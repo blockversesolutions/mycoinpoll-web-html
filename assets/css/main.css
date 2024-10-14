@@ -672,9 +672,6 @@ a.nav-link.dropdown-toggle i{
 	right:0px;
 	top: 2px;
 }
-.frequently-answere {
-	min-height: 520px;
-}
 .solid-line{
   width: 100%;
   border-bottom: 1px solid;
@@ -1113,7 +1110,7 @@ text-fill-color: transparent;
 	left: 0;
 	right: 0;
 	margin: auto;
-	top:46%;
+	top:235px;
 	transform: translateY(-50%);
 	background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
 	opacity: 0.08;
@@ -1358,7 +1355,6 @@ text-fill-color: transparent;
 .frequently-circle {
 	width: 700px;
 	height:650px;
-	top:45%;
 	opacity: 0.09;
 	z-index:0;
 }
