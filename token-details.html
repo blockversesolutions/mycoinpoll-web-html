@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MyCoinPool</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+         />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <!-- header -->
+      <header class="header-area-bg-color">
+         <div class="container">
+            <nav class="navbar navbar-expand-xl menu-bg clip-path">
+               <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                     <img src="assets/images/logo.png" alt="logo"/>
+                  </a>
+                  <button
+                     class="navbar-toggler icon"
+                     type="button"
+                     data-bs-toggle="collapse"
+                     data-bs-target="#navbarText"
+                     aria-controls="navbarText"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation"
+                     >
+                     <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i>
+                     </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                     <ul class="navbar-nav mx-auto" id="outside-click">
+                        <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="token-details.html">Tokens</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="learn-earn.html">Learn & Earn</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">News</a>
+                        </li>
+                     </ul>
+                     <div class="header-right d-flex align-items-center">
+                        <div class="button-wrapper d-flex align-items-center border-gradient">
+                           <a href="apply-launch.html">Apply for Launch <span><img src="assets/images/icon/launch.png" alt="icon"/></span></a>
+                        </div>
+                        <div class="button-wrapper d-flex align-items-center border-gradient">
+                           <a href="#">Connect Wallet <span><img src="assets/images/icon/wallet.png" alt="icon"/></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <div class="coin-details-hero-bg position-relative coin-details-hero-border custom-container">
+         <div class="breadcrumbs-area mt20 breadcrumbs-mobile-padding">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="breadcrumbs">
+                        <ul class="d-flex align-items-center flex-wrap">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#" class="active">Token Details</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="coin-hero-area ptb50 position">
+            <div class="frequently-circle"></div>
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6">
+                     <div class="token-details-card-thumnails box-bg">
+                        <div class="token-card-thumnails position-relative m-0">
+                           <img src="assets/images/thumbnail/image.png" alt="img" class="w-100 object-fit-cover">
+                           <ul class="d-flex align-items-center">
+                              <li><a href="#" class="token-btn token-btn-active">AIRDROP</a></li>
+                              <li><a href="#" class="token-btn token-btn-hover">INITIAL</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="token-details-right-box">
+                        <div class="token-card-heading">
+                           <h3 class="text-shadow">Take Metaverse</h3>
+                        </div>
+                        <div class="token-shear-counter-box d-flex align-items-center">
+                           <div class="token-view-shear">
+                              <p class="mb20">The higher VIP tier, the more free shares.</p>
+                              <a href="#">View all VIP default shares</a>
+                           </div>
+                           <div class="countdown-area">
+                              <h5>Countdown</h5>
+                              <ul class="d-flex align-items-center">
+                                 <li>23D</li>
+                                 <li><span>:</span></li>
+                                 <li>09</li>
+                                 <li><span>:</span></li>
+                                 <li>25</li>
+                                 <li><span>:</span></li>
+                                 <li>45</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="token-details-terget-area d-flex align-items-center justify-content-between">
+                           <ul class="d-flex align-items-center mt20">
+                              <li>
+                                 <p>Supporter</p>
+                                 <span>105k</span>
+                              </li>
+                              <li>
+                                 <p>Progress</p>
+                                 <span>80%</span>
+                              </li>
+                           </ul>
+                           <ul class="d-flex align-items-center text-right mt20">
+                              <li>
+                                 <p class="text-end">Raised</p>
+                                 <span>--/30,000 USDT</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <a href="#" class="btn1 primary-btn mt40">Free to Claim</a>
+                        <div class="token-details-btn-group mt40">
+                           <ul class="d-flex align-items-center">
+                              <li class="w-100 w-md-50">
+                                 <a href="#" class="primary-btn btn4 text-center">
+                                    <h4>VIP0</h4>
+                                    <p>Current VIP Level</p>
+                                 </a>
+                              </li>
+                              <li class="w-md-50 w-100 ">
+                                 <a href="#" class="primary-btn btn4 text-center">
+                                    <h4>Lucky Draw</h4>
+                                    <p>Available Shares</p>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="card-listed-section position-relative">
+         <div class="card-listed circle-effect1"></div>
+         <div class="card-listed2 circle-effect2"></div>
+         <div class="card-listed3 circle-effect3"></div>
+         <div class="container">
+            <div class="notice-box mt50">
+               <div class="running-token-view-box d-flex align-items-center justify-content-between border-indexcing flex-wrap">
+                  <div class="token-view-box-text d-flex align-items-center">
+                     <img src="assets/images/icon/bell.png" alt="icon">
+                     <p>Get early access to cutting-edge crypto projects. Stake and participate in IDOs across multiple blockchains with guaranteed security.</p>
+                  </div>
+                  <div class="token-view-btn">
+                     <a href="#" class="border-gradient btn3">View Details</a>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- start card -->
+                  <div class="full-w-card d-flex align-items-center ptb80 plr40 mobile-box-bg">
+                     <div class="upgrade-box d-flex align-items-center">
+                        <div class="upgrade-box-left">
+                           <div class="common-heading-2">
+                              <h4>Upgrade with 50% Off <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></h4>
+                              <p>You can elevate your VIP status through one of three methods below, and upon upgrading, you will be rewarded with 20 additional Startup shares.</p>
+                           </div>
+                        </div>
+                        <div class="button-list">
+                           <ul class="d-flex align-items-center g30">
+                              <li><a href="#" class="btn4 primary-btn">Trade Now</a></li>
+                              <li><a href="#" class="btn4 primary-btn">Purchase GT</a></li>
+                              <li><a href="#" class="btn4 primary-btn">Deposit Now</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <!-- start card -->
+                  <div class="full-w-card ptb80 plr40 client-review-bg mt50 mobile-box-bg">
+                     <div class="upgrade-box border-bottom-c pb30">
+                        <div class="ido-card-header d-flex align-items-center">
+                           <div class="ido-card-logo">
+                              <img src="assets/images/thumbnail/metaverse.png" alt="icon">
+                           </div>
+                           <div class="ido-card-header-text">
+                              <h4>Take Metaverse</h4>
+                              <p>Take metaverse</p>
+                           </div>
+                        </div>
+                        <div class="project-introduction mt40">
+                           <div class="common-heading-2">
+                              <h4>Project Introduction</h4>
+                              <p>LunarLens is a global short video community that integrates video impact investment gameplay. We encourage and reward the creation and sharing of highquality content, and build a transparent and decentralized investment environment through blockchain technology. We are committed to becoming a global leading digital entertainment platform. We design decentralized finance around the growth of content influence, and regard users as content investors.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="upgrade-box">
+                        <div class="ido-card-header d-flex align-items-center">
+                           <div class="ido-card-logo">
+                              <img src="assets/images/thumbnail/user1.png" alt="icon">
+                           </div>
+                           <div class="ido-card-header-text">
+                              <h4>Eric Aruda</h4>
+                              <p>Founder</p>
+                           </div>
+                        </div>
+                        <div class="project-introduction mt40">
+                           <div class="common-heading-2">
+                              <p>Eric Aruda is graduated from the prestigious Harvard University with a dual degree in Computer Science and Economics. He is the CEO of LunarLens. He leads strategic planning and overall operations at LunarLens, oversees the development and implementation of innovative blockchain technologies to enhance platform performance, and drives global expansion and user growth initiatives.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="token-circle1"></div>
+         <div class="token-circle2"></div>
+         <div class="token-circle3"></div>
+      </section>
+      <!-- Start why choose area -->
+      <section class="why-choose-section ptb120 position-relative">
+         <div class="chain-circle2"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading multi-chain-power-heading">
+                     <h3 class="text-shadow">Secure Your Tokens in the Presale!</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt40 gy-4">
+               <div class="col-xl-3 col-lg-6">
+                  <div class="why-choose-card common-card text-center position-relative">
+                     <span class="text-shadow">Stage 1</span>
+                     <img src="assets/images/icon/stage1.png" alt="icon">
+                     <h4>0.000800$</h4>
+                     <h5>240,000$</h5>
+                     <p>Maximum potential growth and early staking rewards.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-6">
+                  <div class="why-choose-card common-card text-center position-relative">
+                     <span class="text-shadow">Stage 2</span>
+                     <img src="assets/images/icon/stage2.png" alt="icon">
+                     <h4>0.000800$</h4>
+                     <h5>240,000$</h5>
+                     <p>Maximum potential growth and early staking rewards.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-6">
+                  <div class="why-choose-card common-card text-center position-relative">
+                     <span class="text-shadow">Stage 3</span>
+                     <img src="assets/images/icon/stage3.png" alt="icon">
+                     <h4>0.000800$</h4>
+                     <h5>240,000$</h5>
+                     <p>Maximum potential growth and early staking rewards.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-6">
+                  <div class="why-choose-card common-card text-center position-relative">
+                     <span class="text-shadow">Stage 4</span>
+                     <img src="assets/images/icon/stage4.png" alt="icon">
+                     <h4>0.000800$</h4>
+                     <h5>240,000$</h5>
+                     <p>Maximum potential growth and early staking rewards.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Start why choose area -->
+      <!-- Start token rollout area -->
+      <section class="token-rollout-section position-relative">
+         <div class="token-rollout1 circle-effect2"></div>
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6">
+                  <div class="token-rollout-left-side">
+                     <div class="section-heading">
+                        <h3 class="text-shadow">Strategic Token Rollout</h3>
+                        <p>Our strategic token distribution ensures a balanced, fair launch, maximizing growth and long-term community involvement.</p>
+                     </div>
+                     <div class="token-roll-controls mobile-box-bg mt40">
+                        <!-- item -->
+                        <div class="progress-item mb20">
+                           <div class="token-roll-label progress-label">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>Token Pre-Sale </li>
+                                 <li>17-03-2021</li>
+                                 <li>1,000,000 ECM</li>
+                              </ul>
+                           </div>
+                           <div class="progress">
+                              <div class="progress-bar align-items-end" role="progressbar" style="width: 25%;background-color:#2682EE;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>$0.7</span></div>
+                           </div>
+                        </div>
+                        <!-- item -->
+                        <div class="progress-item mb20">
+                           <div class="token-roll-label progress-label">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>Round - 1</li>
+                                 <li>17-03-2021</li>
+                                 <li>1,000,000 ECM</li>
+                              </ul>
+                           </div>
+                           <div class="progress">
+                              <div class="progress-bar align-items-end" role="progressbar" style="width:35%;background-color:#1CD691;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><span>$0.7</span></div>
+                           </div>
+                        </div>
+                        <!-- item -->
+                        <div class="progress-item mb20">
+                           <div class="token-roll-label progress-label">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>Round - 2 </li>
+                                 <li>17-03-2021</li>
+                                 <li>1,000,000 ECM</li>
+                              </ul>
+                           </div>
+                           <div class="progress">
+                              <div class="progress-bar align-items-end" role="progressbar" style="width: 70%;background-color:#DFC730;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span>$0.7</span></div>
+                           </div>
+                        </div>
+                        <!-- item -->
+                        <div class="progress-item mb20">
+                           <div class="token-roll-label progress-label">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>Round - 3</li>
+                                 <li>17-03-2021</li>
+                                 <li>1,000,000 ECM</li>
+                              </ul>
+                           </div>
+                           <div class="progress">
+                              <div class="progress-bar align-items-end" role="progressbar" style="width:80%;background-color:#359846;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>$0.7</span></div>
+                           </div>
+                        </div>
+                        <!-- item -->
+                        <div class="progress-item">
+                           <div class="token-roll-label progress-label">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>Round - 4 </li>
+                                 <li>17-03-2021</li>
+                                 <li>1,000,000 ECM</li>
+                              </ul>
+                           </div>
+                           <div class="progress">
+                              <div class="progress-bar align-items-end" role="progressbar" style="width: 85%;background-color:#B92124;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span>$0.7</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="token-rollout-right-side d-flex justify-content-end position-relative">
+                     <canvas id="myPieChart"></canvas>
+                     <div class="chart-center-box">
+                        <h5>ECM</h5>
+                        <p>27,000,000</p>
+                        <p>Total Supply</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End token rollout area -->
+      <section class="ptb120 position-relative">
+         <div class="roadmap1 circle-effect4"></div>
+         <div class="roadmap2 circle-effect-center"></div>
+         <div class="roadmap3 circle-effect5"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading text-center">
+                     <h3 class="text-shadow">Your Journey to Crypto Success</h3>
+                     <p>Follow our roadmap to see upcoming milestones, new features, and future IDO launches as we revolutionize blockchain investing.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt80">
+               <div class="col-md-12">
+                  <!--start heading fixed row  -->
+                  <div class="row">
+                     <div class="col-xl-6">
+                        <div class="roadmap-item d-flex align-items-center justify-content-end">
+                           <div class="roadmap-start d-flex align-items-center justify-content-center flex-column position-relative">
+                              <h3 class="text-shadow">Road <br> map</h3>
+                              <!-- <div class="shap-right shap-roadmap">
+                                 <img src="assets/images/bg/shap-right.png" alt="">
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--start heading fixed row  -->
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6 offset-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative">
+                              <h4>August</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-left">
+                                 <img src="assets/images/bg/shap-left.png" alt="">
+                                 </div> -->
+                           </div>
+                           <div class="roadmap-item-text">
+                              <span class="roadmap-item-text-btn">Phase 1</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-text roadmap-item-left">
+                              <span class="roadmap-item-text-btn">Phase 2</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                              </ul>
+                           </div>
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative custome-ordering">
+                              <h4>July</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-right">
+                                 <img src="assets/images/bg/shap-right.png" alt="">
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6 offset-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative">
+                              <h4>June</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-left">
+                                 <img src="assets/images/bg/shap-left.png" alt="">
+                                 </div> -->
+                           </div>
+                           <div class="roadmap-item-text">
+                              <span class="roadmap-item-text-btn">Phase 3</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-text roadmap-item-left">
+                              <span class="roadmap-item-text-btn">Phase 4</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                              </ul>
+                           </div>
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative custome-ordering">
+                              <h4>May</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-right">
+                                 <img src="assets/images/bg/shap-right.png" alt="">
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6 offset-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative">
+                              <h4>June</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-left">
+                                 <img src="assets/images/bg/shap-left.png" alt="">
+                                 </div> -->
+                           </div>
+                           <div class="roadmap-item-text">
+                              <span class="roadmap-item-text-btn">Phase 3</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-text roadmap-item-left">
+                              <span class="roadmap-item-text-btn">Phase 4</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                              </ul>
+                           </div>
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative custome-ordering">
+                              <h4>May</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-right">
+                                 <img src="assets/images/bg/shap-right.png" alt="">
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6 offset-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative">
+                              <h4>June</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-left">
+                                 <img src="assets/images/bg/shap-left.png" alt="">
+                                 </div> -->
+                           </div>
+                           <div class="roadmap-item-text">
+                              <span class="roadmap-item-text-btn">Phase 3</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row roadmap-cover">
+                     <div class="col-xl-6">
+                        <div class="roadmap-item d-flex align-items-center">
+                           <div class="roadmap-item-text roadmap-item-left">
+                              <span class="roadmap-item-text-btn">Phase 4</span>
+                              <ul>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Develop Algo algorithm and user interface</li>
+                                 <li><img src="assets/images/icon/checked.png" alt=""> Launch public sale of $ALGO tokens</li>
+                                 <li><img src="assets/images/icon/time.png" alt=""> List $ALGO tokens on major cryptocurrency exchanges</li>
+                              </ul>
+                           </div>
+                           <div class="roadmap-item-year d-flex align-items-center justify-content-center flex-column position-relative custome-ordering">
+                              <h4>May</h4>
+                              <h4>2023</h4>
+                              <!-- <div class="shap-right">
+                                 <img src="assets/images/bg/shap-right.png" alt="">
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <section class="position-relative">
+         <div class="chain-circle2 chain-power-circle2"></div>
+         <div class="frequently-circle2"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading text-center">
+                     <h3 class="text-shadow">Arkham Token Sale and Economics</h3>
+                     <p>The Arkham token sale offers exclusive early access to investors, with carefully planned token economics ensuring long-term value.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt80 gy-4">
+               <div class="col-md-6">
+                  <div class="token-sell-price">
+                     <!-- item -->
+                     <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter mb30">
+                        <span class="left-text">Hard Cap</span>
+                        <span class="line"></span>
+                        <span class="right-text">2,500,000 USD</span>
+                     </div>
+                     <div class="token-sell-price mb30">
+                        <!-- item -->
+                        <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter">
+                           <span class="left-text">Total Token Supply</span>
+                           <span class="line"></span>
+                           <span class="right-text">1,000,000,000 ARKM</span>
+                        </div>
+                     </div>
+                     <div class="token-sell-price mb30">
+                        <!-- item -->
+                        <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter">
+                           <span class="left-text">Initial Circulating Supply</span>
+                           <span class="line"></span>
+                           <span class="right-text">15% of Total Token Supply</span>
+                        </div>
+                     </div>
+                     <div class="token-sell-price">
+                        <!-- item -->
+                        <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter">
+                           <span class="left-text">Public Sale Token Price</span>
+                           <span class="line"></span>
+                           <span class="right-text">2,500,000 USD</span>
+                        </div>
+                        <p class="mt10 mb30">(Price in BNB will be determined prior to the start of subscription)</p>
+                     </div>
+                     <div class="token-sell-price mb30">
+                        <!-- item -->
+                        <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter">
+                           <span class="left-text">Tokens Offered</span>
+                           <span class="line"></span>
+                           <span class="right-text">50,000,000 ARKM</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="token-sell-price">
+                     <!-- item -->
+                     <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter">
+                        <span class="left-text">Hard Cap Per User</span>
+                        <span class="line"></span>
+                        <span class="right-text">15,000 USD</span>
+                     </div>
+                     <p class="mt10 mb30">(Price in BNB will be determined prior to the start of subscription)</p>
+                     <!-- item -->
+                     <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter mb30">
+                        <span class="left-text">Token Sale Vesting Period</span>
+                        <span class="line"></span>
+                        <span class="right-text">No Lockup</span>
+                     </div>
+                     <div class="token-sell-price">
+                        <!-- item -->
+                        <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter mb30">
+                           <span class="left-text">Token Type</span>
+                           <span class="line"></span>
+                           <span class="right-text">ERC20</span>
+                        </div>
+                     </div>
+                     <div class="token-sell-price">
+                        <!-- item -->
+                        <div class="token-sell-price-item d-flex align-items-center justify-content-between g30 border-gradient-item border-gradient-view-outter mb30">
+                           <span class="left-text">Token Distribution</span>
+                           <span class="line"></span>
+                           <span class="right-text">After the end of token sale</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="chain-circle"></div>
+      </section>
+      <section class="ecm-section position-relative pt120">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-xl-6">
+                  <div class="ecm-left-side">
+                     <div class="section-heading">
+                        <h3 class="text-shadow">Unleash ECM for Digital Mining</h3>
+                        <p>Dive into the ECM Cloud for seamless digital mining, offering powerful tools to optimize and grow your crypto assets.</p>
+                     </div>
+                     <div class="ecm-address mt40">
+                        <h5>ECM Contact Address</h5>
+                        <p>OxcAEG6EBAceF456e5A942afb40Fc99F2F38639eF01</p>
+                     </div>
+                     <ul class="d-flex align-items-center mt40 g30 flex-wrap">
+                        <li><a href="#" class="btn1 primary-btn">White Paper <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a></li>
+                        <li><a href="#" class="btn2 primary-btn">How to Buy</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-xl-6">
+                  <div class="ecm-right-box">
+                     <div class="ecm-right-header">
+                        <ul class="d-flex align-items-center justify-content-between flex-wrap">
+                           <li>Stage 1 : 1285.565 ECM</li>
+                           <li>Max : 3350000.0 ECM</li>
+                        </ul>
+                        <div class="ico-progress">
+                           <div class="progress">
+                              <div class="progress-bar align-items-end" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
+                           </div>
+                        </div>
+                        <ul class="d-flex justify-content-center mt20">
+                           <li>1 ECM = 0.0004 ETH</li>
+                        </ul>
+                        <div class="line-divider2 w-100 mt20 mb20"></div>
+                     </div>
+                     <div class="ecm-form">
+                        <h4 class="mb30">ICO is Live</h4>
+                        <div class="subscribe-form">
+                           <form action="">
+                              <div class="subscribe-email mb30 d-flex align-items-center mw-100">
+                                 <img src="assets/images/icon/ecm.png" alt="icon">
+                                 <input type="text" placeholder="ECM Amount">
+                              </div>
+                              <div class="subscribe-email mb40 d-flex align-items-center mw-100">
+                                 <img src="assets/images/icon/eth.png" alt="icon">
+                                 <input type="text" placeholder="ETH Payable">
+                              </div>
+                              <input type="submit" class="btn1 primary-btn submit-btn w-100" value="Subscribe">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer-main-section pt120 position-relative center-effect1">
+         <div class="footer-circle circle-effect-center"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="footer-area d-flex justify-content-between">
+                     <div class="footer-description">
+                        <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                        <p class="mt40">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                        <div class="social-menu">
+                           <span>Follow us</span>
+                           <ul class="d-flex align-items-center">
+                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="footer-widgets-area d-flex">
+                        <div class="footer-widgets">
+                           <h4>Company</h4>
+                           <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Investment</a></li>
+                              <li><a href="#">Referral</a></li>
+                              <li><a href="#">Contact Us</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-widgets contactinfo">
+                           <h4>Contact Info.</h4>
+                           <ul>
+                              <li>Customer Support: <br />
+                                 <a href="mailto:support@brunoex.com">support@brunoex.com</a>
+                              </li>
+                              <li>
+                                 <p class="or-divider">OR</p>
+                              </li>
+                              <li>Corporate Enquiries: <br />
+                                 <a href="mailto:info@brunoex.com">info@brunoex.com</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="footer-widgets footer-subscribe">
+                           <h4>Newsletter</h4>
+                           <p>Subscribe to our newsletter for latest update & stay with us.</p>
+                           <div class="subscribe-form">
+                              <form action="">
+                                 <div class="subscribe-email mt20">
+                                    <input type="email" placeholder="Enter Your Email">
+                                 </div>
+                                 <input type="submit" class="btn1 primary-btn subscribe-btn mt30" value="Subscribe">
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="footer-bottom-copyright d-flex flex-wrap align-items-center justify-content-between">
+                     <div class="copyright-text">
+                        <p>&copy; 2024 <a href="#" class="gradient-color"> mycoinpool</a>  All Rights Reserved.</p>
+                     </div>
+                     <div class="terms-conditions">
+                        <ul class="d-flex align-items-center">
+                           <li><a href="#">Terms & Conditions</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="assets/js/jquery.slideshowad.js"></script>
+      <!-- Include Chart.js -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- Include the DataLabels Plugin -->
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      <!-- chart customize js -->
+      <script src="assets/js/chart.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,809 @@
+ 
+@media screen and (min-width:1280px) {
+  .navbar-nav {
+    gap:15px;
+  }
+  .upcoming-label {
+    right: 2%;
+    top: 10px;
+  }
+  
+}
+@media screen and (max-width: 1440px) {
+  .upcoming-label {
+    right: 4%;
+    top: 2px;
+  }
+  .flip-item img {
+    width: 100%;
+    margin-top: -43px;
+  }
+ .multi-chain-power-section{
+    margin-top: 0;
+  }
+  .multi-chain-power-section::after {
+    display: none;
+  }
+  .multi-chain-power-heading p {
+    margin-top: 20px;
+  }
+ 
+  .ido-card-header{
+    margin-top: 38px;
+  }
+  .slick-arrow {
+    height: 50px;
+    width: 50px;
+  }
+  .cb-slideshow div,.cb-slideshow{
+    width: 400px !important;
+  }
+  .primary-btn {
+    min-width: 300px;
+    height: 75px;
+  }
+  .btn2{
+    height:85px;
+  }
+  .token-view-more-btn .primary-btn {
+    line-height: 78px;
+  }
+  .coin-logo-area ul li {
+    width: 26%;
+  }
+  .token-details-btn-group .btn4.primary-btn {
+    min-width:225px
+   }
+}
+@media screen and (max-width:1280px) {
+  .ecm-left-side ul{
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .ecm-left-side {
+    text-align: center;
+  }
+   .token-card-main-area{
+    flex-wrap: wrap;
+   }
+  .token-card-right {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  .coin-logo-area ul li img{
+    width: 80%;
+  }
+  .token-card-right .social-menu ul,.countdown-area ul {
+    justify-content: center;
+  }
+  .token-card-main-area {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .frequently-answere .accordion-button {
+    padding: 6px 15px !important;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .frequently-answere .accordion-body p {
+    font-size: 15px;
+  }
+  .upgrade-box-left{text-align: center;}
+  .upgrade-box{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .upgrade-box-left .common-heading-2 p{
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .ecm-right-box{
+    margin-left: 0;
+  }
+  .menu-bg-fixed {
+    top: -120px;
+  }
+  .header-cover-area .header-area-bg-color{
+    padding-top: 120px;
+  }
+  .button-wrapper {
+    margin-left: -12px;
+  }
+  button.navbar-toggler.icon:focus{
+    box-shadow: 0 0 0 0 transparent !important;
+  }
+  #outside-click{
+    padding-top: 20px;
+  }
+  .menu-bg {
+    background-image: none;
+    backdrop-filter: 17px;
+    background-color: rgba(116, 117, 115, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(22px);
+    border-radius: 10px;
+  }
+  .running-token-section {
+    background-size: contain;
+  }
+  .coinpool-hero-rights {
+    display: none;
+  }
+  .hero-container {
+    background-size: cover;
+    padding-top: 120px;
+  }
+  .coin-logo-section {
+    margin-top: -140px;
+  }
+  .subscribe-email input {
+    padding: 14px 28px;
+  }
+  .multi-chain-power-section::before{
+    background-size: cover;
+  }
+  header {
+    position: fixed;
+    width: 96%;
+    left: 0;
+    z-index: 999;
+    right: 0;
+    margin: auto;
+    top: 0;
+  }
+  .coin-details-hero-bg {
+    padding-top: 25px;
+  }
+  .roadmap-item{
+    margin-bottom: 40px;
+  }
+  .roadmap-item-year {
+    position: absolute !important;
+    right: 10px;
+  }
+  .roadmap-item-text {
+    margin-left: 0;
+    padding-left: 25px;
+  }
+  .roadmap-item-year::before{
+    display: none;
+  }
+  .roadmap-item.justify-content-end{
+    justify-content: center !important;
+    margin-bottom: 80px !important;
+  }
+  .token-details-card-thumnails.box-bg {
+    margin-right:0px;
+  }
+  .section-heading h3 {
+    font-size: 45px;
+  }
+  .chart-center-box {
+    height: 165px;
+    width: 165px;
+  }
+  .token-rollout-right-side {
+    margin-left:50px;
+  }
+  .breadcrumbs-mobile-padding{
+    margin-top: 85px;
+  }
+   .footer-area{
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .footer-description {
+    margin-right:0px;
+    max-width:550px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom:20px;
+  }
+  .footer-description .social-menu ul{
+    justify-content: center;
+  }
+  .footer-widgets-area{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .subscribe-email input{
+    font-size: 16px;
+  }
+  .header-right {
+    padding-left: 14px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .button-wrapper{
+    min-width: 272px;
+  }
+  .index-hero-text {
+    width: 100%;
+  }
+  .launch-thumnail {
+    margin-top: 60px;
+  }
+  .apply-launch-part .section-heading{
+    margin-bottom: 20px !important;
+  }
+  .apply-launch-part label {
+    margin-bottom: 10px;
+  }
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .box-bg {
+    margin-top: 60px;
+  }
+  .token-details-card-thumnails.box-bg{
+    margin-top: 0;
+  }
+  .coin-hero-area .box-bg{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .coin-hero-area .box-bg{
+    margin-top:50px;
+  }
+  .token-details-right-box{
+    margin-top: 60px;
+  }
+  .why-choose-section{
+    padding-bottom: 0 !important;
+  }
+  .frequently-thumnail {
+    padding-right:0px;
+  }
+  .frequently-asked-text-area {
+    margin-top: 60px;
+  }
+  .subscribe-form{
+    display: flex;
+    justify-content: center;
+  }
+  .subscribe-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .coin-logo-section {
+    margin-top: -150px;
+  }
+  .coin-logo-area ul li {
+    width: 35%;
+  }
+  .coin-logo-area ul li img{
+    width: 60%;
+  }
+  .coin-logo-area ul {
+    row-gap: 15px;
+  }
+  
+  .pagination-inner li a {
+    min-width: 48px;
+  }
+  .token-card-thumnails,.token-card-middle-area {
+    margin-right: 0;
+    width: 100%;
+  }
+  .token-card-thumnails{
+    margin-bottom: 60px;
+  }
+  .token-card-width .token-card-thumnails{
+    margin-bottom: 0;
+  }
+  .token-card-thumnail-text{
+    gap:40px;
+  }
+  .token-card-main-area {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .token-card-middle h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .token-card-thumnails img{
+    width: 100%;
+  }
+  .header-cover-area .header-area-bg-color {
+    padding-top:120px;
+  }
+  .frequently-answere .accordion-item {
+    margin-bottom: 10px;
+  }
+  .ido-card-body .social-menu ul{
+    justify-content: center !important;
+  }
+  .section-heading h3,.token-card-heading h3 {
+    font-size: 45px;
+  }
+  .token-view-shear{
+    border-right:none;
+  }
+  .token-rollout-section {
+    padding-top: 80px;
+  }
+  .token-rollout-right-side {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  .left-text, .right-text {
+    font-size: 15px;
+  }
+  .line {
+    height: 1px;
+  }.running-token-view-box,.token-card-main-area,.ido-single-card,.subscribe-bg{
+    border-radius: 15px;
+    background-image: url('../images/bg/mobile-card.png');
+    padding-bottom: 60px !important;
+    padding-top: 60px;
+  }
+  .slider-arrows {
+    display: none !important;
+  }
+  .footer-widgets-area {
+    gap: 70px;
+  }
+  .learn-earn-area .token-card-thumnails{
+    width: 40%;
+    margin-bottom: 0;
+  }
+  .earn-right-text{
+    width: 60%;
+  }
+  .learn-earn-hero-left {
+    margin-right:0px;
+  }
+  .token-details-card-thumnails.box-bg{
+    margin-top: 0;
+  }
+  .upcoming-label {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-cover-area .header-area-bg-color .container-fluid {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .ido-active-offer {
+    gap:18px;
+    flex-wrap: wrap;
+  }
+  .ido-card-header{
+    flex-wrap: wrap;
+  }
+  .ido-card-logo{
+    margin-bottom:20px;
+  }
+  .ido-single-card {
+    padding: 15px;
+  }
+   .hero-area-text ul{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   }
+   .hero-area-text h3,.token-card-heading h3,.section-heading h3 {
+    font-size:35px;
+    line-height:55px;
+  }
+  .section-heading h3{
+    font-size: 32px;
+    line-height:40px;
+  }
+  p {
+    font-size: 16px;
+  }
+  
+  .hero-area-text {
+    text-align: center;
+  }
+  .primary-btn {
+    min-width: 280px;
+    font-size: 16px;
+    /* height: 65px; */
+    display: flex;
+  }
+  .coin-logo-section {
+    margin-top: -144px;
+  }
+  .coin-logo-area ul li {
+    width: 38%;
+  }
+  .coin-logo-area ul {
+    gap: 15px;
+  }
+  .btn2 {
+    height:74px;
+  }
+  .running-token-view-box{
+    justify-content: center;
+  }
+  .token-view-box-text,.token-view-btn {
+    width: 100%;
+  }
+  .token-view-btn{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .btn3 {
+    padding: 12px 25px;
+  }
+  .ido-card-header {
+    margin-top: 20px;
+  }
+  
+  .navbar-brand {
+    margin-right: 0px;
+  }
+  .subscribe-bg {
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .slider-arrows {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .token-card-main-area {
+    padding-bottom: 50px;
+  }
+  .frequently-circle{
+    display: none;
+  }
+  .token-card-heading{
+    flex-wrap: wrap;
+  }
+  .footer-bottom-copyright{
+    justify-content: center !important;
+  }
+  .terms-conditions ul li a {
+    font-size: 15px;
+  }
+  .copyright-text p{
+    text-align: center;
+  }
+  .multi-chain-card-logo img {
+    width: 55px;
+  }
+  .multi-chain-card-text h4 {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+  .multi-chain-card {
+    padding: 20px;
+  }
+  .pt120 {
+    margin-top: 80px;
+  }
+  .frequently-asked-question-section{
+    padding-top: 0;
+    margin-top: 60px;
+  }
+  .token-view-box-text{
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center;
+    gap: 15px;
+  }
+  .ecm-address p{
+    font-size: 12px;
+  }
+  .token-view-shear {
+    margin-bottom: 30px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .token-shear-counter-box{
+    flex-wrap: wrap;
+  }
+  .roadmap-item-year {
+    position: relative !important;
+    margin-bottom: -50px;
+    right: 0;
+  }
+  .roadmap-item {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .roadmap-item-left {
+    margin-right: 0;
+  }
+  .custome-ordering{
+    order: -2;
+  }
+  .hero-container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 260px;
+  }
+  .circle-effect-center,.center-effect1::after {
+    width: 100%;
+  }
+  .center-effect1::after {
+    background-size: contain;
+  }
+  .ido-card-list-item img {
+    display: none;
+  }
+  .contactinfo{
+    min-width: auto;
+  }
+  .ido-card-list-item {
+    grid-template-columns: 4fr 6fr;
+  }
+  .ptb120{
+    padding:90px 0;
+  }
+  .hero-area-text h3{
+    font-size: 45px;
+  }
+  .ecm-form .subscribe-email input {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+  .circle-effect3{
+    z-index: -2;
+  }
+  .token-details-terget-area ul {
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .token-details-btn-group ul{
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .button-list ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .full-w-card {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:30px;
+    padding-bottom:60px;
+  }
+  .mobile-box-bg{
+    /* background-image: none;
+    background: linear-gradient(135deg, #264162 0%, #102e2c 100%);
+    border-radius: 15px; */
+    border-radius: 15px;
+    background-image: url('../images/bg/mobile-card.png');
+  }
+  .g30{
+    gap: 15px;
+  }
+  .ido-card-logo img{
+    width: 80px;
+    height: 80px;
+  }
+  .running-token-view-box{
+    padding: 40px 28px;
+  }
+  .full-w-card .common-heading-2 p{
+    width: 100%;
+  }
+  .project-introduction.mt40{
+    margin-top: 20px;
+  }
+  .token-roll-label ul li{
+    font-size: 14px;
+  }
+  .token-roll-controls .progress-bar span, .ico-progress .progress-bar span {
+    font-size: 15px;
+  }
+  .roadmap-start{
+    min-height: 240px;
+    min-width: 240px;
+  }
+  .roadmap-item-year {
+    min-height: 154px;
+    min-width: 154px;
+    max-height: 212px;
+  }
+    .line{
+      display: none;
+    }
+    .token-sell-price-item {
+      flex-wrap: wrap;
+      justify-content: center !important;
+      margin-bottom: 10px;
+    }
+    .token-sell-price{
+      margin-bottom: 10px;
+    }
+    .row.mt80.gy-4{
+      margin-top: 40px;
+    }
+    .earn-card-btn-group ul{
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .chart-center-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #111822;
+      width: 100%;
+      border-radius:0%;
+      position: absolute;
+      top:-94px;
+      border: 2px solid #217e88;
+      outline:1px solid #040C16;
+    }
+    .token-rollout-right-side{
+      margin-top:230px;
+    }
+    .pagination .subscribe-btn{
+      height: 40px !important;
+      min-width:75px !important;
+      font-size: 12px;
+    }
+    .pagination-inner li a {
+      min-width: 36px;
+      height: 40px;
+      font-size: 12px;
+    }
+    .pagination ul {
+      gap:3px;
+    }
+    .apply-launch-part {
+      padding: 25px;
+    }
+    .apply-launch-part label{
+      font-size:15px;
+     }
+
+    .subscribe-form .subscribe-btn{
+      margin: auto;
+      margin-top: 20px;
+    }
+    .footer-widgets-area {
+      row-gap: 0;
+      flex-wrap: wrap;
+    }
+    .footer-widgets ul li a,.subscribe-email input{
+      font-size: 15px;
+    }
+    .token-card-right {
+      margin-top: 35px;
+    }
+    .contactinfo ul li {
+      font-size: 20px;
+    }
+    .footer-widgets.footer-subscribe{
+      margin-top: 40px;
+      text-align: center;
+    }
+    .navbar.menu-bg.clip-path{
+      clip-path: polygon( 5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px );
+    }
+    .token-card-thumnails {
+      margin-bottom: 31px;
+    }
+    .line-divider2{
+      margin:20px 0 !important;
+    }
+  
+    .input input, .input textarea {
+      padding: 10px 16px;
+    }
+    .public-radio-area {
+      border-left: none;
+      padding-left: 0;
+    }
+    .input textarea {
+      height: 170px;
+    }
+    .modal-checkbox{
+      margin-bottom: 20px;
+    }
+    .modal-body-inner a{
+      width: 100%;
+      text-align: center;
+    }
+    .custome-modal {
+      padding:40px 15px;
+      padding-bottom: 80px;
+    }
+    .modal-footer-area{
+      justify-content: center !important;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .modal-or-text {
+      font-size:20px;
+      color: #FFFFFF66;
+      margin-top:20px;
+    }
+    .modal-custome-width {
+      width: 96%;
+    }
+    .modal-header-area h4 {
+      font-size:28px;
+      line-height: 40px;
+    }
+    .footer-area {
+      gap: 40px;
+    }
+    .news-poin-list-item ol li h4 {
+      font-size: 18px;
+    }
+    .learning-video-box {
+      height: 390px;
+    }
+    .token-card-thumnail-text {
+      flex-wrap: wrap;
+    }
+    .token-card-width .token-card-thumnails, .token-card-width .token-card-middle-area {
+      width:100%;
+    }
+    .navbar-nav {
+      gap: 0px;
+    }
+    .launch-thumnail img {
+      max-width: 185px;
+    }
+    .learn-earn-area .token-card-thumnails,.earn-right-text{
+      width: 100%;
+    }
+    .token-supporter {
+      margin-bottom: 22px;
+    }
+    .learn-earn-area .earn-right-text {
+      width:100%;
+    }
+}
+@media screen and (max-width:480px) {
+  .coin-logo-area ul li img {
+    width: 90%;
+  }
+.footer-widgets.footer-subscribe{
+    width: 100% !important;
+    text-align: center;
+    max-width: 100%;
+  }
+  .footer-widgets .subscribe-btn{
+    margin: auto;
+    margin-top: 20px;
+  }
+ 
+  .earn-card-btn-group ul li a.btn4.primary-btn {
+    min-width: 305px;
+  }
+  .ido-card-logo {
+    width: 100%;
+  }
+
+  .contactinfo ul li {
+    font-size: 16px;
+  }
+  .ecm-form .subscribe-email img {
+    padding-left: 10px;
+  }
+  .navbar {
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .footer-widgets-area {
+    gap: 40px;
+  }
+  .hero-area-text h3 {
+    font-size: 36px;
+  }
+}
+
+
+
