@@ -37,6 +37,14 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
 }
+button,button:active{
+  outline: none;
+  border: none !important;
+ }
+ button:focus:not(:focus-visible){
+  color:#fff;
+  box-shadow: 0 0 0  rgba(13, 109, 253, 0);
+ }
 .primary-btn {
 	background-size: 100% 100%;
 	min-width:300px;
@@ -45,7 +53,7 @@ h1,h2,h3,h4,h5,h6{
 	transition: 0.5s;
 	color: #fff;
 	display: inline-block;
-	height: 80px;
+	height:72px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,7 +66,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .btn2 {
 	background-image: url('../images/bg/btn2.png');
-  height:90px;
+  height:80px;
 }
 .menu-bg{
   background: linear-gradient(90deg, #16458b31 0%, #5d746b34 100.01%);
@@ -247,7 +255,7 @@ a.nav-link.dropdown-toggle i{
 .running-token-section {
 	background-color: #040C16;
 	background-image: url('../images/bg/line-bg.png');
-	background-size: 100% 80%;
+	background-size: auto;
 	margin-top: 20px;
   position: relative;
 	background-repeat: no-repeat;
@@ -515,7 +523,7 @@ a.nav-link.dropdown-toggle i{
 .token-view-more-btn .primary-btn {
 	min-width: 293px;
 	display: inline-block;
-	line-height:82px;
+	line-height:75px;
 }
 .countdown-area ul li span {
 	font-size: 45px;
@@ -731,6 +739,9 @@ a.nav-link.dropdown-toggle i{
 .slick-arrow i{
   color:#fff;
   font-size: 20px;
+}
+.slick-arrow:hover{
+  z-index: 2;
 }
 .ido-slick-next{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
@@ -2525,3 +2536,8 @@ select {
   top: 140px;
    
  }
+.custom-box-shadow{
+  background: #121d26;
+  border-radius: 10px;
+  padding: 20px !important;
+}

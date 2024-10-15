@@ -40,13 +40,13 @@
   }
   .primary-btn {
     min-width: 300px;
-    height: 75px;
+    height: 72px;
   }
   .btn2{
-    height:85px;
+    height:80px;
   }
   .token-view-more-btn .primary-btn {
-    line-height: 78px;
+    line-height: 75px;
   }
   .coin-logo-area ul li {
     width: 26%;
@@ -421,9 +421,6 @@
   }
   .coin-logo-area ul {
     gap: 15px;
-  }
-  .btn2 {
-    height:74px;
   }
   .running-token-view-box{
     justify-content: center;
