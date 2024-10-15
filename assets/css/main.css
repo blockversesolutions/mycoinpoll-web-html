@@ -210,6 +210,11 @@ a.nav-link.dropdown-toggle i{
 	margin-left: 14px;
 	font-size: 22px;
 }
+.btn1 span i{
+  margin-left:8px;
+	font-size: 22px;
+  line-height: 0;
+}
 .hero-area-text p {
 	margin-top: 20px;
 	margin-bottom: 40px;
@@ -2148,6 +2153,7 @@ select {
   background-clip: text;
   text-fill-color: transparent;
 }
+ 
 .or-divider::before{
   content: '';
   height:1px;
@@ -2161,6 +2167,9 @@ select {
   background: #fff;
   flex: 1;
   margin: 0 0 0 .25em;
+}
+.modal-or-divider::before,.modal-or-divider::after{
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 }
 .contactinfo ul li{
   font-style: italic;
@@ -2233,7 +2242,7 @@ select {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(8px);
 }
-.modal-custome-width {
+.modal-custom-width {
 	max-width: 984px;
 	width: 100%;
 	top:140px;
@@ -2255,21 +2264,21 @@ select {
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-.custome-modal{
+.custom-modal{
   padding: 40px;
   background-color:#040C16;
   border: 1.5px solid #FFFFFF1A;
   border-radius: 20px;
 }
-.custome-modal input{
+.custom-modal input{
   border: none;
 }
 .modal-body-inner .bg-border-input::after{
   border-radius: 7px;
 }
-.modal-body-inner a:hover{
+/* .modal-body-inner > a:hover{
   text-decoration: underline;
-}
+} */
 .gradient-btn {
 	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 	padding: 14px;
@@ -2287,6 +2296,7 @@ select {
 	color: #FFFFFF66;
 	margin-top: 20px;
 	line-height: 22px;
+  margin-bottom: 20px;
 }
 .modal-footer-area a{
   font-size:18px;
@@ -2314,7 +2324,7 @@ select {
   background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
   color:#fff !important;
 }
-.custome-modal .bg-border-input{
+.custom-modal .bg-border-input{
   z-index: inherit;
 }
 .select-icon i{
@@ -2511,4 +2521,7 @@ select {
   margin: 0 auto;
   border-radius: 20px;
 }
- 
+ .connect-wallet-modal{
+  top: 140px;
+   
+ }

@@ -116,10 +116,38 @@
          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sign-up-modal">
          sign-up-modal
          </button>
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#connect-wallet">
+            Connect-wallet
+         </button>
+          <!--start Wallet Modal -->
+          <div class="modal fade bg-gradient-add" id="connect-wallet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content custom-modal connect-wallet-modal">
+                   
+                  <div class="modal-header-area d-flex align-items-center justify-content-between">
+                     <h4 class="text-shadow">Connect Wallet</h4>
+                     <div class="modal-close-btn">
+                        <span data-bs-dismiss="modal" aria-label="Close">
+                           <i class="fas fa-times"></i>
+                        </span>
+                     </div>
+                  </div>
+                  <div class="modal-body-inner">
+                      <a href="login.html" class="btn1 primary-btn subscribe-btn">Login <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span></a>
+                     <div class="d-flex justify-content-center mt20 mb20">
+                        <p class="modal-or-divider or-divider w-80">OR</p>
+                     </div>
+                     <a href="#" class="btn1 primary-btn subscribe-btn">Connect Wallet <span><i class="fa-brands fa-google-wallet"></i></span></a>
+                  </div>
+                   
+               </div>
+            </div>
+         </div>
+         <!-- end Wallet modal -->
          <!--start login Modal -->
          <div class="modal fade bg-gradient-add" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-custome-width">
-               <div class="modal-content custome-modal">
+            <div class="modal-dialog modal-custom-width">
+               <div class="modal-content custom-modal">
                   <form action="">
                      <div class="modal-header-area d-flex align-items-center justify-content-between">
                         <h4 class="text-shadow">Log In</h4>
@@ -167,8 +195,8 @@
          <!-- end login modal -->
          <!--start password forget Modal -->
          <div class="modal fade bg-gradient-add" id="forgot-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-custome-width">
-               <div class="modal-content custome-modal">
+            <div class="modal-dialog modal-custom-width">
+               <div class="modal-content custom-modal">
                   <form action="">
                      <div class="modal-header-area d-flex align-items-center justify-content-between">
                         <h4 class="text-shadow">Reset Your Password</h4>
@@ -207,8 +235,8 @@
          <!-- end password forget modal -->
          <!--start Sign up Modal -->
          <div class="modal fade bg-gradient-add" id="sign-up-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-custome-width">
-               <div class="modal-content custome-modal">
+            <div class="modal-dialog modal-custom-width">
+               <div class="modal-content custom-modal">
                   <form action="">
                      <div class="modal-header-area d-flex align-items-center justify-content-between">
                         <h4 class="text-shadow">Create Account</h4>
