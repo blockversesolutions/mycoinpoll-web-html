@@ -2779,11 +2779,11 @@ select {
   border: 1px solid #2682EE99;
   border-radius: 10px;
   background: #2682EE1A;
+  gap: 5px;
 }
 .coin-balance-logo{
   padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1.5px solid #FFFFFF1A;
+  /* border-right: 1.5px solid #FFFFFF1A; */
 }
 .coin-balance-logo img{
   height: 56px;
@@ -2791,7 +2791,7 @@ select {
   margin-bottom: 10px;
   border-radius: 50px;
 }
-.coin-balance-logo .btn3 {
+.user-coin-balance .btn3 {
 	padding: 6px 17px;
 	font-size: 12px;
 }
@@ -2801,12 +2801,12 @@ select {
   gap: 16px;
 }
 .coin-balance-info h6{
-  font-size: 16px;
-  line-height: 24px;
+  font-size:20px;
+  line-height:30px;
   color:#fff;
 }
 .coin-balance-info h6 span{
-  font-size: 24px;
+  font-size:30px;
   font-weight: 700;
 }
  
@@ -2962,4 +2962,40 @@ display: none;
   line-height: 22px;
   color:#fff;
 }
- 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,table td {
+	border: 1px solid rgba(39, 123, 245, 0.3); 
+	padding: 10px;
+	text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color:#fff;
+  line-height: 17.6px;
+  text-align: left;
+
+}
+.active-status,.deactive-status{
+  border-radius:50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17.6px;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #3598461A;
+  color:#FFFFFFCC;
+  border: 1px solid #35984666
+}
+.deactive-status{
+  background-color: #B921241A;
+  border-color: #B9212466;
+}
+.table-img{
+  width:24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 2px;
+}

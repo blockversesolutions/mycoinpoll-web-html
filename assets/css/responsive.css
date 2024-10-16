@@ -392,6 +392,7 @@
   }
   .dashboard-left {
     width: 60px;
+    background-color: #040C16;
   }
   .menu-icon-show .dashboard-left {
     width:220px;
@@ -815,7 +816,7 @@
     .dashboard-header-right-group {
       gap: 5px;
     }
-    .notification-icon img,.profile-mini-icon img {
+    .notification-icon img,.profile-mini-icon {
       height: 44px;
       width: 44px;
     }
