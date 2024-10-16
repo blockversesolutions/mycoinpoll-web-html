@@ -2551,7 +2551,7 @@ select {
         Start  User Dashboard 
 ===============================================*/
 .dashboard-main-area{
-   padding: 30px;
+   padding:0 30px;
    box-sizing: border-box;
 }
 .dashboard-area{
@@ -2560,13 +2560,15 @@ select {
 }
 .dashboard-left{
   width:225px;
-  border:1.5px solid transparent;
-	background: #080E17;
+  border:1.5px solid #ffffff1c;
 	background-clip: padding-box;
 	border-radius:5px;
   height: calc(100svh - 60px);
   box-sizing: border-box;
   padding: 30px 10px;
+  margin-top: 30px;
+  position: sticky !important;
+  top: 0;
 }
 .dashboard-right{
   width: calc(100% - 225px);
@@ -2576,7 +2578,7 @@ select {
   height: 50px;
   border-radius: 50%;
  }
-.dashboard-left::after {
+/* .dashboard-left::after {
 	content: '';
 	position: absolute;
 	top: -1.5px;
@@ -2587,7 +2589,7 @@ select {
   linear-gradient(129.54deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 96.42%);
 	z-index: -1;
 	border-radius:5px;
-}
+} */
 .dashboard-left-menu ul li a{
   font-size: 16px;
   font-weight: 600;
@@ -2815,12 +2817,12 @@ select {
   background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
   opacity: 0.15;
   filter: blur(90px);
-  z-index: 1;
  
 }
 .ellipse1{
   left:2%;
   top: 0;
+  display:none;
 }
 .dashboard-left-menu {
 	position: relative;
@@ -2847,6 +2849,13 @@ select {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.dashboard-right-header-area{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #040C16;
+  padding: 20px 0;
 }
 .dashboard-header-right-group{
   gap: 16px;
@@ -2947,3 +2956,10 @@ display: none;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 5px;
 }
+.table-heading h5{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color:#fff;
+}
+ 
