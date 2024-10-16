@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MyCoinPool</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+         />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="../assets/css/jquery.flipbox.css" />
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <link rel="stylesheet" href="../assets/css/responsive.css" />
+   </head>
+   <body>
+      <div class="ellipse ellipse1"></div>
+      <div class="ellipse ellipse2"></div>
+      <div class="ellipse ellipse3"></div>
+
+      <div class="dashboard-main-area">
+         <div class="dashboard-area d-flex align-items-start">
+            <div class="dashboard-left position-relative">
+               <div class="resize-icon mb20">
+                  <i class="fa-solid fa-expand"></i>
+               </div>
+              <div class="logo mb40">
+               <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
+              </div>
+              <div class="logo2 mb40">
+               <a href="#"><img src="../assets/images/dashboard/icon/small-logo.png" alt="logo" class="w-100"></a>
+              </div>
+              <div class="dashboard-left-menu">
+               <ul>
+                  <li><a href="#" class="menu-active-bg"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
+               </ul>
+              </div>
+            </div>
+           
+            <div class="dashboard-right">
+               <div class="dashboard-right-header-area d-flex align-items-center justify-content-between">
+                  <div class="page-info d-flex align-items-center">
+                    
+                     <h5 class="page-title">Dashboard</h5>
+                  </div>
+                  
+                  <div class="search-box-area">
+                     <form action="">
+                        <div class="input bg-border-input position-relative">
+                           <div class="search-icon">
+                              <i class="search-icon fas fa-search"></i>
+                           </div>
+                           <input type="text" class="form-control" id="search" placeholder="Search here...">
+                        </div>
+                     </form>
+                  </div>
+                  <div class="dashboard-header-right">
+                     <div class="d-flex align-items-center dashboard-header-right-group">
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           310 USDT <span><img src="../assets/images/dashboard/icon/wallet2.png" alt="icon"></span>
+                        </div>
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           300 CRM <span><img src="../assets/images/icon/wallet.png" alt="icon"></span>
+                        </div>
+                        <div class="notification-icon position-relative">
+                           <img src="../assets/images/dashboard/icon/bell.png" alt="icon">
+                           <span>2+</span>
+                        </div>
+                        <div class="profile-mini-icon">
+                           <a href="user-profile.html"><img src="../assets/images/dashboard/icon/user.png" alt="user"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="dashboard-body mt30">
+                  <div class="page-heading d-flex align-items-center justify-content-between">
+                     <h3>Coin Details</h3>
+                     <a href="#" class="gradient-btn">See Recent Transaction <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                  </div>
+                    
+                    <!-- Start balance box -->
+                  <!-- <div class="user-balance-section mt30">
+                     <div class="input bg-border-input position-relative">
+                         <div class="box-bg-color p30">
+                           <div class="user-balance-item d-flex align-items-center justify-content-between">
+                              <span>Total Balance :</span>
+                              <span><b>$10,500.00</b></span>
+                           </div>
+                           <div class="user-balance-item d-flex align-items-center justify-content-between">
+                              <span>Available Balance :</span>
+                              <span><b>$9,200.00</b></span>
+                           </div>
+                         </div>
+                     </div>
+                  </div> -->
+                  <!-- end balance box -->
+                   <!-- Start coin details -->
+                   <div class="user-coin-details-area">
+                        <div class="user-coin-details d-flex">
+                              <div class="user-coin-thumnails">
+                                    <img src="assets/images/thumbnail/image.png" alt="img" class="object-fit-cover"> 
+                              </div>
+                              <div class="user-coin-counter d-flex justify-content-between align-items-center">
+                                 <div class="token-card-heading">
+                                    <h3>Take Metaverse</h3>
+                                    <div class="token-view-shear">
+                                       <p class="mb20">The higher VIP tier, the more free shares.</p>
+                                       
+                                    </div>
+                                 </div>
+                                 <div class="token-shear-counter-box d-flex align-items-center m-0">
+                                    
+                                    <div class="countdown-area">
+                                       <h5>Countdown</h5>
+                                       <ul class="d-flex align-items-center">
+                                          <li>23D</li>
+                                          <li><span>:</span></li>
+                                          <li>09</li>
+                                          <li><span>:</span></li>
+                                          <li>25</li>
+                                          <li><span>:</span></li>
+                                          <li>45</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="token-details-terget-area d-flex align-items-center justify-content-between">
+                           <ul class="d-flex align-items-center mt20">
+                              <li>
+                                 <p>Supporter</p>
+                                 <span>105k</span>
+                              </li>
+                              <li>
+                                 <p>Progress</p>
+                                 <span>80%</span>
+                              </li>
+                           </ul>
+                           <ul class="d-flex align-items-center text-right mt20">
+                              <li>
+                                 <p class="text-end">Raised</p>
+                                 <span>--/30,000 USDT</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="ico-progress">
+                           <div class="progress">
+                              <div class="progress-bar align-items-end" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
+                           </div>
+                        </div>
+                  </div>
+                   <!-- End coin details -->
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="../assets/js/jquery.flipbox.js"></script>
+      <script src="../assets/js/main.js"></script>
+      <script>
+         function urlCopy() {
+         var copyText = document.getElementById("refer-url");
+         copyText.select();
+         copyText.setSelectionRange(0, 99999);
+         navigator.clipboard.writeText(copyText.value);
+         }
+      </script>
+   </body>
+</html>

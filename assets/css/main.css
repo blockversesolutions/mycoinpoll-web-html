@@ -63,6 +63,7 @@ button,button:active{
 }
 .btn1 {
 	background-image: url('../images/bg/btn1.png');
+  background-color: transparent;
 }
 .btn2 {
 	background-image: url('../images/bg/btn2.png');
@@ -2292,7 +2293,7 @@ select {
 } */
 .gradient-btn {
 	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
-	padding: 14px;
+	padding: 14px 30px;
 	border-radius: 50px;
 	font-size: 18px;
 	font-weight: 600;
@@ -2540,4 +2541,409 @@ select {
   background: #121d26;
   border-radius: 10px;
   padding: 20px !important;
+}
+.input input{
+  border: none;
+  outline: none;
+}
+ 
+/*=================================================
+        Start  User Dashboard 
+===============================================*/
+.dashboard-main-area{
+   padding: 30px;
+   box-sizing: border-box;
+}
+.dashboard-area{
+  justify-content: space-between;
+  gap:40px;
+}
+.dashboard-left{
+  width:225px;
+  border:1.5px solid transparent;
+	background: #080E17;
+	background-clip: padding-box;
+	border-radius:5px;
+  height: calc(100svh - 60px);
+  box-sizing: border-box;
+  padding: 30px 10px;
+}
+.dashboard-right{
+  width: calc(100% - 225px);
+}
+ .profile-mini-icon{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+ }
+.dashboard-left::after {
+	content: '';
+	position: absolute;
+	top: -1.5px;
+	left: -1.5px;
+	right: -1.5px;
+	bottom: -1.5px;
+	background: linear-gradient(309.54deg, rgba(255, 255, 255, 0.3) 3.58%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(129.54deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 96.42%);
+	z-index: -1;
+	border-radius:5px;
+}
+.dashboard-left-menu ul li a{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 12px;
+  display: flex;
+  align-items: center;
+  color:#FFFFFFCC;
+  gap: 10px;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-bottom:8px;
+}
+.dashboard-left-menu ul li a img{
+  width:20px;
+}
+.menu-active-bg,.dashboard-left-menu ul li a:hover{
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+  border-radius: 10px;
+}
+.notification-icon img{
+  height: 52px;
+  cursor: pointer;
+  width: 52px;
+}
+.notification-icon span{
+  height:16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color:#F61717;
+  display: flex;
+  align-items: center;
+  color:#fff;
+  font-weight: 500;
+  font-size:10px;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 14px;
+}
+.page-title{
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 26.4px;
+  color:#FFFFFF;
+}
+.search-box-area{
+  min-width: 399px;
+}
+.search-icon i{
+  color:#BFC6D2;
+  font-size: 18px;
+}
+.search-icon{
+  position: absolute;
+  left:10px;
+  z-index: 99;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search-box-area input{
+  padding-left:50px;
+  border-radius: 4px;
+}
+.user-notification-box{
+  background:#09111B;
+  position: relative;
+  padding: 16px 30px;
+  z-index: 1;
+  gap: 15px;
+}
+.user-notification-box .btn3{
+  min-width: 156px;
+}
+.notification-icon i{
+  font-size: 20px;
+  line-height: 22px;
+  margin-right: 20px;
+}
+.yellow-color i{
+  color:#DFC730;
+}
+.notification-text h5{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color:#fff;
+  margin-bottom: 4px;
+}
+.notification-text p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.user-info-overview-box{
+  background-image: url(../images/dashboard/bg/1.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding:37px 30px;
+}
+.user-info-text h6{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color:#fff;
+}
+.user-info-text h4{
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  color:#fff;
+  margin-bottom: 12px;
+}
+.status-box{
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: inset 0px 1px 9px rgba(255, 247, 247, 0.25);
+  backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  min-width:197px;
+  max-width:197px;
+  padding:10px;
+  text-align: center;
+}
+.status-box img{
+  width: 37px;
+}
+.status-box p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.p30{
+  padding: 30px;
+}
+.refer-link-box-inner{
+  background:#09111B;
+  position: relative;
+  z-index: 1;
+}
+.refer-link-box-inner img{
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.refer-link-box-inner p,.refer-link-box-inner input::placeholder,.refer-link-box-inner input{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color:#fff;
+  width: auto;
+}
+.refer-link-box-inner p{
+  padding-left: 30px;
+}
+.user-balance-item{
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1.5px solid #FFFFFF1A
+}
+.user-balance-item:last-child{
+  border: none;
+  padding-bottom:0;
+  margin-bottom: 0;
+}
+.user-balance-item span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  color:#fff;
+}
+.user-balance-item span b{
+  font-weight: 800;
+}
+.box-bg-color{
+  background-color:#07182C;
+  position: relative;
+  z-index: 1;
+}
+
+.user-coin-balance{
+  padding: 20px;
+  border: 1px solid #2682EE99;
+  border-radius: 10px;
+  background: #2682EE1A;
+}
+.coin-balance-logo{
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1.5px solid #FFFFFF1A;
+}
+.coin-balance-logo img{
+  height: 56px;
+  width: 56px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+.coin-balance-logo .btn3 {
+	padding: 6px 17px;
+	font-size: 12px;
+}
+.coin-balance-info{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.coin-balance-info h6{
+  font-size: 16px;
+  line-height: 24px;
+  color:#fff;
+}
+.coin-balance-info h6 span{
+  font-size: 24px;
+  font-weight: 700;
+}
+ 
+.ellipse{
+  position: absolute;
+  width: 218px;
+  height: 218px;
+  background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
+  opacity: 0.15;
+  filter: blur(90px);
+  z-index: 1;
+ 
+}
+.ellipse1{
+  left:2%;
+  top: 0;
+}
+.dashboard-left-menu {
+	position: relative;
+	z-index: 2;
+}
+.ellipse2{
+  top: 70%;
+  left:2%;
+}
+.ellipse3{
+  top: 50%;
+  left:0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+}
+.text-btn{
+  color: #fff;
+  background-color: #121C2B;
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 9px 19px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dashboard-header-right-group{
+  gap: 16px;
+}
+.text-btn.border-gradient::after {
+	background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
+	opacity: 0.99;
+	filter: blur(2.5px);
+	border-radius: 40px;
+}
+.menu-icon-show .dashboard-left-menu ul li a span{
+  display: none;
+}
+.menu-icon-show .dashboard-left{
+  width: 60px;
+}
+ 
+.page-info{
+  gap: 15px;
+}
+.resize-icon {
+	position: relative;
+	z-index: 5;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px;
+	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+	height: 30px;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+.resize-icon:hover{
+  background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
+}
+/* .left:hover + .right {
+	margin-left: 215px;
+} */
+.menu-icon-show .dashboard-right {
+	width: calc(100% - 60px);
+
+}
+.menu-icon-show .logo{
+	display: none;
+}
+.logo2{
+  display: none;
+}
+.menu-icon-show .logo2{
+	display: block;
+}
+.menu-icon-show  .dashboard-left-menu ul li a {
+	padding-left: 8px;
+  padding-right: 8px;
+}
+.page-heading h3{
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  color:#fff;
+}
+.user-coin-thumnails img{
+  width:155px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.user-coin-details{
+  border-bottom: 3px solid #FFFFFF1A;
+}
+.user-coin-details .token-shear-counter-box{
+  border: none;
+  margin:0;
+}
+.user-coin-counter{
+  width: 100%;
+}
+.user-coin-details-area .token-details-terget-area::after{
+display: none;
+}
+
+
+
+
+
+/*=================================================
+        End  User Dashboard 
+===============================================*/
+.refer-link-box-inner input{
+  width: 76%;
+}
+.dashboard-box{
+  backdrop-filter: blur(30px);
+  border: 1.5px solid #535960;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 5px;
 }

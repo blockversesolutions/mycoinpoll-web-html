@@ -70,6 +70,21 @@ jQuery(document).ready(function ($) {
             $selectItems.hide();
         }
     });
+    // function toggleMenuIcon() {
+    //   if ($(window).width() <= 768) {
+    //     $('.dashboard-area').addClass('menu-icon-show');
+    //   } else {
+    //     $('.dashboard-area').removeClass('menu-icon-show');
+    //   }
+    // }
+  
+    // // Run the function initially and also on window resize
+    // toggleMenuIcon();
+    // $(window).resize(toggleMenuIcon);
+
+    $(".resize-icon").click(function(){
+      $(".dashboard-area").toggleClass('menu-icon-show');
+    }); 
 
     // Update selected value and close dropdown
     $selectItemList.on('click', function () {
