@@ -70,18 +70,6 @@ jQuery(document).ready(function ($) {
             $selectItems.hide();
         }
     });
-    // function toggleMenuIcon() {
-    //   if ($(window).width() <= 768) {
-    //     $('.dashboard-area').addClass('menu-icon-show');
-    //   } else {
-    //     $('.dashboard-area').removeClass('menu-icon-show');
-    //   }
-    // }
-  
-    // // Run the function initially and also on window resize
-    // toggleMenuIcon();
-    // $(window).resize(toggleMenuIcon);
-
     $(".resize-icon").click(function(){
       $(".dashboard-area").toggleClass('menu-icon-show');
     }); 
@@ -106,3 +94,20 @@ jQuery(document).ready(function ($) {
 
 
 })
+ 
+  function urlCopy(elem) {
+    const inputField = elem.previousElementSibling;  // Get the associated input
+    inputField.select();
+    inputField.setSelectionRange(0, 99999);  // For mobile compatibility
+    navigator.clipboard.writeText(inputField.value).catch(err => {
+      console.error('Failed to copy:', err);  // Optional error logging
+    });
+  }
+ 
+
+  new DataTable('.mobile-table', {
+    responsive: true,
+    paging: false,
+    searching: false,
+    ordering:  false
+    });

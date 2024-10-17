@@ -69,6 +69,16 @@ button,button:active{
 	background-image: url('../images/bg/btn2.png');
   height:80px;
 }
+.badge{
+  border-radius:50px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.6px;
+  text-align: center;
+  padding: 4px 10px;
+  color:#FFFFFFCC;
+  border: 1px solid transparent;
+}
 .menu-bg{
   background: linear-gradient(90deg, #16458b31 0%, #5d746b34 100.01%);
 	backdrop-filter: blur(2px);
@@ -1931,8 +1941,7 @@ select {
   padding: 40px;
 }
 .input textarea {
-  resize: none;
-  height:250px;
+  min-height:100px;
 }
 .bg-border{
   border-radius: 5px;
@@ -1941,6 +1950,97 @@ select {
   background-clip: padding-box;
   position: relative;
 }
+.upload-inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.upload-btn {
+	display: inline-block;
+	text-align: center;
+	padding: 14px 30px;
+  border-radius: 50px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+	border-radius: 50px;
+}
+.upload-btn p{
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.upload-btn:hover {
+  background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
+  transition: all 0.3s ease;
+}
+.status-checkbox {
+  position: relative;
+  width:80px;
+  height: 35px;
+}
+
+/* Checkbox styling */
+.status-checkbox input[type="checkbox"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgb(145, 84, 84);
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+}
+
+/* Circle inside the switch */
+.status-checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+/* Adjust circle position on check */
+.status-checkbox input[type="checkbox"]:checked::before {
+  transform: translate(33px, -50%);
+  left:12px;
+}
+
+/* Background color when checked */
+.status-checkbox input[type="checkbox"]:checked {
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+}
+
+/* OFF text when unchecked */
+.status-checkbox input[type="checkbox"]::after {
+  content: "OFF";
+  position: absolute;
+  right:10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* ON text when checked */
+.status-checkbox input[type="checkbox"]:checked::after {
+  content: "ON";
+  left:5px;
+}
+
 
 .bg-border::after {
 	content: '';
@@ -2299,8 +2399,46 @@ select {
 	font-weight: 600;
 	color: #fff;
 	transition: 0.5s;
+  border: none;
+  outline: none;
+  display: inline-block;
 }
-.gradient-btn:hover{
+.transparent-btn {
+	padding: 14px 30px;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+  border: none;
+  outline: none;
+  background-color: #111A23;
+  display: inline-block;
+}
+.transparent-btn:after{
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  z-index: -1;
+  border-radius: 32px;
+}
+.label{
+  color:#fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+.gradient-btn:focus,.transparent-btn:focus{
+  outline: none;
+  color:#fff;
+  border: none;
+  box-shadow:  0 0 0 transparent;
+}
+.gradient-btn:hover,.transparent-btn:hover{
   background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
 }
 .modal-or-text {
@@ -2568,7 +2706,7 @@ select {
   padding: 30px 10px;
   margin-top: 30px;
   position: sticky !important;
-  top: 0;
+  top:30px;
 }
 .dashboard-right{
   width: calc(100% - 225px);
@@ -2576,6 +2714,8 @@ select {
  .profile-mini-icon{
   width:50px;
   height: 50px;
+  display: flex;
+  align-items: center;
   border-radius: 50%;
  }
 /* .dashboard-left::after {
@@ -2737,6 +2877,7 @@ select {
   position: absolute;
   right: 30px;
   top: 50%;
+  z-index: 9;
   transform: translateY(-50%);
 }
 .refer-link-box-inner p,.refer-link-box-inner input::placeholder,.refer-link-box-inner input{
@@ -2938,23 +3079,23 @@ select {
 .user-coin-details-area .token-details-terget-area::after{
 display: none;
 }
-
-
-
-
-
+.text-content {
+  display: inline;
+}
+ 
 /*=================================================
         End  User Dashboard 
 ===============================================*/
 .refer-link-box-inner input{
-  width: 76%;
+  width:70%;
 }
 .dashboard-box{
   backdrop-filter: blur(30px);
-  border: 1.5px solid #535960;
+  border: 1.5px solid #232831;
   padding: 30px;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.103) 0px 8px 24px;
 }
 .table-heading h5{
   font-size: 20px;
@@ -2969,27 +3110,18 @@ table {
 
 table th,table td {
 	border: 1px solid rgba(39, 123, 245, 0.3); 
-	padding: 10px;
+	padding: 14px 14px;
 	text-align: center;
   font-size: 16px;
   font-weight: 500;
   color:#fff;
   line-height: 17.6px;
-  text-align: left;
-
 }
-.active-status,.deactive-status{
-  border-radius:50px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 17.6px;
-  text-align: center;
-  padding: 5px 10px;
+.active-status{
   background-color: #3598461A;
-  color:#FFFFFFCC;
-  border: 1px solid #35984666
+  border-color:#35984666;
 }
-.deactive-status{
+.deactivate-status{
   background-color: #B921241A;
   border-color: #B9212466;
 }
@@ -2998,4 +3130,56 @@ table th,table td {
   height: 24px;
   margin-right: 10px;
   border-radius: 2px;
+}
+/*start plugin table code replace */
+.dt-search,.dt-length,.dt-paging,.dt-info,.dt-column-order{
+	display: none;
+}
+table.dataTable > tbody > tr.child ul.dtr-details > li{
+  border: none;
+}
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
+	border-left: 10px solid #2074BE;
+}
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+	text-align: center;
+}
+table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control::before, table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > th.dtr-control::before {
+	border-top: 10px solid  #1DC99E;
+	 
+}
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
+	text-align: center;
+}
+/*end plugin table code replace */
+table { border-collapse: separate; border-spacing: 0; }
+td {
+    border-left: solid 1px transparent; 
+    padding: 14px;
+}
+tr:first-child th:first-child { border-top-left-radius: 10px; }
+/* tr:first-child td:first-child { border-top-left-radius: 10px; } */
+/* tr:first-child td:last-child { border-top-right-radius: 10px; } */
+tr:first-child th:last-child { border-top-right-radius: 10px; }
+tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+tr:first-child td { border-top-style: solid; }
+tr td:first-child { border-left-style: solid; }
+tr th{
+  background: rgba(38, 130, 238, 0.1);
+}
+.dashboard-right{
+  margin-bottom:20px;
+}
+.ico-section{
+  padding:80px 30px;
+}
+.transaction-id input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:#fff;
+}
+.transaction-id img{
+  cursor: pointer;
 }

@@ -47,10 +47,10 @@
                <ul>
                   <li><a href="dashboard.html"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
-                  <li><a href="transactions.html"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
+                  <li><a href="transactions.html" class="menu-active-bg"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
                   <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
-                  <li><a href="referral-user.html" class="menu-active-bg"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
+                  <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
                </ul>
               </div>
@@ -62,7 +62,7 @@
                      <div class="resize-icon">
                         <i class="fa-solid fa-expand"></i>
                      </div>
-                     <h5 class="page-title">Referral User</h5>
+                     <h5 class="page-title">User Management</h5>
                   </div>
                   
                   <!-- <div class="search-box-area">
@@ -94,20 +94,11 @@
                   </div>
                </div>
                <div class="dashboard-body mt30">
-                  <!--start refer -->
-                     <div class="input bg-border-input">
-                        <div class="refer-link-box-inner d-flex align-items-center g30 position-relative">
-                              <p>Share Referral Link :</p>
-                                <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..fff">
-                                <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy()">
-                        </div>
-                     </div>
-                  <!--end refer -->
                   <!--Start user referable-list -->
                   <div class="data-show-table-area dashboard-box mt30">
                      <div class="table-header-area d-flex align-items-center justify-content-between">
                         <div class="table-heading">
-                           <h5>Referral Users</h5>
+                           <h5>User Management page</h5>
                         </div>
                         <div class="search-box-area">
                            <form action="">
@@ -119,46 +110,81 @@
                               </div>
                            </form>
                         </div>
+                        <div class="add-new-btn">
+                           <a href="#" class="gradient-btn"><i class="fas fa-link"></i> Add New User </a>
+                        </div>
                      </div>
                      <div class="common-table mt30">
                         <table class="custom-table display nowrap mobile-table">
                            <thead>
                                <tr>
                                  <th>SL</th>
-                                 <th>Reg. Date</th>
-                                 <th>Name</th>
-                                 <th>Username</th>
-                                 <th class="text-center">Status</th>
+                                 <th>Transaction Hash</th>
+                                 <th>Method</th>
+                                 <th>Date Time</th>
+                                 <th>Amount</th>
                                </tr>
                            </thead>
                            <tbody>
                               <tr>
                                  <td>01</td>
-                                 <td>12/10/2024</td>
-                                 <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                 <td>@jeffK</td>
-                                 <td class="text-center"><span class="active-status badge">Active</span></td>
+                                 <td>
+                                    <div class="transaction-id">
+                                       <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..juel">
+                                       <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy(this)">
+                                    </div>
+                                 </td>
+                                 <td>Transfer</td>
+                                 <td>2 hrs ago</td>
+                                 <td>$500.00</td>
                               </tr>
                               <tr>
                                  <td>01</td>
-                                 <td>12/10/2024</td>
-                                 <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                 <td>@jeffK</td>
-                                 <td class="text-center"><span class="badge deactivate-status">Deactive</span></td>
+                                 <td>
+                                    <div class="transaction-id">
+                                       <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..juel">
+                                       <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy(this)">
+                                    </div>
+                                 </td>
+                                 <td>Transfer</td>
+                                 <td>2 hrs ago</td>
+                                 <td>$500.00</td>
                               </tr>
                               <tr>
                                  <td>01</td>
-                                 <td>12/10/2024</td>
-                                 <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                 <td>@jeffK</td>
-                                 <td class="text-center"><span class="active-status badge">Active</span></td>
+                                 <td>
+                                    <div class="transaction-id">
+                                       <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..juel">
+                                       <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy(this)">
+                                    </div>
+                                 </td>
+                                 <td>Transfer</td>
+                                 <td>2 hrs ago</td>
+                                 <td>$500.00</td>
                               </tr>
                               <tr>
                                  <td>01</td>
-                                 <td>12/10/2024</td>
-                                 <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                 <td>@jeffK</td>
-                                 <td class="text-center"><span class="badge deactivate-status">Deactive</span></td>
+                                 <td>
+                                    <div class="transaction-id">
+                                       <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..juel">
+                                       <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy(this)">
+                                    </div>
+                                 </td>
+                                 <td>Transfer</td>
+                                 <td>2 hrs ago</td>
+                                 <td>$500.00</td>
+                              </tr>
+                              <tr>
+                                 <td>01</td>
+                                 <td>
+                                    <div class="transaction-id">
+                                       <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..juel">
+                                       <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy(this)">
+                                    </div>
+                                 </td>
+                                 <td>Transfer</td>
+                                 <td>2 hrs ago</td>
+                                 <td>$500.00</td>
                               </tr>
                               
                            </tbody>
