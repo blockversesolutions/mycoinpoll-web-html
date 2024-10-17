@@ -863,12 +863,15 @@
   background-color: #000;
 }
 .ql-toolbar.ql-snow {
-  border: 1px solid #4f4f4f;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  padding: 8px;
+	border-bottom: 1px solid #162a3c;
+	box-sizing: border-box;
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	padding: 8px;
+	background: #0b121c;
+	position: relative;
+	z-index: 9;
 }
 .ql-toolbar.ql-snow .ql-formats {
   margin-right: 15px;
@@ -961,6 +964,5 @@
   color: red;
 }
 .ql-container.ql-snow {
-  border: 1px solid #4f4f4f;
-  border-radius: 0 0px 20px 20px;
+  border-radius: 0 0px 5px 5px;
 }
