@@ -3131,7 +3131,7 @@ table th,table td {
 .table-img{
   width:24px;
   height: 24px;
-  margin-right: 10px;
+  margin-right:5px;
   border-radius: 2px;
 }
 /*start plugin table code replace */
@@ -3358,5 +3358,25 @@ ul.dropdown li:hover{
 	border: none;
 	outline: none;
 }
-
+.action-group{
+  gap:10px;
+}
+.action-group li a i{
+  font-size: 18px;
+}
+.skyblue{
+  color:#2682EE;
+}
+.green{
+  color:#359846;
+}
+.gray{
+  color: #FFFFFF99;
+}
+.red{
+ color:#B92124;
+}
+.action-group li a:hover i{
+  color: #1960bd;
+}
 /* end notice css */
