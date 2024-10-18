@@ -2455,7 +2455,7 @@ select {
   line-height: 32px;
   color: #fff;
 }
-.modal-footer-area a:hover,.modal-close-btn:hover i{
+.modal-close-btn:hover i{
   color: #1CD691;
 }
 .bg-solid-btn{
