@@ -2701,13 +2701,13 @@ select {
   border:1.5px solid #ffffff1c;
 	background-clip: padding-box;
 	border-radius:5px;
-  height: calc(100svh - 60px);
+  /* height: calc(100svh - 60px); */
   box-sizing: border-box;
   padding: 30px 10px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   position: sticky !important;
-  top:30px;
-  overflow-y: scroll;
+  top:0px;
+   
 }
 .dashboard-right{
   width: calc(100% - 225px);
@@ -2755,6 +2755,7 @@ select {
   cursor: pointer;
   width: 52px;
 }
+
 .notification-icon span{
   height:16px;
   width: 16px;
@@ -2769,6 +2770,7 @@ select {
   position: absolute;
   top: 8px;
   right: 14px;
+  pointer-events: none;
 }
 .page-title{
   font-size: 24px;
@@ -3258,5 +3260,103 @@ tr th{
 }
  
 /* start notice css */
+.notification-box{
+  background-color:#fff;
+  padding:10px;
+  border-radius:5px;
+}
+.dropdownContainer {
+  position: relative;
+    left:50%;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    color:red; 
+}
+ 
+ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 274px;
+  
+   
+}
+ 
+/* up arrow*/
+ul.dropdown:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right:100px;
+}
+ul.dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right:15px;
+    border-width: 0 8px 7px 7px;
+    border-style: solid;
+    border-color: #fff transparent;    
+}    
+.notification-box  li{
+  color:#ccc6c6;
+  background-color: #07182C;
+  padding:8px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height:26px;
+  border-radius: 5px;
+}
+ 
+ul.dropdown li:hover{
+  background-color: #020a14;
+  cursor: pointer;
+}
+ 
+/* Content inside the scroll area */
+.scroll-content {
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+/* Custom scrollbar thumb */
+.simplebar-scrollbar::before {
+  background:#2686E9;
+  /* height: 30px; */
+  border-radius: 10px;
+   
+}
+
+/* On hover, make the thumb darker */
+.simplebar-scrollbar:hover::before {
+  background-color: #1DD196;
+  opacity: 1;
+}
+.table tr th,.table tr td{
+  background-color: #040C16;
+  color: white;
+}
+
+.gradient-btn-small {
+	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+	padding: 6px 10px;
+	border-radius: 50px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	border: none;
+	outline: none;
+}
 
 /* end notice css */
