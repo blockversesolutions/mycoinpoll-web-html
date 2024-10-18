@@ -2707,6 +2707,7 @@ select {
   margin-top: 30px;
   position: sticky !important;
   top:30px;
+  overflow-y: scroll;
 }
 .dashboard-right{
   width: calc(100% - 225px);
@@ -3239,3 +3240,23 @@ tr th{
   margin-top: 30px;
   margin-bottom:40px;
 }
+.dashboard-body,.dashboard-left{
+  margin-bottom: 60px;
+}
+.copyright-box{
+  flex-wrap: wrap;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  gap:30px;
+  bottom: 0;
+  background-color: #040C16;
+}
+ 
+/* start notice css */
+
+/* end notice css */

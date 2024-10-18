@@ -916,8 +916,16 @@
     .group-text {
       padding: 10px 8px;
     }
+    .copyright-box{
+      gap:3px;
+    }
+   
+     
 }
 @media screen and (max-width:480px) {
+  .dashboard-body, .dashboard-left {
+    margin-bottom: 100px;
+  }
   .coin-logo-area ul li img {
     width: 90%;
   }
