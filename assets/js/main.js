@@ -26,6 +26,16 @@ jQuery(document).ready(function ($) {
         },
       ],
     });
+  $('.event-thumnails-slider').slick({
+    slidesToShow:1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: false,
+    infinite: true,
+    prevArrow: $('.ido-slick-prev'),
+      nextArrow: $('.ido-slick-next'),
+      
+    });
     $('#accordion').on('click', '[data-toggle="collapse"]', function(event) {
 			event.preventDefault();
 			

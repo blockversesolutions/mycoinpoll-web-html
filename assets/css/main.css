@@ -2631,7 +2631,24 @@ select {
   height:650px;
   padding: 30px;
 }
-.learning-video-box iframe{
+.event-thumnails-item iframe,.event-thumnails-item img{
+  width: 100%;
+  height: 100%;
+}
+.event-thumnails-item iframe{
+  height:450px;
+  border-radius: 10px;
+}
+.events-slider-box .slick-arrow:hover{
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+}
+.events-slider-box .slick-arrow{
+  background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
+}
+.event-video-box{
+  height: 300px;
+}
+.learning-video-box iframe,.event-video-box iframe{
   width: 100%;
   border-radius: 5px;
   height: 100%;
