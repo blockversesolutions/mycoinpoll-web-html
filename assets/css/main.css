@@ -905,7 +905,12 @@ a.nav-link.dropdown-toggle i{
 .accordion-button::after {
   transition: all 0.5s;
 }
-
+.accordion-button img{
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 .frequently-answere .accordion-body{
   padding-top: 7px;
   padding-bottom: 38px;
@@ -1061,11 +1066,20 @@ text-fill-color: transparent;
   max-width: 702px;
   width: 100%;
 }
+.notification-area.frequently-answere .accordion-body p {
+	max-width: 100%;
+	width: 100%;
+}
 .frequently-thumnail {
 	padding-right: 22px;
 }
 .accordion-item span:hover{
   color: #1CD691;
+}
+.notification-thumnails ul li img{
+  max-width:280px;
+  border-radius: 10px;
+  width: 100%;
 }
 .btn3 {
   padding: 12px 25px;
@@ -2750,12 +2764,15 @@ select {
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   border-radius: 10px;
 }
-.notification-icon img{
+.notification-icon > img{
   height: 52px;
   cursor: pointer;
-  width: 52px;
+  width: 54px;
 }
-
+.notification-box li img{
+  width: 35px;
+  height: 35px;
+}
 .notification-icon span{
   height:16px;
   width: 16px;
@@ -2777,6 +2794,9 @@ select {
   font-weight: 800;
   line-height: 26.4px;
   color:#FFFFFF;
+}
+.accordion-button b{
+  margin-left: 10px !important;
 }
 .search-box-area{
   min-width: 399px;
@@ -3304,15 +3324,26 @@ ul.dropdown:after {
     border-width: 0 8px 7px 7px;
     border-style: solid;
     border-color: #fff transparent;    
-}    
-.notification-box  li{
-  color:#ccc6c6;
-  background-color: #07182C;
-  padding:8px;
-  margin-bottom: 5px;
+} 
+.notification-box li h6{
   font-size: 14px;
-  line-height:26px;
-  border-radius: 5px;
+  color:rgba(255, 255, 255, 0.8);
+}  
+.notification-box li p{
+  font-size: 12px;
+} 
+.notification-box li {
+	color: #ccc6c6;
+	background-color: #07182C;
+	padding: 8px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
 }
  
 ul.dropdown li:hover{
@@ -3379,7 +3410,7 @@ ul.dropdown li:hover{
 .action-group li a:hover i{
   color: #1960bd;
 }
-.notification-box:last-child li{
+.notification-box li:last-child{
   text-align: center;
 }
 .table-heading h5 img,.verify-info-text p img{

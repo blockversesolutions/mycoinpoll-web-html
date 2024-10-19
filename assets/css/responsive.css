@@ -922,6 +922,12 @@
     .copyright-box{
       gap:3px;
     }
+    .accordion-item .accordion-button{
+      flex-wrap: wrap;
+    }
+    .accordion-button b {
+      margin-top:5px !important;
+    }
    
      
 }
