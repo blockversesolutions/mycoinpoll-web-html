@@ -972,9 +972,9 @@
     display: block;
   } */
   .gradient-btn, .transparent-btn,.upload-btn {
-    padding: 12px 15px;
+    padding:8px 15px;
     border-radius: 50px;
-    font-size: 15px;
+    font-size: 14px;
   }
   
 }

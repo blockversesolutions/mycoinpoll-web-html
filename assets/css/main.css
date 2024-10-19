@@ -3382,4 +3382,18 @@ ul.dropdown li:hover{
 .notification-box:last-child li{
   text-align: center;
 }
+.table-heading h5 img,.verify-info-text p img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.verify-info-text h5{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color:#fff;
+  margin-bottom: 25px;
+}
+
 /* end notice css */

@@ -48,8 +48,8 @@
               <div class="dashboard-left-menu">
                <ul>
                   <li><a href="dashboard.html"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
-                  <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
-                  <li><a href="transactions.html" class="menu-active-bg"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
+                  <li><a href="#" class="menu-active-bg"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
+                  <li><a href="transactions.html"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
                   <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
                   <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
@@ -115,76 +115,130 @@
                   <div class="dashboard-box mt30 custom-card-form">
                      <div class="custom-card-header d-flex align-items-center justify-content-between">
                         <div class="table-heading">
-                           <h5>Title Here</h5>
+                           <h5>Update Profile Information</h5>
                         </div>
-                        <div class="add-new-btn">
+                        <!-- <div class="add-new-btn">
                            <a href="#" class="gradient-btn"><i class="fas fa-link"></i> Add New User </a>
                            <a href="#" class="transparent-btn border-gradient"><i class="fas fa-link"></i> Add New User </a>
-                        </div>
+                        </div> -->
                      </div>
                      <div class="card-line"></div>
                   <form action=""> 
                      <div class="custom-card-body">
                         <div class="row gy-4">
-                           <div class="col-md-4 col-md-12">
+                           <div class="col-md-6">
                               <div class="form-group">
-                                 <label for="Phone" class="label">Email or Phone Number</label>
+                                 <label for="Name" class="label">Name</label>
                                  <div class="input bg-border-input d-flex align-items-center">
-                                    <span class="group-text group-text-left">@</span>
-                                    <input type="text" class="form-control" id="Phone" placeholder="Enter email or phone number">
+                                    <input type="text" class="form-control" id="Name" placeholder="John Smith">
                                  </div>
                               </div>
                            </div>
-                           <div class="col-md-4 col-md-12">
+                            <div class="col-md-6">
                               <div class="form-group">
-                                 <label for="Phone" class="label">Email or Phone Number</label>
+                                 <label for="Username" class="label">Username</label>
                                  <div class="input bg-border-input d-flex align-items-center">
-                                    
-                                    <input type="text" class="form-control" id="Phone" placeholder="Enter email or phone number">
-                                    <span class="group-text group-text-right">@example.com
-                                    </span>
+                                    <input type="text" class="form-control" id="Username" placeholder="JohnSmith22">
                                  </div>
                               </div>
                            </div>
-                           <div class="col-md-4 col-md-12">
-                              <div class="form-group">
-                                 <label for="Phone" class="label">Email or Phone Number</label>
-                                 <div class="input bg-border-input d-flex align-items-center">
-                                    <input type="text" class="form-control" id="Phone" placeholder="Enter email or phone number">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-12">
-                              <div class="form-group">
-                                 <label for="input9" class="label">Have your smart </label>
+                            <div class="col-lg-4 col-md-6">
+                                 <label for="Region" class="label">Country/Region of Residence</label>
                                  <div class="input bg-border-input">
-                                    <textarea name="" id="input9" placeholder="Your answer"></textarea>
+                                    <!-- code replace here start -->
+                                    <div class="custom-select position-relative">
+                                       <div class="select-selected">
+                                          <img src="../assets/images/country/bd.png" alt="country" width="20"> Bangladesh
+                                       </div>
+                                       <div class="select-items">
+                                          <div class="select-item" data-value="Bangladesh">
+                                             <img src="../assets/images/country/bd.png" alt="Bangladesh" width="20"> Bangladesh
+                                          </div>
+                                          <div class="select-item" data-value="us">
+                                             <img src="../assets/images/country/bd.png" alt="United States" width="20"> United States
+                                          </div>
+                                          <div class="select-item" data-value="India">
+                                             <img src="../assets/images/country/bd.png" alt="India" width="20"> India
+                                          </div>
+                                       </div>
+                                       <div class="select-icon">
+                                          <i class="fa-solid fa-angle-down"></i>
+                                       </div>
+                                    </div>
+                                    <!-- code replace here End -->
+                                 </div>
+                              </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="form-group">
+                                 <label for="Phone" class="label">Phone</label>
+                                 <div class="input bg-border-input d-flex align-items-center">
+                                    <input type="text" class="form-control" id="Phone" placeholder="0179*******">
                                  </div>
                               </div>
                            </div>
-                           <div class="col-md-12">
+                           <div class="col-lg-4 col-md-6">
                               <div class="form-group">
-                                 <label for="message" class="label">Body Message</label>
-                                 <div class="input bg-border-input">
-                                    
-                                    <div id="editor" class="editor"></div>
+                                 <label for="Email" class="label">Email</label>
+                                 <div class="input bg-border-input d-flex align-items-center">
+                                    <input type="text" class="form-control" id="Email" placeholder="hellomrhosen@gmail.com">
                                  </div>
-                               </div>
-                           </div>
-                           <div class="col-md-12">
-                              <div class="form-group">
-                                 <label class="upload-btn">
-                                    <p><i class="fas fa-cloud-upload-alt"></i> Upload images</p>
-                                    <input type="file" multiple="" data-max_length="20" class="upload-inputfile">
-                                  </label>
-                               </div>
-                           </div>
-                           <div class="col-md-12">
-                              <div class="form-group">
-                                 <input type="checkbox" id="Chain" class="checkBox" name="" value="1"> 
-                                 <label for="Chain">Binance Smart Chain<span><i class="fa-solid fa-check"></i></span></label>  
                               </div>
                            </div>
+                            <div class="table-heading">
+                              <h5><img src="../assets/images/icon/label.png" alt="icon"> Level 2 Information</h5>
+                            </div>
+                            <div class="level-two-verify dashboard-box d-flex align-items-center justify-content-between flex-wrap g30">
+                              <div class="verify-info-text">
+                                 <h5>Verification requires the following:</h5>
+                                 <p><img src="../assets/images/icon/nid.png" alt="icon"> NID Submission Required</p>
+                              </div>
+                              <div class="verify-btn">
+                                 <div class="form-group">
+                                    <label class="upload-btn">
+                                       <p><i class="fas fa-cloud-upload-alt"></i> Upload NID</p>
+                                       <input type="file" multiple="" data-max_length="20" class="upload-inputfile">
+                                    </label>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="table-heading">
+                              <h5><img src="../assets/images/icon/launch.png" alt="icon"> Update Your Password</h5>
+                            </div>
+                            <div class="dashboard-box">
+                                <div class="row gy-4">
+                                 <div class="col-lg-4 col-md-6">
+                                    <div class="form-group">
+                                       <label for="Password" class="label">Current Password</label>
+                                       <div class="input bg-border-input d-flex align-items-center">
+                                          <input type="text" class="form-control" id="Password" placeholder="0179*****">
+                                       </div>
+                                    </div>
+                                 </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="form-group">
+                                       <label for="newPassword" class="label">New Password</label>
+                                       <div class="input bg-border-input d-flex align-items-center">
+                                          <input type="text" class="form-control" id="newPassword" placeholder="Enter your password">
+                                       </div>
+                                    </div>
+                                 </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="form-group">
+                                       <label for="rePassword" class="label">Confirm Password</label>
+                                       <div class="input bg-border-input d-flex align-items-center">
+                                          <input type="text" class="form-control" id="rePassword" placeholder="Enter your password">
+                                       </div>
+                                    </div>
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="two-step-verify">
+                              <label class="label mb-3">2FA Management</label>
+                              <div class="status-checkbox">
+                                 <input type="checkbox" value="">
+                              </div>
+                            </div>
+                            
                         </div>
                      </div>
                      <div class="card-line"></div>
