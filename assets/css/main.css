@@ -2746,13 +2746,13 @@ select {
 	border-radius:5px;
 } */
 .dashboard-left-menu ul li a{
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   padding: 14px 12px;
   display: flex;
   align-items: center;
   color:#FFFFFFCC;
-  gap: 10px;
+  gap:8px;
   transition: 0.5s;
   border-radius: 10px;
   margin-bottom:8px;
@@ -3144,6 +3144,32 @@ table th,table td {
   background-color: #3598461A;
   border-color:#35984666;
 }
+.transparent-btn-sm {
+	padding: 4px 15px;
+	border-radius: 50px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	border: none;
+	outline: none;
+	background-color: #111A23;
+	display: inline-block;
+}
+.upload-btn-sm{
+	display: inline-block;
+	text-align: center;
+	padding: 4px 18px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+	border-radius: 50px;
+	font-size: 14px;
+}
+.upload-btn-sm p{
+  font-size: 15px;
+}
 .deactivate-status{
   background-color: #B921241A;
   border-color: #B9212466;
@@ -3426,5 +3452,13 @@ ul.dropdown li:hover{
   color:#fff;
   margin-bottom: 25px;
 }
+.g20{
+  gap: 20px;
+}
+.profile-lg-icon img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 
+}
 /* end notice css */
