@@ -3379,4 +3379,7 @@ ul.dropdown li:hover{
 .action-group li a:hover i{
   color: #1960bd;
 }
+.notification-box:last-child li{
+  text-align: center;
+}
 /* end notice css */
