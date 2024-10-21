@@ -932,6 +932,23 @@
     .accordion-button b {
       margin-top:5px !important;
     }
+    .notification-text h5 {
+      font-size: 15px;
+      font-weight: 500;
+      
+    }
+    .p30 {
+      padding: 15px;
+    }
+    .coin-balance-info h6 {
+      font-size: 16px;
+    }
+    .notification-text p {
+      font-size: 14px;
+    }
+    .coin-balance-info h6 span {
+      font-size: 22px;
+    }
    
      
 }
@@ -985,6 +1002,9 @@
     padding:8px 15px;
     border-radius: 50px;
     font-size: 14px;
+  }
+  .common-table.mt30{
+    margin-top: 0;
   }
   
 }
