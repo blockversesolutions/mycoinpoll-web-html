@@ -3157,6 +3157,10 @@ table th,table td {
   color:#fff;
   line-height: 17.6px;
 }
+.warning-table th,.warning-table td{
+  border: 1px solid rgba(255, 0, 0, 0.16)
+}
+
 .active-status{
   background-color: #3598461A;
   border-color:#35984666;
@@ -3248,6 +3252,12 @@ tr th{
 }
 .transaction-id img{
   cursor: pointer;
+}
+.warning-table tr th{
+  background:#311922;
+}
+.warning-table tr td{
+  background:#211D25;
 }
 /* .custom-card,.custom-card-body{
   padding: 30px;
@@ -3479,7 +3489,7 @@ ul.dropdown li:hover{
 }
 /* end notice css */
 .warning-bg-notification{
-  background-color:#1B1720;
+  background-color:#1B1720 !important;
   border-radius: 5px;
   border: 1px solid rgba(255, 7, 12, 0.31)
 }
