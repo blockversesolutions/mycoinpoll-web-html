@@ -80,6 +80,9 @@
   .token-card-right .social-menu ul,.countdown-area ul {
     justify-content: center;
   }
+  .event-countdown ul{
+    justify-content: flex-start;
+  }
   .token-card-main-area {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -948,6 +951,14 @@
     }
     .coin-balance-info h6 span {
       font-size: 22px;
+    }
+    .event-countdown ul{
+      gap: 4px;
+    }
+    .event-countdown ul li:nth-child(odd){
+      width:60px;
+      height:60px;
+      font-size:16px;
     }
    
      

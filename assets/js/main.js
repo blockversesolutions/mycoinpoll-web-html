@@ -34,6 +34,17 @@ jQuery(document).ready(function ($) {
     infinite: true,
     prevArrow: $('.ido-slick-prev'),
       nextArrow: $('.ido-slick-next'),
+      responsive: [
+        
+        {
+          breakpoint:991,
+          settings: {
+            slidesToShow: 1,
+            arrows:false,
+            dots: true,
+          },
+        },
+      ],
       
     });
     $('#accordion').on('click', '[data-toggle="collapse"]', function(event) {

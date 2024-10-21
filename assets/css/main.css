@@ -525,6 +525,11 @@ a.nav-link.dropdown-toggle i{
   width: 52px;
   border-radius: 6px;
 }
+.event-countdown ul li:nth-child(odd){
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+}
 .mt60{
   margin-top: 60px;
 }
@@ -2639,12 +2644,7 @@ select {
   height:450px;
   border-radius: 10px;
 }
-.events-slider-box .slick-arrow:hover{
-  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
-}
-.events-slider-box .slick-arrow{
-  background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
-}
+ 
 .event-video-box{
   height: 300px;
 }
@@ -3499,8 +3499,13 @@ ul.dropdown li:hover{
   z-index: 1;
   padding: 30px;
 }
-
-
+.event-thumnails-item img{
+  border-radius: 10px;
+}
+.event-thumnails-slider{
+  position: relative;
+  z-index: 5;
+}
 
 
 
