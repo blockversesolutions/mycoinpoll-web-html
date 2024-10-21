@@ -143,6 +143,10 @@
     background-size: cover;
     padding-top: 120px;
   }
+  .metaverse-container {
+    background-size: cover;
+    padding-bottom: 218px;
+  }
   .coin-logo-section {
     margin-top: -140px;
   }
@@ -619,7 +623,7 @@
   .custome-ordering{
     order: -2;
   }
-  .hero-container {
+  .hero-container,.metaverse-container {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 260px;

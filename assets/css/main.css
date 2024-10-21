@@ -205,6 +205,20 @@ a.nav-link.dropdown-toggle i{
   padding-right: 40px;
   padding-bottom: 218px;
 }
+.metaverse-container {
+	max-width:1400px;
+	width: 100%;
+	margin: 0 auto;
+	background-image: url('../images/bg/metavas.png');
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-top: 155px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  
+}
 .header-cover-area .header-area-bg-color.menu-bg-fixed{
   padding-top: 0;
 }
@@ -3506,6 +3520,12 @@ ul.dropdown li:hover{
   position: relative;
   z-index: 5;
 }
+/* start metaverse page */
+.metaverse-thumnails img {
+	width: 100%;
+	height:85%;
+}
+/* End metaverse page */
 
 
 
