@@ -931,7 +931,11 @@
       padding: 10px 8px;
     }
     .copyright-box{
-      gap:3px;
+      gap:14px;
+      padding: 8px;
+    }
+    .copyright-box p{
+      font-size: 14px;
     }
     .accordion-item .accordion-button{
       flex-wrap: wrap;
