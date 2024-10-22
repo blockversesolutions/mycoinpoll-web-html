@@ -783,7 +783,7 @@ a.nav-link.dropdown-toggle i{
 .section-heading h3{
   color:#fff;
   font-weight: 800;
-  font-size:44px;
+  font-size:40px;
   line-height:55px;
 }
 .multi-chain-power-heading p{
@@ -3050,7 +3050,7 @@ select {
   top: 0;
   z-index: 999;
   background: #040C16;
-  padding: 20px 0;
+  padding:15px 0;
 }
 .dashboard-header-right-group{
   gap: 16px;
