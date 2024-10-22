@@ -916,6 +916,7 @@
       position: absolute !important;
       left: -100%;
       top: 0;
+  
       z-index: 999;
     }
     .menu-icon-show .dashboard-left{
@@ -931,11 +932,11 @@
       padding: 10px 8px;
     }
     .copyright-box{
-      gap:14px;
-      padding: 8px;
+      gap:12px;
+      padding:8px 4px;
     }
     .copyright-box p{
-      font-size: 14px;
+      font-size: 12px;
     }
     .accordion-item .accordion-button{
       flex-wrap: wrap;

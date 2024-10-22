@@ -64,6 +64,13 @@ jQuery(document).ready(function ($) {
         $navbarText.removeClass("show");
       }
     });
+    $(document).on("click", function (event) {
+      const $dashboardLeft = $(".resize-icon");
+      const $dashboard = $(".dashboard-area");
+      if (!$dashboardLeft.is(event.target) && $dashboardLeft.has(event.target).length === 0) {
+        $dashboard.removeClass("menu-icon-show");
+      }
+    });
     
 
   // menu bg add
