@@ -3332,18 +3332,19 @@ tr th{
 .dashboard-body,.dashboard-left{
   margin-bottom: 60px;
 }
-.copyright-box{
-  flex-wrap: wrap;
-  padding: 15px;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  gap:30px;
-  bottom: 0;
-  background-color: #040C16;
+.copyright-box {
+	flex-wrap: wrap;
+	padding: 15px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	gap: 30px;
+	bottom: 0;
+	background-color: #040C16;
+	border-top: 1px solid #082b4d;
 }
  
 /* start notice css */
@@ -3429,15 +3430,12 @@ ul.dropdown li:hover{
 
 /* Custom scrollbar thumb */
 .simplebar-scrollbar::before {
-  background:#2686E9;
-  /* height: 30px; */
+  background:#2686E9 !important;
   border-radius: 10px;
-   
 }
-
 /* On hover, make the thumb darker */
 .simplebar-scrollbar:hover::before {
-  background-color: #1DD196;
+  background-color: #1DD196 !important;
   opacity: 1;
 }
 .table tr th,.table tr td{
@@ -3529,4 +3527,4 @@ ul.dropdown li:hover{
 
 
 
-
+/* data-simplebar style="height: calc(100svh - 60px)" */
