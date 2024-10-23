@@ -231,7 +231,10 @@
     flex-wrap: wrap;
   }
   .button-wrapper{
-    min-width: 272px;
+    min-width: 243px;
+  }
+  .button-wrapper a{
+   width: 100%;
   }
   .index-hero-text {
     width: 100%;
@@ -258,6 +261,7 @@
   .coin-hero-area .box-bg{
     margin-top: 0;
   }
+ 
 }
 @media screen and (max-width: 991px) {
   .coin-hero-area .box-bg{
@@ -455,9 +459,15 @@
   .action-group{
     margin-top: 10px;
   }
+  .token-details-terget-area ul li span{
+    font-size: 13px;
+  }
   
 }
 @media screen and (max-width: 767px) {
+  .roadmap-item-text {
+    padding-top: 60px;
+  }
   .user-info-text h6 {
     font-size: 18px;
   }
@@ -657,8 +667,11 @@
     z-index: -2;
   }
   .token-details-terget-area ul {
-    gap: 16px;
+    gap: 10px;
     margin-top: 30px;
+  }
+  .chart-center-boxf img{
+    width: 100%;
   }
   .token-details-btn-group ul{
     flex-wrap: wrap;
@@ -701,17 +714,17 @@
     font-size: 14px;
   }
   .token-roll-controls .progress-bar span, .ico-progress .progress-bar span {
-    font-size: 15px;
+    font-size: 12px;
   }
   .roadmap-start{
     min-height: 240px;
     min-width: 240px;
   }
-  .roadmap-item-year {
+  /* .roadmap-item-year {
     min-height: 154px;
     min-width: 154px;
     max-height: 212px;
-  }
+  } */
     .line{
       display: none;
     }
@@ -742,9 +755,9 @@
       border: 2px solid #217e88;
       outline:1px solid #040C16;
     }
-    .token-rollout-right-side{
+    /* .token-rollout-right-side{
       margin-top:230px;
-    }
+    } */
    
     .pagination-inner li a {
       min-width: 36px;

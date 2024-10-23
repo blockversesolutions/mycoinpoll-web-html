@@ -1525,7 +1525,7 @@ text-fill-color: transparent;
   font-size:18px;
   font-weight: 600;
   color: #FFFFFFCC;
-  padding-right: 15px;
+  padding-right: 7px;
  }
  .token-sell-price ul li span {
 	width: 50%;
@@ -1647,6 +1647,7 @@ text-fill-color: transparent;
   line-height: 24px;
   text-align: center;
   color:#fff;
+  padding: 0 20px;
 
 }
  .roadmap-start h3{
@@ -2750,6 +2751,7 @@ select {
   box-sizing: border-box;
   padding: 30px 10px;
   /* margin-top: 30px; */
+  padding-right: 22px;
   position: sticky !important;
   top:0px;
    
@@ -3065,7 +3067,7 @@ select {
   display: none;
 }
 .menu-icon-show .dashboard-left{
-  width: 60px;
+  width:70px;
 }
  
 .page-info{

@@ -75,7 +75,7 @@ jQuery(document).ready(function ($) {
 
   // menu bg add
     $(window).on('scroll', function() {
-      if ($(window).scrollTop() > 300) {
+      if ($(window).scrollTop() >120) {
           $('header').addClass('menu-bg-fixed');
       } else {
           $('header').removeClass('menu-bg-fixed');
