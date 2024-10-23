@@ -927,7 +927,7 @@
       width: calc(100% - 54px);
     } */
     .dashboard-left {
-      position: absolute !important;
+      position: fixed !important;
       left: -100%;
       top: 0;
   
