@@ -3609,7 +3609,7 @@ ul.dropdown li:hover{
 }
 .address-text span{
   font-weight: 600;
-  font-size: 18px;
+  font-size:14px;
 }
 .address-text input{
   outline: none;
@@ -3706,5 +3706,7 @@ ul.dropdown li:hover{
   fill: #fff;  /* Hover color change */
   stroke: #fff; /* Hover stroke color change */
 }
-
+.gradient-color b{
+  font-size: 14px;
+}
 /* End ico update css */
