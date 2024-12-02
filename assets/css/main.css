@@ -1233,7 +1233,7 @@ text-fill-color: transparent;
 }
 .ecm-right-header ul li{
   font-size:18px;
-  margin-bottom: 20px;
+  margin-bottom:10px;
   font-weight: 500;
 
   color:#FFFFFFCC;
@@ -1248,7 +1248,7 @@ text-fill-color: transparent;
 .ecm-form h4{
   font-size:28px;
   font-weight: 600;
-  line-height: 40px;
+  line-height:30px;
   text-align: center;
   color:#fff;
 }
@@ -1522,7 +1522,7 @@ text-fill-color: transparent;
   border-radius: 30px;
  }
  .token-roll-controls .progress-bar span,.ico-progress .progress-bar span{
-  font-size:18px;
+  font-size:16px;
   font-weight: 600;
   color: #FFFFFFCC;
   padding-right: 7px;
@@ -1560,7 +1560,7 @@ text-fill-color: transparent;
   margin-top: 10px;
 }
 .ico-progress .progress{
-  height: 32px;
+  height: 30px;
   background-color: #FFFFFF1A;
   border-radius: 30px;
 }
@@ -1730,7 +1730,7 @@ text-fill-color: transparent;
 	z-index: -1;
 }
 .ecm-form .subscribe-email input {
-	padding: 16px 18px;
+	padding: 13px 18px;
 }
 .full-w-card{
   padding-top: 50px;
@@ -3635,26 +3635,35 @@ ul.dropdown li:hover{
 }
 .text-copy-btn i{
   color:#fff;
+  font-size: 15px;
 }
 .text-copy-btn{
-  height: 40px;
-  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:35px;
+  width:35px;
+  min-height:35px;
+  min-width:35px;
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   border-radius: 50% !important;
 
+}
+.rotate-50 {
+	transform: rotate(-50deg);
 }
 .submit-btn i{
   margin-left: 5px;
   font-size: 16px;
 }
 .submit-btn{
-  height: 60px;
+  height:53px !important;
 }
 .green-outline-btn{
   background-image: url(../images/shap-bg/green-outline-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 16px 18px;
+  padding:9px 18px;
   font-size: 16px;
   color: #FFFFFFCC;
   gap:8px;
@@ -3664,7 +3673,7 @@ ul.dropdown li:hover{
 	background: 
 		url(../images/shap-bg/red-outline-bg.png) no-repeat center / 100% 100%, 
 		#111822;
-	padding: 16px 18px;
+	padding: 15px 18px;
 	font-size: 16px;
 	color: #B92124;
 	gap: 8px;
@@ -3675,7 +3684,7 @@ ul.dropdown li:hover{
   color:#fff;
 }
 .clip-text {
-	width: 85%;
+	width:78%;
 	transition: 0.5s;
 	white-space: nowrap;
 	overflow: hidden;

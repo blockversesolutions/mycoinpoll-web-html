@@ -466,6 +466,21 @@
   
 }
 @media screen and (max-width: 767px) {
+  .ecm-right-box {
+    padding: 30px 15px;
+  }
+  .clip-text{
+    width: 56%;
+  }
+  .address-text {
+    padding: 6px 10px;
+  }
+  .address-text input {
+    font-size: 14px;
+  }
+  .address-text span {
+    font-size: 14px;
+  }
   .roadmap-item-text {
     padding-top: 60px;
   }
