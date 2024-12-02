@@ -827,7 +827,7 @@ a.nav-link.dropdown-toggle i{
 .ecm-right-box{
   background-image: url('../images/bg/ecm-bg.png');
   margin-left:30px;
-  padding: 40px;
+  padding:30px;
   
 }
 .multi-chain-card-logo img{
@@ -1239,8 +1239,8 @@ text-fill-color: transparent;
   color:#FFFFFFCC;
   line-height: 36px;
 }
-.ecm-form .subscribe-email img{
-  padding-left: 30px;
+.ecm-form .subscribe-email img {
+	padding-left: 20px;
 }
 .mb30{
   margin-bottom: 30px;
@@ -1729,8 +1729,8 @@ text-fill-color: transparent;
 	filter: blur(250px);
 	z-index: -1;
 }
-.ecm-form .subscribe-email input{
-  padding: 20px 28px;
+.ecm-form .subscribe-email input {
+	padding: 16px 18px;
 }
 .full-w-card{
   padding-top: 50px;
@@ -3598,3 +3598,104 @@ ul.dropdown li:hover{
 
 
 /* data-simplebar style="height: calc(100svh - 60px)" */
+
+
+/* Start ico update css */
+.address-text{
+  background-image: url(../images/shap-bg/address-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding:8px 20px;
+}
+.address-text span{
+  font-weight: 600;
+  font-size: 18px;
+}
+.address-text input{
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFFCC;
+  font-weight: 500;
+  background-color: transparent;
+}
+.g-10{
+  gap:10px;
+}
+.address-text .form-control:focus {
+  border: none;
+  color: #FFFFFFCC !important;
+  outline: none;
+  background-color: transparent !important;
+	box-shadow: 0 0 0 0 transparent !important;
+}
+.address-text .form-control::placeholder {
+	color: #FFFFFFCC !important;
+	opacity: 1;
+}
+.text-copy-btn i{
+  color:#fff;
+}
+.text-copy-btn{
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+  border-radius: 50% !important;
+
+}
+.submit-btn i{
+  margin-left: 5px;
+  font-size: 16px;
+}
+.submit-btn{
+  height: 60px;
+}
+.green-outline-btn{
+  background-image: url(../images/shap-bg/green-outline-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 16px 18px;
+  font-size: 16px;
+  color: #FFFFFFCC;
+  gap:8px;
+  font-weight: 500;
+}
+.red-outline-btn {
+	background: 
+		url(../images/shap-bg/red-outline-bg.png) no-repeat center / 100% 100%, 
+		#111822;
+	padding: 16px 18px;
+	font-size: 16px;
+	color: #B92124;
+	gap: 8px;
+  transition: 0.5s;
+	font-weight: 700;
+}
+.red-outline-btn:hover {
+  color:#fff;
+}
+.clip-text {
+	width: 85%;
+	transition: 0.5s;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+.custom-icon {
+	width: 22px;
+	height: 22px;
+}
+
+.icon-path {
+  transition: 0.5s;
+  fill: #B92124;  /* Customize color */
+  stroke: #B92124; /* Stroke color if needed */
+}
+
+.red-outline-btn:hover .custom-icon .icon-path {
+  fill: #fff;  /* Hover color change */
+  stroke: #fff; /* Hover stroke color change */
+}
+
+/* End ico update css */
