@@ -261,9 +261,13 @@
   .coin-hero-area .box-bg{
     margin-top: 0;
   }
+  
  
 }
 @media screen and (max-width: 991px) {
+  .popular-post-item{
+    width:48%;
+  }
   .coin-hero-area .box-bg{
     margin-top:50px;
   }
@@ -998,7 +1002,9 @@
       height:60px;
       font-size:16px;
     }
-   
+    .mt-120 {
+      margin-top: 90px;
+    }
      
 }
 @media screen and (max-width:480px) {
@@ -1054,6 +1060,14 @@
   }
   .common-table.mt30{
     margin-top: 0;
+  }
+  .popular-post-item {
+    width:100%;
+  }
+  .breadcrumbs h6 {
+    font-size: 26px;
+    line-height:35px;
+    margin-top: 5px;
   }
   
 }

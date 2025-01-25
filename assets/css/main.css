@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   background-color: #040C16;
 }
-h3,h4{
+h3,h4,h5{
   font-weight: 800;
   font-family: "Oxanium", sans-serif;
 }
@@ -57,6 +57,37 @@ button,button:active{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.btn-1{
+  background-size: 100% 100%;
+	font-size: 20px;
+	font-weight: 700;
+	transition: 0.5s;
+	color: #fff;
+	display: inline-block;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30px;
+  background-image: url('../images/bg/btn1.png');
+}
+.btn-1-sm{
+  background-size: 100% 100%;
+	font-size:16px;
+	font-weight: 700;
+	transition: 0.5s;
+	color: #fff;
+	display: inline-block;
+	height:45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 22px;
+  background-image: url('../images/bg/btn1.png');
+}
+.btn-1:hover,.btn-1-sm:hover {
+	box-shadow: rgb(37, 136, 231) -5px 25px 26px -22px;
 }
 .primary-btn:hover {
 	box-shadow: rgb(37, 136, 231) -5px 25px 26px -22px;
@@ -477,6 +508,9 @@ a.nav-link.dropdown-toggle i{
   margin-top: 40px;
 }
 .pt120{
+  margin-top: 120px;
+}
+.mt-120{
   margin-top: 120px;
 }
 .token-terget-box::after,.token-details-terget-area::after {
@@ -1118,8 +1152,10 @@ text-fill-color: transparent;
   width:75%;
 }
 .btn3:hover,.icon  {
-	background: linear-gradient(135deg, #18F1FF 0%, #23DB51 100%);
+	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 }
+
+
 .border-indexcing{
   position: relative;
   z-index: 2;
@@ -1140,13 +1176,20 @@ text-fill-color: transparent;
   border-radius:32px;
 }
 .border-gradient::after{
-  background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 }
 .border-gradient-view:after{
   background: linear-gradient(270deg, #2682EE 0%, #1CD691 100%);
   opacity: 30%;
 }
-
+.mt-15{
+  margin-top: 15px;
+}
+.line-1{
+  height: 1px;
+  width: 100%;
+  background:#FFFFFF1A;
+}
 .border-gradient-slider:after{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 }
@@ -1219,7 +1262,7 @@ text-fill-color: transparent;
 	background-repeat: no-repeat;
 	height: 775px;
 }
-.mt20{
+.mt-20{
   margin-top: 20px;
 }
 .line-divider{
@@ -1235,7 +1278,6 @@ text-fill-color: transparent;
   font-size:18px;
   margin-bottom:10px;
   font-weight: 500;
-
   color:#FFFFFFCC;
   line-height: 36px;
 }
@@ -1339,6 +1381,10 @@ text-fill-color: transparent;
 .clip-path{
   clip-path: polygon( 22px 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%, 0 22px );
 }
+.clip-path-2 {
+  clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 22px 100%, 0 calc(100% - 22px));
+}
+
 .box-bg{
   background-image: url('../images/bg/box-bg.png');
   background-size: 100% 100%;
@@ -1786,33 +1832,30 @@ text-fill-color: transparent;
   min-width:375px;
   height: 55px;
 }
- 
-.breadcrumbs ul li a.active{
-  background: linear-gradient(90deg, rgba(39, 123, 245, 0.8) 0%, rgba(28, 214, 145, 0.8) 100.01%);
+.breadcrumbs ul{
+  gap:15px;
 }
 .breadcrumbs ul li a{
-  background: #151D24;
   font-size: 18px;
-  color: #FFFFFFCC;
+  color:#FFFFFFCC;
   display: inline-block;
-  text-align: center;
-  min-width:166px;
-  margin-left: -18px;
-  padding: 10px 30px;
-  clip-path: polygon(86% 0, 100% 50%, 86% 100%, 0% 100%, 11% 50%, 0% 0%);
-
+  font-weight: 500;
+} 
+.breadcrumbs ul li a.active{
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
 }
-.breadcrumbs {
-	margin-left: 18px;
+.breadcrumbs h6{
+  font-weight: 800;
+  font-size: 32px;
+  color:#fff;
+  line-height: 40px;
+  margin-top: 16px;
 }
-.breadcrumbs ul{
-  row-gap: 5px;
-}
-.breadcrumbs ul li:first-child a{
-  clip-path: polygon(0% 0%, 86% 0, 100% 50%, 86% 100%, 0% 100%);
-  /* margin-left: 0; */
-}
-.breadcrumbs ul li a:hover,.pagination-inner li a:hover,.pagination-inner li a.active{
+.pagination-inner li a:hover,.pagination-inner li a.active{
   background: linear-gradient(90deg, rgba(39, 123, 245, 0.8) 0%, rgba(28, 214, 145, 0.8) 100.01%);
 }
 .ptb50{
@@ -3009,18 +3052,21 @@ select {
  
 .ellipse{
   position: absolute;
-  width: 218px;
-  height: 218px;
+  width: 300px;
+  height: 300px;
   background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
   opacity: 0.15;
   filter: blur(90px);
+}
+.ellipse-2{
+  left: 2%;
+  top: -10%;
+}
+.ellipse-3{
+  left: 2%;
+  bottom: 0%;
+}
  
-}
-.ellipse1{
-  left:2%;
-  top: 0;
-  display:none;
-}
 .dashboard-left-menu {
 	position: relative;
 	z-index: 2;
@@ -3695,18 +3741,80 @@ ul.dropdown li:hover{
 	width: 22px;
 	height: 22px;
 }
-
 .icon-path {
   transition: 0.5s;
-  fill: #B92124;  /* Customize color */
-  stroke: #B92124; /* Stroke color if needed */
+  fill: #B92124;
+  stroke: #B92124;
 }
-
 .red-outline-btn:hover .custom-icon .icon-path {
-  fill: #fff;  /* Hover color change */
-  stroke: #fff; /* Hover stroke color change */
+  fill: #fff;
+  stroke: #fff;
 }
 .gradient-color b{
   font-size: 14px;
 }
 /* End ico update css */
+/* start blog post css */
+ 
+.blog-post-card,.widget,.popular-post-item{
+  padding: 25px;
+  background-image: url('../images/shap-bg/shape-1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.blog-post-content h4{
+  font-size: 24px;
+  line-height: 32px;
+  color:#fff;
+  transition: 0.5s;
+}
+.blog-post-card:hover .blog-post-content h4,.popular-post-thumbnails:hover .popular-post-content h5{
+  color:#2388E5;
+}
+.circle{
+  position: absolute;
+  width:300px;
+  height:300px;
+  background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
+  opacity: 0.13;
+  filter: blur(271px);
+  z-index: -2;
+}
+.circle-1{
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top:10%;
+}
+.blog-layout-section .blog-post-content h4{
+  font-size: 20px;
+}
+.blog-layout-section .blog-post-content p{
+  font-size: 14px;
+  line-height: 26px;
+}
+.widget-title{
+  font-size: 20px;
+  font-weight: 600;
+  color:#fff;
+}
+.categories-list .btn3{
+  padding: 5px 18px;
+}
+.categories-list,.popular-post-thumbnails,.popular-post-items{
+  gap:12px;
+}
+.popular-post-content h5{
+  color:#fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.popular-post-item{
+  padding: 12px;
+}
+.mt-70{
+  margin-top: 70px;
+}
+/* End blog post css */
