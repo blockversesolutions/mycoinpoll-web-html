@@ -28,6 +28,10 @@
       <link rel="stylesheet" href="assets/css/responsive.css" />
    </head>
    <body>
+      <div id="cursor-small-dot" class="cursor-small-dot">
+      </div>
+      <div id="cursor-big-dot" class="cursor-big-dot">
+      </div>
       <!-- header -->
       <header class="header-area-bg-color">
          <div class="container">
@@ -1142,5 +1146,32 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
       <script src="assets/js/jquery.flipbox.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         const cursorSmallDot = document.getElementById("cursor-small-dot");
+         const cursorBigDot = document.getElementById("cursor-big-dot");
+         let smallDotPosition = { x: 0, y: 0 };
+         let bigDotPosition = { x: 0, y: 0 };
+         const translate3d = (x, y) => `translate3d(${x}px, ${y}px, 0)`;
+         const handleMouseMove = (e) => {
+         smallDotPosition.x = e.clientX;
+         smallDotPosition.y = e.clientY;
+         bigDotPosition.x = e.clientX - 4;
+         bigDotPosition.y = e.clientY - 8;
+         cursorSmallDot.style.transform = translate3d(
+            smallDotPosition.x,
+            smallDotPosition.y
+         );
+         cursorBigDot.style.transform = translate3d(
+            bigDotPosition.x,
+            bigDotPosition.y
+         );
+         };
+         const mouseMoveHandler = (e) => {
+         window.requestAnimationFrame(() => handleMouseMove(e));
+         };
+
+         window.addEventListener("mousemove", mouseMoveHandler);
+
+      </script>
    </body>
 </html>
