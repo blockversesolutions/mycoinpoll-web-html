@@ -7,7 +7,6 @@
     right: 2%;
     top: 10px;
   }
-  
 }
 @media screen and (max-width: 1440px) {
   .upcoming-label {
@@ -27,7 +26,6 @@
   .multi-chain-power-heading p {
     margin-top: 20px;
   }
- 
   .ido-card-header{
     margin-top: 38px;
   }
@@ -261,8 +259,6 @@
   .coin-hero-area .box-bg{
     margin-top: 0;
   }
-  
- 
 }
 @media screen and (max-width: 991px) {
   .popular-post-item{
@@ -303,7 +299,6 @@
   .coin-logo-area ul {
     row-gap: 15px;
   }
-  
   .pagination-inner li a {
     min-width: 48px;
   }
@@ -404,7 +399,6 @@
   }
   .dashboard-right {
     width: calc(100% - 54px);
-    /* margin-left: 54px; */
   }
   .dashboard-left {
     width: 60px;
@@ -419,18 +413,8 @@
   .menu-icon-show .dashboard-left-menu ul li a span {
     display: block;
   }
-  /* .dashboard-left {
-    position: absolute !important;
-    left: 0;
-    z-index: 5;
-  } */
-  /* .menu-icon-show .dashboard-right {
-    width: calc(100% - 54px);
-    margin-left: 54px;
-  } */
   .menu-icon-show .dashboard-right {
     width: calc(100% - 200px);
-    /* margin-left: 54px; */
   }
   .pagination .subscribe-btn{
     height: 40px !important;
@@ -467,7 +451,6 @@
   .token-details-terget-area ul li span{
     font-size: 13px;
   }
-  
 }
 @media screen and (max-width: 767px) {
   .ecm-right-box {
@@ -524,7 +507,7 @@
     gap: 20px;
     justify-content: center;
    }
-   .hero-area-text h3,.token-card-heading h3,.section-heading h3 {
+   .hero-area-text h1,.hero-area-text h3,.token-card-heading h3,.section-heading h3 {
     font-size:35px;
     line-height:55px;
   }
@@ -535,14 +518,12 @@
   p {
     font-size: 16px;
   }
-  
   .hero-area-text {
     text-align: center;
   }
   .primary-btn {
     min-width: 280px;
     font-size: 16px;
-    /* height: 65px; */
     display: flex;
   }
   .coin-logo-section {
@@ -570,7 +551,6 @@
   .ido-card-header {
     margin-top: 20px;
   }
-  
   .navbar-brand {
     margin-right: 0px;
   }
@@ -676,7 +656,7 @@
   .ptb120{
     padding:90px 0;
   }
-  .hero-area-text h3{
+  .hero-area-text h3,.hero-area-text h1{
     font-size: 45px;
   }
   .ecm-form .subscribe-email input {
@@ -1044,7 +1024,7 @@
   .footer-widgets-area {
     gap: 40px;
   }
-  .hero-area-text h3 {
+  .hero-area-text h3,.hero-area-text h1 {
     font-size: 36px;
   }
   /* .dashboard-left{

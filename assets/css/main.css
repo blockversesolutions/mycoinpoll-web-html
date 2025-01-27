@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
-body {
+ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -16,13 +14,10 @@ p{
   line-height: 30px;
   font-weight: 500;
   color:rgba(255, 255, 255, 0.8);
-
 }
- 
 input {
   outline: none;
 }
-
 a,
 a:hover {
   text-decoration: none;
@@ -96,7 +91,7 @@ button,button:active{
 	background-image: url('../images/bg/btn1.png');
   background-color: transparent;
 }
-.btn2 {
+.btn2{
 	background-image: url('../images/bg/btn2.png');
   height:80px;
 }
@@ -142,18 +137,18 @@ button,button:active{
 .nav-item > a:hover,.nav-item > a:focus,.dropdown-menu ul li a:hover{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .nav-link.dropdown-toggle.show{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .header-right{
   gap:15px;
@@ -161,12 +156,10 @@ text-fill-color: transparent;
 .dropdown-menu {
 	animation: 0.5s animationadd;
 }
-
 @keyframes animationadd {
 	from {
 		transform: translateY(15%);
 	}
-
 	to {
 		transform: translateY(0);
 	}
@@ -183,8 +176,10 @@ text-fill-color: transparent;
   background-color:#121C2B;
   border-radius: 40px;
 }
-.navbar-brand img{
+.navbar-brand img,.footer-description a img{
   max-width: 220px;
+  aspect-ratio: 16 / 9;
+  height: auto;
 }
 .button-wrapper a{
   font-size:18px;
@@ -198,6 +193,10 @@ text-fill-color: transparent;
   border-radius: 40px;
   align-items: center;
 }
+.button-wrapper a span img{
+  width: 29px;
+  height: 29px;
+}
 .button-wrapper.border-gradient::after {
 	background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
 	opacity: 0.99;
@@ -208,7 +207,6 @@ text-fill-color: transparent;
   background: linear-gradient(90deg, rgba(39, 123, 245, 0.9) 0%, rgba(28, 214, 146, 0.74) 100.01%);
   filter: blur(0.02px);
   border-radius: 40px;
-  
 }
 .header-cover-area .header-area-bg-color{
 	padding-top: 35px;
@@ -248,7 +246,6 @@ a.nav-link.dropdown-toggle i{
   padding-left: 40px;
   padding-right: 40px;
   background-repeat: no-repeat;
-  
 }
 .header-cover-area .header-area-bg-color.menu-bg-fixed{
   padding-top: 0;
@@ -260,7 +257,7 @@ a.nav-link.dropdown-toggle i{
 .hero-section-outter{
   margin-top: 60px;
 }
-.hero-area-text h3{
+.hero-area-text h3,.hero-area-text h1{
   font-size:55px;
   line-height:60px;
   color: #FFFFFF;
@@ -429,38 +426,37 @@ a.nav-link.dropdown-toggle i{
 }
 @keyframes moveTopToBottom {
   0% {
-      top:18%; /* Initial position */
+      top:18%;
   }
   50% {
-      top: 30%; /* Move downward */
+      top: 30%;
   }
   100% {
-      top:18%; /* Return to the initial position */
+      top:18%;
   }
 }
 @keyframes moveTopToBottom2 {
   0% {
-      top:50%; /* Initial position */
+      top:50%;
   }
   50% {
-      top:55%; /* Move downward */
+      top:55%;
   }
   100% {
-      top:50%; /* Return to the initial position */
+      top:50%;
   }
 }
 @keyframes card-listed {
   0% {
-      top:20%; /* Initial position */
+      top:20%;
   }
   50% {
-      top:35%; /* Move downward */
+      top:35%;
   }
   100% {
-      top:22%; /* Return to the initial position */
+      top:22%;
   }
 }
-
 .circle-effect1{
   background-image: url('../images/bg/circle1.png');
   position: absolute;
@@ -547,6 +543,10 @@ a.nav-link.dropdown-toggle i{
 .social-menu ul li a i{
   font-size: 20px;
   color:#fff;
+}
+.social-menu ul li a img{
+  width:20px;
+  height: 20px;
 }
 .countdown-area h5{
   margin-bottom: 10px;
@@ -706,7 +706,6 @@ a.nav-link.dropdown-toggle i{
   z-index: -1;
   animation: moveUpDown 3s ease-in-out infinite; /* Animation */
 }
-
 @keyframes moveUpDown {
   0% {
       transform: translateY(0); /* Starting position (bottom) */
@@ -813,7 +812,6 @@ a.nav-link.dropdown-toggle i{
 .ido-slick-prev:hover{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 }
-
 .section-heading h3{
   color:#fff;
   font-weight: 800;
@@ -847,7 +845,6 @@ a.nav-link.dropdown-toggle i{
   font-weight: 500;
   line-height: 24px;
 }
- 
 .multi-chain-card,.ecm-right-box{
   padding: 30px;
   transition: 0.5s;
@@ -862,7 +859,6 @@ a.nav-link.dropdown-toggle i{
   background-image: url('../images/bg/ecm-bg.png');
   margin-left:30px;
   padding:30px;
-  
 }
 .multi-chain-card-logo img{
   width:60px;
@@ -873,7 +869,6 @@ a.nav-link.dropdown-toggle i{
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 .multi-chain-power-section::before {
   content: "";
   position: absolute;
@@ -915,7 +910,6 @@ a.nav-link.dropdown-toggle i{
 	height: 475px;
 	z-index: -2;
 }
-
 .chain-circle2 {
 	left: 0;
 	top: -6%;
@@ -954,7 +948,6 @@ a.nav-link.dropdown-toggle i{
 .accordion-button::after {
   transition: all 0.5s;
 }
-
 .accordion-button::after {
   transition: all 0.5s;
 }
@@ -967,7 +960,6 @@ a.nav-link.dropdown-toggle i{
 .frequently-answere .accordion-body{
   padding-top: 7px;
   padding-bottom: 38px;
-
 }
 .frequently-answere .accordion-button {
 	background-color: transparent;
@@ -995,7 +987,6 @@ a.nav-link.dropdown-toggle i{
   margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.05);
 }
-
 .social-menu span{
   font-size: 14px;
   color:#fff;
@@ -1154,8 +1145,6 @@ text-fill-color: transparent;
 .btn3:hover,.icon  {
 	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 }
-
-
 .border-indexcing{
   position: relative;
   z-index: 2;
@@ -1202,7 +1191,6 @@ text-fill-color: transparent;
 .border-gradient-item:after{
   background:linear-gradient(90deg, rgba(39, 123, 245, 0.3) 0%, rgba(28, 214, 145, 0.3) 100.01%);
 }
-
 .cb-slideshow div{
   background-color: transparent !important;
 }
@@ -1219,7 +1207,6 @@ text-fill-color: transparent;
 	opacity: 0.08;
 	filter: blur(250px);
 	z-index: -2;
- 
 }
 @keyframes zoomInOut {
   0% {
@@ -1282,7 +1269,9 @@ text-fill-color: transparent;
   line-height: 36px;
 }
 .ecm-form .subscribe-email img {
-	padding-left: 20px;
+	margin-left: 20px;
+  width: 32px;
+  height: 32px;
 }
 .mb30{
   margin-bottom: 30px;
@@ -1306,10 +1295,9 @@ text-fill-color: transparent;
   cursor: pointer;
 }
 .why-choose-card img{
-  max-width:75px;
+  width:75px;
   transition: 0.5s;
-  width: 100%;
-  
+  height: 75px;
 }
 .common-card:hover img{
   transform: scale(1.2);
@@ -1329,7 +1317,6 @@ text-fill-color: transparent;
   color: #2682EE;
   margin-top:0px;
 }
-
 .common-card p{
   margin-top: 12px;
   line-height: 24px;
@@ -1344,7 +1331,6 @@ text-fill-color: transparent;
   top: 20px;
   color:#fff;
 }
-
 /* Start Coin details page css */
 .custom-container{
   max-width:1400px;
@@ -1352,7 +1338,7 @@ text-fill-color: transparent;
   margin:auto;
 }
 .coin-details-hero-border{
-  border:2px solid transparent;
+  border:1px solid transparent;
   background: #080E17;
   background-clip: padding-box;
   border-radius:30px;
@@ -1360,10 +1346,10 @@ text-fill-color: transparent;
 .coin-details-hero-border::after {
   content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
   background: linear-gradient(302.95deg, #FFFFFF -6.79%, rgba(255, 255, 255, 0) 100%), 
               linear-gradient(122.95deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 106.79%);
   z-index: -1;
@@ -1384,7 +1370,6 @@ text-fill-color: transparent;
 .clip-path-2 {
   clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 22px 100%, 0 calc(100% - 22px));
 }
-
 .box-bg{
   background-image: url('../images/bg/box-bg.png');
   background-size: 100% 100%;
@@ -1406,7 +1391,6 @@ text-fill-color: transparent;
   margin-top: 26px;
   padding-bottom:30px;
   border-bottom: 3px solid #FFFFFF1A;
-
 }
 .token-details-card-thumnails.box-bg {
 	margin-right: 25px;
@@ -1859,7 +1843,7 @@ text-fill-color: transparent;
   background: linear-gradient(90deg, rgba(39, 123, 245, 0.8) 0%, rgba(28, 214, 145, 0.8) 100.01%);
 }
 .ptb50{
-  padding: 50px 0;
+  padding: 40px 0;
 }
 .pagination ul{
   justify-content: space-between;
@@ -1874,7 +1858,7 @@ text-fill-color: transparent;
 .pagination-inner li a{
   font-size: 20px;
   font-weight: 700;
-  min-width: 68px;
+  min-width: 60px;
   background-color: #FFFFFF26;
   height: 58px;
   color:#fff;
