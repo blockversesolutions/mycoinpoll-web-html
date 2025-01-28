@@ -451,6 +451,9 @@
   .token-details-terget-area ul li span{
     font-size: 13px;
   }
+  .popular-post-thumbnails img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .ecm-right-box {

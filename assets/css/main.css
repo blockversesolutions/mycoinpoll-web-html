@@ -3086,6 +3086,7 @@ select {
   z-index: 999;
   background: #040C16;
   padding:15px 0;
+  padding-left: 20px;
 }
 .dashboard-header-right-group{
   gap: 16px;
@@ -3743,7 +3744,7 @@ ul.dropdown li:hover{
 /* End ico update css */
 /* start blog post css */
  
-.blog-post-card,.widget,.popular-post-item{
+.blog-post-card,.widget{
   padding: 25px;
   background-image: url('../images/shap-bg/shape-1.png');
   background-size: 100% 100%;
@@ -3792,14 +3793,20 @@ ul.dropdown li:hover{
 .categories-list,.popular-post-thumbnails,.popular-post-items{
   gap:12px;
 }
+.popular-post-thumbnails img{
+  width:82px;
+  height:auto;
+}
 .popular-post-content h5{
   color:#fff;
   font-size: 16px;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 24px;
 }
-.popular-post-item{
-  padding: 12px;
+.popular-post-item {
+	padding: 12px;
+	border: 1px solid #1cd09629;
+	border-radius: 5px;
 }
 .mt-70{
   margin-top: 70px;
