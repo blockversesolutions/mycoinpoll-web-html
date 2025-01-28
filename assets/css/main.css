@@ -2121,7 +2121,7 @@ select {
   border:2px solid transparent;
   background-clip: padding-box;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .bg-border-input::after {
 	content: '';
@@ -2689,7 +2689,6 @@ select {
   height:450px;
   border-radius: 10px;
 }
- 
 .event-video-box{
   height: 300px;
 }
@@ -2698,7 +2697,6 @@ select {
   border-radius: 5px;
   height: 100%;
 }
- 
 .learn-description-box{
   padding:35px 30px;
 }
@@ -2711,14 +2709,11 @@ select {
   color:#fff;
   margin: 24px;
 }
- 
 /* Start privacy page css */
 .privacy-policy-section .learn-description-box{
   padding: 80px 30px;
 }
 /* End privacy page css */
-
-
 .header-area-bg-color {
 	margin-bottom: -120px;
 	margin-top:50px;
@@ -2749,7 +2744,6 @@ select {
 }
  .connect-wallet-modal{
   top: 140px;
-   
  }
 .custom-box-shadow{
   background: #121d26;
@@ -2760,7 +2754,6 @@ select {
   border: none;
   outline: none;
 }
- 
 /*=================================================
         Start  User Dashboard 
 ===============================================*/
@@ -3000,7 +2993,6 @@ select {
   position: relative;
   z-index: 1;
 }
-
 .user-coin-balance{
   padding: 20px;
   border: 1px solid #2682EE99;
@@ -3010,7 +3002,6 @@ select {
 }
 .coin-balance-logo{
   padding-right: 20px;
-  /* border-right: 1.5px solid #FFFFFF1A; */
 }
 .coin-balance-logo img{
   height: 56px;
@@ -3036,7 +3027,6 @@ select {
   font-size:30px;
   font-weight: 700;
 }
- 
 .ellipse{
   position: absolute;
   width: 300px;
@@ -3103,7 +3093,6 @@ select {
 .menu-icon-show .dashboard-left{
   width:70px;
 }
- 
 .page-info{
   gap: 15px;
 }
@@ -3206,7 +3195,6 @@ display: none;
   border-radius: 50px;
   animation: circle 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
 }
-
 @keyframes pulse {
   0% {
     transform: scale(0.33);
@@ -3264,9 +3252,8 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-
 table th,table td {
-	border: 1px solid rgba(39, 123, 245, 0.3); 
+	border: 1px solid rgba(39, 123, 245, 0.11);
 	padding: 14px 14px;
 	text-align: center;
   font-size: 16px;
@@ -3277,7 +3264,6 @@ table th,table td {
 .warning-table th,.warning-table td{
   border: 1px solid rgba(255, 0, 0, 0.16)
 }
-
 .active-status{
   background-color: #3598461A;
   border-color:#35984666;
@@ -3599,8 +3585,8 @@ ul.dropdown li:hover{
   gap: 20px;
 }
 .profile-lg-icon img{
-  width: 90px;
-  height: 90px;
+  width:80px;
+  height:80px;
   border-radius: 50%;
 }
 /* end notice css */
@@ -3840,3 +3826,25 @@ ul.dropdown li:hover{
   z-index: 9999;
 }
 /* End cursor css */
+/* Start Refferral manage css */
+.info-card{
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: #2682EE1A;
+  border: 1px solid #2682EE99;
+}
+.info-card h6{
+  font-size:18px;
+  font-weight: 700;
+  color:#fff;
+}
+.info-card span{
+  padding-left: 50px;
+  color: #1CD691;
+  font-weight: 700;
+  font-size: 20px;
+}
+.g-20{
+  gap: 20px;
+}
+/* End Refferral manage css */
