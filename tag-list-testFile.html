@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Input Field</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .tags-input {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 45px;
+            width: 350px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+            background: white;
+        }
+        .tags-input input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+        }
+        .tag {
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            margin: 3px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        .tag .remove-tag {
+            background: none;
+            border: none;
+            color: white;
+            margin-left: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .tag .remove-tag:hover {
+            color: #ff4444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tags-input" id="tags-container">
+        <input type="text" id="tag-input" placeholder="Add a tag..." />
+    </div>
+
+    <script>
+        const tagsContainer = document.getElementById("tags-container");
+        const tagInput = document.getElementById("tag-input");
+
+        tagInput.addEventListener("keypress", function (event) {
+            if (event.key === "Enter" && tagInput.value.trim() !== "") {
+                event.preventDefault();
+                addTag(tagInput.value.trim());
+                tagInput.value = "";
+            }
+        });
+
+        function addTag(tagText) {
+            const tag = document.createElement("span");
+            tag.classList.add("tag");
+            tag.innerHTML = `${tagText} <button class="remove-tag" onclick="removeTag(this)">×</button>`;
+            tagsContainer.insertBefore(tag, tagInput);
+        }
+
+        function removeTag(button) {
+            button.parentElement.remove();
+        }
+    </script>
+
+</body>
+</html>

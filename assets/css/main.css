@@ -2411,6 +2411,11 @@ select {
 	top:140px;
 	/* transform: translateY(-50%) !important; */
 }
+.modal-custom-width-sm{
+  max-width:520px;
+	width: 100%;
+	top:140px;
+}
 .modal-header-area h4{
   font-size:32px;
   color:#fff;
@@ -2455,7 +2460,7 @@ select {
   display: inline-block;
 }
 .transparent-btn {
-	padding: 14px 30px;
+	padding: 10px 28px;
 	border-radius: 50px;
 	font-size: 18px;
 	font-weight: 600;
@@ -3098,6 +3103,8 @@ select {
 	align-items: center;
 	border-radius: 50%;
 	transition: 0.5s;
+  min-width: 30px;
+  min-height: 30px;
 }
 .resize-icon:hover{
   background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
@@ -3225,7 +3232,7 @@ display: none;
 .dashboard-box{
   backdrop-filter: blur(30px);
   border: 1.5px solid #232831;
-  padding: 30px;
+  padding:25px;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 5px;
   /* box-shadow: rgba(149, 157, 165, 0.103) 0px 8px 24px; */
@@ -3249,7 +3256,7 @@ table th,table td {
 	text-align: center;
   font-size: 16px;
   font-weight: 500;
-  color:#fff;
+  color:#FFFFFFCC;
   line-height: 17.6px;
 }
 .warning-table th,.warning-table td{
@@ -3538,7 +3545,10 @@ ul.dropdown li:hover{
   color: #FFFFFF99;
 }
 .red{
- color:#B92124;
+ color:#B92124 !important;
+}
+.bg-red{
+  background: #B92124 !important;
 }
 .action-group li a:hover i{
   color: #1960bd;
@@ -3967,4 +3977,37 @@ ul.dropdown li:hover{
   padding-bottom:40px;
   outline: none;
 }
- 
+/* admin css */
+.btn-group-card {
+	background: #2682EE1A;
+	border: 1px solid #2682EE33;
+	border-radius: 5px;
+	padding: 4px;
+}
+.editor{
+  position: relative;
+  z-index: 999;
+  background-color:#09111B;
+}
+.blog-post-card-color{
+  border-radius: 10px;
+  background: #FFFFFF05;
+  border: 1px solid rgba(39, 123, 245, 0.3);
+  padding: 15px;
+}
+.btn-group-card li a,.btn-group-card li button{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding:6px 10px;
+  border: 1px solid 2682EE99;
+  color: #FFFFFFCC;
+  font-size: 14px;
+  font-weight: 500;
+  background-color:#2682EE1A;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.btn-group-card li a:hover,.btn-group-card li button:hover{
+  background-color:#2683ee5f;
+}

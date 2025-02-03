@@ -456,6 +456,14 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .publish-date {
+    font-size: 14px;
+  }
+  .btn-group-card li a, .btn-group-card li button {
+    gap:5px;
+    padding: 6px 6px;
+    font-size: 14px;
+  }
   .ico-tab ul{ 
     justify-content: center;
     flex-wrap: wrap;
@@ -994,6 +1002,9 @@
     }
     .mt-120 {
       margin-top: 90px;
+    }
+    .dashboard-right-header-area{
+      padding-left: 0;
     }
      
 }
