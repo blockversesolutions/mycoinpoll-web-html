@@ -130,10 +130,7 @@ jQuery(document).ready(function ($) {
       $('.dropdown').hide() ;
     }
   });
-
-
 })
- 
   function urlCopy(elem) {
     const inputField = elem.previousElementSibling;  // Get the associated input
     inputField.select();
@@ -142,11 +139,25 @@ jQuery(document).ready(function ($) {
       console.error('Failed to copy:', err);  // Optional error logging
     });
   }
- 
-
   new DataTable('.mobile-table', {
     responsive: true,
     paging: false,
     searching: false,
     ordering:  false
     });
+    //  ico tab js
+    function openCity(evt, coinName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("ico-tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("ico-tab-btn");
+      for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(coinName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();

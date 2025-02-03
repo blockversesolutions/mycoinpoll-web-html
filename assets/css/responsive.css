@@ -456,6 +456,13 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .ico-tab ul{ 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .ico-tab ul li{
+    width: 100%;
+  }
   .ecm-right-box {
     padding: 30px 15px;
   }
@@ -1006,18 +1013,15 @@
     margin: auto;
     margin-top: 20px;
   }
- 
   .earn-card-btn-group ul li a.btn4.primary-btn {
     min-width: 305px;
   }
   .ido-card-logo {
     width: 100%;
   }
-
   .contactinfo ul li {
     font-size: 16px;
   }
- 
   .navbar {
     padding-left:0px;
     padding-right:0px;
@@ -1028,12 +1032,6 @@
   .hero-area-text h3,.hero-area-text h1 {
     font-size: 36px;
   }
-  /* .dashboard-left{
-    display: none;
-  }
-  .menu-icon-show .dashboard-left{
-    display: block;
-  } */
   .gradient-btn, .transparent-btn,.upload-btn {
     padding:8px 15px;
     border-radius: 50px;
@@ -1050,8 +1048,15 @@
     line-height:35px;
     margin-top: 5px;
   }
-  
+  .ico-tab ul li {
+    font-size: 16px;
+  }
+  .reply-comment-card form{
+    justify-content: flex-end !important;
+    flex-wrap: wrap;
+  }
+  .ico-tab ul li{
+    width: 100% !important;
+  }
 }
-
-
 

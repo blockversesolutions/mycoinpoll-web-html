@@ -54,6 +54,8 @@ button,button:active{
 	align-items: center;
 }
 .btn-1{
+  outline: none;
+  border: none;
   background-size: 100% 100%;
 	font-size: 20px;
 	font-weight: 700;
@@ -74,11 +76,12 @@ button,button:active{
 	transition: 0.5s;
 	color: #fff;
 	display: inline-block;
-	height:45px;
+	height:48px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0 22px;
+  background-color: transparent;
   background-image: url('../images/bg/btn1.png');
 }
 .btn-1:hover,.btn-1-sm:hover {
@@ -495,6 +498,7 @@ a.nav-link.dropdown-toggle i{
 	opacity: 0.2;
 	filter: blur(250px);
 	width: 100%;
+  z-index: -2;
 }
 .token-circle2 {
 	left: 0;
@@ -1262,7 +1266,7 @@ text-fill-color: transparent;
   background-color:#FFFFFF1A;
   height: 3px;
 }
-.ecm-right-header ul li{
+.ecm-right-header ul li,.ico-tab-content ul li{
   font-size:18px;
   margin-bottom:10px;
   font-weight: 500;
@@ -1565,7 +1569,6 @@ text-fill-color: transparent;
 	background: #FFFFFF1A;
 }
 /* End Coin details page css */
-
 .token-sell-price-item {
   width: 100%;
   padding: 15px 30px;
@@ -1573,14 +1576,12 @@ text-fill-color: transparent;
   border-radius: 32px;
   background-color: #121826; /* Dark background */
 }
-
 .left-text,
 .right-text {
   font-size:18px;
   font-weight: 500;
   color: #FFFFFFCC;
 }
-
 .line {
   flex-grow: 1;
   height:1px;
@@ -1651,7 +1652,6 @@ text-fill-color: transparent;
   background-image: url('../images/bg/road-map-item.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-   
   width: 100%;
   margin-left: -48px;
   padding-right:25px;
@@ -1679,14 +1679,12 @@ text-fill-color: transparent;
   text-align: center;
   color:#fff;
   padding: 0 20px;
-
 }
  .roadmap-start h3{
   font-size:35px;
   font-weight: 800;
   color:#fff;
   text-align: center;
-
  }
  .shap-left {
 	position: absolute;
@@ -1761,7 +1759,7 @@ text-fill-color: transparent;
 	z-index: -1;
 }
 .ecm-form .subscribe-email input {
-	padding: 13px 18px;
+	padding: 14px 18px;
 }
 .full-w-card{
   padding-top: 50px;
@@ -2044,7 +2042,6 @@ select {
   width:80px;
   height: 35px;
 }
-
 /* Checkbox styling */
 .status-checkbox input[type="checkbox"] {
   position: relative;
@@ -2058,7 +2055,6 @@ select {
   cursor: pointer;
   box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
 }
-
 /* Circle inside the switch */
 .status-checkbox input[type="checkbox"]::before {
   content: "";
@@ -2072,18 +2068,15 @@ select {
   transform: translateY(-50%);
   transition: 0.5s;
 }
-
 /* Adjust circle position on check */
 .status-checkbox input[type="checkbox"]:checked::before {
   transform: translate(33px, -50%);
   left:12px;
 }
-
 /* Background color when checked */
 .status-checkbox input[type="checkbox"]:checked {
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 }
-
 /* OFF text when unchecked */
 .status-checkbox input[type="checkbox"]::after {
   content: "OFF";
@@ -2096,14 +2089,11 @@ select {
   font-size: 14px;
   transition: 0.3s;
 }
-
 /* ON text when checked */
 .status-checkbox input[type="checkbox"]:checked::after {
   content: "ON";
   left:5px;
 }
-
-
 .bg-border::after {
 	content: '';
 	position: absolute;
@@ -2328,7 +2318,6 @@ select {
   background-clip: text;
   text-fill-color: transparent;
 }
- 
 .or-divider::before{
   content: '';
   height:1px;
@@ -2387,7 +2376,6 @@ select {
 .ptb60{
   padding:60px 0;
 }
-
 /* bitcoin gif */
 .index-hero-text{
   width: 62%;
@@ -2527,7 +2515,7 @@ select {
   font-size: 20px;
   font-weight:600;
   text-align: center;
-  padding:16px 60px;
+  padding:14px 60px;
   background: #2682EE;
   border-radius: 50px;
   color:#fff;
@@ -2544,7 +2532,6 @@ select {
   color:#fff;
 }
 /* End modal css */
-
 /* Start country select css */
 .custom-select {
   position: relative;
@@ -2621,7 +2608,6 @@ select {
 .publish-date{
   gap: 10px;
   color: #FFFFFFCC;
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 12px;
@@ -2846,6 +2832,7 @@ select {
   right: 14px;
   pointer-events: none;
 }
+
 .page-title{
   font-size: 24px;
   font-weight: 800;
@@ -3254,8 +3241,11 @@ table {
   border-collapse: collapse;
 }
 table th,table td {
-	border: 1px solid rgba(39, 123, 245, 0.11);
-	padding: 14px 14px;
+	/* border: 1px solid rgba(39, 123, 245, 0.11); */
+  border: 1px solid transparent;
+  border-image-source: linear-gradient(90deg, rgba(39, 121, 245, 0.072) 0%, rgba(28, 214, 146, 0.089) 100%);
+  border-image-slice: 1;
+	padding: 10px 14px;
 	text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -3320,7 +3310,6 @@ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataT
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control::before, table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > th.dtr-control::before {
 	border-top: 10px solid  #1DC99E;
-	 
 }
 table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
 	text-align: center;
@@ -3341,6 +3330,9 @@ tr:first-child td { border-top-style: solid; }
 tr td:first-child { border-left-style: solid; }
 tr th{
   background: rgba(38, 130, 238, 0.1);
+}
+table{
+  border-spacing: 0 5px !important;
 }
 .dashboard-right{
   margin-bottom:20px;
@@ -3369,7 +3361,6 @@ tr th{
   backdrop-filter: blur(22px);
   background: rgba(38, 130, 238, 0.15);
 } */
-
 .add-new-btn{
   gap:10px;
   display: flex;
@@ -3404,11 +3395,9 @@ tr th{
   padding: 10px 16px;
   box-sizing: border-box;
   color: #FFFFFF66;
-   
 }
 .custom-card-header .table-heading h5{
   font-size: 32px;
-
 }
 .card-line{
   background: linear-gradient(270deg, #2682EE 0%, #1CD691 100%);
@@ -3437,7 +3426,6 @@ tr th{
 	background-color: #040C16;
 	border-top: 1px solid #082b4d;
 }
- 
 /* start notice css */
 .notification-box{
   background-color:#fff;
@@ -3448,22 +3436,17 @@ tr th{
   position: relative;
     left:50%;
 }
-
 .dropdown-toggle {
     cursor: pointer;
     color:red; 
 }
- 
 ul.dropdown {
   display: none;
   position: absolute;
   top: 100%;
   right: 0;
   min-width: 274px;
-  
-   
 }
- 
 /* up arrow*/
 ul.dropdown:before {
     content: "";
@@ -3504,21 +3487,16 @@ ul.dropdown:after {
 	align-items: center;
 	gap: 10px;
 }
- 
 ul.dropdown li:hover{
   background-color: #020a14;
   cursor: pointer;
 }
- 
 /* Content inside the scroll area */
 .scroll-content {
   padding: 15px;
   font-size: 16px;
   line-height: 1.6;
 }
-
-
-
 /* Custom scrollbar thumb */
 .simplebar-scrollbar::before {
   background:#2686E9 !important;
@@ -3533,7 +3511,6 @@ ul.dropdown li:hover{
   background-color: #040C16;
   color: white;
 }
-
 .gradient-btn-small {
 	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 	padding: 6px 10px;
@@ -3590,6 +3567,11 @@ ul.dropdown li:hover{
   height:80px;
   border-radius: 50%;
 }
+.profile-sm-icon img{
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+}
 /* end notice css */
 .warning-bg-notification{
   background-color:#1B1720 !important;
@@ -3615,12 +3597,6 @@ ul.dropdown li:hover{
 	height:85%;
 }
 /* End metaverse page */
-
-
-
-/* data-simplebar style="height: calc(100svh - 60px)" */
-
-
 /* Start ico update css */
 .address-text{
   background-image: url(../images/shap-bg/address-bg.png);
@@ -3668,7 +3644,6 @@ ul.dropdown li:hover{
   min-width:35px;
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   border-radius: 50% !important;
-
 }
 .rotate-50 {
 	transform: rotate(-50deg);
@@ -3730,7 +3705,6 @@ ul.dropdown li:hover{
 }
 /* End ico update css */
 /* start blog post css */
- 
 .blog-post-card,.widget{
   padding: 25px;
   background-image: url('../images/shap-bg/shape-1.png');
@@ -3799,34 +3773,7 @@ ul.dropdown li:hover{
   margin-top: 70px;
 }
 /* End blog post css */
-/* cursor css */
-.cursor-small-dot {
-  position: fixed;
-  width: 18px;
-  z-index: 9999;
-  height: 18px;
-  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
-  pointer-events: none;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  transition: transform 0.1s ease;
-  pointer-events: none;
-  box-shadow: 0px 15px 40px 0px rgba(48, 230, 255, 0.3);
-}
-.cursor-big-dot {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  padding: 1rem;
-  background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  transition: transform 0.001s ease;
-  pointer-events: none;
-  box-shadow: 0px 15px 31px 0px rgba(48, 230, 255, 0.3);
-  z-index: 9999;
-}
-/* End cursor css */
+ 
 /* Start Refferral manage css */
 .info-card{
   border-radius: 10px;
@@ -3858,7 +3805,13 @@ ul.dropdown li:hover{
   border-radius: 10px;
   padding: 18px 25px;
   background: #2682EE1A;
-  border: 1px solid #2682EE99;
+  border: 1px solid #2683ee60;
+}
+.card-2 {
+	border-radius: 10px;
+	padding: 18px 25px;
+	border: 1px solid #2683ee60;
+	background: linear-gradient(90deg, #0A1522 0%, #113546 100.01%);
 }
 .blance-logo img{
   height: 50px;
@@ -3888,4 +3841,130 @@ ul.dropdown li:hover{
   z-index: 9;
   transform: translateY(-50%);
 }
+.comment-body p{
+  color: #FFFFFFCC;
+}
+.comment-footer ul li,.rounded-btn{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #2682EE66;
+  background: #2682EE1A;
+}
+.rounded-btn{
+  height:50px;
+  transition: 0.5s;
+  width:50px;
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+}
+.rounded-btn:hover{
+  background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
+}
+.rounded-btn i{
+  color:#fff;
+  font-size: 20px;
+}
+.comment-footer ul li i{
+  color: #2683eeb9;
+  transition: 0.5s;
+}
+.comment-footer ul li:hover i{
+  color:#fff;
+}
+.shear-btn{
+  position: absolute;
+  right:10px;
+  bottom: 10px;
+}
 /* End Refferral manage css */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+.ico-tab ul li{
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ico-tab-select-icon{
+  position: absolute;
+  right:20px;
+  display: none;
+  top:50%;
+  transform: translateY(-50%);
+}
+.ico-tab-select-icon i{
+  color:#fff;
+  font-size: 24px;
+}
+ .ico-tab ul li img{
+  height: 32px;
+  width: 32px;
+  margin-right:8px;
+ }
+.ico-tab-btn.gradient-btn{
+  background: linear-gradient(90deg, #1B212B 0%, #1B212B 100.01%);
+  border: 1px solid #1fb9b1c9;
+  padding: 10px 20px;
+}
+.ico-tab-btn.gradient-btn.active{
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+}
+.ico-tab-btn.gradient-btn.active .ico-tab-select-icon{
+  display: block;
+}
+.reply-comment-card{
+  position: relative;
+}
+.reply-comment-card::after {
+  content: "";
+  position: absolute;
+  left: -44px;  
+  top: -54%;
+  height: 109%; 
+  width: 2px;
+  background: linear-gradient(90deg, rgba(28, 214, 145, 0.2) 0%, rgba(39, 123, 245, 0.2) 100.01%);
+}
+.first-reply::after {
+  top: -14px;
+  height: 55%;
+}
+.reply-comment-card::before {
+	content: "";
+	position: absolute;
+	width: 44px;
+	height: 2px;
+	top: 50%;
+	left: -44px;
+	transform: translateY(-50%);
+	background: linear-gradient(90deg, rgba(28, 214, 145, 0.2) 0%, rgba(39, 123, 245, 0.2) 100.01%);
+}
+.subscribe-email textarea{
+  background-color: transparent;
+  border: none;
+  color:#FFFFFF66;
+  font-size: 20px;
+  padding-bottom:40px;
+  outline: none;
+}
+ 

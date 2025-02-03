@@ -853,26 +853,80 @@
                               <div class="progress-bar align-items-end" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
                            </div>
                         </div>
-                        <ul class="d-flex justify-content-center mt-20">
-                           <li>1 ECM = 0.0004 ETH</li>
-                        </ul>
                         <div class="line-divider2 w-100 mt-20 mb20"></div>
                      </div>
-                     <div class="ecm-form">
-                        <h4 class="mb30">ICO is Live</h4>
-                        <div class="subscribe-form">
-                           <form action="">
-                              <div class="subscribe-email mb30 d-flex align-items-center mw-100">
-                                 <img src="assets/images/icon/ecm.png" alt="icon">
-                                 <input type="text" placeholder="ECM Amount">
-                              </div>
-                              <div class="subscribe-email mb40 d-flex align-items-center mw-100">
-                                 <img src="assets/images/icon/eth.png" alt="icon">
-                                 <input type="text" placeholder="ETH Payable">
-                              </div>
-                              <input type="submit" class="btn1 primary-btn submit-btn w-100" value="Connect Wallet">
-                           </form>
+                     <div class="d-flex flex-column g-10 mt-20">
+                        <div class="address-text input-group d-flex align-items-center secondary-btn-sm">
+                           <span class="gradient-color" id="wallet_address">Your Address : </span>
+                           <input type="text" class="form-control" value="0xB2744291cA7dF45278CF1c9c74CF1c9c74" readonly="" id="wallet_address" placeholder="Your Address">
                         </div>
+                        <div class="address-text input-group d-flex align-items-center position-relative secondary-btn-sm">
+                           <span class="gradient-color" id="referral_link">Referral Link : </span>
+                           <input type="text" class="form-control" value="0xB2744291cA7dF45278CF1c9c74CF1c9c9" readonly="" id="referral_link" placeholder="Referral Link">
+                           <button class="text-copy-btn" type="button" id="referred_by"><i class="far fa-copy"></i></button>
+                        </div>
+                        <div class="address-text input-group d-flex align-items-center secondary-btn-sm">
+                           <span class="gradient-color" id="referred_by">Referred By : </span>
+                           <input type="text" class="form-control" value="0xB27448291CA7dF45278CF1c9c7422D76647f6B7E" id="referred_by" placeholder="Enter Referred Wallet">
+                        </div>
+                     </div>
+                     <div class="line-1 mt-20"></div>
+                     <div class="ecm-form mt-20">
+                        <h4 class="mb30">ICO is Live</h4>
+                          <div class="ico-tab mb20">
+                           <ul class="d-flex align-items-center g-20">
+                              <li class="ico-tab-btn gradient-btn w-50" onclick="openCity(event, 'eth-coin-form')" id="defaultOpen"><img src="assets/images/icon/eth.png" alt="eth">Buy with ETH<span class="ico-tab-select-icon"><i class="fa-solid fa-circle-check"></i></span></li>
+                              <li class="ico-tab-btn gradient-btn w-50" onclick="openCity(event, 'usdt-coin-form')"><img src="assets/images/icon/usdt.png" alt="ecm"> Buy with USDT <span class="ico-tab-select-icon"><i class="fa-solid fa-circle-check"></i></span></li>
+                           </ul>
+                           </div>
+                           <div id="eth-coin-form" class="ico-tab-content">
+                              <ul class="d-flex justify-content-center mt-1 mb20">
+                                 <li class="text-white">1 ECM = 0.0004 ETH</li>
+                              </ul>
+                              <div class="subscribe-form">
+                                 <form action="">
+                                    <div class="subscribe-email mb30 d-flex align-items-center mw-100">
+                                       <img src="assets/images/icon/ecm.png" alt="icon">
+                                       <input type="text" placeholder="ECM Amount">
+                                    </div>
+                                    <div class="subscribe-email mb40 d-flex align-items-center mw-100">
+                                       <img src="assets/images/icon/eth.png" alt="icon">
+                                       <input type="text" placeholder="ETH Payable">
+                                    </div>
+                                    <input type="submit" class="btn1 primary-btn submit-btn w-100" value="Connect Wallet">
+                                 </form>
+                              </div>
+                           </div>
+                           <div id="usdt-coin-form" class="ico-tab-content">
+                              <ul class="d-flex justify-content-center mt-1 mb20">
+                                 <li class="text-white">1 ECM = 1.24 USDT</li>
+                              </ul>
+                              <div class="subscribe-form">
+                                 <form action="">
+                                    <div class="subscribe-email mb30 d-flex align-items-center mw-100">
+                                       <img src="assets/images/icon/ecm.png" alt="icon">
+                                       <input type="text" placeholder="ECM Amount">
+                                    </div>
+                                    <div class="subscribe-email mb40 d-flex align-items-center mw-100">
+                                       <img src="assets/images/icon/usdt.png" alt="icon">
+                                       <input type="text" placeholder="USDT Payable">
+                                    </div>
+                                    <input type="submit" class="btn1 primary-btn submit-btn w-100" value="Connect Wallet">
+                                 </form>
+                              </div>
+                           </div>
+                           
+                     </div>
+                     <a href="#" target="_blank" class="green-outline-btn d-flex align-items-center justify-content-between mt-20"><span class="gradient-color"><b>Hash : </b></span>
+                     <span class="clip-text">0x41924ee204e47c6aeea1c45e8ed19f5b94bff42a55493f65665fdd8045a9abde</span>
+                     <span class="text-copy-btn rotate-50"><i class="fa-solid fa-arrow-right-long"></i></span>
+                     </a> 
+                     <div class="text-center">
+                        <button class="red-outline-btn w-100 justify-content-center align-items-center d-flex mt-20">Disconnect <svg class="custom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path class="icon-path" d="M9.90533 6.96968C9.61246 6.67677 9.13756 6.67677 8.84468 6.96968C8.55177 7.26256 8.55177 7.73746 8.84468 8.03033L10.9394 10.125L8.84468 12.2197C8.55177 12.5126 8.55177 12.9875 8.84468 13.2803C9.13756 13.5732 9.61246 13.5732 9.90533 13.2803L12 11.1857L14.0947 13.2803C14.3876 13.5732 14.8625 13.5732 15.1553 13.2803C15.4482 12.9875 15.4482 12.5126 15.1553 12.2197L13.0607 10.125L15.1553 8.03033C15.4482 7.73746 15.4482 7.26256 15.1553 6.96968C14.8625 6.67677 14.3876 6.67677 14.0947 6.96968L12 9.06436L9.90533 6.96968Z" fill="#B92124"/>
+                           <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M6.09004 1.5C3.56563 1.5 1.32073 3.30751 1.01522 5.87749C0.660602 8.86061 0.661881 11.3731 1.01734 14.3669C1.32268 16.9387 3.56788 18.75 6.09521 18.75H8.46015L8.01015 21H6.75C6.33577 21 6 21.3358 6 21.75C6 22.1642 6.33577 22.5 6.75 22.5H17.25C17.6642 22.5 18 22.1642 18 21.75C18 21.3358 17.6642 21 17.25 21H15.9898L15.5398 18.75H17.8955C20.407 18.75 22.645 16.9605 22.9647 14.405C23.344 11.3717 23.345 8.84018 22.9682 5.83571C22.648 3.28303 20.4103 1.5 17.9035 1.5H6.09004ZM14.4601 21L14.0101 18.75H9.98985L9.53985 21H14.4601ZM2.50474 6.05456C2.71313 4.30155 4.26109 3 6.09004 3H17.9035C19.7209 3 21.2619 4.28449 21.4798 6.02239C21.841 8.90194 21.8403 11.3082 21.4763 14.2188C21.2583 15.9612 19.7153 17.25 17.8955 17.25H6.09521C4.26457 17.25 2.71534 15.9459 2.50687 14.1901C2.16529 11.3131 2.16418 8.91934 2.50474 6.05456Z" fill="#B92124" stroke="#B92124"/>
+                        </svg>
+                        </button>
                      </div>
                   </div>
                </div>
@@ -917,7 +971,6 @@
                                  </div>
                               </div>
                            </div>
-                           
                            <div class="accordion-item">
                               <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               How to participate in IDOs / sales?
@@ -964,7 +1017,7 @@
                      <div class="d-inline-block">
                         <a href="blog.html" class="btn-1">View More <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
                      </div>
-                     </div>
+                  </div>
                </div>
             </div>
             <div class="row gy-4 mt-5">
@@ -978,7 +1031,7 @@
                         <h4>Why Staking ECM Is the Future of Passive Income</h4>
                         <p class="mt-3">Earn consistent rewards effortlessly by staking ECM tokens securely and profitably.</p>
                         <div class="d-inline-block mt-4">
-                           <a href="#" class="btn-1-sm">
+                           <a href="blog-details.html" class="btn-1-sm">
                            Learn more <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span>
                            </a>
                         </div>
@@ -995,7 +1048,7 @@
                         <h4>Top 5 Ways Blockchain is Reshaping Online Shopping</h4>
                         <p class="mt-3">Discover blockchain’s impact on security, transparency e-commerce transactions.</p>
                         <div class="d-inline-block mt-4">
-                           <a href="#" class="btn-1-sm">
+                           <a href="blog-details.html" class="btn-1-sm">
                            Learn more <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span>
                            </a>
                         </div>
@@ -1012,7 +1065,7 @@
                         <h4>How ECM is Transforming E-Commerce</h4>
                         <p class="mt-3">ECM revolutionizes e-commerce with blockchain technology, secure transactions.</p>
                         <div class="d-inline-block mt-4">
-                           <a href="#" class="btn-1-sm">
+                           <a href="blog-details.html" class="btn-1-sm">
                            Learn more <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span>
                            </a>
                         </div>
@@ -1026,14 +1079,12 @@
          <div class="container">
             <div class="row subscribe-bg">
                <div class="col-lg-6">
-               
                      <div class="subscribe-text">
                         <div class="section-heading">
                            <h3 class="text-shadow">Stay Updated with Us</h3>
                            <p>Subscribe to our newsletter for the latest updates on upcoming IDOs, platform news, and exclusive investment opportunities.</p>
                         </div>
                      </div>
-                  
                </div>
                <div class="col-lg-6">
                   <div class="subscribe-form">
@@ -1146,32 +1197,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
       <script src="assets/js/jquery.flipbox.js"></script>
       <script src="assets/js/main.js"></script>
-      <script>
-         const cursorSmallDot = document.getElementById("cursor-small-dot");
-         const cursorBigDot = document.getElementById("cursor-big-dot");
-         let smallDotPosition = { x: 0, y: 0 };
-         let bigDotPosition = { x: 0, y: 0 };
-         const translate3d = (x, y) => `translate3d(${x}px, ${y}px, 0)`;
-         const handleMouseMove = (e) => {
-         smallDotPosition.x = e.clientX;
-         smallDotPosition.y = e.clientY;
-         bigDotPosition.x = e.clientX - 4;
-         bigDotPosition.y = e.clientY - 8;
-         cursorSmallDot.style.transform = translate3d(
-            smallDotPosition.x,
-            smallDotPosition.y
-         );
-         cursorBigDot.style.transform = translate3d(
-            bigDotPosition.x,
-            bigDotPosition.y
-         );
-         };
-         const mouseMoveHandler = (e) => {
-         window.requestAnimationFrame(() => handleMouseMove(e));
-         };
-
-         window.addEventListener("mousemove", mouseMoveHandler);
-
-      </script>
+ 
    </body>
 </html>
