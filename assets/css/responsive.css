@@ -259,8 +259,18 @@
   .coin-hero-area .box-bg{
     margin-top: 0;
   }
+  .staking-section{
+    flex-wrap: wrap;
+  }
+  .staking-righ-area{
+    order: -2;
+  }
+  .staking-left-area,.staking-righ-area{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 991px) {
+  
   .popular-post-item{
     width:48%;
   }
@@ -1067,6 +1077,18 @@
     flex-wrap: wrap;
   }
   .ico-tab ul li{
+    width: 100% !important;
+  }
+  .selected-days {
+    padding: 5px 12px;
+  }
+  .selected-days span,.page-title  {
+    font-size: 20px;
+  }
+  .staking-righ-area ul{
+    flex-wrap: wrap;
+  }
+  .staking-righ-area ul li{
     width: 100% !important;
   }
 }

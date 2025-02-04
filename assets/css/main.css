@@ -108,6 +108,13 @@ button,button:active{
   color:#FFFFFFCC;
   border: 1px solid transparent;
 }
+.badge-with-icon img{
+  height: 24px;
+  width: 24px;
+}
+.badge-with-icon{
+  color: #040C16;
+}
 .menu-bg{
   background: linear-gradient(90deg, #16458b31 0%, #5d746b34 100.01%);
 	backdrop-filter: blur(2px);
@@ -2122,6 +2129,7 @@ select {
 	bottom: -2px;
 	border-radius:5px;
   background: linear-gradient(90deg, rgba(39, 123, 245, 0.2) 0%, rgba(28, 214, 145, 0.2) 100.01%);
+  z-index:-2;
 } 
  .apply-launch-part label,.modal-body-inner label{
   font-size:18px;
@@ -2133,7 +2141,7 @@ select {
  .modal-body-inner label{
   margin-bottom: 10px;
  }
- .input input, .input textarea {
+ .input input,.file-input, .input textarea {
 	background: #0b121c;
 	position: relative;
 	z-index: 9;
@@ -2233,8 +2241,8 @@ select {
 	z-index: 2;
 	top: 0px;
 	left: 2px;
-	width: 30px;
-	height: 30px;
+	width:26px;
+	height:26px;
 	background: linear-gradient(90deg, rgba(39, 123, 245, 0.3) 0%, rgba(28, 214, 145, 0.3) 100.01%);
 	display: block;
 	content: "";
@@ -2258,19 +2266,19 @@ select {
 	position: absolute;
 	left: 5px;
 	z-index: 9;
-	top: 3px;
-	height: 24px;
-	width: 24px;
+	top:3px;
+	height: 20px;
+	width: 20px;
 	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
 	border-radius: 50%;
 	border: 6px solid #111821;
 }
 .form-group .public-radio + label::after {
 	z-index: 2;
-	top: 3px;
+	top:3px;
 	left: 5px;
-	width: 24px;
-	height: 24px;
+	width: 20px;
+	height: 20px;
 	background: #111822;
 	display: block;
 	content: "";
@@ -2758,7 +2766,7 @@ select {
   gap:40px;
 }
 .dashboard-left{
-  width:225px;
+  width:255px;
   border:1.5px solid #ffffff1c;
 	background-clip: padding-box;
 	border-radius:5px;
@@ -2772,7 +2780,7 @@ select {
    
 }
 .dashboard-right{
-  width: calc(100% - 225px);
+  width: calc(100% - 295px);
 }
  .profile-mini-icon{
   width:50px;
@@ -3266,6 +3274,14 @@ table th,table td {
   background-color: #3598461A;
   border-color:#35984666;
 }
+.pending-status{
+  background: #DFC7301A;
+  border-color:#DFC73066;
+}
+.completed-status{
+  background: #2682EE1A;
+  border-color:#2682EE66;
+}
 .transparent-btn-sm {
 	padding: 4px 15px;
 	border-radius: 50px;
@@ -3428,7 +3444,7 @@ table{
 	right: 0;
 	margin: auto;
 	gap: 30px;
-  z-index: 9;
+  z-index:99;
 	bottom: 0;
 	background-color: #040C16;
 	border-top: 1px solid #082b4d;
@@ -4011,3 +4027,132 @@ ul.dropdown li:hover{
 .btn-group-card li a:hover,.btn-group-card li button:hover{
   background-color:#2683ee5f;
 }
+.file-btn{
+  margin: 0;
+  cursor: pointer;
+  background: #FFFFFF0A;
+  border-radius:5px;
+  padding:4px 10px;
+  border: 1px solid #FFFFFF33 !important;
+  color:#FFFFFFCC;
+  margin-right: 15px;
+}
+/* Start staking section */
+.staking-righ-area{
+  border: 1.5px solid #232831;
+  padding: 25px;
+  border-radius: 5px;
+  width: 50%;
+  background: #FFFFFF05;
+}
+.staking-thumbnails img{
+  width:60%;
+  margin: auto;
+}
+.staking-left-area{
+  border: 1.5px solid #232831;
+  padding: 25px;
+  border-radius: 5px;
+  background-image: url('../images/dashboard/bg/2.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 65px;
+  width: 50%;
+}
+.selected-days{
+  padding:5px 15px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+  border: 1px solid #2682EE99;
+}
+.selected-days span{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 800;
+  color:#fff;
+}
+.staking-offer-info{
+  padding: 4px;
+}
+.selected-content p b{
+  color:#fff;
+  font-weight: 800;
+}
+.staking-badge-1{
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.staking-slider-item-2 .staking-badge-1{
+  left: inherit;
+  right: 5%;
+  top: 60%;
+}
+.staking-badge-2{
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+ .staking-slider .slick-dots li button::before {
+	color: transparent;
+	background: #1CD6914D;
+	border-radius: 50%;
+}
+.staking-slider .slick-dots li.slick-active {
+  width:45px;
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+  border-radius:15px;
+}
+.balance-card{
+  padding:8px 20px;
+}
+.balance-card span{
+  color: #1CD691;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+}
+ .staking-days-select-btn{
+  padding: 12px;
+  padding-top: 8px;
+ }
+ .max-btn{
+  position:absolute;
+  right: 2px;
+  top: 50%;
+  border-radius: 5px;
+  transform: translateY(-50%);
+ }
+ @keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.slick-active .staking-thumbnails img {
+  animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.slick-active .staking-offer-info {
+  animation: fadeInUp 2s ease-in-out;
+}
+
+
+/* End staking section */

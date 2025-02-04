@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MyCoinPool</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+         />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="../assets/css/jquery.flipbox.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+      <link rel="stylesheet" href="../assets/css/editor.css" />
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <link rel="stylesheet" href="../assets/css/responsive.css" />
+   </head>
+   <body>
+      <div class="ellipse ellipse1"></div>
+      <div class="ellipse ellipse2"></div>
+      <div class="ellipse ellipse3"></div>
+
+      <div class="dashboard-main-area">
+         <div class="dashboard-area d-flex align-items-start">
+            <div class="dashboard-left position-relative" data-simplebar style="height: calc(100svh - 60px)">
+               
+              <div class="logo mb40">
+               <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
+              </div>
+              <div class="logo2 mb40">
+               <a href="#"><img src="../assets/images/dashboard/icon/small-logo.png" alt="logo" class="w-100"></a>
+              </div>
+              <div class="dashboard-left-menu">
+               <ul>
+                  <li><a href="dashboard.html"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
+                  <li><a href="transactions.html"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
+                  <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
+                  <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
+                  <li><a href="manage-roles.html"><img src="../assets/images/dashboard/icon/roles.png" alt="icon"> <span class="left-menu-text">Manage Roles</span></a></li>
+                  <li class="menu-active-bg"><a href="staking.html"><img src="../assets/images/dashboard/icon/staking.png" alt="icon"> <span class="left-menu-text">Staking </span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
+               </ul>
+              </div>
+            </div>
+           
+            <div class="dashboard-right">
+               <div class="dashboard-right-header-area d-flex align-items-center justify-content-between">
+                  <div class="page-info d-flex align-items-center">
+                     <div class="resize-icon">
+                        <i class="fa-solid fa-expand"></i>
+                     </div>
+                     <h5 class="page-title">Staking</h5>
+                  </div>
+                   
+                  <div class="dashboard-header-right">
+                     <div class="d-flex align-items-center dashboard-header-right-group">
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           310 USDT <span><img src="../assets/images/dashboard/icon/wallet2.png" alt="icon"></span>
+                        </div>
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           300 CRM <span><img src="../assets/images/icon/wallet.png" alt="icon"></span>
+                        </div>
+                        <div class="notification-icon position-relative "> 
+                           <span>2+</span>
+                           <img src="../assets/images/dashboard/icon/bell.png" alt="icon" class="dropdown-toggle">
+                            
+                           <ul class="dropdown notification-box" data-simplebar style="height: 303px; ">
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                              
+                             <li><a href="notification.html" class="gradient-btn-small">Show All</a></li>
+                           </ul>
+                        </div>
+                        <div class="profile-mini-icon">
+                           <a href="user-profile.html"><img src="../assets/images/dashboard/icon/user.png" alt="user"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="dashboard-body mt30">
+                  <div class="staking-section d-flex mt-20 g-20">
+                     <div class="staking-left-area">
+                        <h6 class="page-title">Earn More Profit with Deposit</h6>
+                        <div class="line-1 mt-3"></div>
+                        <div class="staking-slider mt-3">
+                           <!-- slider item -->
+                           <div class="staking-slider-item">
+                              <div class="staking-thumbnails position-relative">
+                                 <img src="../assets/images/dashboard/thumbnails/1.png" alt="image">
+                                 <div class="d-inline-block staking-badge-2">
+                                    <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/ecm-reword.png" alt="icon"> Get Reword</div>
+                                 </div>
+                                 <div class="d-inline-block staking-badge-1">
+                                    <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/offer.png" alt="icon"> <span class=" gradient-color">5% Extra ECM</span></div>
+                                 </div>
+                              </div>
+                              <div class="staking-offer-info card-1 d-flex align-items-center g-20 mt-4">
+                                 <div class="selected-days d-inline-block text-center">
+                                    <span>07</span>
+                                    <p>Days</p>
+                                 </div>
+                                 <div class="selected-content">
+                                    <p>Deposit <b>100 ECM</b> = Get <b>105 ECM</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- slider item -->
+                           <div class="staking-slider-item">
+                              <div class="staking-thumbnails position-relative">
+                                 <img src="../assets/images/dashboard/thumbnails/2.png" alt="image">
+                                 <div class="d-inline-block staking-badge-2">
+                                    <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/ecm-reword.png" alt="icon"> Get Reword</div>
+                                 </div>
+                                 <div class="d-inline-block staking-badge-1">
+                                    <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/offer.png" alt="icon"> <span class=" gradient-color">5% Extra ECM</span></div>
+                                 </div>
+                              </div>
+                              <div class="staking-offer-info card-1 d-flex align-items-center g-20 mt-4">
+                                 <div class="selected-days d-inline-block text-center">
+                                    <span>14</span>
+                                    <p>Days</p>
+                                 </div>
+                                 <div class="selected-content">
+                                    <p>Deposit <b>100 ECM</b> = Get <b>105 ECM</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- slider item -->
+                           <div class="staking-slider-item">
+                              <div class="staking-thumbnails position-relative">
+                                 <img src="../assets/images/dashboard/thumbnails/3.png" alt="image">
+                                 <div class="d-inline-block staking-badge-2">
+                                    <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/ecm-reword.png" alt="icon"> Get Reword</div>
+                                 </div>
+                                 <div class="d-inline-block staking-badge-1">
+                                    <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/offer.png" alt="icon"> <span class=" gradient-color">5% Extra ECM</span></div>
+                                 </div>
+                              </div>
+                              <div class="staking-offer-info card-1 d-flex align-items-center g-20 mt-4 mb-4">
+                                 <div class="selected-days d-inline-block text-center">
+                                    <span>30</span>
+                                    <p>Days</p>
+                                 </div>
+                                 <div class="selected-content">
+                                    <p>Deposit <b>100 ECM</b> = Get <b>105 ECM</b></p>
+                                 </div>
+                              </div>
+                           </div>  
+                        </div>
+                     </div>
+                     <div class="staking-righ-area">
+                        <h6 class="page-title">Staking Is Live</h6>
+                        <div class="line-1 mt-3"></div>
+                        <div class="balance-card card-1 d-flex align-items-center g-20 mt-4 mb-4 justify-content-between">
+                           <p>Balance :</p>
+                           <span>500 ECM</span>
+                        </div>
+                        <form action="">
+                           <div class="d-flex align-items-center mt-3 g-20 flex-wrap">
+                              <div class="form-group">
+                                 <div class="staking-days-select-btn bg-border-input">
+                                    <input type="radio" id="one" class="public-radio" name="stakingDays" value="1"> 
+                                    <label for="one">7 days - 5%<span></span></label>  
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <div class="bg-border-input staking-days-select-btn">
+                                    <input type="radio" id="two" class="public-radio" name="stakingDays" value="1"> 
+                                    <label for="two">14 days - 10%<span></span></label>  
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <div class="bg-border-input staking-days-select-btn">
+                                    <input type="radio" id="three" class="public-radio" name="stakingDays" value="1"> 
+                                    <label for="three">30 days - 15%<span></span></label>  
+                                 </div>
+                              </div>
+                              <div class="form-group w-100">
+                                 <label for="Stack_amount" class="label">Stack Amount</label>
+                                 <div class="input bg-border-input d-flex align-items-center position-relative">
+                                    <input type="number" class="form-control" id="Stack_amount" placeholder="Enter ECM Amount">
+                                    <button class="group-text max-btn">Max</button>
+                                 </div>
+                                 
+                              </div>
+                              <ul class="d-flex align-items-center g-10 w-100">
+                                 <li class="bg-border-input d-flex align-items-center justify-content-between p-2 w-50"><p class="gradient-color">Reword  :</p> <b class="gradient-color">50 ECM</b></li>
+                                 <li class="bg-border-input d-flex align-items-center justify-content-between p-2 w-50"><p class="gradient-color">Total  :</p> <b class="gradient-color">550 ECM</b></li>
+                                 
+                              </ul>
+                              <button type="submit" class="btn1 primary-btn submit-btn w-100 mt-20">
+                                 Stake Now <i class="fa-solid fa-cart-shopping"></i>
+                              </button>
+                              <a href="#" target="_blank" class="green-outline-btn d-flex align-items-center justify-content-between w-100"><span class="gradient-color"><b>Hash : </b></span>
+                                 <span class="clip-text">0x41924ee204e47c6aeea1c45e8ed19f5b94bff42a55493f65665fdd8045a9abde</span>
+                                 <span class="text-copy-btn rotate-50"><i class="fa-solid fa-arrow-right-long"></i></span>
+                              </a>
+                              <div class="text-center w-100">
+                                 <button class="red-outline-btn w-100 justify-content-center align-items-center d-flex">Disconnect <svg class="custom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-path" d="M9.90533 6.96968C9.61246 6.67677 9.13756 6.67677 8.84468 6.96968C8.55177 7.26256 8.55177 7.73746 8.84468 8.03033L10.9394 10.125L8.84468 12.2197C8.55177 12.5126 8.55177 12.9875 8.84468 13.2803C9.13756 13.5732 9.61246 13.5732 9.90533 13.2803L12 11.1857L14.0947 13.2803C14.3876 13.5732 14.8625 13.5732 15.1553 13.2803C15.4482 12.9875 15.4482 12.5126 15.1553 12.2197L13.0607 10.125L15.1553 8.03033C15.4482 7.73746 15.4482 7.26256 15.1553 6.96968C14.8625 6.67677 14.3876 6.67677 14.0947 6.96968L12 9.06436L9.90533 6.96968Z" fill="#B92124"></path>
+                                    <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M6.09004 1.5C3.56563 1.5 1.32073 3.30751 1.01522 5.87749C0.660602 8.86061 0.661881 11.3731 1.01734 14.3669C1.32268 16.9387 3.56788 18.75 6.09521 18.75H8.46015L8.01015 21H6.75C6.33577 21 6 21.3358 6 21.75C6 22.1642 6.33577 22.5 6.75 22.5H17.25C17.6642 22.5 18 22.1642 18 21.75C18 21.3358 17.6642 21 17.25 21H15.9898L15.5398 18.75H17.8955C20.407 18.75 22.645 16.9605 22.9647 14.405C23.344 11.3717 23.345 8.84018 22.9682 5.83571C22.648 3.28303 20.4103 1.5 17.9035 1.5H6.09004ZM14.4601 21L14.0101 18.75H9.98985L9.53985 21H14.4601ZM2.50474 6.05456C2.71313 4.30155 4.26109 3 6.09004 3H17.9035C19.7209 3 21.2619 4.28449 21.4798 6.02239C21.841 8.90194 21.8403 11.3082 21.4763 14.2188C21.2583 15.9612 19.7153 17.25 17.8955 17.25H6.09521C4.26457 17.25 2.71534 15.9459 2.50687 14.1901C2.16529 11.3131 2.16418 8.91934 2.50474 6.05456Z" fill="#B92124" stroke="#B92124"></path>
+                              </svg>
+                              </button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <!--Start user referable-list -->
+                  <div class="data-show-table-area dashboard-box mt30">
+                     <div class="table-header-area d-flex align-items-center justify-content-between">
+                        <div class="table-heading">
+                           <h5>Staking History</h5>
+                        </div>
+                        <div class="search-box-area">
+                           <form action="">
+                              <div class="input bg-border-input position-relative">
+                                 <div class="search-icon">
+                                    <i class="search-icon fas fa-search"></i>
+                                 </div>
+                                 <input type="text" class="form-control" id="search" placeholder="Search here...">
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     
+                     <div class="common-table mt30">
+                        <table class="custom-table display nowrap mobile-table">
+                           <thead>
+                               <tr>
+                                 <th>SL</th>
+                                 <th>Date</th>
+                                 <th>Amount</th>
+                                 <th>Percentage</th>
+                                 <th>Duration</th>
+                                 <th>Reward</th>
+                                 <th>Total Receive</th>
+                                 <th>Status</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>01</td>
+                                 <td>12/10/2024</td>
+                                 <td>100 ECM</td>
+                                 <td>10%</td>
+                                 <td>14 day</td>
+                                 <td>15 ECM</td>
+                                 <td>115 ECM</td>
+                                 <td class="text-start"><span class="pending-status badge">Pending</span> 7d : 2h : 10m</td>
+                              </tr>
+                               <tr>
+                                 <td>02</td>
+                                 <td>12/10/2024</td>
+                                 <td>100 ECM</td>
+                                 <td>10%</td>
+                                 <td>14 day</td>
+                                 <td>15 ECM</td>
+                                 <td>115 ECM</td>
+                                 <td class="text-start"><span class="completed-status badge">Pending</span></td>
+                              </tr>
+                              <tr>
+                                 <td>02</td>
+                                 <td>12/10/2024</td>
+                                 <td>100 ECM</td>
+                                 <td>10%</td>
+                                 <td>14 day</td>
+                                 <td>15 ECM</td>
+                                 <td>115 ECM</td>
+                                 <td class="text-start">
+                                    <a href="#" class="gradient-btn-small bg-red">Unstack Now</a>
+                                 </td>
+                              </tr>
+                              
+                           </tbody>
+                       </table>
+                        
+                        <div class="pagination mt50">
+                           <ul class="d-flex align-items-center w-100">
+                              <li><a href="#" class="btn1 primary-btn subscribe-btn">Previous</a></li>
+                              <li>
+                                 <ul class="d-flex align-items-center pagination-inner">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#" class="active">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">10</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="#" class="btn1 primary-btn subscribe-btn">Next</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <!--End user referable-list -->
+               </div>
+                
+               <!-- copyright -->
+               <div class="copyright-box d-flex align-items-center justify-content-center">
+                  <p class="gradient-color">Current Version 1.0</p>
+                  <p>&copy; 2025<a href="index.html" class="gradient-color">Develope By Mycoinpool</a> </p>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="../assets/js/jquery.flipbox.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+      <script src="../assets/js/editor.js"></script>
+      <script src="../assets/js/main.js"></script>
+ 
+   </body>
+</html>

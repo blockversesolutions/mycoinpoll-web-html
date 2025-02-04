@@ -1,5 +1,14 @@
 
 jQuery(document).ready(function ($) {
+  $('.staking-slider').slick({
+    slidesToShow:1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    dots: true,
+    autoplaySpeed: 3500,
+    });
   $('.ido-card-slider').slick({
     slidesToShow:3,
     slidesToScroll: 1,
