@@ -4105,6 +4105,7 @@ ul.dropdown li:hover{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   border-radius:15px;
 }
+ 
 .balance-card{
   padding:8px 20px;
 }
@@ -4153,6 +4154,21 @@ ul.dropdown li:hover{
 .slick-active .staking-offer-info {
   animation: fadeInUp 2s ease-in-out;
 }
-
+.staking-days-select-btn {
+	display: flex;
+	align-items: center;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+/* Active class when selected */
+.staking-days-select-btn.active {
+  background: linear-gradient(90deg, #277BF5, #1CD691);
+  border: 2px solid #2682ED;
+}
+.form-group .staking-days-select-btn .public-radio:checked + label span {
+	background: linear-gradient(90deg, #FFF 0%, #FFF 100.01%);
+}
 
 /* End staking section */
