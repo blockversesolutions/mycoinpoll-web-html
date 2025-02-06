@@ -31,11 +31,9 @@
       <div class="ellipse ellipse1"></div>
       <div class="ellipse ellipse2"></div>
       <div class="ellipse ellipse3"></div>
-
       <div class="dashboard-main-area">
          <div class="dashboard-area d-flex align-items-start">
             <div class="dashboard-left position-relative" data-simplebar style="height: calc(100svh - 60px)">
-               
               <div class="logo mb40">
                <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
               </div>
@@ -56,7 +54,6 @@
                </ul>
               </div>
             </div>
-           
             <div class="dashboard-right">
                <div class="dashboard-right-header-area d-flex align-items-center justify-content-between">
                   <div class="page-info d-flex align-items-center">
@@ -98,7 +95,6 @@
                      </div>
                   </div>
                </div>
-               
                <div class="dashboard-body mt30">
                   <div class="staking-section d-flex mt-20 g-20">
                      <div class="staking-left-area">
@@ -210,7 +206,6 @@
                               <ul class="d-flex align-items-center g-10 w-100">
                                  <li class="bg-border-input d-flex align-items-center justify-content-between p-2 w-50"><p class="gradient-color">Reword  :</p> <b class="gradient-color">50 ECM</b></li>
                                  <li class="bg-border-input d-flex align-items-center justify-content-between p-2 w-50"><p class="gradient-color">Total  :</p> <b class="gradient-color">550 ECM</b></li>
-                                 
                               </ul>
                               <button type="submit" class="btn1 primary-btn submit-btn w-100 mt-20">
                                  Stake Now <i class="fa-solid fa-cart-shopping"></i>
@@ -247,7 +242,6 @@
                            </form>
                         </div>
                      </div>
-                     
                      <div class="common-table mt30">
                         <table class="custom-table display nowrap mobile-table">
                            <thead>
@@ -295,10 +289,8 @@
                                     <a href="#" class="gradient-btn-small bg-red">Unstack Now</a>
                                  </td>
                               </tr>
-                              
                            </tbody>
                        </table>
-                        
                         <div class="pagination mt50">
                            <ul class="d-flex align-items-center w-100">
                               <li><a href="#" class="btn1 primary-btn subscribe-btn">Previous</a></li>
@@ -315,18 +307,15 @@
                            </ul>
                         </div>
                      </div>
-                     
                   </div>
                   <!--End user referable-list -->
                </div>
-                
                <!-- copyright -->
                <div class="copyright-box d-flex align-items-center justify-content-center">
                   <p class="gradient-color">Current Version 1.0</p>
                   <p>&copy; 2025<a href="index.html" class="gradient-color">Develope By Mycoinpool</a> </p>
                </div>
             </div>
-            
          </div>
       </div>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -339,15 +328,13 @@
       <script src="../assets/js/editor.js"></script>
       <script src="../assets/js/main.js"></script>
       <script>
-         document.querySelectorAll(".staking-days-select-btn").forEach(btn => {
-         btn.addEventListener("click", function () {
-            // Remove class from all buttons
-            document.querySelectorAll(".staking-days-select-btn").forEach(b => b.classList.remove("active"));
-            // Add class to the clicked button
-            this.classList.add("active");
-            // Ensure the corresponding radio input is checked
-            this.querySelector(".public-radio").checked = true;
-         });
+         document.addEventListener("click", (e) => {
+            if (e.target.closest(".staking-days-select-btn")) {
+               document.querySelectorAll(".staking-days-select-btn").forEach(b => b.classList.remove("active"));
+               let btn = e.target.closest(".staking-days-select-btn");
+               btn.classList.add("active");
+               btn.querySelector(".public-radio").checked = true;
+            }
          });
       </script>
    </body>

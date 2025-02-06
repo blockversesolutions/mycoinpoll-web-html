@@ -43,7 +43,6 @@ jQuery(document).ready(function ($) {
     prevArrow: $('.ido-slick-prev'),
       nextArrow: $('.ido-slick-next'),
       responsive: [
-        
         {
           breakpoint:991,
           settings: {
@@ -53,14 +52,11 @@ jQuery(document).ready(function ($) {
           },
         },
       ],
-      
     });
     $('#accordion').on('click', '[data-toggle="collapse"]', function(event) {
 			event.preventDefault();
-			
 			var $this = $(this),
 				target = $this.attr('href') || $this.data('target');
-			
 			if (target === undefined || $(target).hasClass('in')) {
 				return false;
 			}
@@ -79,8 +75,6 @@ jQuery(document).ready(function ($) {
         $dashboard.removeClass("menu-icon-show");
       }
     });
-    
-
   // menu bg add
     $(window).on('scroll', function() {
       if ($(window).scrollTop() >120) {
@@ -94,12 +88,10 @@ jQuery(document).ready(function ($) {
     const $selectSelected = $('.select-selected');
     const $selectItems = $('.select-items');
     const $selectItemList = $('.select-item');
-
     // Toggle dropdown on click
     $selectSelected.on('click', function () {
         $selectItems.toggle();
     });
-
     // Close dropdown when clicking outside
     $(document).on('click', function (event) {
         if (!$(event.target).closest('.custom-select').length) {
@@ -109,7 +101,6 @@ jQuery(document).ready(function ($) {
     $(".resize-icon").click(function(){
       $(".dashboard-area").toggleClass('menu-icon-show');
     }); 
-
     // Update selected value and close dropdown
     $selectItemList.on('click', function () {
         const selectedValue = $(this).data('value');
@@ -117,7 +108,6 @@ jQuery(document).ready(function ($) {
         $selectSelected.html(selectedText);
         $selectItems.hide();
     });
-
   // logo flip
   $('.logo-flip-box').flipbox({
     autoplay: true,
@@ -131,7 +121,6 @@ jQuery(document).ready(function ($) {
    $('.dropdown-toggle').click(function() {
     $(this).next('.dropdown').toggle( 400 );
   });
-
   $(document).click(function(e) {
     var target = e.target;
     if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {

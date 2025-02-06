@@ -5,7 +5,7 @@
   font-weight: 400;
   background-color: #040C16;
 }
-h3,h4,h5{
+h1,h3,h4,h5{
   font-weight: 800;
   font-family: "Oxanium", sans-serif;
 }
@@ -715,17 +715,17 @@ a.nav-link.dropdown-toggle i{
   background-size: 100% 67%;
   background-repeat: no-repeat;
   z-index: -1;
-  animation: moveUpDown 3s ease-in-out infinite; /* Animation */
+  animation: moveUpDown 3s ease-in-out infinite;
 }
 @keyframes moveUpDown {
   0% {
-      transform: translateY(0); /* Starting position (bottom) */
+      transform: translateY(0);
   }
   50% {
-      transform: translateY(-40px); /* Move up 20px */
+      transform: translateY(-40px);
   }
   100% {
-      transform: translateY(0); /* Back to starting position */
+      transform: translateY(0);
   }
 }
 .ido-card-list-item {
@@ -3843,10 +3843,10 @@ ul.dropdown li:hover{
   height: 50px;
   width: 50px;
 }
-.blance-logo{
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1.5px solid #FFFFFF1A
+.blance-info {
+	border-left: 1.5px solid #FFFFFF1A;
+	padding-left: 20px;
+	margin-left: 20px;
 }
 .blance-info span{
   font-size: 24px;
@@ -4105,7 +4105,6 @@ ul.dropdown li:hover{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   border-radius:15px;
 }
- 
 .balance-card{
   padding:8px 20px;
 }
@@ -4136,7 +4135,6 @@ ul.dropdown li:hover{
       transform: scale(1);
   }
 }
-
 .slick-active .staking-thumbnails img {
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -4150,7 +4148,6 @@ ul.dropdown li:hover{
       transform: translateY(0);
   }
 }
-
 .slick-active .staking-offer-info {
   animation: fadeInUp 2s ease-in-out;
 }
@@ -4170,5 +4167,12 @@ ul.dropdown li:hover{
 .form-group .staking-days-select-btn .public-radio:checked + label span {
 	background: linear-gradient(90deg, #FFF 0%, #FFF 100.01%);
 }
-
+.blog-status{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.gradient-bg{
+  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+}
 /* End staking section */

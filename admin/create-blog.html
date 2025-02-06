@@ -31,11 +31,9 @@
       <div class="ellipse ellipse1"></div>
       <div class="ellipse ellipse2"></div>
       <div class="ellipse ellipse3"></div>
-
       <div class="dashboard-main-area">
          <div class="dashboard-area d-flex align-items-start">
             <div class="dashboard-left position-relative" data-simplebar style="height: calc(100svh - 60px)">
-               
               <div class="logo mb40">
                <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
               </div>
@@ -56,7 +54,6 @@
                </ul>
               </div>
             </div>
-           
             <div class="dashboard-right">
                <div class="dashboard-right-header-area d-flex align-items-center justify-content-between">
                   <div class="page-info d-flex align-items-center">
@@ -65,7 +62,6 @@
                      </div>
                      <h5 class="page-title">Blog Management</h5>
                   </div>
-                   
                   <div class="dashboard-header-right">
                      <div class="d-flex align-items-center dashboard-header-right-group">
                         <div class="text-btn d-flex align-items-center border-gradient">
@@ -259,7 +255,7 @@
                   <!--End user referable-list -->
                </div>
                <div class="modal-section">
-                  <div class="modal fade bg-gradient-add" id="delete-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade bg-gradient-add" id="delete-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
                      <div class="modal-dialog modal-custom-width-sm">
                         <div class="modal-content custom-modal">
                            <form action="">
@@ -311,12 +307,10 @@
             let fileName = event.target.files.length ? event.target.files[0].name : 'No File Choosen';
             document.getElementById('fileName').textContent = fileName;
          });
-
          document.getElementById('removeFile').addEventListener('click', function() {
             document.getElementById('fileInput').value = '';
             document.getElementById('fileName').textContent = 'No File Chosen';
          });
       </script>
-      
    </body>
 </html>
