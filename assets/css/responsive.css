@@ -6,6 +6,23 @@
     right: 2%;
     top: 10px;
   }
+  .ico-tab-btn.gradient-btn{
+    padding: 10px 20px;
+  }
+  .ico-tab ul li img{
+    height: 32px;
+    width: 32px;
+    margin-right:8px;
+   }
+   .ico-tab ul li{
+    font-size: 18px;
+  }
+  .ico-tab-select-icon{
+    right:20px;
+  }
+  .ico-tab-select-icon i{
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 1440px) {
   .upcoming-label {

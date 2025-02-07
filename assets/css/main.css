@@ -1823,7 +1823,7 @@ text-fill-color: transparent;
   height: 55px;
 }
 .breadcrumbs ul{
-  gap:15px;
+  gap:12px;
 }
 .breadcrumbs ul li a{
   font-size: 18px;
@@ -1935,7 +1935,7 @@ select {
 }
 @keyframes learn-circle1 {
   0% {
-      top:3%; /* Initial position */
+      top:3%;  
   }
   50% {
       top: 10%; /* Move downward */
@@ -1958,7 +1958,6 @@ select {
   bottom: 10%;
   left: 0;
   animation: learn-circle4 25s ease-in-out infinite;
-
 }
 @keyframes learn-circle4 {
   0% {
@@ -2006,6 +2005,9 @@ select {
  }
 .apply-launch-part{
   padding: 40px;
+}
+.apply-launch-part .bg-border-input::after{
+  z-index: 0;
 }
 .input textarea {
   min-height:100px;
@@ -2192,9 +2194,7 @@ select {
   margin-bottom:25px;
 }
 .form-group .checkBox:checked + label::before {
-  
     background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
-  
 }
 .form-group .checkBox:checked + label::after {
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
@@ -2249,11 +2249,8 @@ select {
 	position: absolute;
 	border-radius: 50%;
 }
- 
 .form-group .public-radio:checked + label::before {
-  
-    background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
-  
+    background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%); 
 }
 .form-group .public-radio:checked + label::after {
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
@@ -3637,7 +3634,7 @@ ul.dropdown li:hover{
 .address-text input{
   outline: none;
   border: none;
-  font-size: 16px;
+  font-size: 15px;
   color: #FFFFFFCC;
   font-weight: 500;
   background-color: transparent;
@@ -3799,7 +3796,6 @@ ul.dropdown li:hover{
   margin-top: 70px;
 }
 /* End blog post css */
- 
 /* Start Refferral manage css */
 .info-card{
   border-radius: 10px;
@@ -3926,7 +3922,7 @@ ul.dropdown li:hover{
   display: none;
 }
 .ico-tab ul li{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   position: relative;
   display: flex;
@@ -3934,24 +3930,24 @@ ul.dropdown li:hover{
 }
 .ico-tab-select-icon{
   position: absolute;
-  right:20px;
+  right:6px;
   display: none;
   top:50%;
   transform: translateY(-50%);
 }
 .ico-tab-select-icon i{
   color:#fff;
-  font-size: 24px;
+  font-size:15px;
 }
  .ico-tab ul li img{
-  height: 32px;
-  width: 32px;
-  margin-right:8px;
+  height:24px;
+  width:24px;
+  margin-right:4px;
  }
 .ico-tab-btn.gradient-btn{
   background: linear-gradient(90deg, #1B212B 0%, #1B212B 100.01%);
   border: 1px solid #1fb9b1c9;
-  padding: 10px 20px;
+  padding: 6px;
 }
 .ico-tab-btn.gradient-btn.active{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
@@ -4174,5 +4170,8 @@ ul.dropdown li:hover{
 }
 .gradient-bg{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+}
+.gradient-bg-red{
+  background: linear-gradient(90deg, #B92124  0%, #b64d4f 100.01%);
 }
 /* End staking section */
