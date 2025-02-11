@@ -25,6 +25,7 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
       <link rel="stylesheet" href="../assets/css/editor.css" />
       <link rel="stylesheet" href="../assets/css/main.css" />
+      <link rel="stylesheet" href="../assets/css/staking.css" />
       <link rel="stylesheet" href="../assets/css/responsive.css" />
    </head>
    <body>
@@ -94,133 +95,148 @@
                   </div>
                </div>
                <div class="dashboard-body mt30">
-                  <div class="staking-section d-flex mt-20 g-20">
-                     <div class="staking-left-area">
-                        <h6 class="page-title">Earn More Profit with Deposit</h6>
-                        <div class="line-1 mt-3"></div>
-                        <div class="d-flex flex-column h-100 justify-content-around">
-                           <div class="staking-slider mt-3">
-                              <!-- slider item -->
-                              <div class="staking-slider-item">
-                                 <div class="staking-thumbnails position-relative">
-                                    <img src="../assets/images/dashboard/thumbnails/1.png" alt="image">
-                                    <div class="d-inline-block staking-badge-2">
-                                       <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/ecm-reword.png" alt="icon"> Get Reword</div>
+                  <div class="staking-section">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <form action="">
+                              <div class="d-flex h-100 justify-content-between g-20 flex-xl-nowrap flex-wrap">
+                                 <div class="staking-header-item">
+                                    <div class="taking-value-area d-flex align-items-center g-10 justify-content-between">
+                                       <div class="staking-value d-flex align-items-center g-10">
+                                          <img src="../assets/images/icon/ecm.png" alt="ecm-logo">
+                                          <input type="text" placeholder="Enter ECM amount">
+                                       </div>
+                                       <div class="balance">
+                                          <p>Balance</p>
+                                          <p><span>20,000</span> ECM</p>
+                                       </div>
                                     </div>
-                                    <div class="d-inline-block staking-badge-1">
-                                       <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/offer.png" alt="icon"> <span class=" gradient-color">5% Extra ECM</span></div>
+                                    <div class="d-flex align-items-center mt-3 g-20 flex-wrap">
+                                       <!-- First Section (25% - Max) -->
+                                       <div class="form-group">
+                                          <div class="staking-days-select-btn bg-border-input active">
+                                                <input type="radio" id="one" checked class="public-radio" name="stakingPercentage" value="1"> 
+                                                <label for="one">25%<span></span></label>  
+                                          </div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="bg-border-input staking-days-select-btn">
+                                                <input type="radio" id="two" class="public-radio" name="stakingPercentage" value="2"> 
+                                                <label for="two">50%<span></span></label>  
+                                          </div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="bg-border-input staking-days-select-btn">
+                                                <input type="radio" id="three" class="public-radio" name="stakingPercentage" value="3"> 
+                                                <label for="three">75%<span></span></label>  
+                                          </div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="bg-border-input staking-days-select-btn">
+                                                <input type="radio" id="four" class="public-radio" name="stakingPercentage" value="4"> 
+                                                <label for="four">Max<span></span></label>  
+                                          </div>
+                                       </div>
                                     </div>
                                  </div>
-                                 <div class="staking-offer-info card-1 d-flex align-items-center g-20 mt-5">
-                                    <div class="selected-days d-inline-block text-center">
-                                       <span>07</span>
-                                       <p>Days</p>
+                                 <div class="staking-header-item">
+                                    <div class="taking-value-area d-flex align-items-center g-10 justify-content-between">
+                                       <div class="staking-value d-flex align-items-center g-10">
+                                          <img src="../assets/images/icon/timer.png" alt="timer">
+                                          <p>07</p>
+                                       </div>
+                                       <div class="days-value">
+                                          <p>Days</p>
+                                       </div>
                                     </div>
-                                    <div class="selected-content">
-                                       <p>Deposit <b>100 ECM</b> = Get <b>105 ECM</b></p>
+                                    <div class="d-flex align-items-center mt-3 g-20 flex-wrap">
+                                       <!-- First Section (25% - Max) -->
+                                       <div class="form-group">
+                                          <div class="staking-days-select-btn bg-border-input active">
+                                                <input type="radio" id="stakingweek_one" checked class="public-radio" name="stakingweek" value="1"> 
+                                                <label for="stakingweek_one">1W<span></span></label>  
+                                          </div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="bg-border-input staking-days-select-btn">
+                                                <input type="radio" id="stakingweek_two" class="public-radio" name="stakingweek" value="2"> 
+                                                <label for="stakingweek_two">2W<span></span></label>  
+                                          </div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="bg-border-input staking-days-select-btn">
+                                                <input type="radio" id="stakingweek_three" class="public-radio" name="stakingweek" value="3"> 
+                                                <label for="stakingweek_three">3W<span></span></label>  
+                                          </div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="bg-border-input staking-days-select-btn">
+                                                <input type="radio" id="stakingweek_four" class="public-radio" name="stakingweek" value="4"> 
+                                                <label for="stakingweek_four">4W<span></span></label>  
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="mt-4">
+                                 <span class="label">Lock Overview</span>
+                              </div>
+                              <div class="lock-overview d-flex align-items-center justify-content-center mt-2">
+                                 <div class="selected-staking-title d-flex align-items-center g-10">
+                                    <img src="../assets/images/icon/ecm.png" alt="icon">
+                                    <h6 class="page-title">My ECM Stack :  30.00</h6>
+                                 </div>
+                                 <!-- <span class="page-title"></span> -->
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap g-10 mt-4">
+                                 <div class="milestone-offer-card w-100">
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Stack amount</p>
+                                       <span>30 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Estimated Profit</p>
+                                       <span class="text-color-1CD691">06 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Total</p>
+                                       <span>36 ECM</span>
+                                    </div>
+                                 </div>
+                                 <div class="milestone-offer-card w-100">
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ECM to be locked</p>
+                                       <span>30 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Duration</p>
+                                       <span class="text-color-1CD691">07 days</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Unlocked on</p>
+                                       <span>Feb 13 2025, 15:30</span>
                                     </div>
                                  </div>
                               </div>
-                              <!-- slider item -->
-                              <div class="staking-slider-item">
-                                 <div class="staking-thumbnails position-relative">
-                                    <img src="../assets/images/dashboard/thumbnails/2.png" alt="image">
-                                    <div class="d-inline-block staking-badge-2">
-                                       <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/ecm-reword.png" alt="icon"> Get Reword</div>
-                                    </div>
-                                    <div class="d-inline-block staking-badge-1">
-                                       <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/offer.png" alt="icon"> <span class=" gradient-color">5% Extra ECM</span></div>
-                                    </div>
-                                 </div>
-                                 <div class="staking-offer-info card-1 d-flex align-items-center g-20 mt-5">
-                                    <div class="selected-days d-inline-block text-center">
-                                       <span>14</span>
-                                       <p>Days</p>
-                                    </div>
-                                    <div class="selected-content">
-                                       <p>Deposit <b>100 ECM</b> = Get <b>105 ECM</b></p>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- slider item -->
-                              <div class="staking-slider-item">
-                                 <div class="staking-thumbnails position-relative">
-                                    <img src="../assets/images/dashboard/thumbnails/3.png" alt="image">
-                                    <div class="d-inline-block staking-badge-2">
-                                       <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/ecm-reword.png" alt="icon"> Get Reword</div>
-                                    </div>
-                                    <div class="d-inline-block staking-badge-1">
-                                       <div class="badge badge-with-icon d-flex align-items-center g-10 bg-white"><img src="../assets/images/dashboard/icon/offer.png" alt="icon"> <span class=" gradient-color">5% Extra ECM</span></div>
-                                    </div>
-                                 </div>
-                                 <div class="staking-offer-info card-1 d-flex align-items-center g-20 mt-5">
-                                    <div class="selected-days d-inline-block text-center">
-                                       <span>30</span>
-                                       <p>Days</p>
-                                    </div>
-                                    <div class="selected-content">
-                                       <p>Deposit <b>100 ECM</b> = Get <b>105 ECM</b></p>
-                                    </div>
-                                 </div>
-                              </div>  
-                           </div>
-                        </div>
-                     </div>
-                     <div class="staking-righ-area">
-                        <h6 class="page-title">Staking Is Live</h6>
-                        <div class="line-1 mt-3"></div>
-                        <div class="balance-card card-1 d-flex align-items-center g-20 mt-4 mb-4 justify-content-between">
-                           <p>Balance :</p>
-                           <span>500 ECM</span>
-                        </div>
-                        <form action="">
-                           <div class="d-flex align-items-center mt-3 g-20 flex-wrap">
-                              <div class="form-group">
-                                 <div class="staking-days-select-btn bg-border-input active">
-                                    <input type="radio" id="one" checked class="public-radio" name="stakingDays" value="1"> 
-                                    <label for="one">7 days - 5%<span></span></label>  
-                                 </div>
-                              </div>
-                              <div class="form-group">
-                                 <div class="bg-border-input staking-days-select-btn">
-                                    <input type="radio" id="two" class="public-radio" name="stakingDays" value="1"> 
-                                    <label for="two">14 days - 10%<span></span></label>  
-                                 </div>
-                              </div>
-                              <div class="form-group">
-                                 <div class="bg-border-input staking-days-select-btn">
-                                    <input type="radio" id="three" class="public-radio" name="stakingDays" value="1"> 
-                                    <label for="three">30 days - 15%<span></span></label>  
-                                 </div>
-                              </div>
-                              <div class="form-group w-100">
-                                 <label for="Stack_amount" class="label">Stack Amount</label>
-                                 <div class="input bg-border-input d-flex align-items-center position-relative">
-                                    <input type="number" class="form-control" id="Stack_amount" placeholder="Enter ECM Amount">
-                                    <button class="group-text max-btn">Max</button>
-                                 </div>
+                              <div class="d-flex align-items-center justify-content-md-between justify-content-center flex-wrap flex-md-nowrap g-10 mt-4">
+                                 <button class="gradient-btn w-50">Stake Now  <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span> </button>
+                                 <button class="transparent-btn border-gradient w-50">Buy ECM  <i class="fa-solid fa-cart-shopping"></i> </button>
                                  
                               </div>
-                              <ul class="d-flex align-items-center g-10 w-100">
-                                 <li class="bg-border-input d-flex align-items-center justify-content-between p-2 w-50"><p class="gradient-color">Reword  :</p> <b class="gradient-color">50 ECM</b></li>
-                                 <li class="bg-border-input d-flex align-items-center justify-content-between p-2 w-50"><p class="gradient-color">Total  :</p> <b class="gradient-color">550 ECM</b></li>
-                              </ul>
-                              <button type="submit" class="btn1 primary-btn submit-btn w-100 mt-20">
-                                 Stake Now <i class="fa-solid fa-cart-shopping"></i>
-                              </button>
-                              <a href="#" target="_blank" class="green-outline-btn d-flex align-items-center justify-content-between w-100"><span class="gradient-color"><b>Hash : </b></span>
-                                 <span class="clip-text">0x41924ee204e47c6aeea1c45e8ed19f5b94bff42a55493f65665fdd8045a9abde</span>
-                                 <span class="text-copy-btn rotate-50"><i class="fa-solid fa-arrow-right-long"></i></span>
-                              </a>
-                              <div class="text-center w-100">
-                                 <button class="red-outline-btn w-100 justify-content-center align-items-center d-flex">Disconnect <svg class="custom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="icon-path" d="M9.90533 6.96968C9.61246 6.67677 9.13756 6.67677 8.84468 6.96968C8.55177 7.26256 8.55177 7.73746 8.84468 8.03033L10.9394 10.125L8.84468 12.2197C8.55177 12.5126 8.55177 12.9875 8.84468 13.2803C9.13756 13.5732 9.61246 13.5732 9.90533 13.2803L12 11.1857L14.0947 13.2803C14.3876 13.5732 14.8625 13.5732 15.1553 13.2803C15.4482 12.9875 15.4482 12.5126 15.1553 12.2197L13.0607 10.125L15.1553 8.03033C15.4482 7.73746 15.4482 7.26256 15.1553 6.96968C14.8625 6.67677 14.3876 6.67677 14.0947 6.96968L12 9.06436L9.90533 6.96968Z" fill="#B92124"></path>
-                                    <path class="icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M6.09004 1.5C3.56563 1.5 1.32073 3.30751 1.01522 5.87749C0.660602 8.86061 0.661881 11.3731 1.01734 14.3669C1.32268 16.9387 3.56788 18.75 6.09521 18.75H8.46015L8.01015 21H6.75C6.33577 21 6 21.3358 6 21.75C6 22.1642 6.33577 22.5 6.75 22.5H17.25C17.6642 22.5 18 22.1642 18 21.75C18 21.3358 17.6642 21 17.25 21H15.9898L15.5398 18.75H17.8955C20.407 18.75 22.645 16.9605 22.9647 14.405C23.344 11.3717 23.345 8.84018 22.9682 5.83571C22.648 3.28303 20.4103 1.5 17.9035 1.5H6.09004ZM14.4601 21L14.0101 18.75H9.98985L9.53985 21H14.4601ZM2.50474 6.05456C2.71313 4.30155 4.26109 3 6.09004 3H17.9035C19.7209 3 21.2619 4.28449 21.4798 6.02239C21.841 8.90194 21.8403 11.3082 21.4763 14.2188C21.2583 15.9612 19.7153 17.25 17.8955 17.25H6.09521C4.26457 17.25 2.71534 15.9459 2.50687 14.1901C2.16529 11.3131 2.16418 8.91934 2.50474 6.05456Z" fill="#B92124" stroke="#B92124"></path>
-                                 </svg>
-                              </button>
+                              <div class="w-100 mt-4">
+                                 <a href="#" target="_blank" class="transparent-btn border-gradient d-flex align-items-center justify-content-center g-10"><span><b>Hash : </b></span>
+                                    <span class="clip-text w-auto">0x41924ee204e47c6aeea1c45e8ed19f5b94bff42a55493f65665fdd8045a9abde</span>
+                                    <span class="text-copy-btn rotate-50"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                 </a>
                               </div>
-                           </div>
-                        </form>
+                           </form>
+                        </div>
                      </div>
                   </div>
                   <!--Start user referable-list -->
@@ -252,7 +268,6 @@
                                  <th>Reward</th>
                                  <th>Total Receive</th>
                                  <th>Status</th>
-                                  
                                </tr>
                            </thead>
                            <tbody>
@@ -274,7 +289,7 @@
                                  <td>14 day</td>
                                  <td>15 ECM</td>
                                  <td>115 ECM</td>
-                                 <td class="text-start"><span class="completed-status badge">Pending</span></td>
+                                 <td class="text-start"><span class="completed-status badge">Completed</span></td>
                               </tr>
                               <tr>
                                  <td>02</td>
@@ -329,10 +344,11 @@
       <script>
          document.addEventListener("click", (e) => {
             if (e.target.closest(".staking-days-select-btn")) {
-               document.querySelectorAll(".staking-days-select-btn").forEach(b => b.classList.remove("active"));
-               let btn = e.target.closest(".staking-days-select-btn");
-               btn.classList.add("active");
-               btn.querySelector(".public-radio").checked = true;
+                  let section = e.target.closest(".d-flex");
+                  section.querySelectorAll(".staking-days-select-btn").forEach(b => b.classList.remove("active"));
+                  let btn = e.target.closest(".staking-days-select-btn");
+                  btn.classList.add("active");
+                  btn.querySelector(".public-radio").checked = true;
             }
          });
       </script>

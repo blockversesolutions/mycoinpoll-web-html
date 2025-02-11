@@ -1,0 +1,59 @@
+.progress-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.progress-circle svg {
+    transform: rotate(-90deg);
+}
+
+.progress-circle circle {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+.progress-circle .bg {
+    stroke: #4b5563;
+}
+
+.progress-circle .progress {
+    stroke-dasharray: 251;
+    stroke-dashoffset: 251;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.progress-circle .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+/* chart info */
+.millestone-chart-info p{
+    font-size: 14px;
+    line-height: 13.2px;
+    color: #FFFFFF99;   
+}
+.millestone-chart-info h4{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    color:#fff;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom:5px;
+}
+.day-user-count i{
+    margin-right: 5px;
+}
+.day-user-count-up i,.day-user-count-up{
+    color:#359846;
+}
+.day-user-count-down i,.day-user-count-down{
+    color:#B92124;
+}

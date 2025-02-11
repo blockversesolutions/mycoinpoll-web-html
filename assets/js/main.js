@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function ($) {
   $('.staking-slider').slick({
     slidesToShow:1,
@@ -62,10 +61,8 @@ jQuery(document).ready(function ($) {
 			}
 		});
     $(document).on("click", function (event) {
-      const $div = $("#outside-click");
-      const $navbarText = $("#navbarText");
-      if (!$div.is(event.target) && $div.has(event.target).length === 0) {
-        $navbarText.removeClass("show");
+      if (!$("#outside-click").add("#navbarText").is(event.target) && !$("#outside-click").has(event.target).length) {
+        $("#navbarText").removeClass("show");
       }
     });
     $(document).on("click", function (event) {
@@ -76,12 +73,8 @@ jQuery(document).ready(function ($) {
       }
     });
   // menu bg add
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop() >120) {
-          $('header').addClass('menu-bg-fixed');
-      } else {
-          $('header').removeClass('menu-bg-fixed');
-      }
+  $(window).on("scroll", function () {
+    $("header").toggleClass("menu-bg-fixed", $(window).scrollTop() > 120);
   });
   // Country select
   // Get references to elements

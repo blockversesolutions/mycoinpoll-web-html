@@ -1,0 +1,60 @@
+.taking-value-area{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #FFFFFF05;
+    border: 1.5px solid #ffffff17;
+    min-height: 82px;
+}
+.staking-value img{
+    width: 30px;
+    height: 30px;
+}
+.staking-value input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff96;
+    font-weight: 500;
+    font-size:18px;
+}
+.staking-value::placeholder{
+    opacity: 1;
+    color: #ffffffe8;
+    font-weight: 500;
+    font-size:18px;
+}
+.balance p span,.days-value p,.staking-value p{
+    color:#fff;
+}
+.balance p{
+    color: #FFFFFF99;
+}
+.staking-section .bg-border-input::after {
+    border-radius: 22px;
+}
+.staking-header-item{
+    width: 50%;
+}
+.lock-overview{
+    background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+    backdrop-filter: blur(30px);
+    padding: 15px 25px;
+    border-radius: 10px; 
+}
+.selected-staking-title h6,.lock-overview span{
+    font-size: 20px;
+}
+@media all and (max-width:1199px){
+    .staking-header-item{
+        width:100% !important;
+    }
+    .taking-value-area .staking-value{
+        width: 50%;
+    }
+    .taking-value-area {
+        padding: 10px 10px;
+    }
+    .ellipse{
+        z-index: -2;
+    }
+}

@@ -501,7 +501,7 @@
     padding: 30px 15px;
   }
   .clip-text{
-    width: 56%;
+    width: 56% !important;
   }
   .address-text {
     padding: 6px 10px;
@@ -802,7 +802,6 @@
     /* .token-rollout-right-side{
       margin-top:230px;
     } */
-   
     .pagination-inner li a {
       min-width: 36px;
       height: 40px;
@@ -817,7 +816,6 @@
     .apply-launch-part label{
       font-size:15px;
      }
-
     .subscribe-form .subscribe-btn{
       margin: auto;
       margin-top: 20px;
@@ -848,7 +846,6 @@
     .line-divider2{
       margin:20px 0 !important;
     }
-  
     .input input, .input textarea {
       padding: 10px 16px;
     }
@@ -1004,7 +1001,6 @@
     .notification-text h5 {
       font-size: 15px;
       font-weight: 500;
-      
     }
     .p30 {
       padding: 15px;
@@ -1032,7 +1028,6 @@
     .dashboard-right-header-area{
       padding-left: 0;
     }
-     
 }
 @media screen and (max-width:480px) {
   .dashboard-body, .dashboard-left {
@@ -1107,5 +1102,10 @@
   .staking-righ-area ul li{
     width: 100% !important;
   }
+  .ellipse{
+    z-index: -2;
+  }
+  .pagination .subscribe-btn {
+    min-width: 60px !important;
+  }
 }
-

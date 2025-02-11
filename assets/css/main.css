@@ -278,7 +278,6 @@ a.nav-link.dropdown-toggle i{
 }
 .icon-rotate i {
 	transform: rotate(-47deg);
-	margin-left: 14px;
 	font-size: 22px;
 }
 .btn1 span i{
@@ -2137,7 +2136,7 @@ select {
   font-size:18px;
   font-weight: 500;
   line-height:32px;
-  margin-bottom:20px;
+  margin-bottom:10px;
   color:#fff;
  }
  .modal-body-inner label{
@@ -2421,6 +2420,11 @@ select {
 	width: 100%;
 	top:140px;
 }
+.modal-custom-width-md{
+  max-width:680px;
+	width: 100%;
+	top:60px;
+}
 .modal-header-area h4{
   font-size:32px;
   color:#fff;
@@ -2434,7 +2438,7 @@ select {
 }
 .modal-header-area{
   border-bottom: 3px solid #FFFFFF1A;
-  padding-bottom: 30px;
+  padding-bottom:15px;
   margin-bottom: 30px;
 }
 .custom-modal{
@@ -3268,7 +3272,7 @@ table th,table td {
   border: 1px solid rgba(255, 0, 0, 0.16)
 }
 .active-status{
-  background-color: #3598461A;
+  background-color: #2889385a;
   border-color:#35984666;
 }
 .pending-status{
@@ -3276,7 +3280,7 @@ table th,table td {
   border-color:#DFC73066;
 }
 .completed-status{
-  background: #2682EE1A;
+  background: #2682EE66;
   border-color:#2682EE66;
 }
 .transparent-btn-sm {
@@ -3551,6 +3555,9 @@ ul.dropdown li:hover{
 .skyblue{
   color:#2682EE;
 }
+.g-40{
+  gap: 40px;
+}
 .green{
   color:#359846;
 }
@@ -3735,7 +3742,7 @@ ul.dropdown li:hover{
   background-repeat: no-repeat;
   background-position: center center;
 }
-.blog-post-content h4{
+.blog-post-content h4,.milestone-content h4{
   font-size: 24px;
   line-height: 32px;
   color:#fff;
@@ -4001,7 +4008,7 @@ ul.dropdown li:hover{
   z-index: 999;
   background-color:#09111B;
 }
-.blog-post-card-color{
+.blog-post-card-color,.common-card-design{
   border-radius: 10px;
   background: #FFFFFF05;
   border: 1px solid rgba(39, 123, 245, 0.3);
@@ -4049,10 +4056,10 @@ ul.dropdown li:hover{
   border: 1.5px solid #232831;
   padding: 25px;
   border-radius: 5px;
-  background-image: url('../images/dashboard/bg/2.png');
+  /* background-image: url('../images/dashboard/bg/2.png');
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
   padding-bottom: 65px;
   width: 50%;
 }
@@ -4150,10 +4157,11 @@ ul.dropdown li:hover{
 .staking-days-select-btn {
 	display: flex;
 	align-items: center;
-	padding: 10px 15px;
-	border-radius: 5px;
+	padding: 6px 8px;
+	border-radius: 22px;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
+	padding-right: 12px;
 }
 /* Active class when selected */
 .staking-days-select-btn.active {
@@ -4175,3 +4183,32 @@ ul.dropdown li:hover{
   background: linear-gradient(90deg, #B92124  0%, #b64d4f 100.01%);
 }
 /* End staking section */
+/* Start millestone */
+.milestone-offer-card{
+  border: 1.5px solid #827D7D2E;
+  border-radius: 5px;
+  padding: 10px;
+}
+.milestone-offer-info-item{
+  border-bottom: 1px solid #FFFFFF1A;
+  padding:6px 0;
+}
+.milestone-offer-info-item:last-child{
+  border: none;
+}
+.milestone-offer-info-item span{
+  font-weight: 500;
+  color:#fff;
+}
+.text-color-1CD691{
+  color:#1CD691 !important;
+}
+.milestone-content .progress{
+  height:20px;
+}
+ .milestone-modal-section .bg-border-input:after{
+  z-index: 0;
+ }
+ 
+
+/* End millestone */
