@@ -3561,6 +3561,9 @@ ul.dropdown li:hover{
 .green{
   color:#359846;
 }
+.bg-green{
+  background:#359846 !important;
+}
 .gray{
   color: #FFFFFF99;
 }
@@ -4209,6 +4212,8 @@ ul.dropdown li:hover{
  .milestone-modal-section .bg-border-input:after{
   z-index: 0;
  }
- 
+ .mt-40{
+  margin-top: 40px;
+ }
 
 /* End millestone */
