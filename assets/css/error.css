@@ -1,0 +1,131 @@
+.error-section h5{
+    font-weight: 800;
+    font-size: 40px;
+    line-height:55px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.error-section h3{
+    color: #FFFFFF14;
+    font-size:140px;
+    letter-spacing: 4px;
+    font-weight:800;
+}
+.error-text {
+    font-size: 90px;
+    letter-spacing:2px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px transparent;
+    background: linear-gradient(90deg, #00ff99, #2682EC, #21B0BC, #00ff99);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientShift 4s linear infinite;
+    position: relative;
+    filter: drop-shadow(0 0 0.4px #00ccff) drop-shadow(0 0 0.8px #00ff99);
+}
+body{
+    overflow-x: hidden;
+    background-color:#09111B;
+    font-family: "Oxanium", sans-serif;
+}
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.ellipse-box {
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    background: linear-gradient(90deg, rgba(39, 123, 245, 0.1) 0%, rgba(28, 214, 145, 0.1) 100.01%);
+    border-radius: 50%;
+    animation: moveEllipse 6s ease-in-out infinite;
+}
+
+.ellipse-box-1 {
+    left: -80px;
+    top: -53px;
+}
+
+@keyframes moveEllipse {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, -20px);
+    }
+    50% {
+        transform: translate(40px, 0px);
+    }
+    75% {
+        transform: translate(20px, 20px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.gradient-btn {
+	background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
+	padding: 10px 28px;
+	border-radius: 30px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	border: none;
+	outline: none;
+	display: inline-block;
+}
+ 
+.ellipse-box-2{
+    right: -80px;
+    top: -53px;
+}
+a{
+    text-decoration: none;
+}
+.gradient-btn:hover{
+	background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
+}
+.ellipse {
+	bottom:0%;
+	left: 0;
+    position: absolute;
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
+	opacity: 0.15;
+	filter: blur(150px);
+ 
+}
+@media all and (max-width:767px){
+    .error-section h3 {
+        font-size: 84px;
+    }
+    .error-text {
+        font-size: 55px;
+        letter-spacing: 2px;
+    }
+    .error-section h5 {
+        font-size: 30px;
+        line-height:45px;
+    }
+    .ellipse-box,.ellipse {
+        width: 170px;
+        height: 170px;
+    }
+    .error-page{
+        overflow: hidden;
+    }
+  }
+  
+ 
+ 
