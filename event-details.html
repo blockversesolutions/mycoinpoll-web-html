@@ -207,50 +207,33 @@
             <div class="row mt-70">
                <div class="col-md-8 offset-md-2">
                   <div class="section-heading text-center">
-                     <h3 class="text-shadow">View Our Gallery</h3>
+                     <h3 class="text-shadow">View Event Gallery</h3>
                      <p>Explore our gallery to relive exciting moments, insightful discussions, and key highlights from our blockchain events worldwide.</p>
                   </div>
                </div>
-               <div class="col-md-12 mt-4">
-                  <!-- Header -->
-                  <div class="d-flex align-center justify-content-between" id="myHeader">
-                     <h6 class="page-title">Select Layout</h6>
-                     <div class="grid-select-btn">
-                        <button onclick="one()"><i class="fas fa-th-large grid-icon"></i></button>
-                        <button  onclick="two()">
-                           <i class="fa-solid fa-grip-vertical"></i></button>
-                        <button onclick="four()"><i class="fas fa-th grid-icon"></i></button>
+               <div class="col-md-12">
+                  <div class="position-relative rgb-border mt-5 p-2">
+                     <div class="event-gallery">
+                        <img src="assets/images/event/1.png" alt="Image">
+                        <img src="assets/images/event/2.png" alt="Image">
+                        <img src="assets/images/event/3.png" alt="Image">
+                         
+                        <img src="assets/images/event/event-thumbnails.png" alt="Image">
+                        <img src="assets/images/event/1.png" alt="Image">
+                        <img src="assets/images/event/2.png" alt="Image">
+                     </div>
+                     <div class="d-flex justify-content-center mt-5 mb-3">
+                        <button class="btn1 primary-btn">Load More</button>
+                     </div>
+                     <div class="lightbox" id="lightbox">
+                        <span class="close" onclick="closeLightbox()">&times;</span>
+                        <img class="lightbox-image" id="lightbox-image">
+                        <div class="nav">
+                              <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+                              <span class="next" onclick="changeImage(1)">&#10095;</span>
+                        </div>
                      </div>
                   </div>
-                  <!-- Photo Grid -->
-                  <div class="d-flex flex-wrap mt-5 position-relative rgb-border"> 
-                     <div class="image-grid-item">
-                        <img src="assets/images/event/1.png" class="w-100">
-                        <img src="assets/images/event/2.png" class="w-100">
-                        <img src="assets/images/event/3.png" class="w-100">
-                     </div>
-                     <div class="image-grid-item">
-                        <img src="assets/images/event/1.png" class="w-100">
-                        <img src="assets/images/event/3.png" class="w-100">
-                        <img src="assets/images/event/event-thumbnails.png" class="w-100">
-                     </div>
-                     <div class="image-grid-item">
-                         <img src="assets/images/event/event-thumbnails.png" class="w-100">
-                        <img src="assets/images/event/1.png" class="w-100">
-                        <img src="assets/images/event/2.png" class="w-100">
-                       
-                     </div>
-                     <div class="image-grid-item">
-                        <img src="assets/images/event/2.png" class="w-100">
-                        <img src="assets/images/event/event-thumbnails.png" class="w-100">
-                        <img src="assets/images/event/3.png" class="w-100">
-                     </div>
-                  </div>
-                  
-                  <div class="d-flex justify-content-center mt-5">
-                     <button  class="btn-1-sm">Load More <i class="fa-solid fa-plus ms-2"></i></button>
-                  </div>
-
                </div>
             </div>
          </div>
@@ -347,32 +330,40 @@
       <!-- chart customize js -->
       <script src="assets/js/chart.js"></script>
       <script src="assets/js/main.js"></script>
-      <script>
-         // Get the elements with class="column"
-         var elements = document.getElementsByClassName("image-grid-item");
-         // Declare a loop variable
-         var i;
-         // Full-width images
-         function one() {
-            for (i = 0; i < elements.length; i++) {
-            elements[i].style.msFlex = "100%";  // IE10
-            elements[i].style.flex = "100%";
-         }
-         }
-         // Two images side by side
-         function two() {
-         for (i = 0; i < elements.length; i++) {
-            elements[i].style.msFlex = "50%";  // IE10
-            elements[i].style.flex = "50%";
-         }
-         }
-         // Four images side by side
-         function four() {
-         for (i = 0; i < elements.length; i++) {
-            elements[i].style.msFlex = "25%";  // IE10
-            elements[i].style.flex = "25%";
-         }
-         }
-      </script>
+       <script>
+         let currentIndex = 0;
+const images = [];
+
+// Automatically get all image sources and assign click events dynamically
+document.querySelectorAll('.event-gallery img').forEach((img, index) => {
+    images.push(img.src);
+    img.addEventListener('click', () => {
+        openLightbox(index);
+    });
+});
+
+function openLightbox(index) {
+    currentIndex = index;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    lightboxImage.src = images[currentIndex];
+    lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
+
+function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+    document.getElementById('lightbox-image').src = images[currentIndex];
+}
+
+       </script>
    </body>
 </html>

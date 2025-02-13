@@ -1857,9 +1857,10 @@ text-fill-color: transparent;
 .pagination-inner{
   gap:20px;
 }
-.pagination > ul > li:first-child a{
+ 
+ .opacity-low{
   opacity: 40%;
-}
+ }
 .pagination-inner li a{
   font-size: 20px;
   font-weight: 700;
@@ -4191,6 +4192,7 @@ ul.dropdown li:hover{
   border: 1.5px solid #827D7D2E;
   border-radius: 5px;
   padding: 10px;
+  background: #FFFFFF05;
 }
 .milestone-offer-info-item{
   border-bottom: 1px solid #FFFFFF1A;
@@ -4215,5 +4217,16 @@ ul.dropdown li:hover{
  .mt-40{
   margin-top: 40px;
  }
-
 /* End millestone */
+.no-data{
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+}
+.no-data h4{
+  color:#fff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
