@@ -198,6 +198,29 @@
                         <div class="search-box-area">
                            <form action="">
                               <div class="d-flex align-items-center g-20 flex-wrap">
+                                 <div class="filter-btn">
+                                  
+                                 <div class="input bg-border-input">
+                                    <!-- code replace here start -->
+                                    <div class="custom-select position-relative">
+                                       <div class="select-selected" data-value="web">
+                                           Status
+                                          </div>
+                                       <div class="select-items">
+                                          <div class="select-item" data-value="Pending">
+                                              Pending
+                                          </div>
+                                          <div class="select-item" data-value="Achieved">
+                                              Achieved
+                                          </div>
+                                       </div>
+                                       <div class="select-icon">
+                                          <i class="fa-solid fa-angle-down"></i>
+                                       </div>
+                                    </div>
+                                    <!-- code replace here End -->
+                                 </div>
+                              </div>
                                  <div class="input bg-border-input position-relative">
                                     <div class="search-icon">
                                        <i class="search-icon fas fa-search"></i>
@@ -469,13 +492,10 @@
         const color = circle.getAttribute('data-color');
         const progressCircle = circle.querySelector('.progress');
         const text = circle.querySelector('.text');
-
         const circumference = 2 * Math.PI * 40;
         const offset = circumference * (1 - progress / 100);
-
         progressCircle.style.stroke = color;
         progressCircle.style.strokeDashoffset = offset;
-
         let count = 0;
         const interval = setInterval(() => {
             if (count >= progress) {
@@ -502,7 +522,6 @@
                      cellPadding: 3
                   }
             });
-
             doc.save("Sales_Report.pdf");
          }
       </script>

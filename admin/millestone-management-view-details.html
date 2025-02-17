@@ -131,6 +131,7 @@
                            </div>
                          </div>
                           <div class="col-lg-6">
+                           
                            <div class="milestone-offer-card h-100">
                               <!-- item -->
                               <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
@@ -258,5 +259,12 @@
       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
       <script src="../assets/js/editor.js"></script>
       <script src="../assets/js/main.js"></script>
+      <script>
+        // Simulate Loading (e.g., fetching data)
+        setTimeout(() => {
+            document.querySelector('.skeleton-loader').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        }, 3000); // Change the time to adjust the loading duration
+    </script>
    </body>
 </html>

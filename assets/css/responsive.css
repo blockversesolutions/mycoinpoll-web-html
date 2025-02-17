@@ -1069,6 +1069,9 @@
     border-radius: 50px;
     font-size: 14px;
   }
+  .gradient-btn i{
+    font-size: 15px;
+  }
   .common-table.mt30{
     margin-top: 0;
   }

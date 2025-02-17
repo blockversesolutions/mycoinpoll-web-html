@@ -44,6 +44,30 @@
 .selected-staking-title h6,.lock-overview span{
     font-size: 20px;
 }
+.gradient-btn,.buy-ecm  {
+	padding: 15px 28px;
+	font-size:28px;
+	font-weight: 600;
+    border-radius: 50px;
+}
+.buy-ecm::after {
+	border-radius: 50px;
+}
+.icon-rotate i {
+	font-size: 30px;
+}
+
+.staking-log-user-info h5{
+    font-weight: 500;
+}
+.staking-log-user-icon img{
+    height:45px;
+    width:45px;
+}
+
+.staking-user-info .profile-info h5{
+    font-weight:500;
+}
 @media all and (max-width:1199px){
     .staking-header-item{
         width:100% !important;
@@ -56,5 +80,16 @@
     }
     .ellipse{
         z-index: -2;
+    }
+}
+@media all and (max-width:991px){
+    .gradient-btn,.buy-ecm{     
+        padding: 15px 28px !important;
+        font-size: 28px !important;
+    }
+}
+@media all and (max-width:480px){
+    .gradient-btn,.buy-ecm{
+        width:100% !important;
     }
 }
