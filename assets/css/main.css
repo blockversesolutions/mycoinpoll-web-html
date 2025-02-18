@@ -2935,7 +2935,7 @@ select {
   line-height: 22px;
   margin-right: 20px;
 }
-.yellow-color i{
+.yellow-color i,.yellow-color{
   color:#DFC730;
 }
 .notification-text h5{
@@ -3636,7 +3636,7 @@ ul.dropdown li:hover{
   font-weight: 600;
   line-height: 22px;
   color:#fff;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .g20{
   gap: 20px;
@@ -4293,3 +4293,32 @@ ul.dropdown li:hover{
  .verify-btn p{
   font-weight:700;
  }
+ .section-heading h4{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color:#fff;
+ }
+ .support-text ul li{
+  color:#FFFFFFCC;
+  font-size: 16px;
+ }
+ .support-text ul li a{
+  font-weight:700;
+  color: #2682EE;
+ }
+.verify-info-text h6{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  color:#fff;
+}
+.submition-history li img{
+  height:30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.submition-history li{
+  color:#fff;
+  font-weight: 500;
+}

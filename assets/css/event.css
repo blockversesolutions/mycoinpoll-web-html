@@ -18,7 +18,7 @@
 }
 .event-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   padding: 10px;
 }
@@ -52,7 +52,6 @@
   max-height: 80%;
   border-radius: 10px;
 }
-
 .lightbox .close {
   position: absolute;
   top: 20px;
@@ -61,7 +60,6 @@
   cursor: pointer;
   color: #fff;
 }
-
 .lightbox .nav {
   position: absolute;
   top: 50%;

@@ -482,6 +482,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .icon-rotate i{
+    font-size: 16px;
+  }
   .publish-date {
     font-size: 14px;
   }
