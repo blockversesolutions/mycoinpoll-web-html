@@ -2688,10 +2688,10 @@ select {
 .rgb-border::after {
 	content: '';
 	position: absolute;
-	top: -3px;
-	left: -3px;
-	right: -3px;
-	bottom: -3px;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
 	background: linear-gradient(90deg, rgba(39, 123, 245, 0.2) 0%, rgba(28, 214, 145, 0.2) 100.01%);
   border: 2px solid;
 	z-index: -1;
@@ -3599,13 +3599,13 @@ ul.dropdown li:hover{
   font-size: 18px;
 }
 .skyblue{
-  color:#2682EE;
+  color:#2682EE !important;
 }
 .g-40{
   gap: 40px;
 }
 .green{
-  color:#359846;
+  color:#359846 !important;
 }
 .bg-green{
   background:#359846 !important;
