@@ -2152,7 +2152,7 @@ select {
 } 
 .bg-border-input{
   border-radius: 5px;
-  background:#0B121C;
+  background:#0b121ce5;
   border:2px solid transparent;
   background-clip: padding-box;
   position: relative;
@@ -2539,7 +2539,7 @@ select {
 .label{
   color:#fff;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 10px;
   line-height: 22px;
 }
@@ -4240,8 +4240,8 @@ ul.dropdown li:hover{
   background: #FFFFFF05;
 }
 .milestone-offer-info-item{
-  border-bottom: 1px solid #FFFFFF1A;
-  padding:6px 0;
+  padding:8px 18px;
+  border-bottom: 1px solid #FFFFFF1A
 }
 .milestone-offer-info-item:last-child{
   border: none;
@@ -4249,6 +4249,15 @@ ul.dropdown li:hover{
 .milestone-offer-info-item span{
   font-weight: 600;
   color:#fff;
+}
+.small-description span{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF99;
+}
+.milestone-offer-info-item p{
+  font-weight: 600;
 }
 .text-color-1CD691{
   color:#1CD691 !important;
