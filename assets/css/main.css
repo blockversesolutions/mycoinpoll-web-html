@@ -992,7 +992,7 @@ a.nav-link.dropdown-toggle i{
 	padding: 0;
 	font-weight: 700;
 	font-size: 23px;
-	line-height: 45px;
+	line-height:32px;
 	color: #FFFFFFCC;
 	box-shadow: 0 0 0 transparent;
 }
@@ -1006,7 +1006,7 @@ a.nav-link.dropdown-toggle i{
   outline: none;
 }
 .frequently-answere .accordion-item{
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.05);
 }
 .social-menu span{
@@ -3325,6 +3325,11 @@ table th,table td {
   background: #DFC7301A;
   border-color:#DFC73066;
 }
+.in-progress-status{
+  background: #FF8C001A;
+
+  border-color:#FF8C0066;
+}
 .completed-status{
   background: #2682EE66;
   border-color:#2682EE66;
@@ -3615,6 +3620,7 @@ ul.dropdown li:hover{
 }
 .red{
  color:#B92124 !important;
+ font-weight: 500;
 }
 .bg-red{
   background: #B92124 !important;
@@ -4357,4 +4363,62 @@ ul.dropdown li:hover{
 .submition-history li{
   color:#fff;
   font-weight: 500;
+}
+/* Start ticket css */
+.ticket-author-icon img{
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.ticket-info-body h6{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color:#fff;
+}
+.ticket-info-body span{
+  color: #FFFFFFB2;
+  font-weight: 400;
+  font-size: 14px;
+}
+.attachments-download{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(149, 157, 165, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.attachments-download i{
+  color: green;
+  font-size: 30px;
+}
+.attachments-thumbnails li:hover .attachments-download{
+  opacity: 1;
+}
+.ticket-author-box{
+  border-bottom: 1px solid #FFFFFF1A;
+  padding-bottom: 30px;
+}
+.ticket-author-box:last-child{
+  border: none;
+  padding-bottom: 0;
+}
+/* End ticket css */
+input[type="time"] {
+  position: relative;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 40px 8px 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mycoinpoll</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+         />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="../assets/css/jquery.flipbox.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+      <link rel="stylesheet" href="../assets/css/editor.css" />
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <link rel="stylesheet" href="../assets/css/responsive.css" />
+   </head>
+   <body>
+      <div class="ellipse ellipse1"></div>
+      <div class="ellipse ellipse2"></div>
+      <div class="ellipse ellipse3"></div>
+
+      <div class="dashboard-main-area">
+         <div class="dashboard-area d-flex align-items-start">
+            <div class="dashboard-left position-relative" data-simplebar style="height: calc(100svh - 60px)">
+               
+              <div class="logo mb40">
+               <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
+              </div>
+              <div class="logo2 mb40">
+               <a href="#"><img src="../assets/images/dashboard/icon/small-logo.png" alt="logo" class="w-100"></a>
+              </div>
+              <div class="dashboard-left-menu">
+               <ul>
+                  <li><a href="dashboard.html"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
+                  <li><a href="transactions.html"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
+                  <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
+                  <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
+                  <li><a href="manage-roles.html"><img src="../assets/images/dashboard/icon/roles.png" alt="icon"> <span class="left-menu-text">Manage Roles</span></a></li>
+                  <li><a href="manage-permissions.html"><img src="../assets/images/dashboard/icon/permission.png" alt="icon"> <span class="left-menu-text">Permissions</span></a></li>
+                  <li class="menu-active-bg"><a href="support-ticket.html"><img src="../assets/images/dashboard/icon/ticket.png" alt="icon"> <span class="left-menu-text">Support Ticket</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
+               </ul>
+              </div>
+            </div>
+           
+            <div class="dashboard-right">
+               <div class="dashboard-right-header-area d-flex align-items-center justify-content-between">
+                  <div class="page-info d-flex align-items-center">
+                     <div class="resize-icon">
+                        <i class="fa-solid fa-expand"></i>
+                     </div>
+                     <h5 class="page-title">Support Ticket</h5>
+                  </div>
+                   
+                  <div class="dashboard-header-right">
+                     <div class="d-flex align-items-center dashboard-header-right-group">
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           310 USDT <span><img src="../assets/images/dashboard/icon/wallet2.png" alt="icon"></span>
+                        </div>
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           300 CRM <span><img src="../assets/images/icon/wallet.png" alt="icon"></span>
+                        </div>
+                        <div class="notification-icon position-relative "> 
+                           <span>2+</span>
+                           <img src="../assets/images/dashboard/icon/bell.png" alt="icon" class="dropdown-toggle">
+                            
+                           <ul class="dropdown notification-box" data-simplebar style="height: 303px; ">
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                              
+                             <li><a href="notification.html" class="gradient-btn-small">Show All</a></li>
+                           </ul>
+                        </div>
+                        <div class="profile-mini-icon">
+                           <a href="user-profile.html"><img src="../assets/images/dashboard/icon/user.png" alt="user"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="dashboard-body mt30">
+                  <div class="custom-card-header d-flex align-items-center justify-content-between">
+                     <div class="table-heading">
+                        <h5> Ticket</h5>
+                     </div>
+                     <div class="add-new-btn">
+                        <a href="create-ticket.html" class="gradient-btn"><i class="fas fa-link"></i> Create New Ticket </a>
+                     </div>
+                  </div>
+                  <!--Start user referable-list -->
+                  <div class="data-show-table-area dashboard-box mt30">
+                     <div class="table-header-area d-flex align-items-center justify-content-between">
+                        <div class="table-heading">
+                           <h5>Ticket List</h5>
+                        </div>
+                        <div class="search-box-area">
+                           <form action="">
+                              <div class="input bg-border-input position-relative">
+                                 <div class="search-icon">
+                                    <i class="search-icon fas fa-search"></i>
+                                 </div>
+                                 <input type="text" class="form-control" id="search" placeholder="Search here...">
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     
+                     <div class="common-table mt30">
+                        <table class="custom-table display nowrap mobile-table">
+                           <thead>
+                               <tr>
+                                 <th>Ticket ID</th>
+                                 <th>Department</th>
+                                 <th>Subject</th>
+                                 <th>Created Date</th>
+                                 <th>Last Update</th>
+                                 <th>Status</th>
+                                 <th>Action</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>#12345</td>
+                                 <td>Technical Support</td>
+                                 <td>Payment not received</td>
+                                 <td>12/10/2024</td>
+                                 <td>12/10/2024</td>
+                                 <td>
+                                    <span class="in-progress-status badge">In progress</span>
+                                 </td>
+                                 <td>
+                                    <ul class="d-flex align-items-center action-group justify-content-center">
+                                       <li>
+                                          <a href="ticket-details.html"><i class="far fa-eye green"></i></a>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>#12345</td>
+                                 <td>Billing & Payments</td>
+                                 <td>Login issue</td>
+                                 <td>12/10/2024</td>
+                                 <td>12/10/2024</td>
+                                 <td>
+                                    <span class="active-status badge">Open</span>
+                                 </td>
+                                 <td>
+                                    <ul class="d-flex align-items-center action-group justify-content-center">
+                                       <li>
+                                          <a href="ticket-details.html"><i class="far fa-eye green"></i></a>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>#12345</td>
+                                 <td>Billing & Payments</td>
+                                 <td>Login issue</td>
+                                 <td>12/10/2024</td>
+                                 <td>12/10/2024</td>
+                                 <td>
+                                    <span class="pending-status badge">Pending</span>
+                                 </td>
+                                 <td>
+                                    <ul class="d-flex align-items-center action-group justify-content-center">
+                                       <li>
+                                          <a href="ticket-details.html"><i class="far fa-eye green"></i></a>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>#12345</td>
+                                 <td>Billing & Payments</td>
+                                 <td>Login issue</td>
+                                 <td>12/10/2024</td>
+                                 <td>12/10/2024</td>
+                                 <td>
+                                    <span class="completed-status badge">Resolved</span>
+                                 </td>
+                                 <td>
+                                    <ul class="d-flex align-items-center action-group justify-content-center">
+                                       <li>
+                                          <a href="ticket-details.html"><i class="far fa-eye green"></i></a>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>#12345</td>
+                                 <td>Billing & Payments</td>
+                                 <td>Login issue</td>
+                                 <td>12/10/2024</td>
+                                 <td>12/10/2024</td>
+                                 <td>
+                                    <span class="deactivate-status badge">Closed</span>
+                                 </td>
+                                 <td>
+                                    <ul class="d-flex align-items-center action-group justify-content-center">
+                                       <li>
+                                          <a href="#"><i class="far fa-eye green"></i></a>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                           </tbody>
+                       </table>
+                        
+                        <div class="pagination mt50">
+                           <ul class="d-flex align-items-center w-100">
+                              <li><a href="#" class="btn1 primary-btn subscribe-btn">Previous</a></li>
+                              <li>
+                                 <ul class="d-flex align-items-center pagination-inner">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#" class="active">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">10</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="#" class="btn1 primary-btn subscribe-btn">Next</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <div class="dashboard-box mt30">
+                    <div class="section-heading">
+                        <h4>Common Question?</h4>
+                     </div>
+                     <div class="row mt-1 gy-4">
+                        <div class="col-lg-6">
+                           <div class="frequently-answere">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-item">
+                                    <span class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I create a support ticket?
+                                    </span>
+                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>To create a support ticket, go to your User Dashboard, click "Create New Ticket", fill in the required details (subject, description, priority), and submit. You’ll receive a confirmation email with your ticket ID.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-item">
+                                    <span  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 How can I check the status of my ticket?
+                                    </span>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Get early access to cutting-edge crypto projects. Stake and participate in IDOs across multiple blockchains with guaranteed security.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-item">
+                                    <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Can I attach files to my ticket?
+                                    </span>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Get early access to cutting-edge crypto projects. Stake and participate in IDOs across multiple blockchains with guaranteed security.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-item">
+                                       <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                       How long does it take to get a response?
+                                       </span>
+                                       <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                             <p>
+                                                Get early access to cutting-edge crypto projects. Stake and participate in IDOs across multiple blockchains with guaranteed security.
+                                             </p>
+                                          </div>
+                                       </div>
+                                 </div>
+                                 <div class="accordion-item">
+                                       <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                       How long does it take to get a response?
+                                       </span>
+                                       <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                             <p>
+                                                Get early access to cutting-edge crypto projects. Stake and participate in IDOs across multiple blockchains with guaranteed security.
+                                             </p>
+                                          </div>
+                                       </div>
+                                 </div>
+                                 <div class="accordion-item">
+                                       <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                       How long does it take to get a response?
+                                       </span>
+                                       <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                             <p>
+                                                Get early access to cutting-edge crypto projects. Stake and participate in IDOs across multiple blockchains with guaranteed security.
+                                             </p>
+                                          </div>
+                                       </div>
+                                 </div>
+                              </div>  
+                           </div>
+                        </div>
+                        <div class="col-lg-6 offset-md-2 offset-lg-0 col-md-8">
+                           <img src="../assets/images/thumbnail/faq.png" alt="img" class="w-100 rounded">
+                        </div>
+                     </div>
+                  </div>
+                  <!--End user referable-list -->
+               </div>
+               
+               <!-- copyright -->
+               <div class="copyright-box d-flex align-items-center justify-content-center">
+                  <p class="gradient-color">Current Version 1.0</p>
+                  <p>&copy; 2025<a href="index.html" class="gradient-color">Develope By Mycoinpoll</a> </p>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="../assets/js/jquery.flipbox.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+      <script src="../assets/js/editor.js"></script>
+      <script src="../assets/js/main.js"></script>
+      
+   </body>
+</html>
