@@ -1114,4 +1114,8 @@
   .pagination .subscribe-btn {
     min-width: 60px !important;
   }
+  .countdown-area ul li:nth-child(odd){
+    height: 45px;
+    width: 45px;
+  }
 }

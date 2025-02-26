@@ -134,6 +134,27 @@
                                        <p>Deadline</p>
                                        <span>19 February 2025</span>
                                     </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Reward</p>
+                                       <ul class="d-flex align-items-center reward-tab">
+                                          <li class="reward-tab-btn" onclick="reward_type(event, 'Tour')" id="defaultOpen">Tour Trip</li>
+                                          <li class="reward-tab-btn" onclick="reward_type(event, 'USD')">USD</li>
+                                          <li class="reward-tab-btn" onclick="reward_type(event, 'ECM')">ECM</li>
+                                       </ul>
+                                      
+                                    </div>
+                                    <div class="reward-content-box">
+                                        <div class="reward-type-description tabcontent" id="Tour">
+                                          <p>We will Provide you a tour trip from Dhaka to Cox’s Bazar 2-3 days.</p>
+                                       </div>
+                                       <div id="USD" class="reward-type-description tabcontent">
+                                           <p>Lorem ipsum dolor sit amet consectetur</p>
+                                       </div>
+                                       <div id="ECM" class="tabcontent reward-type-description">
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                       </div>
+                                    </div>
                                  </div>
                                  <div class="ico-progress mt-3">
                                     <ul class="d-flex align-items-center justify-content-between flex-wrap text-white">
@@ -141,7 +162,8 @@
                                        <li><span>60%</span></li>
                                     </ul>
                                     <div class="progress mt-2">
-                                       <div class="progress-bar align-items-end" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                       <div class="progress-bar align-items-end" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"> 
+                                       </div>
                                     </div>
                                  </div>
                                  <ul class="btn-group-card d-flex align-items-center justify-content-between mt-4">
@@ -562,6 +584,24 @@
       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
       <script src="../assets/js/editor.js"></script>
       <script src="../assets/js/main.js"></script>
+      <script>
+         function reward_type(evt, reward_type_name) {
+         var i, tabcontent, tablinks;
+         tabcontent = document.getElementsByClassName("tabcontent");
+         for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+         tablinks = document.getElementsByClassName("reward-tab-btn");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         document.getElementById(reward_type_name).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("defaultOpen").click();
+      </script>
      
    </body>
 </html>
