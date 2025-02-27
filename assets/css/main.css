@@ -2156,7 +2156,7 @@ select {
   border:2px solid transparent;
   background-clip: padding-box;
   position: relative;
-  /* z-index: 2; */
+  z-index: 2;
 }
 .bg-border-input::after {
 	content: '';
@@ -2585,9 +2585,9 @@ select {
   background: linear-gradient(0deg, #277BF5 0%, #1CD691 100.01%);
   color:#fff !important;
 }
-.custom-modal .bg-border-input{
+/* .custom-modal .bg-border-input{
   z-index: inherit;
-}
+} */
 .select-icon i{
   color:#fff;
 }
@@ -4465,4 +4465,10 @@ input[type="time"] {
 .ticket-input-box .bg-border-input{
   padding: 4px;
   padding-right: 10px;
+}
+.ticket-input-box .bg-border-input{
+  border-radius: 26px;
+}
+.ticket-input-box .bg-border-input:after{
+  border-radius: 25px;
 }
