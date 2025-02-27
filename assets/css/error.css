@@ -104,7 +104,17 @@ a{
 	background: linear-gradient(135deg, #18F1FF 0%, #3818FF 100%);
 	opacity: 0.15;
 	filter: blur(150px);
- 
+
+}
+/* 503 page*/
+.error-section-503 img{
+    max-width: 390px;
+}
+.error-page-503{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../images/dashboard/bg/particle.png');
+    background-size:100% 100%;
+    background-position: center center;
 }
 @media all and (max-width:767px){
     .error-section h3 {

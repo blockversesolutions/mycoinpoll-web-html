@@ -1118,4 +1118,10 @@
     height: 45px;
     width: 45px;
   }
+  .referral-list-item span,.referral-list-item p{
+    font-size: 12px;
+  }
+  .referral-list-item{
+    padding: 6px;
+  }
 }

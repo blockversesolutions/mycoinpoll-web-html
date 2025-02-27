@@ -49,7 +49,7 @@
                      <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
                      <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
                      <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
-                     <li><a href="referral-user.html" class="menu-active-bg"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral Manage</span></a></li>
+                     <li><a href="refferal-link-details.html" class="menu-active-bg"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral Manage</span></a></li>
                      <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
                   </ul>
                </div>
@@ -60,7 +60,7 @@
                         <div class="resize-icon">
                            <i class="fa-solid fa-expand"></i>
                         </div>
-                        <h5 class="page-title">Notification</h5>
+                        <h5 class="page-title">Referral User</h5>
                      </div>
                      <div class="dashboard-header-right">
                         <div class="d-flex align-items-center dashboard-header-right-group">
@@ -93,30 +93,23 @@
                         </div>
                      </div>
                   </div>
-                  <div class="input bg-border-input mt-20">
-                     <div class="refer-link-box-inner p30">
-                        <div class="input bg-border-input">
-                           <form action="">
-                              <div class="position-relative">
-                                 <div class="search-icon">
-                                    <i class="search-icon fas fa-search"></i>
-                                 </div>
-                                 <input type="text" class="w-100 ps-5 form-control" id="search" placeholder="Search by name or ether address">
-                                 <div class="search-btn">
-                                    <button class="gradient-btn">Search Now</button>
-                                 </div>
-                              </div>
-                              </form>
+                  
+                  <div class="dashboard-body mt30">
+                      <!--start refer -->
+                     <div class="input bg-border-input">
+                        <div class="refer-link-box-inner d-flex align-items-center g30 position-relative">
+                           <p>Share Referral Link :</p>
+                           <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..fff">
+                           <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy()">
                         </div>
                      </div>
-                  </div>
-                  <div class="dashboard-body mt30">
+                     <!--end refer -->
                      <!--Start user referable-list -->
                      <div class="data-show-table-area dashboard-box mt30">
-                        <div class="d-flex align-items-center flex-wrap g20">
-                           <div class="row w-100">
-                              <div class="col-md-7">
-                                 <div class="profile-view-status d-flex align-items-center g20">
+                            
+                           <div class="row gy-4">
+                              <div class="col-xxl-7">
+                                 <div class="profile-view-status d-flex align-items-center g20 flex-wrap">
                                     <div class="profile-lg-icon">
                                        <img src="../assets/images/dashboard/icon/user.png" alt="user">
                                     </div>
@@ -130,25 +123,26 @@
                                              <span> <i class="fa-solid fa-circle-check skyblue"></i> UU ID: 45843909</span>
                                           </div>
                                        </div>
-                                       
                                     </div>
                                  </div>
                               </div>
-                              <div class="col-md-5">
-                                 <div class="milestone-offer-card mt-20">
+                              <div class="col-xxl-5">
+                                  <div class="milestone-offer-card h-100 d-flex flex-column g-10">
                                     <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <div class="d-flex flex-wrap align-items-center g-10">
-                                          <div class="batch-icon">
-                                             <img src="../assets/images/batch/exclusive.png" alt="icon">
-                                          </div>
-                                          <div class="batch-activity-text">
-                                             <h6>Exclusive Batch</h6>
-                                             <p>12/10/2024, 12:30 pm</p>
-                                          </div>
+                                    <div class="bg-border-input milestone-offer-info-item referral-list-item">
+                                       <div class="d-flex align-items-center g-10">
+                                          <p>Email:</p>
+                                          <span>hellomrjhon@gmail.com</span>
                                        </div>
-                                       <span class="completed-status badge">Achieved</span>
                                     </div>
+                                    <!-- item -->
+                                    <div class="bg-border-input milestone-offer-info-item referral-list-item">
+                                       <div class="d-flex align-items-center g-10">
+                                          <p>Address:</p>
+                                          <span class="text-color-1CD691">0xB2744291cA7dF45278CF1c9c74CF1</span>
+                                       </div>
+                                    </div>
+                                    
                                  </div>
                               </div>
                            </div>
@@ -163,198 +157,203 @@
                                  <span>$300</span>
                               </div>
                            </div> -->
-                        </div>                
-                        <div class="row gy-4 mt-2">
-                           <div class="col-lg-3 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-blance-card d-flex align-items-center">
-                                    <div class="blance-logo">
-                                       <img src="../assets/images/icon/ecm-1.png" alt="icon">
-                                    </div>
-                                    <div class="blance-info">
-                                       <p>Total Transection</p>
-                                       <span>450 </span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-blance-card d-flex align-items-center">
-                                    <div class="blance-logo">
-                                       <img src="../assets/images/icon/ecm-logo.png" alt="icon">
-                                    </div>
-                                    <div class="blance-info">
-                                       <p>Total ECM Bought</p>
-                                       <span>30,000</span>
+                                         
+                           <div class="row gy-4 mt-2">
+                              <div class="col-xxl-3 col-lg-6 col-md-6">     
+                                 <div class="card-1">
+                                    <div class="user-blance-card d-flex align-items-center">
+                                       <div class="blance-logo">
+                                          <img src="../assets/images/icon/ecm-1.png" alt="icon">
+                                       </div>
+                                       <div class="blance-info">
+                                          <p>Total Transection</p>
+                                          <span>450 </span>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-blance-card d-flex align-items-center">
-                                    <div class="blance-logo">
-                                       <img src="../assets/images/icon/user.png" alt="icon">
-                                    </div>
-                                    <div class="blance-info">
-                                       <p>Total Referral User</p>
-                                       <span>450</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-blance-card d-flex align-items-center">
-                                    <div class="blance-logo">
-                                       <img src="../assets/images/icon/ecm-logo.png" alt="icon">
-                                    </div>
-                                    <div class="blance-info">
-                                       <p>Current ECM Bal.</p>
-                                       <span>10,000</span>
+                              <div class="col-xxl-3 col-lg-6 col-md-6">     
+                                 <div class="card-1">
+                                    <div class="user-blance-card d-flex align-items-center">
+                                       <div class="blance-logo">
+                                          <img src="../assets/images/icon/ecm-logo.png" alt="icon">
+                                       </div>
+                                       <div class="blance-info">
+                                          <p>Total ECM Bought</p>
+                                          <span>30,000</span>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
+                              <div class="col-xxl-3 col-lg-6 col-md-6">     
+                                 <div class="card-1">
+                                    <div class="user-blance-card d-flex align-items-center">
+                                       <div class="blance-logo">
+                                          <img src="../assets/images/icon/user.png" alt="icon">
+                                       </div>
+                                       <div class="blance-info">
+                                          <p>Total Referral User</p>
+                                          <span>450</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xxl-3 col-lg-6 col-md-6">     
+                                 <div class="card-1">
+                                    <div class="user-blance-card d-flex align-items-center">
+                                       <div class="blance-logo">
+                                          <img src="../assets/images/icon/ecm-logo.png" alt="icon">
+                                       </div>
+                                       <div class="blance-info">
+                                          <p>Current ECM Bal.</p>
+                                          <span>10,000</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              
                            </div>
-                           
-                        </div>
                         </div>
                         
-                        <div class="table-header-area d-flex align-items-center justify-content-between mt40">
-                           <div class="table-heading">
-                              <h5>Referral User List</h5>
-                           </div>
-                           <div class="search-box-area">
-                              <form action="">
-                                 <div class="input bg-border-input position-relative">
-                                    <div class="search-icon">
-                                       <i class="search-icon fas fa-search"></i>
+                        <div class="dashboard-box mt30">
+                           <div class="table-header-area d-flex align-items-center justify-content-between">
+                              <div class="table-heading">
+                                 <h5>Referral User List</h5>
+                              </div>
+                              <div class="search-box-area">
+                                 <form action="">
+                                    <div class="input bg-border-input position-relative">
+                                       <div class="search-icon">
+                                          <i class="search-icon fas fa-search"></i>
+                                       </div>
+                                       <input type="text" class="form-control" id="search" placeholder="Search here...">
                                     </div>
-                                    <input type="text" class="form-control" id="search" placeholder="Search here...">
-                                 </div>
-                              </form>
+                                 </form>
+                              </div>
                            </div>
-                        </div>
-                        <div class="common-table mt30">
-                           <table class="custom-table display nowrap mobile-table">
-                              <thead>
-                                 <tr>
-                                    <th>SL</th>
-                                    <th>Reg. Date</th>
-                                    <th>Name</th>
-                                    <th>Referral Link</th>
-                                    <th>Total Referral</th>
-                                    <th class="text-center">Status</th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <td>01</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>300</td>
-                                    <td class="text-center"><span class="active-status badge">Active</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>02</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>450</td>
-                                    <td class="text-center"><span class="badge deactivate-status">Deactive</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>03</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>550</td>
-                                    <td class="text-center"><span class="badge deactivate-status">Deactive</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>04</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>658</td>
-                                    <td class="text-center"><span class="active-status badge">Active</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>05</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>780</td>
-                                    <td class="text-center"><span class="badge deactivate-status">Deactive</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>06</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>550</td>
-                                    <td class="text-center"><span class="badge deactivate-status">Deactive</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>07</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>550</td>
-                                    <td class="text-center"><span class="badge active-status">Active</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>08</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>550</td>
-                                    <td class="text-center"><span class="badge active-status">Active</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>09</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>550</td>
-                                    <td class="text-center"><span class="badge active-status">Active</span></td>
-                                    
-                                 </tr>
-                                 <tr>
-                                    <td>10</td>
-                                    <td>12/10/2024</td>
-                                    <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
-                                    <td>https://usdt.mycoinpoll.com...</td>
-                                    <td>550</td>
-                                    <td class="text-center"><span class="badge active-status">Active</span></td>
-                                    
-                                 </tr>
-                              </tbody>
-                        </table>
-                           <div class="pagination mt50">
-                              <ul class="d-flex align-items-center w-100">
-                                 <li><a href="#" class="btn1 primary-btn subscribe-btn">Previous</a></li>
-                                 <li>
-                                    <ul class="d-flex align-items-center pagination-inner">
-                                       <li><a href="#">1</a></li>
-                                       <li><a href="#" class="active">2</a></li>
-                                       <li><a href="#">3</a></li>
-                                       <li><a href="#">...</a></li>
-                                       <li><a href="#">10</a></li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="#" class="btn1 primary-btn subscribe-btn">Next</a></li>
-                              </ul>
+                           <div class="common-table mt30">
+                              <table class="custom-table display nowrap mobile-table">
+                                 <thead>
+                                    <tr>
+                                       <th>SL</th>
+                                       <th>Name</th>
+                                       <th>Reg. Date</th>
+                                       <th>Email</th>
+                                       <th>Phone</th>
+                                       <th>UU ID</th>
+                                       <th class="text-center">Status</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>01</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       
+                                       <td class="text-center"><span class="deactivate-status badge">Deactive</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>01</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                      
+                                       <td class="text-center"><span class="active-status badge">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>01</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="deactivate-status badge">Deactive</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>01</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="active-status badge">Active</span></td>
+                                    </tr> 
+                                    <tr>
+                                       <td>05</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="deactivate-status badge">Deactive</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>06</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="active-status badge">Active</span></td>
+                                    </tr> 
+                                    <tr>
+                                       <td>07</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="deactivate-status badge">Deactive</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>08</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="active-status badge">Active</span></td>
+                                    </tr> 
+                                    <tr>
+                                       <td>09</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="deactivate-status badge">Deactive</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>10</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="active-status badge">Active</span></td>
+                                    </tr>  
+                                 </tbody>
+                              </table>
+                              <div class="pagination mt50">
+                                 <ul class="d-flex align-items-center w-100">
+                                    <li><a href="#" class="btn1 primary-btn subscribe-btn">Previous</a></li>
+                                    <li>
+                                       <ul class="d-flex align-items-center pagination-inner">
+                                          <li><a href="#">1</a></li>
+                                          <li><a href="#" class="active">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">...</a></li>
+                                          <li><a href="#">10</a></li>
+                                       </ul>
+                                    </li>
+                                    <li><a href="#" class="btn1 primary-btn subscribe-btn">Next</a></li>
+                                 </ul>
+                              </div>
                            </div>
                         </div>
                   </div>

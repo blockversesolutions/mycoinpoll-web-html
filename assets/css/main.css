@@ -11,7 +11,7 @@ h1,h3,h4,h5{
 }
 p{
   font-size:18px;
-  line-height: 30px;
+  line-height:28px;
   font-weight: 500;
   color:rgba(255, 255, 255, 0.8);
 }
@@ -3033,6 +3033,9 @@ select {
   line-height: 22px;
   color:#fff;
 }
+.g-5{
+  gap: 5px;
+}
 .user-balance-item span b{
   font-weight: 800;
 }
@@ -3091,7 +3094,6 @@ select {
   left: 2%;
   bottom: 0%;
 }
- 
 .dashboard-left-menu {
 	position: relative;
 	z-index: 2;
@@ -3104,6 +3106,7 @@ select {
   top: 50%;
   left:0;
   right: 0;
+  z-index: -2;
   margin: auto;
   transform: translateY(-50%);
 }
@@ -4407,7 +4410,7 @@ ul.dropdown li:hover{
   padding-bottom: 30px;
 }
 .ticket-author-box:last-child{
-  border: none;
+  border: none !important;
   padding-bottom: 0;
 }
 /* End ticket css */
@@ -4421,4 +4424,45 @@ input[type="time"] {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
+}
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(90deg, #277DF3 0%, #2589E5 100.01%); }
+  33% {
+    background: linear-gradient(90deg, #2495D8 0%, #239AD3 100.01%); }
+  75% {
+    background: linear-gradient(90deg, #20B1B9  0%, #20B8B2  100.01%); }
+  100% {
+    background: linear-gradient(90deg, #1EC99F 0%, #1CD394 100.01%); }
+}
+.animated-bg {
+  animation: colorChange 4s infinite linear;
+}
+.ticket-input-box .gradient-btn{
+  min-width: 130px;
+}
+.ticket-file-upload label{
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 42px;
+  width: 42px;
+  align-items: center;
+  border: 1px solid #277BF5;
+  cursor: pointer;
+}
+.ticket-file-upload label:hover i{
+  color:#1EC6A3;
+}
+.ticket-file-upload input{
+  display: none;
+}
+.ticket-file-upload label i{
+  color:#fff;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.ticket-input-box .bg-border-input{
+  padding: 4px;
+  padding-right: 10px;
 }
