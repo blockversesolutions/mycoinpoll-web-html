@@ -2156,7 +2156,7 @@ select {
   border:2px solid transparent;
   background-clip: padding-box;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .bg-border-input::after {
 	content: '';
@@ -2169,6 +2169,9 @@ select {
   background: linear-gradient(90deg, rgba(39, 123, 245, 0.2) 0%, rgba(28, 214, 145, 0.2) 100.01%);
   z-index:-2;
 } 
+.modal-body-inner .bg-border-input{
+  z-index: 2;
+}
  .apply-launch-part label,.modal-body-inner label{
   font-size:18px;
   font-weight: 500;
@@ -3600,6 +3603,9 @@ ul.dropdown li:hover{
 	border: none;
 	outline: none;
 }
+.gradient-btn-small span i{
+  font-size: 14px;
+}
 .action-group{
   gap:10px;
 }
@@ -3893,6 +3899,7 @@ ul.dropdown li:hover{
   padding: 18px 25px;
   background: #2682EE1A;
   border: 1px solid #2683ee60;
+  height: 100%;
 }
 .card-2 {
 	border-radius: 10px;
@@ -4275,8 +4282,11 @@ ul.dropdown li:hover{
   padding: 10px;
   background: #FFFFFF05;
 }
+.user-info-overview-box .milestone-offer-card{
+  background: #FFFFFF45;
+}
 .milestone-offer-info-item{
-  padding:8px 18px;
+  padding:8px 12px;
   border-bottom: 1px solid #FFFFFF1A
 }
 .milestone-offer-info-item:last-child{
@@ -4308,17 +4318,27 @@ ul.dropdown li:hover{
   margin-top: 40px;
  }
 /* End millestone */
-.no-data{
+ .animate-img{
   position: absolute;
-  top: 15%;
-  left: 0;
-  right: 0;
-}
-.no-data h4{
+  top:-3%;
+  left: 24%;
+  animation: moveTopToBottom 3s ease-in-out infinite;
+  z-index:-2;
+ }
+ .animate-img-2{
+  position: absolute;
+  top:30px;
+  left:-15%;
+  animation: zoomInOut 2s ease-in-out infinite;
+ }
+.no-data-content h4{
   color:#fff;
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
   font-weight: 500;
+}
+.no-data-thumbnails img{
+  max-width:250px;
 }
 .profile-icon img{
   height:52px;
@@ -4454,15 +4474,24 @@ input[type="time"] {
 .ticket-file-upload label:hover i{
   color:#1EC6A3;
 }
-.ticket-file-upload input{
+.ticket-file-upload input {
   display: none;
+}
+#file-name {
+  font-size: 14px;
+  color: #ddd;
 }
 .ticket-file-upload label i{
   color:#fff;
   transition: 0.5s;
   font-size: 18px;
 }
-.ticket-input-box .bg-border-input{
+.ticket-input-box .input {
+	border-radius: 5px;
+	padding: 5px 14px;
+	border: 1px solid #2687E83D;
+}
+/* .ticket-input-box .bg-border-input{
   padding: 4px;
   padding-right: 10px;
 }
@@ -4471,4 +4500,4 @@ input[type="time"] {
 }
 .ticket-input-box .bg-border-input:after{
   border-radius: 25px;
-}
+} */

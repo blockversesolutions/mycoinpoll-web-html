@@ -108,20 +108,20 @@
                         </div>
                         <p>Status : <span class="active-status badge"> Open</span></p>
                      </div>
-                     <div class="row gy-4 mt-1">
-                        <div class="col-lg-4 col-md-6">
+                     <div class="row gy-3 mt-1">
+                        <div class="col-lg-6 col-xl-4">
                            <div class="bg-border-input d-flex align-items-center justify-content-between p-2 ps-3 pe-3">
                               <p>Priority</p>
                               <span class="red">High</span>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-6 col-xl-4">
                            <div class="bg-border-input d-flex align-items-center justify-content-between p-2 ps-3 pe-3">
                               <p>Created</p>
                                <b class="text-white">1st June 2025</b> 
                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-6 col-xl-4">
                            <div class="bg-border-input d-flex align-items-center justify-content-between p-2 ps-3 pe-3">
                               <p>Last Updated</p>
                                <b class="text-white">1st June 2025</b> 
@@ -203,7 +203,7 @@
                      </div>
                      <form action="">
                        <div class="form-group position-relative ticket-input-box">
-                           <div class="input bg-border-input d-flex align-items-center g-10 flex-md-nowrap flex-wrap">
+                           <!-- <div class="input d-flex align-items-center g-10 flex-md-nowrap flex-wrap">
                               <input type="text" class="form-control" placeholder="Write here...">
                               <div class="ticket-file-upload">
                                  <label for="file-select">
@@ -212,6 +212,19 @@
                                  <input type="file" id="file-select">
                               </div>
                               <button class="gradient-btn">Send <i class="fa-solid fa-paper-plane"></i></button>
+                           </div> -->
+                           <div class="input d-flex align-items-center g-10 flex-md-nowrap flex-wrap">
+                              <input type="text" class="form-control" placeholder="Write here...">
+                              <span id="file-name" style="display: none;"></span>
+                              <div class="ticket-file-upload" onclick="document.getElementById('file-select').click();">
+                                 <input type="file" id="file-select" onchange="updateFileName()">
+                                 <label for="file-select">
+                                       <i class="fa-solid fa-paperclip"></i>
+                                 </label>
+                              </div>
+                              <button class="gradient-btn">
+                                 Send <i class="fa-solid fa-paper-plane"></i>
+                              </button>
                            </div>
                        </div>
                      </form>
@@ -248,5 +261,18 @@
             });
         });
     </script>
+    <script>
+         function updateFileName() {
+         const input = document.getElementById("file-select");
+         const fileNameDisplay = document.getElementById("file-name");
+         
+         if (input.files.length > 0) {
+            fileNameDisplay.textContent = input.files[0].name; // Show selected file name
+            fileNameDisplay.style.display = "inline"; // Make it visible
+         } else {
+            fileNameDisplay.style.display = "none"; // Hide when no file selected
+         }
+      }
+   </script>
    </body>
 </html>

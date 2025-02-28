@@ -480,6 +480,9 @@
   .popular-post-thumbnails img {
     width: 100%;
   }
+  .user-info-overview-box{
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 767px) {
   .icon-rotate i{

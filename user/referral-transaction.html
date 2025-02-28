@@ -50,7 +50,8 @@
                   <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
                   <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
                   <li><a href="manage-roles.html"><img src="../assets/images/dashboard/icon/roles.png" alt="icon"> <span class="left-menu-text">Manage Roles</span></a></li>
-                  <li class="menu-active-bg"><a href="staking.html"><img src="../assets/images/dashboard/icon/staking.png" alt="icon"> <span class="left-menu-text">Staking Log</span></a></li>
+                  <li><a href="staking.html"><img src="../assets/images/dashboard/icon/staking.png" alt="icon"> <span class="left-menu-text">Staking Log</span></a></li>
+                  <li class="menu-active-bg"><a href="refferal-link-details.html"><img src="../assets/images/dashboard/icon/transaction.png" alt="icon"> <span class="left-menu-text">Referral Transac.</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
                </ul>
               </div>
@@ -61,7 +62,7 @@
                      <div class="resize-icon">
                         <i class="fa-solid fa-expand"></i>
                      </div>
-                     <h5 class="page-title">Staking Log</h5>
+                     <h5 class="page-title">Transactions</h5>
                   </div>
                   <div class="dashboard-header-right">
                      <div class="d-flex align-items-center dashboard-header-right-group">
@@ -94,10 +95,47 @@
                      </div>
                   </div>
                </div>
+               <!--start refer -->
+               <div class="input bg-border-input mt30">
+                  <div class="refer-link-box-inner d-flex align-items-center g30 position-relative">
+                     <p>Share Referral Link :</p>
+                     <input type="text" id="refer-url" placeholder="Receiver Address" value="https://usdt.mycoinpoll.com/regrfsa..fff">
+                     <img src="../assets/images/dashboard/icon/copy.png" alt="copy" onclick="urlCopy()">
+                  </div>
+               </div>
+               <!--end refer -->
+               <div class="milestone-offer-card h-100 d-flex g-10 mt30 justify-content-center flex-wrap">
+                  <!-- item -->
+                  <div class="bg-border-input milestone-offer-info-item">
+                     <div class="d-flex align-items-center g-10">
+                        <p>Total ECM Earn with Refer :</p>
+                        <span class="text-color-1CD691">4200 ECM</span>
+                     </div>
+                  </div>
+                  <!-- item -->
+                  <div class="bg-border-input milestone-offer-info-item">
+                     <div class="d-flex align-items-center g-10">
+                        <p>Total ETH Earn with Refer :</p>
+                        <span class="text-color-1CD691">3200 ETH</span>
+                     </div>
+                  </div>             
+               </div>
                <div class="dashboard-body mt30">
                    <div class="dashboard-box">
-                     <div class="table-heading">
-                        <h5>Staking History</h5>
+                     <div class="d-flex align-items-center justify-content-between flex-wrap g-10">
+                        <div class="table-heading">
+                           <h5>Referral Transactions</h5>
+                        </div>
+                        <div class="search-box-area">
+                           <form action="">
+                              <div class="input bg-border-input position-relative">
+                                 <div class="search-icon">
+                                    <i class="search-icon fas fa-search"></i>
+                                 </div>
+                                 <input type="text" class="form-control" id="search" placeholder="Search here...">
+                              </div>
+                           </form>
+                        </div>
                      </div>
                      <div class="row gy-4 mt-1">
                         <div class="col-lg-6 col-xl-4">
@@ -125,104 +163,28 @@
                                  <div class="milestone-offer-card mt-20">
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Stacking Amount</p>
+                                       <p>Purchase Amount</p>
                                        <span class="text-color-1CD691">1000 ECM</span>
                                     </div>
                                     <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Percentage</p>
-                                       <span>10%</span>
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Duration</p>
-                                       <span>15 days</span>
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Reward</p>
-                                       <span>100 ECM</span>
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
                                     </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Total Amount</p>
-                                       <span>1100 ECM</span>
-                                    </div>
-                                 </div>
-                                 <div class="d-flex align-items-center g-10 flex-column mt-20">
-                                    <p>Status : <span class="pending-status badge"> Pending </span></p>
-                                    <div class="countdown-area-sm">
-                                    <ul class="d-flex align-items-center">
-                                       <li>23D</li>
-                                       <li><span>:</span></li>
-                                       <li>09h</li>
-                                       <li><span>:</span></li>
-                                       <li>25m</li>
-                                       <li><span>:</span></li>
-                                       <li>45s</li>
-                                    </ul>
-                                 </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                         <div class="col-lg-6 col-xl-4">
-                           <div class="bg-border-input h-100">
-                              <div class="p-3">
-                                  <div class="d-flex align-items-center g-10">
-                                    <div class="profile-icon">
-                                       <img src="../assets/images/icon/ecm-logo.png" alt="logo">
-                                    </div>
-                                    <div class="profile-info">
-                                       <h5>ECM Coins</h5>
-                                       <span class="publish-date d-flex align-items-center m-0"> <i class="fa-solid fa-clock"></i> 19 February 2025</span>
-                                    </div>
-                                 </div>
-                                 <div class="line-1 mt-15"></div>
-                                  <div class="d-flex align-items-center g-10 justify-content-center staking-user-info mt-15">
-                                    <div class="profile-icon profile-icon-sm">
-                                       <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                    </div>
-                                    <div class="profile-info">
-                                       <h5>Jane Cooper</h5>
-                                       <span class="publish-date d-flex align-items-center m-0">UU ID: 5320127</span>
-                                    </div>
-                                 </div>
-                                 <div class="milestone-offer-card mt-20">
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Stacking Amount</p>
-                                       <span class="text-color-1CD691">1000 ECM</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Percentage</p>
-                                       <span>10%</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Duration</p>
-                                       <span>15 days</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Reward</p>
-                                       <span>100 ECM</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Total Amount</p>
-                                       <span>1100 ECM</span>
-                                    </div>
-                                 </div>
-                                 <div class="d-flex align-items-center g-10 flex-column mt-20">
-                                    <p>Status : <span class="completed-status badge"> Completed </span></p>
-                                     
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                         <div class="col-lg-6 col-xl-4">
                            <div class="bg-border-input h-100 ">
                               <div class="p-3">
                                   <div class="d-flex align-items-center g-10">
@@ -247,104 +209,28 @@
                                  <div class="milestone-offer-card mt-20">
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Stacking Amount</p>
+                                       <p>Purchase Amount</p>
                                        <span class="text-color-1CD691">1000 ECM</span>
                                     </div>
                                     <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Percentage</p>
-                                       <span>10%</span>
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Duration</p>
-                                       <span>15 days</span>
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Reward</p>
-                                       <span>100 ECM</span>
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
                                     </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Total Amount</p>
-                                       <span>1100 ECM</span>
-                                    </div>
-                                 </div>
-                                 <div class="d-flex align-items-center g-10 flex-column mt-20">
-                                    <p>Status : <span class="pending-status badge"> Pending </span></p>
-                                    <div class="countdown-area-sm">
-                                    <ul class="d-flex align-items-center">
-                                       <li>23D</li>
-                                       <li><span>:</span></li>
-                                       <li>09h</li>
-                                       <li><span>:</span></li>
-                                       <li>25m</li>
-                                       <li><span>:</span></li>
-                                       <li>45s</li>
-                                    </ul>
-                                 </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                         <div class="col-lg-6 col-xl-4">
-                           <div class="bg-border-input h-100">
-                              <div class="p-3">
-                                  <div class="d-flex align-items-center g-10">
-                                    <div class="profile-icon">
-                                       <img src="../assets/images/icon/ecm-logo.png" alt="logo">
-                                    </div>
-                                    <div class="profile-info">
-                                       <h5>ECM Coins</h5>
-                                       <span class="publish-date d-flex align-items-center m-0"> <i class="fa-solid fa-clock"></i> 19 February 2025</span>
-                                    </div>
-                                 </div>
-                                 <div class="line-1 mt-15"></div>
-                                  <div class="d-flex align-items-center g-10 justify-content-center staking-user-info mt-15">
-                                    <div class="profile-icon profile-icon-sm">
-                                       <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                    </div>
-                                    <div class="profile-info">
-                                       <h5>Jane Cooper</h5>
-                                       <span class="publish-date d-flex align-items-center m-0">UU ID: 5320127</span>
-                                    </div>
-                                 </div>
-                                 <div class="milestone-offer-card mt-20">
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Stacking Amount</p>
-                                       <span class="text-color-1CD691">1000 ECM</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Percentage</p>
-                                       <span>10%</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Duration</p>
-                                       <span>15 days</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Reward</p>
-                                       <span>100 ECM</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Total Amount</p>
-                                       <span>1100 ECM</span>
-                                    </div>
-                                 </div>
-                                 <div class="d-flex align-items-center g-10 flex-column mt-20">
-                                    <p>Status : <span class="completed-status badge"> Completed </span></p>
-                                     
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                         <div class="col-lg-6 col-xl-4">
                            <div class="bg-border-input h-100 ">
                               <div class="p-3">
                                   <div class="d-flex align-items-center g-10">
@@ -369,49 +255,29 @@
                                  <div class="milestone-offer-card mt-20">
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Stacking Amount</p>
+                                       <p>Purchase Amount</p>
                                        <span class="text-color-1CD691">1000 ECM</span>
                                     </div>
                                     <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Percentage</p>
-                                       <span>10%</span>
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Duration</p>
-                                       <span>15 days</span>
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Reward</p>
-                                       <span>100 ECM</span>
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
                                     </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Total Amount</p>
-                                       <span>1100 ECM</span>
-                                    </div>
-                                 </div>
-                                 <div class="d-flex align-items-center g-10 flex-column mt-20">
-                                    <p>Status : <span class="pending-status badge"> Pending </span></p>
-                                    <div class="countdown-area-sm">
-                                    <ul class="d-flex align-items-center">
-                                       <li>23D</li>
-                                       <li><span>:</span></li>
-                                       <li>09h</li>
-                                       <li><span>:</span></li>
-                                       <li>25m</li>
-                                       <li><span>:</span></li>
-                                       <li>45s</li>
-                                    </ul>
-                                 </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                         <div class="col-lg-6 col-xl-4">
-                           <div class="bg-border-input h-100">
+                           <div class="bg-border-input h-100 ">
                               <div class="p-3">
                                   <div class="d-flex align-items-center g-10">
                                     <div class="profile-icon">
@@ -419,7 +285,7 @@
                                     </div>
                                     <div class="profile-info">
                                        <h5>ECM Coins</h5>
-                                       <span class="publish-date d-flex align-items-center m-0"> <i class="fa-solid fa-clock"></i> 19 February 2025</span>
+                                       <span class="publish-date d-flex align-items-center m-0"><i class="fa-solid fa-clock"></i> 19 February 2025</span>
                                     </div>
                                  </div>
                                  <div class="line-1 mt-15"></div>
@@ -435,36 +301,258 @@
                                  <div class="milestone-offer-card mt-20">
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Stacking Amount</p>
+                                       <p>Purchase Amount</p>
                                        <span class="text-color-1CD691">1000 ECM</span>
                                     </div>
                                     <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Percentage</p>
-                                       <span>10%</span>
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Duration</p>
-                                       <span>15 days</span>
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
                                     </div>
                                     <!-- item -->
                                     <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Reward</p>
-                                       <span>100 ECM</span>
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
                                     </div>
-                                    <!-- item -->
-                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                       <p>Total Amount</p>
-                                       <span>1100 ECM</span>
-                                    </div>
-                                 </div>
-                                 <div class="d-flex align-items-center g-10 flex-column mt-20">
-                                    <p>Status : <span class="completed-status badge"> Completed </span></p>
                                  </div>
                               </div>
                            </div>
-                        </div> 
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input h-100 ">
+                              <div class="p-3">
+                                  <div class="d-flex align-items-center g-10">
+                                    <div class="profile-icon">
+                                       <img src="../assets/images/icon/ecm-logo.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>ECM Coins</h5>
+                                       <span class="publish-date d-flex align-items-center m-0"><i class="fa-solid fa-clock"></i> 19 February 2025</span>
+                                    </div>
+                                 </div>
+                                 <div class="line-1 mt-15"></div>
+                                  <div class="d-flex align-items-center g-10 justify-content-center staking-user-info mt-15">
+                                    <div class="profile-icon profile-icon-sm">
+                                       <img src="../assets/images/dashboard/icon/user.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>Jane Cooper</h5>
+                                       <span class="publish-date d-flex align-items-center m-0">UU ID: 5320127</span>
+                                    </div>
+                                 </div>
+                                 <div class="milestone-offer-card mt-20">
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Purchase Amount</p>
+                                       <span class="text-color-1CD691">1000 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input h-100 ">
+                              <div class="p-3">
+                                  <div class="d-flex align-items-center g-10">
+                                    <div class="profile-icon">
+                                       <img src="../assets/images/icon/ecm-logo.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>ECM Coins</h5>
+                                       <span class="publish-date d-flex align-items-center m-0"><i class="fa-solid fa-clock"></i> 19 February 2025</span>
+                                    </div>
+                                 </div>
+                                 <div class="line-1 mt-15"></div>
+                                  <div class="d-flex align-items-center g-10 justify-content-center staking-user-info mt-15">
+                                    <div class="profile-icon profile-icon-sm">
+                                       <img src="../assets/images/dashboard/icon/user.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>Jane Cooper</h5>
+                                       <span class="publish-date d-flex align-items-center m-0">UU ID: 5320127</span>
+                                    </div>
+                                 </div>
+                                 <div class="milestone-offer-card mt-20">
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Purchase Amount</p>
+                                       <span class="text-color-1CD691">1000 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input h-100 ">
+                              <div class="p-3">
+                                  <div class="d-flex align-items-center g-10">
+                                    <div class="profile-icon">
+                                       <img src="../assets/images/icon/ecm-logo.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>ECM Coins</h5>
+                                       <span class="publish-date d-flex align-items-center m-0"><i class="fa-solid fa-clock"></i> 19 February 2025</span>
+                                    </div>
+                                 </div>
+                                 <div class="line-1 mt-15"></div>
+                                  <div class="d-flex align-items-center g-10 justify-content-center staking-user-info mt-15">
+                                    <div class="profile-icon profile-icon-sm">
+                                       <img src="../assets/images/dashboard/icon/user.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>Jane Cooper</h5>
+                                       <span class="publish-date d-flex align-items-center m-0">UU ID: 5320127</span>
+                                    </div>
+                                 </div>
+                                 <div class="milestone-offer-card mt-20">
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Purchase Amount</p>
+                                       <span class="text-color-1CD691">1000 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input h-100 ">
+                              <div class="p-3">
+                                  <div class="d-flex align-items-center g-10">
+                                    <div class="profile-icon">
+                                       <img src="../assets/images/icon/ecm-logo.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>ECM Coins</h5>
+                                       <span class="publish-date d-flex align-items-center m-0"><i class="fa-solid fa-clock"></i> 19 February 2025</span>
+                                    </div>
+                                 </div>
+                                 <div class="line-1 mt-15"></div>
+                                  <div class="d-flex align-items-center g-10 justify-content-center staking-user-info mt-15">
+                                    <div class="profile-icon profile-icon-sm">
+                                       <img src="../assets/images/dashboard/icon/user.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>Jane Cooper</h5>
+                                       <span class="publish-date d-flex align-items-center m-0">UU ID: 5320127</span>
+                                    </div>
+                                 </div>
+                                 <div class="milestone-offer-card mt-20">
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Purchase Amount</p>
+                                       <span class="text-color-1CD691">1000 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input h-100 ">
+                              <div class="p-3">
+                                  <div class="d-flex align-items-center g-10">
+                                    <div class="profile-icon">
+                                       <img src="../assets/images/icon/ecm-logo.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>ECM Coins</h5>
+                                       <span class="publish-date d-flex align-items-center m-0"><i class="fa-solid fa-clock"></i> 19 February 2025</span>
+                                    </div>
+                                 </div>
+                                 <div class="line-1 mt-15"></div>
+                                  <div class="d-flex align-items-center g-10 justify-content-center staking-user-info mt-15">
+                                    <div class="profile-icon profile-icon-sm">
+                                       <img src="../assets/images/dashboard/icon/user.png" alt="logo">
+                                    </div>
+                                    <div class="profile-info">
+                                       <h5>Jane Cooper</h5>
+                                       <span class="publish-date d-flex align-items-center m-0">UU ID: 5320127</span>
+                                    </div>
+                                 </div>
+                                 <div class="milestone-offer-card mt-20">
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>Purchase Amount</p>
+                                       <span class="text-color-1CD691">1000 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item text-center">
+                                       <p class="text-white text-color-1CD691">Referral Bonus</p>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ECM Amount</p>
+                                       <span>110 ECM</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
+                                       <p>ETH Amount</p>
+                                       <span>12 ETH</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                         
                         <div class="col-md-12">
                            <div class="pagination mt-20">
                               <ul class="d-flex align-items-center w-100">
