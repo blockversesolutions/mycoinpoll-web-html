@@ -214,18 +214,18 @@
                               <button class="gradient-btn">Send <i class="fa-solid fa-paper-plane"></i></button>
                            </div> -->
                            <div class="input d-flex align-items-center g-10 flex-md-nowrap flex-wrap">
-                              <input type="text" class="form-control" placeholder="Write here...">
-                              <span id="file-name" style="display: none;"></span>
-                              <div class="ticket-file-upload" onclick="document.getElementById('file-select').click();">
-                                 <input type="file" id="file-select" onchange="updateFileName()">
-                                 <label for="file-select">
-                                       <i class="fa-solid fa-paperclip"></i>
-                                 </label>
-                              </div>
-                              <button class="gradient-btn">
-                                 Send <i class="fa-solid fa-paper-plane"></i>
-                              </button>
+                           <input type="text" class="form-control" placeholder="Write here...">
+                           <span id="file-name" style="display: none;"></span>
+                           <div class="ticket-file-upload" onclick="triggerFileSelect()">
+                              <input type="file" id="file-select" onchange="updateFileName()" style="display: none;">
+                              <label for="file-select">
+                                 <i class="fa-solid fa-paperclip"></i>
+                              </label>
                            </div>
+                           <button class="gradient-btn">
+                              Send <i class="fa-solid fa-paper-plane"></i>
+                           </button>
+                        </div>
                        </div>
                      </form>
                   </div>
