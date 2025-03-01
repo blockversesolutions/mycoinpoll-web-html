@@ -93,61 +93,7 @@
                         </div>
                      </div>
                   </div>
-                  <!--start login Modal -->
-         <div class="modal fade bg-gradient-add" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-custom-width-sm">
-               <div class="modal-content custom-modal">
-                  <form action="">
-                     <div class="modal-header-area d-flex align-items-center justify-content-between">
-                        <h4 class="text-shadow">Assign a Agent</h4>
-                        <div class="modal-close-btn">
-                           <span data-bs-dismiss="modal" aria-label="Close">
-                           <i class="fas fa-times"></i>
-                           </span>
-                        </div>
-                     </div>
-                     <div class="modal-body-inner">
-                        <div class="row gy-3">
-                           <p>You have the option to assign an agent for handling this ticket (#10001) efficiently.</p>
-                            <div class="form-group col-md-12">
-                              <label for="Region">Agent name</label>
-                              <div class="input bg-border-input">
-                                 <div class="custom-select position-relative">
-                                    <div class="select-selected">
-                                        Agent - 1
-                                    </div>
-                                    <div class="select-items">
-                                       <div class="select-item" data-value="Agent-1">
-                                           Agent - 2
-                                       </div>
-                                       <div class="select-item" data-value="Agent-2">
-                                           Agent - 3
-                                       </div>
-                                       <div class="select-item" data-value="Agent-3">
-                                           Agent - 4
-                                       </div>
-                                       <div class="select-item" data-value="Agent-4">
-                                           Agent - 5
-                                       </div>
-                                        
-                                    </div>
-                                    <div class="select-icon">
-                                       <i class="fa-solid fa-angle-down"></i>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-20">
-                        <a href="#">Not a Mycoinpoll member?</a>
-                        <a href="#" class="bg-solid-btn">Sign Up</a>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-         <!-- end login modal -->
+                  
                   <div class="dashboard-body mt30">
                      <!--Start user referable-list -->
                      <div class="data-show-table-area dashboard-box mt30">
@@ -245,7 +191,7 @@
                                           <div class="d-flex align-items-end g-10">
                                              <span>12%</span>
                                              <div class="d-flex align-items-center day-user-count-down red">
-                                                <i class="fa-solid fa-caret-down"> </i> -24 Today
+                                                <i class="fa-solid fa-caret-down"> </i> +24 Today
                                              </div>
                                           </div>
                                        </div>
@@ -271,60 +217,144 @@
                                  </form>
                               </div>
                            </div>
-                           
-                           <div class="row gy-4 mt-1">
-                              <div class="col-lg-6 col-xl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : <span class="red deactivate-status badge"> High</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge in-progress-status">In progress</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
+                           <div class="common-table mt30">
+                              <table class="custom-table display nowrap mobile-table">
+                                 <thead>
+                                    <tr>
+                                       <th>Ticket ID</th>
+                                       <th>Name</th>
+                                       <th>Subject</th>
+                                       <th>Priority</th>
+                                       <th>Created Date</th>
+                                       <th>Last Update</th>
+                                       <th class="text-center">Status</th>
+                                       <th>Action</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>01</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
                                        
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
+                                       <td class="text-center"><span class="deactivate-status badge">Deactive</span></td>
+                                       <td>
+                                         <div class="position-relative action-btn-wraper">
+                                           <span class="action-btn"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                          <div class="custom-dropdown-menu">
+                                             <ul class="d-flex flex-column g-20 align-items-start">
+                                                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-modal">
+         Login Modal
+         </button> -->
+                                                <li class="d-flex align-items-center g-10" data-bs-toggle="modal" data-bs-target="#login-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
+                                                <li class="d-flex align-items-center g-10"><i class="fa-solid fa-eye green"></i> View Details</li>
+                                                <li class="d-flex align-items-center g-10"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
+                                                <li class="d-flex align-items-center g-10"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
+                                                <li class="d-flex align-items-center g-10"><i class="fa-solid fa-trash-can red"></i> Delete</li>
+                                             </ul>
                                           </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#login-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><i class="fa-solid fa-eye green"></i> View Details</li>
-                                                <li class="d-flex align-items-center g-5"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                <li class="d-flex align-items-center g-5"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                                         </div>
+                                       </td>
+                                    </tr>
+
+                                     
+                                    <tr>
+                                       <td>08</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="active-status badge">Active</span></td>
+                                    </tr> 
+                                    <tr>
+                                       <td>09</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="deactivate-status badge">Deactive</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>10</td>
+                                       <td><img src="../assets/images/dashboard/icon/user.png" alt="" class="table-img"> Jane Cooper</td>
+                                       <td>12/10/2024</td>
+                                       <td>deanna.curtis@example.com</td>
+                                       <td>(704) 555-0127</td>
+                                       <td>5320127</td>
+                                       <td class="text-center"><span class="active-status badge">Active</span></td>
+                                    </tr>  
+                                 </tbody>
+                              </table>
+                              <!-- Button trigger modal -->
+         
+         <!--start login Modal -->
+         <div class="modal fade bg-gradient-add" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-custom-width">
+               <div class="modal-content custom-modal">
+                  <form action="">
+                     <div class="modal-header-area d-flex align-items-center justify-content-between">
+                        <h4 class="text-shadow">Log In</h4>
+                        <div class="modal-close-btn">
+                           <span data-bs-dismiss="modal" aria-label="Close">
+                           <i class="fas fa-times"></i>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="modal-body-inner">
+                        <div class="row gy-3">
+                           <div class="form-group col-md-12">
+                              <label for="Phone">Email or Phone Number</label>
+                              <div class="input bg-border-input">
+                                 <input type="text" class="form-control" id="Phone" placeholder="Enter email or phone number">
+                              </div>
+                           </div>
+                           <div class="form-group col-md-12">
+                              <label for="Phone">Password</label>
+                              <div class="input bg-border-input">
+                                 <input type="text" class="form-control" id="Phone" placeholder="At least 8 characters long">
+                              </div>
+                           </div>
+                           <div class="form-group col-md-12 d-flex align-items-center justify-content-between flex-wrap">
+                              <div class="modal-checkbox">
+                                 <input type="checkbox" id="Policy" class="checkBox" name="" value="1"> 
+                                 <label for="Policy" class="mb-0">Accept User Agreement And Privacy Policy<span><i class="fa-solid fa-check"></i></span></label> 
+                              </div>
+                              <a href="#" class="gradient-color">Forgot Password?</a>
+                           </div>
+                           <div class="form-group col-md-12 mt50">
+                              <input type="submit" class="form-control gradient-btn w-100" value="Log In">
+                           </div>
+                           <div class="modal-or-text text-center">or</div>
+                        </div>
+                     </div>
+                     <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-20">
+                        <a href="#">Not a Mycoinpoll member?</a>
+                        <a href="#" class="bg-solid-btn">Sign Up</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <!-- end login modal -->
+                              <div class="pagination mt50">
+                                 <ul class="d-flex align-items-center w-100">
+                                    <li><a href="#" class="btn1 primary-btn subscribe-btn">Previous</a></li>
+                                    <li>
+                                       <ul class="d-flex align-items-center pagination-inner">
+                                          <li><a href="#">1</a></li>
+                                          <li><a href="#" class="active">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">...</a></li>
+                                          <li><a href="#">10</a></li>
+                                       </ul>
+                                    </li>
+                                    <li><a href="#" class="btn1 primary-btn subscribe-btn">Next</a></li>
+                                 </ul>
                               </div>
                            </div>
                         </div>
@@ -348,6 +378,32 @@
       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
       <script src="../assets/js/editor.js"></script>
       <script src="../assets/js/main.js"></script>
-      
+      <script>
+   document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".action-btn-wraper").forEach((wrapper) => {
+         const actionBtn = wrapper.querySelector(".action-btn");
+         const dropdown = wrapper.querySelector(".custom-dropdown-menu");
+
+         actionBtn.addEventListener("click", function (event) {
+            event.stopPropagation(); // Prevent body click from immediately closing
+            dropdown.classList.toggle("show");
+
+            // Close other open dropdowns
+            document.querySelectorAll(".custom-dropdown-menu").forEach((menu) => {
+               if (menu !== dropdown) {
+                  menu.classList.remove("show");
+               }
+            });
+         });
+
+         // Close dropdown when clicking outside
+         document.addEventListener("click", function (e) {
+            if (!wrapper.contains(e.target)) {
+               dropdown.classList.remove("show");
+            }
+         });
+      });
+   });
+</script>
    </body>
 </html>

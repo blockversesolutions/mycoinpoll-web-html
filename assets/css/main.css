@@ -42,7 +42,7 @@ button,button:active{
  }
 .primary-btn {
 	background-size: 100% 100%;
-	min-width:300px;
+	min-width:270px;
 	font-size:18px;
 	font-weight: 700;
 	transition: 0.5s;
@@ -3368,7 +3368,7 @@ table th,table td {
 }
 .deactivate-status{
   background-color: #B921241A;
-  border-color: #B9212466;
+  border-color: #b921234b;
 }
 .table-img{
   width:24px;
@@ -3916,6 +3916,7 @@ ul.dropdown li:hover{
 	padding-left: 20px;
 	margin-left: 20px;
 }
+ 
 .blance-info span{
   font-size: 24px;
   font-weight: 700;
@@ -4254,10 +4255,10 @@ ul.dropdown li:hover{
 }
 .reward-tab li{
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   color:#FFFFFFCC;
   padding: 3px 6px;
-  background: #2682EE1A;
+  background: #051f3dbe;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -4491,6 +4492,34 @@ input[type="time"] {
 	padding: 5px 14px;
 	border: 1px solid #2687E83D;
 }
+.action-btn{
+  height: 28px;
+  width: 28px;
+  border: 1px solid #FFFFFF33;
+  background: #FFFFFF0A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.action-btn i{
+  font-size: 18px;
+}
+.custom-dropdown-menu{
+  background: #040C16;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+  right: 0;
+  position: absolute;
+  border: 1px solid #303030;
+}
+.custom-dropdown-menu.show {
+  display: block; /* Show when toggled */
+}
+
 /* .ticket-input-box .bg-border-input{
   padding: 4px;
   padding-right: 10px;

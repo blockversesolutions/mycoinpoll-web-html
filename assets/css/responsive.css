@@ -7,24 +7,32 @@
     top: 10px;
   }
   .ico-tab-btn.gradient-btn{
-    padding: 10px 20px;
+    padding:8px 10px;
   }
   .ico-tab ul li img{
-    height: 32px;
-    width: 32px;
-    margin-right:8px;
+    height:22px;
+    width: 22px;
+    margin-right:4px;
    }
    .ico-tab ul li{
     font-size: 18px;
   }
   .ico-tab-select-icon{
-    right:20px;
+    right:6px;
   }
   .ico-tab-select-icon i{
-    font-size: 24px;
+    font-size:18px;
+  }
+  .dashboard-body .ecm-left-side .primary-btn{
+    min-width: 212px;
+    height: 60px;
+  }
+  .dashboard-body .ecm-left-side .btn2 {
+    height: 65px;
   }
 }
 @media screen and (max-width: 1440px) {
+ 
   .upcoming-label {
     right: 4%;
     top: 2px;
