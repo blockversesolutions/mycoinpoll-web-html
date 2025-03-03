@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mycoinpoll</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+         />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="../assets/css/jquery.flipbox.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+      <link rel="stylesheet" href="../assets/css/editor.css" />
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <link rel="stylesheet" href="../assets/css/responsive.css" />
+   </head>
+   <body>
+      <div class="ellipse ellipse1"></div>
+      <div class="ellipse ellipse2"></div>
+      <div class="ellipse ellipse3"></div>
+
+      <div class="dashboard-main-area">
+         <div class="dashboard-area d-flex align-items-start">
+            <div class="dashboard-left position-relative" data-simplebar style="height: calc(100svh - 60px)">
+               
+              <div class="logo mb40">
+               <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
+              </div>
+              <div class="logo2 mb40">
+               <a href="#"><img src="../assets/images/dashboard/icon/small-logo.png" alt="logo" class="w-100"></a>
+              </div>
+              <div class="dashboard-left-menu">
+               <ul>
+                  <li><a href="dashboard.html"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
+                  <li><a href="transactions.html"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
+                  <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
+                  <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
+
+                  <li><a href="manage-roles.html"><img src="../assets/images/dashboard/icon/roles.png" alt="icon"> <span class="left-menu-text">Manage Roles</span></a></li>
+                  <li><a href="manage-permissions.html"><img src="../assets/images/dashboard/icon/permission.png" alt="icon"> <span class="left-menu-text">Permissions</span></a></li>
+                  <li class="menu-active-bg"><a href="support-ticket.html"><img src="../assets/images/dashboard/icon/ticket.png" alt="icon"> <span class="left-menu-text">Support Ticket</span></a></li>
+                  <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
+               </ul>
+              </div>
+            </div>
+           
+            <div class="dashboard-right">
+               <div class="dashboard-right-header-area d-flex align-items-center justify-content-between">
+                  <div class="page-info d-flex align-items-center">
+                     <div class="resize-icon">
+                        <i class="fa-solid fa-expand"></i>
+                     </div>
+                     <h5 class="page-title">Support Ticket</h5>
+                  </div>
+                   
+                  <div class="dashboard-header-right">
+                     <div class="d-flex align-items-center dashboard-header-right-group">
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           310 USDT <span><img src="../assets/images/dashboard/icon/wallet2.png" alt="icon"></span>
+                        </div>
+                        <div class="text-btn d-flex align-items-center border-gradient">
+                           300 CRM <span><img src="../assets/images/icon/wallet.png" alt="icon"></span>
+                        </div>
+                        <div class="notification-icon position-relative "> 
+                           <span>2+</span>
+                           <img src="../assets/images/dashboard/icon/bell.png" alt="icon" class="dropdown-toggle">
+                            
+                           <ul class="dropdown notification-box" data-simplebar style="height: 303px; ">
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                             <li>
+                              <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
+                              <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
+                              
+                             <li><a href="notification.html" class="gradient-btn-small">Show All</a></li>
+                           </ul>
+                        </div>
+                        <div class="profile-mini-icon">
+                           <a href="user-profile.html"><img src="../assets/images/dashboard/icon/user.png" alt="user"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+                <!--start Transfer Department Modal -->
+                  <div class="modal fade bg-gradient-add" id="Transfer-Department-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-custom-width-sm">
+                        <div class="modal-content custom-modal">
+                           <form action="">
+                              <div class="modal-header-area d-flex align-items-center justify-content-between">
+                                 <h4 class="text-shadow">Transfer Department</h4>
+                                 <div class="modal-close-btn">
+                                    <span data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fas fa-times"></i>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="modal-body-inner">
+                                 <div class="row gy-3">
+                                    <p>You have the option to change the department for handling this ticket (#10001) efficiently.</p>
+                                    <div class="form-group col-md-12">
+                                       <label for="Status">Department name</label>
+                                       <div class="input bg-border-input">
+                                          <div class="custom-select position-relative">
+                                             <div class="select-selected">
+                                                Billing & payment
+                                             </div>
+                                             <div class="select-items">
+                                                <div class="select-item" data-value="Agent-1">
+                                                   Login Problem
+                                                </div>
+                                                <div class="select-item" data-value="Agent-2">
+                                                   Reffer Problem
+                                                </div>
+                                                 
+                                             </div>
+                                             <div class="select-icon">
+                                                <i class="fa-solid fa-angle-down"></i>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40">
+                                 <button class="gradient-btn">Save or Update <i class="fa-regular fa-circle-right white"></i></button>
+                                 <div class="position-relative z-1">
+                                    <span data-bs-dismiss="modal" aria-label="Close" class="transparent-btn border-gradient cursor">
+                                    Cancel
+                                    </span>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end Transfer Department modal -->
+                   <!--start add note Modal -->
+                  <div class="modal fade bg-gradient-add" id="add-note-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-custom-width-sm">
+                        <div class="modal-content custom-modal">
+                           <form action="">
+                              <div class="modal-header-area d-flex align-items-center justify-content-between">
+                                 <h4 class="text-shadow">Add a Note</h4>
+                                 <div class="modal-close-btn">
+                                    <span data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fas fa-times"></i>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="modal-body-inner">
+                                 <div class="row gy-3">
+                                    <p>You can add a detailed note for the assigned agent to clearly understand & efficiently resolve this ticket (#10001).</p>
+                                    <div class="form-group col-md-12">
+                                       <label for="Status">Admin Note</label>
+                                       <div class="input bg-border-input">
+                                          <textarea name="" id="" placeholder="Write here..."></textarea>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40">
+                                 <button class="gradient-btn">Save or Update <i class="fa-regular fa-circle-right white"></i></button>
+                                 <div class="position-relative z-1">
+                                    <span data-bs-dismiss="modal" aria-label="Close" class="transparent-btn border-gradient cursor">
+                                    Cancel
+                                    </span>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end add note modal -->
+                   <!--start Assign Modal -->
+                  <div class="modal fade bg-gradient-add" id="assign-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-custom-width-sm">
+                        <div class="modal-content custom-modal">
+                           <form action="">
+                              <div class="modal-header-area d-flex align-items-center justify-content-between">
+                                 <h4 class="text-shadow">Assign a Agent</h4>
+                                 <div class="modal-close-btn">
+                                    <span data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fas fa-times"></i>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="modal-body-inner">
+                                 <div class="row gy-3">
+                                    <p>You have the option to assign an agent for handling this ticket (#10001) efficiently.</p>
+                                    <div class="form-group col-md-12">
+                                       <label for="Region">Select Agent name</label>
+                                       <div class="input bg-border-input">
+                                          <div class="custom-select position-relative">
+                                             <div class="select-selected">
+                                                Agent - 1
+                                             </div>
+                                             <div class="select-items">
+                                                <div class="select-item" data-value="Agent-1">
+                                                   Agent - 2
+                                                </div>
+                                                <div class="select-item" data-value="Agent-2">
+                                                   Agent - 3
+                                                </div>
+                                                <div class="select-item" data-value="Agent-3">
+                                                   Agent - 4
+                                                </div>
+                                                <div class="select-item" data-value="Agent-4">
+                                                   Agent - 5
+                                                </div>
+                                                
+                                             </div>
+                                             <div class="select-icon">
+                                                <i class="fa-solid fa-angle-down"></i>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40">
+                                 <button class="gradient-btn">Assign <i class="fa-regular fa-circle-right white"></i></button>
+                                 <div class="position-relative z-1">
+                                    <span data-bs-dismiss="modal" aria-label="Close" class="transparent-btn border-gradient cursor">
+                                    Cancel
+                                    </span>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end Assign modal -->
+               <div class="dashboard-body mt30">
+                  <div class="dashboard-box mt30">
+                     <div class="d-flex align-items-center justify-content-between">
+                        <div class="table-heading w-auto">
+                           <h5>Ticket : #10001</h5>
+                        </div>
+                        <p>Status : <span class="active-status badge"> Open</span></p>
+                     </div>
+                     <div class="row gy-3 mt-1">
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input d-flex align-items-center justify-content-between p-2 ps-3 pe-3">
+                              <p>Priority</p>
+                              <!-- <span class="red">High</span> -->
+                               <form action="">
+                                 <div class="cursor badge deactivate-status text-start d-flex align-items-center">
+                                    <select name="" id="" class="red cursor">
+                                       <option value="High">High</option>
+                                       <option value="High">Medium</option>
+                                       <option value="High">Low</option>
+                                    </select>
+                                    <div class="select-icon">
+                                       <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                 </div>
+                               </form>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input d-flex align-items-center justify-content-between p-2 ps-3 pe-3">
+                              <p>Created</p>
+                               <b class="text-white">1st June 2025</b> 
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="bg-border-input d-flex align-items-center justify-content-between p-2 ps-3 pe-3">
+                              <p>Last Updated</p>
+                               <b class="text-white">1st June 2025</b> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="dashboard-box mt30">
+                     <div class="d-flex align-items-center justify-content-between flex-wrap g-20">
+                        <div class="table-heading  w-auto">
+                           <h5>Payment Not Received</h5>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap g-10">
+                           
+                           <button class="transparent-btn border-gradient" data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-white"></i> Transfer Department</button>
+                           <button class="gradient-btn" data-bs-toggle="modal" data-bs-target="#assign-modal"> <i class="fa-regular fa-circle-right text-white"></i> Assign Agent</button>
+                           <button class="gradient-btn bg-red"> <i class="fa-regular fa-circle-xmark"></i> Close Ticket</button>
+                           <!-- after close -->
+                             <button class="gradient-btn"> <i class="fa-regular fa-circle-check"></i> Reopen Ticket</button>
+                        </div>
+                        
+                     </div>
+                     <div class="line-1 mt-3"></div>
+                     <!-- items -->
+                     <div class="ticket-author-box d-flex g-10 mt30">
+                        <div class="ticket-author-icon">
+                           <img src="../assets/images/icon/user.png" alt="">
+                        </div>
+                        <div class="ticket-info-body">
+                           <h6>Ontor Hossen</h6>
+                           <span>07-06-2024, 03:40pm</span>
+                           <div class="d-flex flex-column g-10 mt-4">
+                              <p>Hi Team, </p>
+                              <p>We're currently facing significant network connectivity issues affecting multiple users. Users are reporting intermittent access to network resources, including servAers and shared files. This is impacting productivity across the organization. We need to investigate and resolve .</p>
+                              <p>Thank you for your attention to this matter. </p>
+                           </div> 
+                           <div class="attachments-body">
+                              <p class="mt-40">ATTACHMENTS :</p>
+                              <ul class="d-flex align-items-center g-20 flex-wrap attachments-thumbnails mt-3">
+                                 <li class="position-relative attachments-select">
+                                    <img src="../assets/images/dashboard/thumbnails/attachments.png" alt="img" class="w-100 rounded previewImage">
+                                    <div class="attachments-download rounded download-icon">
+                                       <i class="fa-solid fa-download"></i>
+                                    </div>
+                                 </li>
+                                 <li class="position-relative attachments-select">
+                                    <img src="../assets/images/dashboard/thumbnails/attachments.png" alt="img" class="w-100 rounded previewImage">
+                                    <div class="attachments-download rounded download-icon">
+                                       <i class="fa-solid fa-download"></i>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- items -->
+                     <div class="ticket-author-box d-flex g-10 mt30 border-0">
+                        <div class="ticket-author-icon">
+                           <img src="../assets/images/icon/user.png" alt="">
+                        </div>
+                        <div class="ticket-info-body">
+                           <h6>Ontor Hossen</h6>
+                           <span>07-06-2024, 03:40pm</span>
+                           <div class="d-flex flex-column g-10 mt-4">
+                              <p>Hi Team, </p>
+                              <p>We're currently facing significant network connectivity issues affecting multiple users. Users are reporting intermittent access to network resources, including servAers and shared files. This is impacting productivity across the organization. We need to investigate and resolve .</p>
+                              <p>Thank you for your attention to this matter. </p>
+                           </div> 
+                           <div class="attachments-body">
+                              <p class="mt-40">ATTACHMENTS :</p>
+                              <ul class="d-flex align-items-center g-20 flex-wrap attachments-thumbnails mt-3">
+                                 <li class="position-relative attachments-select">
+                                    <img src="../assets/images/dashboard/thumbnails/attachments.png" alt="img" class="w-100 rounded previewImage">
+                                    <div class="attachments-download rounded download-icon">
+                                       <i class="fa-solid fa-download"></i>
+                                    </div>
+                                 </li>
+                                 <li class="position-relative attachments-select">
+                                    <img src="../assets/images/dashboard/thumbnails/attachments.png" alt="img" class="w-100 rounded previewImage">
+                                    <div class="attachments-download rounded download-icon">
+                                       <i class="fa-solid fa-download"></i>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <form action="">
+                       <div class="form-group position-relative ticket-input-box">
+                           <!-- <div class="input d-flex align-items-center g-10 flex-md-nowrap flex-wrap">
+                              <input type="text" class="form-control" placeholder="Write here...">
+                              <div class="ticket-file-upload">
+                                 <label for="file-select">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                 </label>
+                                 <input type="file" id="file-select">
+                              </div>
+                              <button class="gradient-btn">Send <i class="fa-solid fa-paper-plane"></i></button>
+                           </div> -->
+                           <div class="input d-flex align-items-center g-10 flex-md-nowrap flex-wrap">
+                           <input type="text" class="form-control" placeholder="Write here...">
+                           <span id="file-name" style="display: none;"></span>
+                           
+                           <div class="ticket-file-upload" onclick="triggerFileSelect()">
+                              <input type="file" id="file-select" onchange="updateFileName()" style="display: none;">
+                              <label for="file-select">
+                                 <i class="fa-solid fa-paperclip"></i>
+                              </label>
+                           </div>
+                           <div class="ticket-file-upload">
+                              <label data-bs-toggle="modal" data-bs-target="#add-note-modal">
+                                 <i class="fa-solid fa-pen-to-square"></i>
+                              </label>
+                           </div>
+                           <button class="gradient-btn">
+                              Send <i class="fa-solid fa-paper-plane"></i>
+                           </button>
+                        </div>
+                       </div>
+                     </form>
+                     <!-- alert sms -->
+                      <div class="transparent-btn border-gradient w-100 mt-40 text-center pe-none">
+                        <span class="red">The ticket is closed</span>
+                      </div>
+                  </div>
+               </div>
+               <!-- copyright -->
+               <div class="copyright-box d-flex align-items-center justify-content-center">
+                  <p class="gradient-color">Current Version 1.0</p>
+                  <p>&copy; 2025<a href="index.html" class="gradient-color">Develope By Mycoinpoll</a> </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="../assets/js/jquery.flipbox.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+      <script src="../assets/js/editor.js"></script>
+      <script src="../assets/js/main.js"></script>
+      <script>
+        document.querySelectorAll('.download-icon').forEach(icon => {
+            icon.addEventListener('click', function() {
+                const card = this.closest('.attachments-select'); // Get parent card
+                const image = card.querySelector('.previewImage'); // Get the image in the same card
+                const link = document.createElement('a');
+                link.href = image.src;
+                link.download = "downloaded-image.png"; // Set download file name
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+    </script>
+    <script>
+         function updateFileName() {
+         const input = document.getElementById("file-select");
+         const fileNameDisplay = document.getElementById("file-name");
+         
+         if (input.files.length > 0) {
+            fileNameDisplay.textContent = input.files[0].name; // Show selected file name
+            fileNameDisplay.style.display = "inline"; // Make it visible
+         } else {
+            fileNameDisplay.style.display = "none"; // Hide when no file selected
+         }
+      }
+   </script>
+   </body>
+</html>

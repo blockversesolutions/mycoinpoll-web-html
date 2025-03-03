@@ -1944,7 +1944,7 @@ select {
 }
 .select-icon{
   position: absolute;
-  right: 30px;
+  right:20px;
   top:50%;
   pointer-events: none;
   transform: translateY(-50%);
@@ -3336,6 +3336,7 @@ table th,table td {
 
   border-color:#FF8C0066;
 }
+
 .completed-status{
   background: #2682EE66;
   border-color:#2682EE66;
@@ -3427,7 +3428,7 @@ table{
   outline: none;
   color:#fff;
 }
-.transaction-id img{
+.transaction-id img,.cursor{
   cursor: pointer;
 }
 .warning-table tr th{
@@ -3527,7 +3528,7 @@ ul.dropdown {
   top: 100%;
   right: 0;
   min-width: 274px;
-}
+}add-note-modal
 /* up arrow*/
 ul.dropdown:before {
     content: "";
@@ -4519,7 +4520,16 @@ input[type="time"] {
 .custom-dropdown-menu.show {
   display: block; /* Show when toggled */
 }
-
+.ticket-list-filter .select-item {
+  background-color:#0b151f;
+  color:#fff;
+}
+.ticket-list-filter .select-items {
+	border: 1px solid #1b579d;
+}
+.ticket-list-filter{
+  min-width: 165px;
+}
 /* .ticket-input-box .bg-border-input{
   padding: 4px;
   padding-right: 10px;
