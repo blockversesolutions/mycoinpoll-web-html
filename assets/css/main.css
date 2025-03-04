@@ -1944,7 +1944,7 @@ select {
 }
 .select-icon{
   position: absolute;
-  right:20px;
+  right:25px;
   top:50%;
   pointer-events: none;
   transform: translateY(-50%);
@@ -4267,10 +4267,15 @@ ul.dropdown li:hover{
   background: #2682EE99;
 }
 /* Style the tab content */
-.tabcontent p{
+.tabcontent p,.tabcontent-reward p{
   color: #FFFFFF99;
   font-size: 14px;
   line-height:24px;
+}
+.tabcontent-reward {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
 }
 .tabcontent {
   display: none;
@@ -4441,6 +4446,16 @@ input[type="time"] {
   color: #333;
   font-size: 16px;
   padding: 8px 40px 8px 12px;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+input[type="time"]::after {
+  content: "\f017";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #ddd;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -4529,6 +4544,10 @@ input[type="time"] {
 }
 .ticket-list-filter{
   min-width: 165px;
+}
+.status-filter{
+  min-width: 140px !important;
+  width: 100%;
 }
 /* .ticket-input-box .bg-border-input{
   padding: 4px;
