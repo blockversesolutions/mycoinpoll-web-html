@@ -32,7 +32,43 @@
   }
 }
 @media screen and (max-width: 1440px) {
- 
+ /* Start left bar edit */
+ .dashboard-left {
+	width: 60px;
+	background-color: #040C16;
+}
+.menu-icon-show .dashboard-left {
+	width: 220px;
+}
+.dashboard-area {
+	gap: 10px;
+}
+.dashboard-left {
+	padding: 30px 6px;
+	padding-right: 22px;
+}
+.dashboard-right {
+	width: calc(100% - 54px);
+}
+.logo {
+	display: none;
+}
+.logo2 {
+	display: block;
+}
+.dashboard-left-menu ul li a span {
+	display: none;
+}
+.menu-icon-show .logo {
+	display: block;
+}
+.menu-icon-show .logo2 {
+	display: none;
+}
+.menu-icon-show .dashboard-left-menu ul li a span {
+	display: block;
+}
+ /* End left bar edit */
   .upcoming-label {
     right: 4%;
     top: 2px;
@@ -1134,5 +1170,8 @@
   }
   .referral-list-item{
     padding: 6px;
+  }
+  .error-section-503 img {
+    max-width: 200px;
   }
 }
