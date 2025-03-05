@@ -4395,10 +4395,12 @@ ul.dropdown li:hover{
   font-weight: 500;
 }
 /* Start ticket css */
-.ticket-author-icon img{
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
+.ticket-author-icon img {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	padding: 3px;
 }
 .ticket-info-body h6{
   font-family: Montserrat;
@@ -4407,10 +4409,17 @@ ul.dropdown li:hover{
   line-height: 24.38px;
   color:#fff;
 }
+.attachments-select img{
+  max-width:160px;
+  height:60px;
+}
 .ticket-info-body span{
   color: #FFFFFFB2;
   font-weight: 400;
   font-size: 14px;
+}
+.ticket-info-body p{
+  font-size: 15px;
 }
 .attachments-download{
   position: absolute;
@@ -4433,13 +4442,9 @@ ul.dropdown li:hover{
   opacity: 1;
 }
 .ticket-author-box{
-  border-bottom: 1px solid #FFFFFF1A;
-  padding-bottom: 30px;
+  padding-bottom:18px;
 }
-.ticket-author-box:last-child{
-  border: none !important;
-  padding-bottom: 0;
-}
+ 
 /* End ticket css */
 input[type="time"] {
   position: relative;
@@ -4559,3 +4564,49 @@ input[type="time"]::after {
 .ticket-input-box .bg-border-input:after{
   border-radius: 25px;
 } */
+
+.ticket-info-body{
+  background-color:#111B29;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+.user-reply .ticket-info-body{
+  margin-left:5px;
+}
+.admin-reply .ticket-info-body h6,.admin-reply .ticket-info-body span{
+  text-align: right;
+  display: block;
+}
+.admin-reply .ticket-info-body{
+  margin-right:5px;
+  order: -2;
+  background-color: #16233A ;
+}
+.ticket-info-body::after{
+  content: "";
+  position: absolute;
+  top: 12px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.user-reply .ticket-info-body::after{
+  left: -40px;
+  border-right: 20px solid #111B29;
+}
+.admin-reply .ticket-info-body::after{
+  right: -40px;
+  border-left: 20px solid #16233A;
+}
+.support-reply-area{
+  max-width: 100%;
+  padding: 15px;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  border-radius: 10px;
+}
+.support-reply-inner{
+  max-height: 600px;
+}

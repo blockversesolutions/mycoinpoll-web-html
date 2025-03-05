@@ -1175,4 +1175,7 @@
   .error-section-503 img {
     max-width: 200px;
   }
+  .support-reply-area{
+    padding: 10px;
+  }
 }
