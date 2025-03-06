@@ -1308,6 +1308,9 @@ input[type="date"]::after {
   background-color:#FFFFFF1A;
   height: 3px;
 }
+.ico-tab-content .subscribe-form form{
+  width: 100%;
+}
 .ecm-right-header ul li,.ico-tab-content ul li{
   font-size:18px;
   margin-bottom:10px;

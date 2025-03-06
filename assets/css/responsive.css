@@ -1176,4 +1176,13 @@
   .support-reply-area{
     padding: 10px;
   }
+  .section-heading h3 {
+    font-size: 28px;
+  }
+  .primary-btn{
+    height: 60px;
+  }
+  .btn2 {
+    height: 65px;
+  }
 }
