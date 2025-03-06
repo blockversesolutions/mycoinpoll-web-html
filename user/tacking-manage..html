@@ -29,11 +29,9 @@
       <div class="ellipse ellipse1"></div>
       <div class="ellipse ellipse2"></div>
       <div class="ellipse ellipse3"></div>
-
       <div class="dashboard-main-area">
          <div class="dashboard-area d-flex align-items-start">
             <div class="dashboard-left position-relative">
-               
               <div class="logo mb40">
                <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
               </div>
@@ -43,12 +41,11 @@
               <div class="dashboard-left-menu">
                <ul>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
-                  <li><a href="#"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">User Management</span></a></li>
+                  <li><a href="#" class="menu-active-bg"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">User Management</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
-                   <li class="menu-active-bg"><a href="purchase-log.html"><img src="../assets/images/dashboard/icon/purchase.png" alt="icon"> <span class="left-menu-text">Purchase Log</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
                   <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
                </ul>
@@ -60,8 +57,18 @@
                      <div class="resize-icon">
                         <i class="fa-solid fa-expand"></i>
                      </div>
-                     <h5 class="page-title">Purchase Log</h5>
+                     <h5 class="page-title">Token Management</h5>
                   </div>
+                  <!-- <div class="search-box-area">
+                     <form action="">
+                        <div class="input bg-border-input position-relative">
+                           <div class="search-icon">
+                              <i class="search-icon fas fa-search"></i>
+                           </div>
+                           <input type="text" class="form-control" id="search" placeholder="Search here...">
+                        </div>
+                     </form>
+                  </div> -->
                   <div class="dashboard-header-right">
                      <div class="d-flex align-items-center dashboard-header-right-group">
                         <div class="text-btn d-flex align-items-center border-gradient">
@@ -81,162 +88,127 @@
                   </div>
                </div>
                <div class="dashboard-body mt30">
-                  <div class="table-header-area d-flex align-items-center justify-content-between">
-                        <div class="table-heading">
-                           <h5>Purchase History</h5>
-                        </div>
-                        <div class="d-flex align-items-center g-10 flex-wrap">
-                           <div class="search-box-area">
-                              <form action="">
-                                 <div class="input bg-border-input position-relative">
-                                    <div class="search-icon">
-                                       <i class="search-icon fas fa-search"></i>
-                                    </div>
-                                    <input type="text" class="form-control" id="search" placeholder="Search here...">
-                                 </div>
-                              </form>
-                           </div>
-                           <a href="#" class="gradient-btn">See Transactions  <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
+                  <div class="custom-card-header d-flex align-items-center justify-content-between">
+                     <div class="table-heading">
+                        <h5>Token Management</h5>
                      </div>
+                     <div class="add-new-btn">
+                        <a href="#" class="gradient-btn"><i class="fas fa-link"></i> Add New Token </a>
+                     </div>
+                  </div>
                   <!--Start user referable-list -->
                   <div class="data-show-table-area dashboard-box mt30">
+                     <div class="table-header-area d-flex align-items-center justify-content-between">
+                        <div class="table-heading">
+                           <h5>Token List</h5>
+                        </div>
+                        <div class="search-box-area">
+                           <form action="">
+                              <div class="input bg-border-input position-relative">
+                                 <div class="search-icon">
+                                    <i class="search-icon fas fa-search"></i>
+                                 </div>
+                                 <input type="text" class="form-control" id="search" placeholder="Search here...">
+                              </div>
+                           </form>
+                        </div>
+                     </div>
                      <div class="common-table mt30">
                         <table class="custom-table display nowrap mobile-table">
                            <thead>
                                <tr>
-                                 <th>ID</th>
-                                 <th>Name</th>
-                                 <th>Email</th>
-                                 <th>Phone</th>
-                                 <th>Total Purchased</th>
+                                 <th>SL</th>
+                                 <th>Token Name</th>
+                                 <th>Reg. Date</th>
+                                 <th>Current Price</th>
+                                 <th>Total Supply</th>
+                                 <th>Status</th>
                                  <th>Action</th>
                                </tr>
                            </thead>
                            <tbody>
                               <tr>
                                  <td>01</td>
-                                 <td>Jane Cooper</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
+                                 <td><img src="../assets/images/dashboard/icon/coin.png" alt="" class="table-img">Metaverse</td>
+                                 <td>12/10/2024</td>
+                                 <td>$300</td>
+                                 <td>2951,000,000</td>
+                                 <td class="text-center"><span class="badge deactivate-status">Deactive</span></td>
                                  <td>
                                     <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-pencil-alt skyblue"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-ban gray"></i></a></li>
+                                       <li><a href="#"><i class="far fa-trash-alt red"></i></a></li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                               <tr>
+                                 <td>01</td>
+                                 <td><img src="../assets/images/dashboard/icon/coin.png" alt="" class="table-img">Metaverse</td>
+                                 <td>12/10/2024</td>
+                                 <td>$300</td>
+                                 <td>2951,000,000</td>
+                                 <td class="text-center"><span class="badge active-status">Active</span></td>
+                                 <td>
+                                    <ul class="d-flex align-items-center action-group justify-content-center">
+                                       <li><a href="#"><i class="fas fa-pencil-alt skyblue"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-ban gray"></i></a></li>
+                                       <li><a href="#"><i class="far fa-trash-alt red"></i></a></li>
                                     </ul>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>02</td>
-                                 <td>Esther Howard</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
+                                 <td>01</td>
+                                 <td><img src="../assets/images/dashboard/icon/coin.png" alt="" class="table-img">Metaverse</td>
+                                 <td>12/10/2024</td>
+                                 <td>$300</td>
+                                 <td>2951,000,000</td>
+                                 <td class="text-center"><span class="badge active-status">Active</span></td>
                                  <td>
                                     <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-pencil-alt skyblue"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-ban gray"></i></a></li>
+                                       <li><a href="#"><i class="far fa-trash-alt red"></i></a></li>
                                     </ul>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>03</td>
-                                 <td>Leslie Alexander</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
+                                 <td>01</td>
+                                 <td><img src="../assets/images/dashboard/icon/coin.png" alt="" class="table-img">Metaverse</td>
+                                 <td>12/10/2024</td>
+                                 <td>$300</td>
+                                 <td>2951,000,000</td>
+                                 <td class="text-center"><span class="badge active-status">Active</span></td>
                                  <td>
                                     <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-pencil-alt skyblue"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-ban gray"></i></a></li>
+                                       <li><a href="#"><i class="far fa-trash-alt red"></i></a></li>
                                     </ul>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>04</td>
-                                 <td>Jenny Wilson</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
+                                 <td>01</td>
+                                 <td><img src="../assets/images/dashboard/icon/coin.png" alt="" class="table-img">Metaverse</td>
+                                 <td>12/10/2024</td>
+                                 <td>$300</td>
+                                 <td>2951,000,000</td>
+                                 <td class="text-center"><span class="badge active-status">Active</span></td>
                                  <td>
                                     <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
-                                    </ul>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>05</td>
-                                 <td>Guy Hawkins</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
-                                 <td>
-                                    <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
-                                    </ul>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>06</td>
-                                 <td>Robert Fox</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
-                                 <td>
-                                    <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
-                                    </ul>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>07</td>
-                                 <td>Kristin Watson</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
-                                 <td>
-                                    <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
-                                    </ul>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>08</td>
-                                 <td>Cody Fisher</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
-                                 <td>
-                                    <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
-                                    </ul>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>09</td>
-                                 <td>Bessie Cooper</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
-                                 <td>
-                                    <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
-                                    </ul>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>10</td>
-                                 <td>Floyd Miles</td>
-                                 <td>deanna.curtis@example.com</td>
-                                 <td>(704) 555-0127</td>
-                                 <td>07</td>
-                                 <td>
-                                    <ul class="d-flex align-items-center action-group justify-content-center">
-                                       <li><a href="purchase-log-details.html"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-pencil-alt skyblue"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-eye green"></i></a></li>
+                                       <li><a href="#"><i class="fas fa-ban gray"></i></a></li>
+                                       <li><a href="#"><i class="far fa-trash-alt red"></i></a></li>
                                     </ul>
                                  </td>
                               </tr>
                            </tbody>
                        </table>
-                         
                         <div class="pagination mt50">
                            <ul class="d-flex align-items-center w-100">
                               <li><a href="#" class="btn1 primary-btn subscribe-btn">Previous</a></li>
@@ -259,9 +231,6 @@
             </div>
          </div>
       </div>
-
-
-
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
@@ -270,6 +239,5 @@
       <script src="../assets/js/jquery.flipbox.js"></script>
       <script src="../assets/js/editor.js"></script>
       <script src="../assets/js/main.js"></script>
-       
    </body>
 </html>

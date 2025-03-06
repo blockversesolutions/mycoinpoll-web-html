@@ -3309,12 +3309,11 @@ table {
   border-collapse: collapse;
 }
 table th,table td {
-	/* border: 1px solid rgba(39, 123, 245, 0.11); */
   border: 1px solid transparent;
   border-image-source: linear-gradient(90deg, rgba(39, 121, 245, 0.072) 0%, rgba(28, 214, 146, 0.089) 100%);
   border-image-slice: 1;
 	padding: 10px 14px;
-	text-align: center;
+	/* text-align: center; */
   font-size: 16px;
   font-weight: 500;
   color:#FFFFFFCC;

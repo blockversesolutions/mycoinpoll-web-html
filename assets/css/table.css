@@ -1,0 +1,115 @@
+
+  .custom-table th {
+    background-color: #0C2339;
+    color: #ffffff;
+  }
+ 
+  /*responsive*/
+  @media (max-width:1280px) {
+    .custom-table tbody tr:nth-child(even) {
+        background-color: #0C2339;
+        }
+    .custom-table tbody tr:nth-child(odd) {
+        background-color: #011425;
+        }
+    .custom-table-lg thead {
+      display: none;
+    }
+    .custom-table-lg,
+    .custom-table-lg tbody,
+    .custom-table-lg tr,
+    .custom-table-lg td {
+      display: block;
+      width: 100%;
+    }
+    .custom-table-lg tr {
+      margin-bottom: 15px;
+    }
+    .custom-table-lg td {
+      padding-left: 50%;
+      text-align: left;
+      position: relative;
+    }
+    .custom-table-lg td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  @media (max-width:991px) {
+    .custom-table tbody tr:nth-child(even) {
+        background-color: #0C2339;
+        }
+    .custom-table tbody tr:nth-child(odd) {
+        background-color: #011425;
+        }
+    .custom-table-md thead {
+      display: none;
+    }
+    .custom-table-md,
+    .custom-table-md tbody,
+    .custom-table-md tr,
+    .custom-table-md td {
+      display: block;
+      width: 100%;
+    }
+    .custom-table-md tr {
+      margin-bottom: 15px;
+    }
+    .custom-table-md td {
+      padding-left: 50%;
+      text-align: left;
+      position: relative;
+    }
+    .custom-table-md td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+    @media (max-width:768px) {
+    .custom-table tbody tr:nth-child(even) {
+        background-color: #0C2339;
+        }
+    .custom-table tbody tr:nth-child(odd) {
+        background-color: #011425;
+        }
+    .custom-table-sm thead {
+      display: none;
+    }
+    .custom-table-sm,
+    .custom-table-sm tbody,
+    .custom-table-sm tr,
+    .custom-table-sm td {
+      display: block;
+      width: 100%;
+    }
+    .custom-table-sm tr {
+      margin-bottom: 15px;
+    }
+    .custom-table-sm td {
+      padding-left: 50%;
+      text-align: left;
+      position: relative;
+    }
+    .custom-table-sm td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
