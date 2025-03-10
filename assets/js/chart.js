@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 scales: {
                     x: {
                         ticks: { color: '#ffffff' },
-                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        grid: { color: 'rgba(255, 255, 255, 0.03)' }
                     },
                     y: {
                         ticks: {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 return (value / 1000) + 'K'; // Converts 100000 to 100K format
                             }
                         },
-                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        grid: { color: 'rgba(255, 255, 255, 0.03)' }
                     }
                 },
                 plugins: {
