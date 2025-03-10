@@ -519,6 +519,9 @@
   .action-group{
     margin-top: 15px;
   }
+  .custom-table  .action-group{
+    margin-top:0px;
+  }
   .token-details-terget-area ul li span{
     font-size: 13px;
   }
@@ -530,6 +533,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .modal-content{
+    width: 96%;
+  }
   .icon-rotate i{
     font-size: 16px;
   }

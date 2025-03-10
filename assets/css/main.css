@@ -1268,7 +1268,7 @@ input[type="date"]::after {
 }
 .footer-widgets img{
   animation: zoomInOut 6s ease-in-out infinite;
-}
+}.select2-container--bootstrap-5 .select2-dropdown
 .ecm-address h5 {
 	font-size: 24px;
 	font-weight: 600;
@@ -1285,7 +1285,6 @@ input[type="date"]::after {
   line-height: 36px;
   color:#2682EE;
   margin-bottom: 16px;
- 
 }
 .line-shap-animation{
   position: absolute;
@@ -2466,10 +2465,10 @@ select {
 .modal-custom-width-md{
   max-width:680px;
 	width: 100%;
-	top:60px;
+	top:40px;
 }
 .modal-header-area h4{
-  font-size:32px;
+  font-size:28px;
   color:#fff;
   font-weight:700;
   line-height:45px;
@@ -2988,7 +2987,7 @@ select {
   padding:10px;
   text-align: center;
 }
-.status-box img{
+.status-box > img{
   width: 37px;
 }
 .status-box p{
@@ -3611,6 +3610,10 @@ ul.dropdown li:hover{
 }
 .action-group{
   gap:10px;
+}
+.action-group li{
+  color:gray;
+  cursor: pointer;
 }
 .action-group li a i{
   font-size: 18px;
@@ -4611,4 +4614,12 @@ input[type="time"]::after {
 }
 .support-reply-inner{
   max-height: 600px;
+}
+.chart-container {
+  border: 1px solid #ffffff1c;
+  width:100%;
+  background: #11151c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.09);
 }

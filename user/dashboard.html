@@ -123,18 +123,24 @@
                            <h6>Username : hello12345</h6>
                            <h6>Ethereum : <span class="text-content">0x73fCA0F1b86701ABb3De296C5B6B1b4bA1Ca2F9b</span></h6>
                         </div>
-                        <div class="batch-item text-center">
-                           <p>Achieved Batch</p>
-                           <ul class="mt-3 d-flex justify-content-center flex-row-reverse align-items-center">
-                              <li class="order-1"><img src="../assets/images/batch/exclusive.png" alt="exclusive" class="rounded-circle  batch-logo-sm"></li>
-                              <li><img class="rounded-circle  batch-logo-sm" src="../assets/images/batch/purchase.png" alt="purchase"/></li>
-                              <li><img class="rounded-circle  batch-logo-sm" src="../assets/images/batch/referral.png" alt="referral"/>
-                              </li>
-                              <li><img class="rounded-circle  batch-logo-sm" src="../assets/images/batch/staking.png" alt="staking"/></li>
-                              <li>2+</li>
-                           </ul>
-                           <div class="position-relative z-2">
-                              <a href="batch-levels.html" class="border-gradient btn3 mt-3">See Details</a>
+                        <div class="batch-item text-center status-box d-flex align-items-center g-20  ">
+                           <!-- <div class="recent-batch">
+                              <img src="../assets/images/batch/purchase.png" alt="icon">
+                               <p>Purchase Batch</p>
+                           </div> -->
+                           <div class="w-100">
+                              <p>Achieved Batch</p>
+                              <ul id="badgeList" class="mt-3 d-flex justify-content-center  flex-row-reverse align-items-center">
+                                 <li class="badge-item"><img class="rounded-circle  batch-logo-sm" src="../assets/images/batch/purchase.png" alt="purchase"/></li>
+                                 <li class="badge-item"><img class="rounded-circle  batch-logo-sm" src="../assets/images/batch/referral.png" alt="referral"/>
+                                 </li>
+                                 <li class="badge-item"><img class="rounded-circle  batch-logo-sm" src="../assets/images/batch/staking.png" alt="staking"/></li>
+                                 <li class="badge-item"><img src="../assets/images/batch/exclusive.png" alt="exclusive" class="rounded-circle  batch-logo-sm"></li>
+                                 <li class="badge-count">5+</li>
+                              </ul>
+                              <div class="position-relative z-2">
+                                 <a href="batch-levels.html" class="border-gradient btn3 mt-3">See Details</a>
+                              </div>
                            </div>
                         </div>
                         <!-- <div class="milestone-offer-card h-100 d-flex g-5 justify-content-center flex-column">
@@ -281,6 +287,11 @@
                      </div>
                   </div> -->
                   <!-- end balance box -->
+                   <!-- Start chart -->
+                    <div class="chart-container mt-20">
+                        <canvas id="balanceChart" style="height:300px;"></canvas>
+                    </div>
+                   <!-- End chart -->
                    <!-- Start coin box -->
                     <div class="user-coin-balance-box mt30">
                      <div class="row gy-4">
@@ -347,7 +358,7 @@
                                  </thead>
                                  <tbody>
                                     <tr>                             
-                                       <td>Jane Cooper</td>
+                                       <td>Jane Cooper</td>+
                                        <td>@jeffK</td>
                                        <td>test@gmail.com</td>
                                        <td class="text-center">
@@ -407,8 +418,24 @@
        <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
       <script src="../assets/js/jquery.flipbox.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="../assets/js/chart.js"></script>
       <script src="../assets/js/main.js"></script>
       <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const badgeList = document.getElementById("badgeList");
+            const badges = Array.from(badgeList.querySelectorAll(".badge-item")); // Select all badges except "2+"
+            function rotateBadges() {
+               const firstBadge = badges.shift(); // Remove first badge
+               badges.push(firstBadge); // Add it to the end
+               // Append badges in new order while keeping "2+" at the end
+               badges.forEach(badge => badgeList.appendChild(badge));
+               // Ensure the "2+" element is always the last child
+               const lastElement = document.querySelector(".badge-count");
+               badgeList.appendChild(lastElement);
+            }
+            setInterval(rotateBadges, 3000); // Rotate every 3 seconds
+         });
       </script>
    </body>
 </html>

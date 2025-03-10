@@ -78,6 +78,12 @@
     }
   }
     @media (max-width:768px) {
+      .custom-table td::before {
+        font-size: 13px;
+      }
+      table td{
+        font-size: 14px !important;
+      }
     .custom-table tbody tr:nth-child(even) {
         background-color: #0C2339;
         }
