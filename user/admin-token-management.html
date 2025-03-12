@@ -88,6 +88,34 @@
                   </div>
                </div>
                <div class="dashboard-body mt30">
+                  <!--start delete popup Modal -->
+                  <div class="modal fade bg-gradient-add" id="delete-modal-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-custom-width-md">
+                        <div class="modal-content custom-modal">
+                           <form action="">
+                              <div class="modal-header-area d-flex align-items-center justify-content-between">
+                                 <h4 class="text-shadow">Delete Token</h4>
+                                 <div class="modal-close-btn">
+                                    <span data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fas fa-times"></i>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="modal-body-inner">
+                                 <div class="risk-warning d-flex align-items-start p-0 mb60">
+                                    <span><i class="fa-solid fa-circle-exclamation"></i></span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ad quae ipsam beatae </p>
+                                 </div>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-end modal-footer-area flex-wrap mt-20 position-relative g-10 z-2">
+                                 <button class="transparent-btn-sm border-gradient" data-bs-dismiss="modal" aria-label="Close"> Cancel</button>
+                                 <button class="transparent-btn-sm bg-red">Delete</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end delete popup  modal -->
                   <div class="custom-card-header d-flex align-items-center justify-content-between">
                      <div class="table-heading">
                         <h5>Token Management</h5>
@@ -113,6 +141,7 @@
                            </form>
                         </div>
                      </div>
+                     
                      <div class="common-table mt30">
                         <table class="custom-table display nowrap mobile-table">
                            <thead>
@@ -139,7 +168,7 @@
                                        <li><a href="#"><i class="fas fa-pencil-alt skyblue"></i></a></li>
                                        <li><a href="#"><i class="fas fa-eye green"></i></a></li>
                                        <li><a href="#"><i class="fas fa-ban gray"></i></a></li>
-                                       <li><a href="#"><i class="far fa-trash-alt red"></i></a></li>
+                                       <li data-bs-toggle="modal" data-bs-target="#delete-modal-popup"><a href="#"><i class="far fa-trash-alt red"></i></a></li>
                                     </ul>
                                  </td>
                               </tr>

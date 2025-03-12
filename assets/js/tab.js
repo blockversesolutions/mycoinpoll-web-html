@@ -1,17 +1,14 @@
-// start ico tab js
-function active_coin_tab(evt, coinName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("ico-tab-content");
-    for (i = 0; i < tabcontent.length; i++) {
-       tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("ico-tab-btn");
-    for (i = 0; i < tablinks.length; i++) {
-       tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(coinName).style.display = "block";
-    evt.currentTarget.className += " active";
-    }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    // End ico tab js
+// ico tab controls 
+document.addEventListener("DOMContentLoaded", () => {
+   document.querySelectorAll(".ico-tab-btn").forEach(btn => {
+       btn.addEventListener("click", function () {
+           document.querySelectorAll(".ico-tab-content").forEach(c => c.style.display = "none");
+           document.querySelectorAll(".ico-tab-btn").forEach(b => b.classList.remove("active"));
+
+           document.getElementById(this.getAttribute("onclick").match(/'([^']+)'/)[1]).style.display = "block";
+           this.classList.add("active");
+       });
+   });
+   document.getElementById("defaultOpen").click();
+});
+

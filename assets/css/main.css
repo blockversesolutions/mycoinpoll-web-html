@@ -1,3 +1,7 @@
+ :root{
+  --primary-color:rgba(255, 255, 255, 0.8);
+  --primary-bg:#2682EE;
+ }
  body {
   margin: 0;
   padding: 0;
@@ -13,7 +17,8 @@ p{
   font-size:18px;
   line-height:28px;
   font-weight: 500;
-  color:rgba(255, 255, 255, 0.8);
+  color: var(--primary-color);
+  /* color:rgba(255, 255, 255, 0.8); */
 }
 input {
   outline: none;
@@ -380,7 +385,8 @@ a.nav-link.dropdown-toggle i{
   top: 20px;
 }
 .token-btn-active{
-  background: #2682EE;
+  /* background: #2682EE; */
+  background-color: var(--primary-bg);
   color: #fff;;
 }
 .token-btn-hover{
@@ -1266,9 +1272,12 @@ input[type="date"]::after {
       transform: scale(1); /* Zoom out */
   }
 }
+.zoomInOut{
+  animation: zoomInOut 2s ease-in-out infinite;
+}
 .footer-widgets img{
   animation: zoomInOut 6s ease-in-out infinite;
-}.select2-container--bootstrap-5 .select2-dropdown
+}
 .ecm-address h5 {
 	font-size: 24px;
 	font-weight: 600;
@@ -1964,7 +1973,7 @@ select {
 .risk-warning span i{
   font-size: 20px;
   color:#fff;
-  margin-right: 20px;
+  margin-right:10px;
   line-height: 32px;
 }
 .learn-circle1{
@@ -2629,6 +2638,7 @@ select {
   overflow-y: auto;
   display: none;
   z-index: 99;
+  border-radius: 0 0 10px 10px;
 }
 .select-item {
   padding: 10px;
@@ -2916,13 +2926,13 @@ select {
 }
 .search-icon{
   position: absolute;
-  left:10px;
+  left:8px;
   z-index: 99;
   top: 50%;
   transform: translateY(-50%);
 }
 .search-box-area input{
-  padding-left:50px;
+  padding-left:45px;
   border-radius: 4px;
 }
 .user-notification-box{
@@ -3007,20 +3017,20 @@ select {
 .refer-link-box-inner img{
   cursor: pointer;
   position: absolute;
-  right: 30px;
+  right:15px;
   top: 50%;
   z-index: 9;
   transform: translateY(-50%);
 }
 .refer-link-box-inner p,.refer-link-box-inner input::placeholder,.refer-link-box-inner input{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   color:#fff;
   width: auto;
 }
 .refer-link-box-inner p{
-  padding-left: 30px;
+  padding-left:15px;
 }
 .user-balance-item{
   padding-bottom: 16px;
@@ -4543,7 +4553,7 @@ input[type="time"]::after {
   border: 1px solid #303030;
 }
 .custom-dropdown-menu.show {
-  display: block; /* Show when toggled */
+  display: block;
 }
 .ticket-list-filter .select-item {
   background-color:#0b151f;
@@ -4615,11 +4625,15 @@ input[type="time"]::after {
 .support-reply-inner{
   max-height: 600px;
 }
+ 
 .chart-container {
   border: 1px solid #ffffff1c;
   width:100%;
-  background: #11151c;
+  background:rgba(0,0,0,0.125);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.09);
 }
+ .navbar-brand:focus-visible{
+  outline: none;
+ }

@@ -349,15 +349,21 @@
                            </div>
                         </div>
                       </div>
-                     <div class="mt-20">
-                        <h6 class="page-title">
-                           Balance Growth
-                        </h6>
-                        <div class="chart-container mt-20">
-                              
-                              <canvas id="balanceChart" style="height:300px;"></canvas>
+                      <div class="mt-20">
+                        <!-- Title and Legend Container -->
+                        <div class="chart-header d-flex justify-content-between align-items-center flex-wrap g-10">
+                            <h6 class="page-title">
+                                Balance Growth
+                            </h6>
+                            <!-- Custom Legend -->
+                            <div id="chartLegend" class="d-flex g-5"></div>
                         </div>
-                     </div>
+                    
+                        <!-- Chart Container -->
+                        <div class="chart-container mt-20">  
+                            <canvas id="balanceChart" style="height:300px;"></canvas>
+                        </div>
+                    </div>
                    </div>
                    <!-- End chart -->
                    <!-- Start coin box -->
@@ -426,14 +432,14 @@
                                  </thead>
                                  <tbody>
                                     <tr>                             
-                                       <td>Jane Cooper</td>+
+                                       <td>Jane Cooper</td>
                                        <td>@jeffK</td>
                                        <td>test@gmail.com</td>
                                        <td class="text-center">
                                           <a href="#" class="gradient-btn-small">
                                              Choose It
                                           </a>
-                                       </td>
+                                       </td> 
                                     </tr>
                                     <tr>                             
                                        <td>Jane Cooper</td>

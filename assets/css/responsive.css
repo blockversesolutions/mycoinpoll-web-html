@@ -1085,6 +1085,12 @@
     .dashboard-right-header-area{
       padding-left: 0;
     }
+    .chart-container{
+      padding:5px
+    }
+    .gradient-btn, .transparent-btn {
+      padding: 8px 20px;
+    }
 }
 @media screen and (max-width:480px) {
   .dashboard-body, .dashboard-left {
@@ -1190,5 +1196,11 @@
   }
   .btn2 {
     height: 65px;
+  }
+  .token-view-more-btn .primary-btn {
+    line-height: 62px;
+  }
+  .btn1 span i {
+    font-size: 16px;
   }
 }

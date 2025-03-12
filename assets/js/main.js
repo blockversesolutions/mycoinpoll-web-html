@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
             slidesToShow: 1,
             arrows:false,
             dots: true,
-          },
+          },   
         },
       ],
     });
@@ -76,7 +76,8 @@ jQuery(document).ready(function ($) {
       if (!$(event.target).closest(".resize-icon").length) {
           $(".dashboard-area").removeClass("menu-icon-show");
       }
-  });
+    });
+  
   // menu bg add
   $(window).on("scroll", function () {
     $("header").toggleClass("menu-bg-fixed", $(window).scrollTop() > 120);

@@ -381,7 +381,6 @@
                       <div class="transparent-btn border-gradient w-100 mt-40 text-center pe-none">
                         <span class="red">The ticket is closed</span>
                       </div>
-                     
                   </div>
                </div>
                <!-- copyright -->
@@ -416,16 +415,11 @@
         });
     </script>
     <script>
-         function updateFileName() {
-         const input = document.getElementById("file-select");
-         const fileNameDisplay = document.getElementById("file-name");
-         
-         if (input.files.length > 0) {
-            fileNameDisplay.textContent = input.files[0].name; // Show selected file name
-            fileNameDisplay.style.display = "inline"; // Make it visible
-         } else {
-            fileNameDisplay.style.display = "none"; // Hide when no file selected
-         }
+      function updateFileName() {
+      const file = document.getElementById("file-select").files[0];
+      const fileNameDisplay = document.getElementById("file-name");
+      fileNameDisplay.textContent = file ? file.name : "";
+      fileNameDisplay.style.display = file ? "inline" : "none";
       }
    </script>
    </body>
