@@ -72,12 +72,21 @@ jQuery(document).ready(function ($) {
     //     $dashboard.removeClass("menu-icon-show");
     //   }
     // });
+
+    // outside click
+    // $(document).on("click", (event) => {
+    //   if (!$(event.target).closest(".resize-icon").length) {
+    //       $(".dashboard-area").removeClass("menu-icon-show");
+    //   }
+    // });
     $(document).on("click", (event) => {
-      if (!$(event.target).closest(".resize-icon").length) {
+      if (
+          !$(event.target).closest(".resize-icon").length && 
+          !$(event.target).closest(".menu-item.menu-active-bg").length
+      ) {
           $(".dashboard-area").removeClass("menu-icon-show");
       }
-    });
-  
+  });
   // menu bg add
   $(window).on("scroll", function () {
     $("header").toggleClass("menu-bg-fixed", $(window).scrollTop() > 120);

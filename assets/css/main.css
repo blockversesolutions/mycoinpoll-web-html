@@ -281,8 +281,8 @@ a.nav-link.dropdown-toggle i{
   text-shadow: 3px 0px 0px #1CD691, 11px 5px 10px rgba(28, 214, 145, 0.24);
 }
 .icon-rotate i {
-	transform: rotate(-47deg);
-	font-size: 22px;
+  transform: rotate(-54deg);
+  font-size: 18px;
 }
 .btn1 span i{
   margin-left:8px;
@@ -4542,7 +4542,7 @@ input[type="time"]::after {
 .action-btn i{
   font-size: 18px;
 }
-.custom-dropdown-menu{
+.custom-dropdown-menu{ 
   background: #040C16;
   padding: 15px;
   border-radius: 10px;
@@ -4568,17 +4568,7 @@ input[type="time"]::after {
   min-width: 140px !important;
   width: 100%;
 }
-/* .ticket-input-box .bg-border-input{
-  padding: 4px;
-  padding-right: 10px;
-}
-.ticket-input-box .bg-border-input{
-  border-radius: 26px;
-}
-.ticket-input-box .bg-border-input:after{
-  border-radius: 25px;
-} */
-
+ 
 .ticket-info-body{
   background-color:#111B29;
   padding: 20px;
@@ -4624,7 +4614,6 @@ input[type="time"]::after {
 .support-reply-inner{
   max-height: 600px;
 }
- 
 .chart-container {
   border: 1px solid #ffffff1c;
   width:100%;
@@ -4636,3 +4625,22 @@ input[type="time"]::after {
  .navbar-brand:focus-visible{
   outline: none;
  }
+ .submenu {
+  display: none;
+  padding-left: 20px;
+}
+.toggle-icon {
+  transition: transform 0.3s ease-in-out;
+}
+.dashboard-left-menu .submenu{
+  padding-left: 20px;
+}
+.menu-icon-show .submenu{
+  padding-left:0px;
+}
+.min-width-250{
+  min-width:250px;
+}
+.w-20{
+  width:20%;
+}

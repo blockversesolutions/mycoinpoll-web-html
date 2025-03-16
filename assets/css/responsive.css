@@ -32,6 +32,12 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .dashboard-left-menu .submenu{
+    padding-left:0px;
+  }
+  .menu-icon-show .submenu{
+    padding-left:20px;
+  }
  /* Start left bar edit */
  .dashboard-left {
 	width: 60px;
@@ -481,6 +487,7 @@
   .dashboard-left-menu ul li a span {
     display: none;
   }
+
   .menu-icon-show .dashboard-left-menu ul li a span {
     display: block;
   }
