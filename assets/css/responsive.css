@@ -12,13 +12,13 @@
   .ico-tab ul li img{
     height:22px;
     width: 22px;
-    margin-right:4px;
+    margin-right:6px;
    }
    .ico-tab ul li{
     font-size: 18px;
   }
   .ico-tab-select-icon{
-    right:6px;
+    right:8px;
   }
   .ico-tab-select-icon i{
     font-size:18px;
@@ -1211,3 +1211,4 @@
     font-size: 16px;
   }
 }
+ 

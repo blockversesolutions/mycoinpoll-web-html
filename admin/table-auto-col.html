@@ -1,204 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Responsive Table</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <style>
-        /* Table Wrapper */
-        .custom-table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            padding: 10px;
-        }
 
-        /* Main Table */
+      /* Table Wrapper */
+      .custom-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .total-referral{
+        overflow-y:10px;
+      }
+      .accordion-content{
+        margin-left: 10px;
+        margin-right:20px;
+      }
+      .custom-table{
+        border: none;
+      }
+      /* Main Table */
+      .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #0c2339;
+        color: white;
+      }
+      .custom-table th,
+      .custom-table td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #444;
+        white-space: nowrap;
+      }
+      .dashboard-box.text-center{
+        height: 40px;
+      }
+      .custom-table th {
+        background-color: #0c2339;
+      }
+      /* Status Badge */
+      .badge {
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .active-status {
+        background-color: green;
+        color: white;
+      }
+
+      /* Action Icons */
+      .action-group {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        gap: 10px;
+      }
+
+      .action-group a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .skyblue {
+        color: #00bcd4;
+      }
+      .green {
+        color: #4caf50;
+      }
+      .red {
+        color: #f44336;
+      }
+
+      /* Responsive Table (Auto-Stack) */
+      @media (max-width: 768px) {
         .custom-table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #0C2339;
-            color: white;
+          display: block;
         }
 
-        .custom-table th,
+        .custom-table thead {
+          display: none;
+        }
+        .custom-table tbody,
+        .custom-table tr {
+          display: block;
+          width: 100%;
+          background-color: #011425;
+          margin-bottom: 10px;
+          border-radius: 10px;
+        }
+
         .custom-table td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #444;
-            white-space: nowrap;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 10px;
+          border-bottom: 1px solid #444;
+          cursor: pointer;
         }
 
-        .custom-table th {
-            background-color: #0C2339;
+        .custom-table td:last-child {
+          border-bottom: none;
         }
 
-        /* Status Badge */
-        .badge {
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            font-weight: bold;
+        .custom-table td::before {
+          content: attr(data-label);
+          font-weight: bold;
+          color: #ffffff;
+          padding-right: 10px;
         }
 
-        .active-status {
-            background-color: green;
-            color: white;
+        /* Accordion Mode for Small Screens */
+        .accordion-content {
+          display: none;
         }
 
-        /* Action Icons */
-        .action-group {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            gap: 10px;
+        .accordion.active .accordion-content {
+          display: block;
         }
-
-        .action-group a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .skyblue { color: #00bcd4; }
-        .green { color: #4caf50; }
-        .red { color: #f44336; }
-
-        /* Responsive Table (Auto-Stack) */
-        @media (max-width: 768px) {
-            .custom-table {
-                display: block;
-            }
-
-            .custom-table thead {
-                display: none;
-            }
-
-            .custom-table tbody,
-            .custom-table tr {
-                display: block;
-                width: 100%;
-                background-color: #011425;
-                margin-bottom: 10px;
-                border-radius: 10px;
-            }
-
-            .custom-table td {
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                padding: 10px;
-                border-bottom: 1px solid #444;
-                cursor: pointer;
-            }
-
-            .custom-table td:last-child {
-                border-bottom: none;
-            }
-
-            .custom-table td::before {
-                content: attr(data-label);
-                font-weight: bold;
-                color: #ffffff;
-                padding-right: 10px;
-            }
-
-            /* Accordion Mode for Small Screens */
-            .accordion-content {
-                display: none;
-            }
-
-            .accordion.active .accordion-content {
-                display: block;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="custom-table-wrapper">
-        <table class="custom-table">
-            <thead>
-                <tr>
-                    <th>SL</th>
-                    <th>Reg. Date</th>
-                    <th>Name</th>
-                    <th>Referral Link</th>
-                    <th>Total Referral</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="accordion">
-                    <td data-label="SL">01</td>
-                    <td data-label="Reg. Date">12/10/2024</td>
-                    <td data-label="Name">
-                        <img src="https://via.placeholder.com/30" alt="User">
-                        Jane Cooper
-                    </td>
-                    <td data-label="Referral Link">
-                        <a href="https://usdt.mycoinpoll.com">usdt.mycoinpoll.com...</a>
-                    </td>
-                    <td data-label="Total Referral">300</td>
-                    <td data-label="Status"><span class="active-status badge">Active</span></td>
-                    <td data-label="Action">
-                        <ul class="d-flex align-items-center action-group">
-                            <li><a href="#"><i class="fas fa-pencil-alt skyblue"></i></a></li>
-                            <li><a href="refferal-link-details.html"><i class="fas fa-eye green"></i></a></li>
-                            <li><a href="#" class="delete-row"><i class="far fa-trash-alt red"></i></a></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="accordion-content">
-                    <td colspan="7">
-                        <strong>More Details:</strong> This is extra information about the user.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>SL</th>
+            <th>Reg. Date</th>
+            <th>Name</th>
+            <th>Referral Link</th>
+            <th>Total Referral</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="accordion">
+            <td data-label="SL">01</td>
+            <td data-label="Reg. Date">12/10/2024</td>
+            <td data-label="Name">
+              <img src="https://via.placeholder.com/30" alt="User" />
+              Jane Cooper
+            </td>
+            <td data-label="Referral Link">
+              <a href="https://usdt.mycoinpoll.com">usdt.mycoinpoll.com...</a>
+            </td>
+            <td data-label="Total Referral">300</td>
+            <td data-label="Status">
+              <span class="active-status badge active-status">Active</span>
+            </td>
+            <td data-label="Action">
+              <ul class="d-flex align-items-center action-group">
+                <li>
+                  <a href="#"><i class="fas fa-pencil-alt skyblue"></i></a>
+                </li>
+                <li>
+                  <a href="refferal-link-details.html"
+                    ><i class="fas fa-eye green"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="delete-row"
+                    ><i class="far fa-trash-alt red"></i
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="accordion-content">
+            <td colspan="7">
+              <strong>More Details:</strong> This is extra information about the
+              user.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script>
-        // Make the Table Fully Responsive with Auto-Adjusting Columns
-        function adjustTable() {
-            const table = document.querySelector('.custom-table');
-            const container = document.querySelector('.custom-table-wrapper');
+      // Make the Table Fully Responsive with Auto-Adjusting Columns
+      function adjustTable() {
+        const table = document.querySelector(".custom-table");
+        const container = document.querySelector(".custom-table-wrapper");
 
-            if (table.offsetWidth > container.offsetWidth) {
-                container.style.overflowX = 'auto';
-            } else {
-                container.style.overflowX = 'hidden';
-            }
+        if (table.offsetWidth > container.offsetWidth) {
+          container.style.overflowX = "auto";
+        } else {
+          container.style.overflowX = "hidden";
         }
+      }
 
-        window.addEventListener('resize', adjustTable);
-        document.addEventListener('DOMContentLoaded', adjustTable);
+      window.addEventListener("resize", adjustTable);
+      document.addEventListener("DOMContentLoaded", adjustTable);
 
-        // Accordion Toggle for Mobile View
-        document.querySelectorAll('.accordion').forEach(item => {
-            item.addEventListener('click', function () {
-                this.classList.toggle('active');
-                let content = this.nextElementSibling;
-                if (content && content.classList.contains('accordion-content')) {
-                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-                }
-            });
+      // Accordion Toggle for Mobile View
+      document.querySelectorAll(".accordion").forEach((item) => {
+        item.addEventListener("click", function () {
+          this.classList.toggle("active");
+          let content = this.nextElementSibling;
+          if (content && content.classList.contains("accordion-content")) {
+            content.style.display =
+              content.style.display === "block" ? "none" : "block";
+          }
         });
+      });
 
-        // Delete Row Functionality
-        document.querySelectorAll('.delete-row').forEach(item => {
-            item.addEventListener('click', function (event) {
-                event.preventDefault();
-                let row = this.closest('tr');
-                let detailsRow = row.nextElementSibling;
-                row.remove();
-                if (detailsRow && detailsRow.classList.contains('accordion-content')) {
-                    detailsRow.remove();
-                }
-            });
+      // Delete Row Functionality
+      document.querySelectorAll(".delete-row").forEach((item) => {
+        item.addEventListener("click", function (event) {
+          event.preventDefault();
+          let row = this.closest("tr");
+          let detailsRow = row.nextElementSibling;
+          row.remove();
+          if (
+            detailsRow &&
+            detailsRow.classList.contains("accordion-content")
+          ) {
+            detailsRow.remove();
+          }
         });
+      });
     </script>
-    
-
-</body>
+  </body>
 </html>
