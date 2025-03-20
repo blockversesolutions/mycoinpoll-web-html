@@ -1,57 +1,102 @@
 jQuery(document).ready(function ($) {
-  $('.staking-slider').slick({
-    slidesToShow:1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: false,
-    infinite: true,
-    dots: true,
-    autoplaySpeed: 3500,
-    });
-  $('.ido-card-slider').slick({
-    slidesToShow:3,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: false,
-    infinite: true,
-    prevArrow: $('.ido-slick-prev'),
-      nextArrow: $('.ido-slick-next'),
-      responsive: [
-        {
-          breakpoint: 1500,
-          settings: {
-            slidesToShow: 2,
+  // $('.staking-slider').slick({
+  //   slidesToShow:1,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   autoplay: false,
+  //   infinite: true,
+  //   dots: true,
+  //   autoplaySpeed: 3500,
+  //   });
+
+    if ($('.staking-slider').length){
+      $('.staking-slider').slick({
+        slidesToShow:1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        infinite: true,
+        dots: true,
+        autoplaySpeed: 3500,
+        });
+    };
+
+    if($('.ido-card-slider').length){
+      $('.ido-card-slider').slick({
+        slidesToShow:3,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: false,
+        infinite: true,
+        prevArrow: $('.ido-slick-prev'),
+          nextArrow: $('.ido-slick-next'),
+          responsive: [
+            {
+              breakpoint: 1500,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint:991,
+              settings: {
+                slidesToShow: 1,
+                arrows:false,
+                dots: true,
+              },
+            },
+          ],
+        });
+    }
+
+  // $('.ido-card-slider').slick({
+  //   slidesToShow:3,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   autoplay: false,
+  //   infinite: true,
+  //   prevArrow: $('.ido-slick-prev'),
+  //     nextArrow: $('.ido-slick-next'),
+  //     responsive: [
+  //       {
+  //         breakpoint: 1500,
+  //         settings: {
+  //           slidesToShow: 2,
+  //         },
+  //       },
+  //       {
+  //         breakpoint:991,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           arrows:false,
+  //           dots: true,
+  //         },
+  //       },
+  //     ],
+  //   });
+
+  if($('.event-thumbnails-slider').length){
+    $('.event-thumbnails-slider').slick({
+      slidesToShow:1,
+      slidesToScroll: 1,
+      arrows: true,
+      autoplay: false,
+      infinite: true,
+      prevArrow: $('.ido-slick-prev'),
+        nextArrow: $('.ido-slick-next'),
+        responsive: [
+          {
+            breakpoint:991,
+            settings: {
+              slidesToShow: 1,
+              arrows:false,
+              dots: true,
+            },   
           },
-        },
-        {
-          breakpoint:991,
-          settings: {
-            slidesToShow: 1,
-            arrows:false,
-            dots: true,
-          },
-        },
-      ],
-    });
-  $('.event-thumnails-slider').slick({
-    slidesToShow:1,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: false,
-    infinite: true,
-    prevArrow: $('.ido-slick-prev'),
-      nextArrow: $('.ido-slick-next'),
-      responsive: [
-        {
-          breakpoint:991,
-          settings: {
-            slidesToShow: 1,
-            arrows:false,
-            dots: true,
-          },   
-        },
-      ],
-    });
+        ],
+      });
+  }
+ 
     $('#accordion').on('click', '[data-toggle="collapse"]', function(event) {
 			event.preventDefault();
 			var $this = $(this),

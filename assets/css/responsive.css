@@ -251,7 +251,7 @@
     justify-content: center !important;
     margin-bottom: 80px !important;
   }
-  .token-details-card-thumnails.box-bg {
+  .token-details-card-thumbnails.box-bg {
     margin-right:0px;
   }
   .section-heading h3 {
@@ -320,7 +320,7 @@
   .box-bg {
     margin-top: 60px;
   }
-  .token-details-card-thumnails.box-bg{
+  .token-details-card-thumbnails.box-bg{
     margin-top: 0;
   }
   .coin-hero-area .box-bg{
@@ -379,14 +379,14 @@
   .pagination-inner li a {
     min-width: 48px;
   }
-  .token-card-thumnails,.token-card-middle-area {
+  .token-card-thumbnails,.token-card-middle-area {
     margin-right: 0;
     width: 100%;
   }
-  .token-card-thumnails{
+  .token-card-thumbnails{
     margin-bottom: 60px;
   }
-  .token-card-width .token-card-thumnails{
+  .token-card-width .token-card-thumbnails{
     margin-bottom: 0;
   }
   .token-card-thumnail-text{
@@ -400,7 +400,7 @@
     font-size: 30px;
     line-height: 40px;
   }
-  .token-card-thumnails img{
+  .token-card-thumbnails img{
     width: 100%;
   }
   .header-cover-area .header-area-bg-color {
@@ -442,7 +442,7 @@
   .footer-widgets-area {
     gap: 70px;
   }
-  .learn-earn-area .token-card-thumnails{
+  .learn-earn-area .token-card-thumbnails{
     width: 40%;
     margin-bottom: 0;
   }
@@ -452,7 +452,7 @@
   .learn-earn-hero-left {
     margin-right:0px;
   }
-  .token-details-card-thumnails.box-bg{
+  .token-details-card-thumbnails.box-bg{
     margin-top: 0;
   }
   .dashboard-left {
@@ -904,7 +904,7 @@
     .navbar.menu-bg.clip-path{
       clip-path: polygon( 5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px );
     }
-    .token-card-thumnails {
+    .token-card-thumbnails {
       margin-bottom: 31px;
     }
     .line-divider2{
@@ -963,7 +963,7 @@
     .token-card-thumnail-text {
       flex-wrap: wrap;
     }
-    .token-card-width .token-card-thumnails, .token-card-width .token-card-middle-area {
+    .token-card-width .token-card-thumbnails, .token-card-width .token-card-middle-area {
       width:100%;
     }
     .navbar-nav {
@@ -972,7 +972,7 @@
     .launch-thumnail img {
       max-width: 185px;
     }
-    .learn-earn-area .token-card-thumnails,.earn-right-text{
+    .learn-earn-area .token-card-thumbnails,.earn-right-text{
       width: 100%;
     }
     .token-supporter {
