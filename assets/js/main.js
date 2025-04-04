@@ -1,14 +1,4 @@
 jQuery(document).ready(function ($) {
-  // $('.staking-slider').slick({
-  //   slidesToShow:1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   autoplay: false,
-  //   infinite: true,
-  //   dots: true,
-  //   autoplaySpeed: 3500,
-  //   });
-
     if ($('.staking-slider').length){
       $('.staking-slider').slick({
         slidesToShow:1,
@@ -20,7 +10,6 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 3500,
         });
     };
-
     if($('.ido-card-slider').length){
       $('.ido-card-slider').slick({
         slidesToShow:3,
@@ -48,33 +37,6 @@ jQuery(document).ready(function ($) {
           ],
         });
     }
-
-  // $('.ido-card-slider').slick({
-  //   slidesToShow:3,
-  //   slidesToScroll: 1,
-  //   arrows: true,
-  //   autoplay: false,
-  //   infinite: true,
-  //   prevArrow: $('.ido-slick-prev'),
-  //     nextArrow: $('.ido-slick-next'),
-  //     responsive: [
-  //       {
-  //         breakpoint: 1500,
-  //         settings: {
-  //           slidesToShow: 2,
-  //         },
-  //       },
-  //       {
-  //         breakpoint:991,
-  //         settings: {
-  //           slidesToShow: 1,
-  //           arrows:false,
-  //           dots: true,
-  //         },
-  //       },
-  //     ],
-  //   });
-
   if($('.event-thumbnails-slider').length){
     $('.event-thumbnails-slider').slick({
       slidesToShow:1,
@@ -96,7 +58,6 @@ jQuery(document).ready(function ($) {
         ],
       });
   }
- 
     $('#accordion').on('click', '[data-toggle="collapse"]', function(event) {
 			event.preventDefault();
 			var $this = $(this),
@@ -110,20 +71,7 @@ jQuery(document).ready(function ($) {
         $("#navbarText").removeClass("show");
       }
     });
-    // $(document).on("click", function (event) {
-    //   const $dashboardLeft = $(".resize-icon");
-    //   const $dashboard = $(".dashboard-area");
-    //   if (!$dashboardLeft.is(event.target) && $dashboardLeft.has(event.target).length === 0) {
-    //     $dashboard.removeClass("menu-icon-show");
-    //   }
-    // });
-
-    // outside click
-    // $(document).on("click", (event) => {
-    //   if (!$(event.target).closest(".resize-icon").length) {
-    //       $(".dashboard-area").removeClass("menu-icon-show");
-    //   }
-    // });
+ 
     $(document).on("click", (event) => {
       if (
           !$(event.target).closest(".resize-icon").length && 
@@ -189,13 +137,6 @@ jQuery(document).ready(function ($) {
       console.error('Failed to copy:', err);  // Optional error logging
     });
   }
-  // new DataTable('.mobile-table', {
-  //   responsive: true,
-  //   paging: false,
-  //   searching: false,
-  //   ordering:  false
-  //   });
-
     if (document.querySelector('.mobile-table')) {
       new DataTable('.mobile-table', {
           responsive: true,
@@ -206,3 +147,44 @@ jQuery(document).ready(function ($) {
   }
  
   
+
+  // chart js code here
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var myChart = new Chart(ctx, {
+        type: "bar", // Change to 'line', 'pie', 'doughnut', etc.
+        data: {
+            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: "Votes",
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    "rgba(255, 99, 132, 0.5)",
+                    "rgba(54, 162, 235, 0.5)",
+                    "rgba(255, 206, 86, 0.5)",
+                    "rgba(75, 192, 192, 0.5)",
+                    "rgba(153, 102, 255, 0.5)",
+                    "rgba(255, 159, 64, 0.5)",
+                    "rgba(565,148,78,0.8)"
+                ],
+                borderColor: [
+                    "rgba(255, 99, 132, 1)",
+                    "rgba(54, 162, 235, 1)",
+                    "rgba(255, 206, 86, 1)",
+                    "rgba(75, 192, 192, 1)",
+                    "rgba(153, 102, 255, 1)",
+                    "rgba(255, 159, 64, 1)"
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+});

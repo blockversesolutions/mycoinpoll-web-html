@@ -586,7 +586,7 @@ a.nav-link.dropdown-toggle i {
 .countdown-area h5 {
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 25px;
   color: #fff;
 }
@@ -4825,7 +4825,6 @@ input[type="time"]::after {
 .min-width-250 {
   min-width: 250px;
 }
-
 .sm-text-view tr th,
 .sm-text-view tr td,
 .sm-text-view tr td .badge {
@@ -4835,3 +4834,4 @@ input[type="time"]::after {
 .sm-text-view td {
   padding: 6px;
 }
+ 

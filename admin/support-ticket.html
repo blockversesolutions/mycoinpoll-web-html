@@ -1,975 +1,1722 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mycoinpoll</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-      <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-      <link rel="stylesheet" href="../assets/css/jquery.flipbox.css" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
-      <link rel="stylesheet" href="../assets/css/editor.css" />
-      <link rel="stylesheet" href="../assets/css/main.css" />
-      <link rel="stylesheet" href="../assets/css/responsive.css" />
-   </head>
-   <body>
-      <div class="ellipse ellipse1"></div>
-      <div class="ellipse ellipse2"></div>
-      <div class="ellipse ellipse3"></div>
-      <div class="dashboard-main-area">
-         <div class="dashboard-area d-flex align-items-start">
-               <div class="dashboard-left position-relative" data-simplebar style="height: calc(100svh - 60px)">
-               <div class="logo mb40">
-                  <a href="#"><img src="../assets/images/logo.png" alt="" class="w-100"></a>
-               </div>
-               <div class="logo2 mb40">
-                  <a href="#"><img src="../assets/images/dashboard/icon/small-logo.png" alt="logo" class="w-100"></a>
-               </div>
-               <div class="dashboard-left-menu">
-                  <ul>
-                     <li><a href="dashboard.html"><img src="../assets/images/dashboard/icon/dashboard.png" alt="icon"> <span class="left-menu-text">Dashboard</span></a></li>
-                     <li><a href="#"><img src="../assets/images/dashboard/icon/profile.png" alt="icon"> <span class="left-menu-text">Profile</span></a></li>
-                     <li><a href="transactions.html"><img src="../assets/images/dashboard/icon/transactions.png" alt="icon"> <span class="left-menu-text">Transactions</span></a></li>
-                     <li><a href="#"><img src="../assets/images/dashboard/icon/wallet.png" alt="icon"> <span class="left-menu-text">Wallet</span></a></li>
-                     <li><a href="ico.html"><img src="../assets/images/dashboard/icon/ico.png" alt="icon"> <span class="left-menu-text">ICO</span></a></li>
-                     <li><a href="referral-user.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral User</span></a></li>
-                     <li><a href="refferal-link-details.html"><img src="../assets/images/dashboard/icon/referral.png" alt="icon"> <span class="left-menu-text">Referral Manage</span></a></li>
-                     <li><a href="support-ticket.html" class="menu-active-bg"><img src="../assets/images/dashboard/icon/ticket.png" alt="icon"> <span class="left-menu-text">Support Ticket</span></a></li>
-                     <li><a href="#"><img src="../assets/images/dashboard/icon/logout.png" alt="icon"> <span class="left-menu-text">Logout</span></a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mycoinpoll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../assets/css/jquery.flipbox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+    <link rel="stylesheet" href="../assets/css/editor.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="ellipse ellipse1"></div>
+    <div class="ellipse ellipse2"></div>
+    <div class="ellipse ellipse3"></div>
+    <div class="dashboard-main-area">
+      <div class="dashboard-area d-flex align-items-start">
+        <div
+          class="dashboard-left position-relative"
+          data-simplebar
+          style="height: calc(100svh - 60px)"
+        >
+          <div class="logo mb40">
+            <a href="#"
+              ><img src="../assets/images/logo.png" alt="" class="w-100"
+            /></a>
+          </div>
+          <div class="logo2 mb40">
+            <a href="#"
+              ><img
+                src="../assets/images/dashboard/icon/small-logo.png"
+                alt="logo"
+                class="w-100"
+            /></a>
+          </div>
+          <div class="dashboard-left-menu">
+            <ul>
+              <li>
+                <a href="dashboard.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/dashboard.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Dashboard</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/profile.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Profile</span></a
+                >
+              </li>
+              <li>
+                <a href="transactions.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/transactions.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Transactions</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/wallet.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Wallet</span></a
+                >
+              </li>
+              <li>
+                <a href="ico.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/ico.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">ICO</span></a
+                >
+              </li>
+              <li>
+                <a href="referral-user.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/referral.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Referral User</span></a
+                >
+              </li>
+              <li>
+                <a href="refferal-link-details.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/referral.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Referral Manage</span></a
+                >
+              </li>
+              <li>
+                <a href="support-ticket.html" class="menu-active-bg"
+                  ><img
+                    src="../assets/images/dashboard/icon/ticket.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Support Ticket</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/logout.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dashboard-right">
+          <div
+            class="dashboard-right-header-area d-flex align-items-center justify-content-between"
+          >
+            <div class="page-info d-flex align-items-center">
+              <div class="resize-icon">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+              <h5 class="page-title">Support Ticket</h5>
+            </div>
+            <div class="dashboard-header-right">
+              <div
+                class="d-flex align-items-center dashboard-header-right-group"
+              >
+                <div class="text-btn d-flex align-items-center border-gradient">
+                  310 USDT
+                  <span
+                    ><img
+                      src="../assets/images/dashboard/icon/wallet2.png"
+                      alt="icon"
+                  /></span>
+                </div>
+                <div class="text-btn d-flex align-items-center border-gradient">
+                  300 CRM
+                  <span
+                    ><img src="../assets/images/icon/wallet.png" alt="icon"
+                  /></span>
+                </div>
+                <div class="notification-icon position-relative">
+                  <span>2+</span>
+                  <img
+                    src="../assets/images/dashboard/icon/bell.png"
+                    alt="icon"
+                    class="dropdown-toggle"
+                  />
+
+                  <ul
+                    class="dropdown notification-box"
+                    data-simplebar
+                    style="height: 303px"
+                  >
+                    <li>
+                      <img
+                        src="../assets/images/icon/noticifation-details.png"
+                        alt="icon"
+                      />
+                      <h6>Order Shipped <b>(2h ago)</b></h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adicing elit.
+                      </p>
+                    </li>
+                    <li>
+                      <img
+                        src="../assets/images/icon/noticifation-details.png"
+                        alt="icon"
+                      />
+                      <h6>Order Shipped <b>(2h ago)</b></h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adicing elit.
+                      </p>
+                    </li>
+                    <li>
+                      <img
+                        src="../assets/images/icon/noticifation-details.png"
+                        alt="icon"
+                      />
+                      <h6>Order Shipped <b>(2h ago)</b></h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adicing elit.
+                      </p>
+                    </li>
+                    <li>
+                      <a href="notification.html" class="gradient-btn-small"
+                        >Show All</a
+                      >
+                    </li>
                   </ul>
-               </div>
-               </div>
-               <div class="dashboard-right">
-                  <div class="dashboard-right-header-area d-flex align-items-center justify-content-between">
-                     <div class="page-info d-flex align-items-center">
-                        <div class="resize-icon">
-                           <i class="fa-solid fa-expand"></i>
-                        </div>
-                        <h5 class="page-title">Support Ticket</h5>
-                     </div>
-                     <div class="dashboard-header-right">
-                        <div class="d-flex align-items-center dashboard-header-right-group">
-                           <div class="text-btn d-flex align-items-center border-gradient">
-                              310 USDT <span><img src="../assets/images/dashboard/icon/wallet2.png" alt="icon"></span>
-                           </div>
-                           <div class="text-btn d-flex align-items-center border-gradient">
-                              300 CRM <span><img src="../assets/images/icon/wallet.png" alt="icon"></span>
-                           </div>
-                           <div class="notification-icon position-relative "> 
-                              <span>2+</span>
-                              <img src="../assets/images/dashboard/icon/bell.png" alt="icon" class="dropdown-toggle">
-                              
-                              <ul class="dropdown notification-box" data-simplebar style="height: 303px; ">
-                              <li>
-                                 <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
-                              <li>
-                                 <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
-                              <li>
-                                 <img src="../assets/images/icon/noticifation-details.png" alt="icon"> <h6> Order Shipped <b>(2h ago)</b> </h6>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adicing elit.  </p></li>
-                              <li><a href="notification.html" class="gradient-btn-small">Show All</a></li>
-                              </ul>
-                           </div>
-                           <div class="profile-mini-icon">
-                              <a href="user-profile.html"><img src="../assets/images/dashboard/icon/user.png" alt="user"></a>
-                           </div>
-                        </div>
-                     </div>
+                </div>
+                <div class="profile-mini-icon">
+                  <a href="user-profile.html"
+                    ><img
+                      src="../assets/images/dashboard/icon/user.png"
+                      alt="user"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--start Assign Modal -->
+          <div
+            class="modal fade bg-gradient-add"
+            id="assign-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-custom-width-sm">
+              <div class="modal-content custom-modal">
+                <form action="">
+                  <div
+                    class="modal-header-area d-flex align-items-center justify-content-between"
+                  >
+                    <h4 class="text-shadow">Assign a Agent</h4>
+                    <div class="modal-close-btn">
+                      <span data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                      </span>
+                    </div>
                   </div>
-                  <!--start Assign Modal -->
-                  <div class="modal fade bg-gradient-add" id="assign-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-custom-width-sm">
-                        <div class="modal-content custom-modal">
-                           <form action="">
-                              <div class="modal-header-area d-flex align-items-center justify-content-between">
-                                 <h4 class="text-shadow">Assign a Agent</h4>
-                                 <div class="modal-close-btn">
-                                    <span data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="fas fa-times"></i>
-                                    </span>
-                                 </div>
+                  <div class="modal-body-inner">
+                    <div class="row gy-3">
+                      <p>
+                        You have the option to assign an agent for handling this
+                        ticket (#10001) efficiently.
+                      </p>
+                      <div class="form-group col-md-12">
+                        <label for="Region">Select Agent name</label>
+                        <div class="input bg-border-input">
+                          <div class="custom-select position-relative">
+                            <div class="select-selected">Agent - 1</div>
+                            <div class="select-items">
+                              <div class="select-item" data-value="Agent-1">
+                                Agent - 2
                               </div>
-                              <div class="modal-body-inner">
-                                 <div class="row gy-3">
-                                    <p>You have the option to assign an agent for handling this ticket (#10001) efficiently.</p>
-                                    <div class="form-group col-md-12">
-                                       <label for="Region">Select Agent name</label>
-                                       <div class="input bg-border-input">
-                                          <div class="custom-select position-relative">
-                                             <div class="select-selected">
-                                                Agent - 1
-                                             </div>
-                                             <div class="select-items">
-                                                <div class="select-item" data-value="Agent-1">
-                                                   Agent - 2
-                                                </div>
-                                                <div class="select-item" data-value="Agent-2">
-                                                   Agent - 3
-                                                </div>
-                                                <div class="select-item" data-value="Agent-3">
-                                                   Agent - 4
-                                                </div>
-                                                <div class="select-item" data-value="Agent-4">
-                                                   Agent - 5
-                                                </div>
-                                                
-                                             </div>
-                                             <div class="select-icon">
-                                                <i class="fa-solid fa-angle-down"></i>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                       <label for="Region">Add Note</label>
-                                       <div class="input bg-border-input">
-                                          <textarea name="" id="" placeholder="Note Here ..."></textarea>
-                                       </div>
-                                    </div>
-                                 </div>
+                              <div class="select-item" data-value="Agent-2">
+                                Agent - 3
                               </div>
-                              <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40">
-                                 <button class="gradient-btn">Assign <i class="fa-regular fa-circle-right white"></i></button>
-                                 <div class="position-relative z-1">
-                                    <span data-bs-dismiss="modal" aria-label="Close" class="transparent-btn border-gradient cursor">
-                                    Cancel
-                                    </span>
-                                 </div>
+                              <div class="select-item" data-value="Agent-3">
+                                Agent - 4
                               </div>
-                           </form>
+                              <div class="select-item" data-value="Agent-4">
+                                Agent - 5
+                              </div>
+                            </div>
+                            <div class="select-icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                          </div>
                         </div>
-                     </div>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="Region">Add Note</label>
+                        <div class="input bg-border-input">
+                          <textarea
+                            name=""
+                            id=""
+                            placeholder="Note Here ..."
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <!-- end Assign modal -->
-                  <!--start change-status Modal -->
-                  <div class="modal fade bg-gradient-add" id="change-status-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-custom-width-sm">
-                        <div class="modal-content custom-modal">
-                           <form action="">
-                              <div class="modal-header-area d-flex align-items-center justify-content-between">
-                                 <h4 class="text-shadow">Change Status</h4>
-                                 <div class="modal-close-btn">
-                                    <span data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="fas fa-times"></i>
-                                    </span>
-                                 </div>
-                              </div>
-                              <div class="modal-body-inner">
-                                 <div class="row gy-3">
-                                    <p>You have the ability to modify and update the status of this ticket as needed.</p>
-                                    <div class="form-group col-md-12">
-                                       <label for="Status">Status</label>
-                                       <div class="input bg-border-input">
-                                          <div class="custom-select position-relative">
-                                             <div class="select-selected">
-                                                Open
-                                             </div>
-                                             <div class="select-items">
-                                                <div class="select-item" data-value="Agent-1">
-                                                   Pending
-                                                </div>
-                                                <div class="select-item" data-value="Agent-2">
-                                                   Resolved
-                                                </div>
-                                                <div class="select-item" data-value="Agent-3">
-                                                  Close
-                                                </div>
-                                                <div class="select-item" data-value="Agent-4">
-                                                   In progress
-                                                </div>
-                                                
-                                             </div>
-                                             <div class="select-icon">
-                                                <i class="fa-solid fa-angle-down"></i>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40">
-                                 <button class="gradient-btn">Save or Update <i class="fa-regular fa-circle-right white"></i></button>
-                                 <div class="position-relative z-1">
-                                    <span data-bs-dismiss="modal" aria-label="Close" class="transparent-btn border-gradient cursor">
-                                    Cancel
-                                    </span>
-                                 </div>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40"
+                  >
+                    <button class="gradient-btn">
+                      Assign <i class="fa-regular fa-circle-right white"></i>
+                    </button>
+                    <div class="position-relative z-1">
+                      <span
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        class="transparent-btn border-gradient cursor"
+                      >
+                        Cancel
+                      </span>
+                    </div>
                   </div>
-                  <!-- end change-status modal -->
-                   <!--start Transfer Department Modal -->
-                  <div class="modal fade bg-gradient-add" id="Transfer-Department-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-custom-width-sm">
-                        <div class="modal-content custom-modal">
-                           <form action="">
-                              <div class="modal-header-area d-flex align-items-center justify-content-between">
-                                 <h4 class="text-shadow">Transfer Department</h4>
-                                 <div class="modal-close-btn">
-                                    <span data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="fas fa-times"></i>
-                                    </span>
-                                 </div>
-                              </div>
-                              <div class="modal-body-inner">
-                                 <div class="row gy-3">
-                                    <p>You have the option to change the department for handling this ticket (#10001) efficiently.</p>
-                                    <div class="form-group col-md-12">
-                                       <label for="Status">Department name</label>
-                                       <div class="input bg-border-input">
-                                          <div class="custom-select position-relative">
-                                             <div class="select-selected">
-                                                Billing & payment
-                                             </div>
-                                             <div class="select-items">
-                                                <div class="select-item" data-value="Agent-1">
-                                                   Login Problem
-                                                </div>
-                                                <div class="select-item" data-value="Agent-2">
-                                                   Reffer Problem
-                                                </div>
-                                                 
-                                             </div>
-                                             <div class="select-icon">
-                                                <i class="fa-solid fa-angle-down"></i>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40">
-                                 <button class="gradient-btn">Save or Update <i class="fa-regular fa-circle-right white"></i></button>
-                                 <div class="position-relative z-1">
-                                    <span data-bs-dismiss="modal" aria-label="Close" class="transparent-btn border-gradient cursor">
-                                    Cancel
-                                    </span>
-                                 </div>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end Assign modal -->
+          <!--start change-status Modal -->
+          <div
+            class="modal fade bg-gradient-add"
+            id="change-status-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-custom-width-sm">
+              <div class="modal-content custom-modal">
+                <form action="">
+                  <div
+                    class="modal-header-area d-flex align-items-center justify-content-between"
+                  >
+                    <h4 class="text-shadow">Change Status</h4>
+                    <div class="modal-close-btn">
+                      <span data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                      </span>
+                    </div>
                   </div>
-                  <!-- end Transfer Department modal -->
-                    <!--start Delete Modal -->
-                  <div class="modal fade bg-gradient-add" id="delete-ticket-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-custom-width-sm">
-                        <div class="modal-content custom-modal">
-                           <form action="">
-                              <div class="modal-header-area d-flex align-items-center justify-content-between">
-                                 <h4 class="text-shadow">Delete Ticket</h4>
-                                 <div class="modal-close-btn">
-                                    <span data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="fas fa-times"></i>
-                                    </span>
-                                 </div>
+                  <div class="modal-body-inner">
+                    <div class="row gy-3">
+                      <p>
+                        You have the ability to modify and update the status of
+                        this ticket as needed.
+                      </p>
+                      <div class="form-group col-md-12">
+                        <label for="Status">Status</label>
+                        <div class="input bg-border-input">
+                          <div class="custom-select position-relative">
+                            <div class="select-selected">Open</div>
+                            <div class="select-items">
+                              <div class="select-item" data-value="Agent-1">
+                                Pending
                               </div>
-                              <div class="modal-body-inner">
-                                 <div class="row gy-3">
-                                    <p>Are you sure you want to delete ticket?</p>
-                                     
-                                 </div>
+                              <div class="select-item" data-value="Agent-2">
+                                Resolved
                               </div>
-                              <div class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40">
-                                 <button class="gradient-btn bg-red">Delete <i class="fa-regular fa-circle-right white"></i></button>
-                                 <div class="position-relative z-1">
-                                    <span data-bs-dismiss="modal" aria-label="Close" class="transparent-btn border-gradient cursor">
-                                    Cancel
-                                    </span>
-                                 </div>
+                              <div class="select-item" data-value="Agent-3">
+                                Close
                               </div>
-                           </form>
+                              <div class="select-item" data-value="Agent-4">
+                                In progress
+                              </div>
+                            </div>
+                            <div class="select-icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                          </div>
                         </div>
-                     </div>
+                      </div>
+                    </div>
                   </div>
-                  <!-- end Delete modal -->
-                  <div class="dashboard-body mt30">
-                     <!--Start user referable-list -->
-                     <div class="data-show-table-area dashboard-box mt30">
-                        <div class="row gy-4 mt-2">
-                           <div class="col-lg-4 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-balance-card d-flex align-items-center">
-                                    <div class="balance-logo">
-                                       <img src="../assets/images/icon/10.png" alt="icon">
-                                    </div>
-                                    <div class="balance-info">
-                                       <p>Total Support Ticket</p>
-                                       <span>2,456 </span>
-                                    </div>
-                                 </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40"
+                  >
+                    <button class="gradient-btn">
+                      Save or Update
+                      <i class="fa-regular fa-circle-right white"></i>
+                    </button>
+                    <div class="position-relative z-1">
+                      <span
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        class="transparent-btn border-gradient cursor"
+                      >
+                        Cancel
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end change-status modal -->
+          <!--start Transfer Department Modal -->
+          <div
+            class="modal fade bg-gradient-add"
+            id="Transfer-Department-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-custom-width-sm">
+              <div class="modal-content custom-modal">
+                <form action="">
+                  <div
+                    class="modal-header-area d-flex align-items-center justify-content-between"
+                  >
+                    <h4 class="text-shadow">Transfer Department</h4>
+                    <div class="modal-close-btn">
+                      <span data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="modal-body-inner">
+                    <div class="row gy-3">
+                      <p>
+                        You have the option to change the department for
+                        handling this ticket (#10001) efficiently.
+                      </p>
+                      <div class="form-group col-md-12">
+                        <label for="Status">Department name</label>
+                        <div class="input bg-border-input">
+                          <div class="custom-select position-relative">
+                            <div class="select-selected">Billing & payment</div>
+                            <div class="select-items">
+                              <div class="select-item" data-value="Agent-1">
+                                Login Problem
                               </div>
-                           </div>
-                           <div class="col-lg-4 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-balance-card d-flex align-items-center">
-                                    <div class="balance-logo">
-                                       <img src="../assets/images/icon/11.png" alt="icon">
-                                    </div>
-                                    <div class="balance-info">
-                                       <p>Average Response Time</p>
-                                       <span>2.5 hours</span>
-                                    </div>
-                                 </div>
+                              <div class="select-item" data-value="Agent-2">
+                                Reffer Problem
                               </div>
-                           </div>
-                           <div class="col-lg-4 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-balance-card d-flex align-items-center">
-                                    <div class="balance-logo">
-                                       <img src="../assets/images/icon/12.png" alt="icon">
-                                    </div>
-                                    <div class="balance-info">
-                                       <p>Resolution Time</p>
-                                       <span>6.8 hours</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-balance-card d-flex align-items-center">
-                                    <div class="balance-logo">
-                                       <img src="../assets/images/icon/13.png" alt="icon">
-                                    </div>
-                                    <div class="balance-info">
-                                       <p>First Contact Resolution Rate</p>
-                                       <span>78%</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-balance-card d-flex align-items-center">
-                                    <div class="balance-logo">
-                                       <img src="../assets/images/icon/14.png" alt="icon">
-                                    </div>
-                                    <div class="balance-info">
-                                       <p>Customer Satisfaction Score</p>
-                                       <div class="d-flex align-items-end g-10">
-                                          <span>92%</span>
-                                          <div class="d-flex align-items-center day-user-count-up green">
-                                             <i class="fa-solid fa-caret-up"> </i> +24 Today
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 col-md-6">     
-                              <div class="card-1">
-                                 <div class="user-balance-card d-flex align-items-center">
-                                    <div class="balance-logo">
-                                       <img src="../assets/images/icon/15.png" alt="icon">
-                                    </div>
-                                    <div class="balance-info">
-                                       <p>Reopened Ticket Rate</p>
-                                       <div class="d-flex align-items-end g-10">
-                                          <span>12%</span>
-                                          <div class="d-flex align-items-center day-user-count-down red">
-                                             <i class="fa-solid fa-caret-down"> </i> -24 Today
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                            </div>
+                            <div class="select-icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                          </div>
                         </div>
-                     </div>
-                        <div class="dashboard-box mt30">
-                           <div class="table-header-area d-flex align-items-center justify-content-between">
-                              <div class="table-heading">
-                                 <h5>Ticket List</h5>
-                              </div>
-                              <div class="d-flex align-items-center flex-wrap g-10">
-                                 <form action="">
-                                    <div class="form-group ticket-list-filter">
-                                       <div class="input bg-border-input">
-                                          <div class="custom-select position-relative">
-                                             <div class="select-selected">
-                                                Filter
-                                             </div>
-                                             <div class="select-items">
-                                                <div class="select-item" data-value="Agent-1">
-                                                   Pending
-                                                </div>
-                                                <div class="select-item" data-value="Progress">
-                                                   In Progress
-                                                </div>
-                                                <div class="select-item" data-value="Open">
-                                                   Open
-                                                </div>
-                                                <div class="select-item" data-value="Resolved">
-                                                   Resolved
-                                                </div>
-                                                <div class="select-item" data-value="Closed">
-                                                   Closed
-                                                </div>
-                                             </div>
-                                             <div class="select-icon">
-                                                <i class="fa-solid fa-angle-down"></i>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </form>
-                                 <div class="search-box-area">
-                                    <form action="">
-                                       <div class="input bg-border-input position-relative">
-                                          <div class="search-icon">
-                                             <i class="search-icon fas fa-search"></i>
-                                          </div>
-                                          <input type="text" class="form-control" id="search" placeholder="Search here...">
-                                       </div>
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row gy-4 mt-1">
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                              <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : 
-                                             <span class="red deactivate-status badge"> High</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge in-progress-status">In progress</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : 
-                                             <span class="active-status badge"> Low</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge active-status">Open</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : 
-                                             <span class="completed-status badge">Medium</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge pending-status">Pending</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : 
-                                             <span class="completed-status badge">Medium</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge completed-status">Resolved</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <!-- <p>Priority : 
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40"
+                  >
+                    <button class="gradient-btn">
+                      Save or Update
+                      <i class="fa-regular fa-circle-right white"></i>
+                    </button>
+                    <div class="position-relative z-1">
+                      <span
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        class="transparent-btn border-gradient cursor"
+                      >
+                        Cancel
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end Transfer Department modal -->
+          <!--start Delete Modal -->
+          <div
+            class="modal fade bg-gradient-add"
+            id="delete-ticket-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-custom-width-sm">
+              <div class="modal-content custom-modal">
+                <form action="">
+                  <div
+                    class="modal-header-area d-flex align-items-center justify-content-between"
+                  >
+                    <h4 class="text-shadow">Delete Ticket</h4>
+                    <div class="modal-close-btn">
+                      <span data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="modal-body-inner">
+                    <div class="row gy-3">
+                      <p>Are you sure you want to delete ticket?</p>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between modal-footer-area flex-wrap mt-40"
+                  >
+                    <button class="gradient-btn bg-red">
+                      Delete <i class="fa-regular fa-circle-right white"></i>
+                    </button>
+                    <div class="position-relative z-1">
+                      <span
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        class="transparent-btn border-gradient cursor"
+                      >
+                        Cancel
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end Delete modal -->
+          <div class="dashboard-body mt30">
+            <!--Start user referable-list -->
+            <div class="data-show-table-area dashboard-box mt30">
+              <div class="row gy-4 mt-2">
+                <div class="col-lg-4 col-md-6">
+                  <div class="card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/10.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total Support Ticket</p>
+                        <span>2,456 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/11.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Average Response Time</p>
+                        <span>2.5 hours</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/12.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Resolution Time</p>
+                        <span>6.8 hours</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/13.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>First Contact Resolution Rate</p>
+                        <span>78%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/14.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Customer Satisfaction Score</p>
+                        <div class="d-flex align-items-end g-10">
+                          <span>92%</span>
+                          <div
+                            class="d-flex align-items-center day-user-count-up green"
+                          >
+                            <i class="fa-solid fa-caret-up"> </i> +24 Today
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/15.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Reopened Ticket Rate</p>
+                        <div class="d-flex align-items-end g-10">
+                          <span>12%</span>
+                          <div
+                            class="d-flex align-items-center day-user-count-down red"
+                          >
+                            <i class="fa-solid fa-caret-down"> </i> -24 Today
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-box mt30">
+              <div
+                class="table-header-area d-flex align-items-center justify-content-between"
+              >
+                <div class="table-heading">
+                  <h5>Ticket List</h5>
+                </div>
+                <div class="d-flex align-items-center flex-wrap g-10">
+                  <form action="">
+                    <div class="form-group ticket-list-filter">
+                      <div class="input bg-border-input">
+                        <div class="custom-select position-relative">
+                          <div class="select-selected">Filter</div>
+                          <div class="select-items">
+                            <div class="select-item" data-value="Agent-1">
+                              Pending
+                            </div>
+                            <div class="select-item" data-value="Progress">
+                              In Progress
+                            </div>
+                            <div class="select-item" data-value="Open">
+                              Open
+                            </div>
+                            <div class="select-item" data-value="Resolved">
+                              Resolved
+                            </div>
+                            <div class="select-item" data-value="Closed">
+                              Closed
+                            </div>
+                          </div>
+                          <div class="select-icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="search-box-area">
+                    <form action="">
+                      <div class="input bg-border-input position-relative">
+                        <div class="search-icon">
+                          <i class="search-icon fas fa-search"></i>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="search"
+                          placeholder="Search here..."
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-4 mt-1">
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <p>
+                          Priority :
+                          <span class="red deactivate-status badge"> High</span>
+                        </p>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge in-progress-status"
+                          >In progress</span
+                        >
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <p>
+                          Priority :
+                          <span class="active-status badge"> Low</span>
+                        </p>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge active-status">Open</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <p>
+                          Priority :
+                          <span class="completed-status badge">Medium</span>
+                        </p>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge pending-status">Pending</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <p>
+                          Priority :
+                          <span class="completed-status badge">Medium</span>
+                        </p>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge completed-status">Resolved</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge deactivate-status">Closed</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <p>
+                          Priority :
+                          <span class="active-status badge"> Low</span>
+                        </p>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge active-status">Open</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <p>
+                          Priority :
+                          <span class="completed-status badge">Medium</span>
+                        </p>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge pending-status">Pending</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <p>
+                          Priority :
+                          <span class="completed-status badge">Medium</span>
+                        </p>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
+                        </div>
+                        <span class="badge completed-status">Resolved</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="bg-border-input h-100">
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center g-10 border-0"
+                        >
+                          <p>Ticket ID :</p>
+                          <span class="text-color-1CD691">#12345</span>
+                        </div>
+                        <!-- <p>Priority : 
                                              <span class="completed-status badge">Medium</span></p> -->
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge deactivate-status">Closed</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : 
-                                             <span class="active-status badge"> Low</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge active-status">Open</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : 
-                                             <span class="completed-status badge">Medium</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge pending-status">Pending</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <p>Priority : 
-                                             <span class="completed-status badge">Medium</span></p>
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge completed-status">Resolved</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-xxl-4">
-                                 <div class="bg-border-input h-100 ">
-                                    <div class="p-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                          <div class="milestone-offer-info-item d-flex align-items-center g-10 border-0">
-                                             <p>Ticket ID : </p>
-                                             <span class="text-color-1CD691">#12345</span>
-                                          </div>
-                                          <!-- <p>Priority : 
-                                             <span class="completed-status badge">Medium</span></p> -->
-                                        </div>
-                                       <div class="line-1 mt-15"></div>
-                                       <div class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between">
-                                          <div class="d-flex align-items-center g-10 justify-content-center staking-user-info ">
-                                             <div class="profile-icon profile-icon-sm">
-                                                <img src="../assets/images/dashboard/icon/user.png" alt="logo">
-                                             </div>
-                                             <div class="profile-info d-flex flex-column g-10">
-                                                <h5>Jane Cooper</h5>
-                                             </div>
-                                          </div>
-                                          <span class="badge deactivate-status">Closed</span>
-                                       </div>
-                                       <div class="file-btn d-block me-0 mt-3 p-3">
-                                          <span class="text-white"><b>Subject : </b></span>
-                                          <span>Payment not received </span>
-                                       </div>
-                                       
-                                       <div class="milestone-offer-card mt-20">
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Created Date</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                           
-                                          <!-- item -->
-                                          <div class="milestone-offer-info-item d-flex align-items-center justify-content-between">
-                                             <p>Last Update</p>
-                                             <span>12/10/2024</span>
-                                          </div>
-                                          <!-- Action Area -->
-                                          <div class="mt-4 d-flex align-items-center justify-content-between">
-                                              <ul class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center">
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#assign-modal"><i class="fa-regular fa-circle-right skyblue"></i> Assign</li>
-                                                <li class="d-flex align-items-center g-5"><a href="../admin/ticket-details.html" class="text-white"><i class="fa-solid fa-eye green"></i> View Details</a></li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#change-status-modal"><i class="fa-solid fa-pencil skyblue"></i> Change Status</li>
-                                                 
-                                                <li class="d-flex align-items-center g-5"  data-bs-toggle="modal" data-bs-target="#Transfer-Department-modal"><i class="fa-solid fa-rotate text-color-1CD691"></i> Transfer</li>
-                                                <li class="d-flex align-items-center g-5" data-bs-toggle="modal" data-bs-target="#delete-ticket-modal"><i class="fa-solid fa-trash-can red"></i> Delete</li>
-                                              </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-xl-12">
-                                 <div class="pagination mt50">
-                                    <ul class="d-flex align-items-center w-100">
-                                       <li><a href="#" class="btn1 primary-btn subscribe-btn opacity-low">Previous</a></li>
-                                       <li>
-                                          <ul class="d-flex align-items-center pagination-inner">
-                                             <li><a href="#">1</a></li>
-                                             <li><a href="#" class="active">2</a></li>
-                                             <li><a href="#">3</a></li>
-                                             <li><a href="#">...</a></li>
-                                             <li><a href="#">10</a></li>
-                                          </ul>
-                                       </li>
-                                       <li><a href="#" class="btn1 primary-btn subscribe-btn">Next</a></li>
-                                    </ul>
-                                 </div> 
-                              </div>
-                           </div>
+                      </div>
+                      <div class="line-1 mt-15"></div>
+                      <div
+                        class="d-flex mt-15 d-flex align-items-center g-10 justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center g-10 justify-content-center staking-user-info"
+                        >
+                          <div class="profile-icon profile-icon-sm">
+                            <img
+                              src="../assets/images/dashboard/icon/user.png"
+                              alt="logo"
+                            />
+                          </div>
+                          <div class="profile-info d-flex flex-column g-10">
+                            <h5>Jane Cooper</h5>
+                          </div>
                         </div>
+                        <span class="badge deactivate-status">Closed</span>
+                      </div>
+                      <div class="file-btn d-block me-0 mt-3 p-3">
+                        <span class="text-white"><b>Subject : </b></span>
+                        <span>Payment not received </span>
+                      </div>
+
+                      <div class="milestone-offer-card mt-20">
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Created Date</p>
+                          <span>12/10/2024</span>
+                        </div>
+
+                        <!-- item -->
+                        <div
+                          class="milestone-offer-info-item d-flex align-items-center justify-content-between"
+                        >
+                          <p>Last Update</p>
+                          <span>12/10/2024</span>
+                        </div>
+                        <!-- Action Area -->
+                        <div
+                          class="mt-4 d-flex align-items-center justify-content-between"
+                        >
+                          <ul
+                            class="reward-tab d-flex align-items-center g-5 flex-wrap justify-content-center"
+                          >
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#assign-modal"
+                            >
+                              <i class="fa-regular fa-circle-right skyblue"></i>
+                              Assign
+                            </li>
+                            <li class="d-flex align-items-center g-5">
+                              <a
+                                href="../admin/ticket-details.html"
+                                class="text-white"
+                                ><i class="fa-solid fa-eye green"></i> View
+                                Details</a
+                              >
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#change-status-modal"
+                            >
+                              <i class="fa-solid fa-pencil skyblue"></i> Change
+                              Status
+                            </li>
+
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#Transfer-Department-modal"
+                            >
+                              <i
+                                class="fa-solid fa-rotate text-color-1CD691"
+                              ></i>
+                              Transfer
+                            </li>
+                            <li
+                              class="d-flex align-items-center g-5"
+                              data-bs-toggle="modal"
+                              data-bs-target="#delete-ticket-modal"
+                            >
+                              <i class="fa-solid fa-trash-can red"></i> Delete
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                     <!--End user referable-list -->
-               </div>
-               <!-- copyright -->
-               <div class="copyright-box d-flex align-items-center justify-content-center">
-                  <p class="gradient-color ">Current Version 1.0</p>
-                  <p>&copy; 2025 <a href="index.html" class="gradient-color">Develope By Mycoinpoll</a> </p>
-               </div>
-         </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="pagination mt50">
+                    <ul class="d-flex align-items-center w-100">
+                      <li>
+                        <a
+                          href="#"
+                          class="btn1 primary-btn subscribe-btn opacity-low"
+                          >Previous</a
+                        >
+                      </li>
+                      <li>
+                        <ul class="d-flex align-items-center pagination-inner">
+                          <li><a href="#">1</a></li>
+                          <li><a href="#" class="active">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">...</a></li>
+                          <li><a href="#">10</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="btn1 primary-btn subscribe-btn"
+                          >Next</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End user referable-list -->
+        </div>
+        <!-- copyright -->
+        <div
+          class="copyright-box d-flex align-items-center justify-content-center"
+        >
+          <p class="gradient-color">Current Version 1.0</p>
+          <p>
+            &copy; 2025
+            <a href="index.html" class="gradient-color"
+              >Develope By Mycoinpoll</a
+            >
+          </p>
+        </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-      <script src="../assets/js/jquery.flipbox.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-      <script src="../assets/js/editor.js"></script>
-      <script src="../assets/js/main.js"></script>
-      
-   </body>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../assets/js/jquery.flipbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="../assets/js/editor.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
