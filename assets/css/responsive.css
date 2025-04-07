@@ -991,8 +991,8 @@
       gap: 5px;
     }
     .notification-icon img,.profile-mini-icon img{
-      height: 44px;
-      width: 44px;
+      height:28px;
+      width:28px;
     }
     .custom-card-header .table-heading h5 {
       font-size: 24px;
@@ -1097,6 +1097,9 @@
     }
     .gradient-btn, .transparent-btn {
       padding: 8px 20px;
+    }
+    .token-card-heading h4{
+      font-size: 26px;
     }
 }
 @media screen and (max-width:480px) {
@@ -1210,5 +1213,8 @@
   .btn1 span i {
     font-size: 16px;
   }
+  .batch-item {
+    min-width: 260px;
+}
 }
  

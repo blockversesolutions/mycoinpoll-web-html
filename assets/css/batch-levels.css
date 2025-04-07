@@ -134,9 +134,13 @@
   width: 95px;
   height: auto;
 }
-/* @media all and (max-width:480px){
-  .batch-logo-sm {
+@media all and (max-width:480px){
+  /* .batch-logo-sm {
     width: 64px;
     height: 54px;
-  }
-} */
+  } */
+   .batch-item ul li,.batch-item ul li:last-child{
+    height: 55px;
+    width: 55px;
+   }
+}

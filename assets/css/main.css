@@ -3013,6 +3013,12 @@ select {
   line-height: 26.4px;
   color: #ffffff;
 }
+.page-title-sm {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24.4px;
+  color: #ffffff;
+}
 .accordion-button b {
   margin-left: 10px !important;
 }
@@ -3047,7 +3053,12 @@ select {
 .notification-icon i {
   font-size: 20px;
   line-height: 22px;
-  margin-right: 20px;
+  margin-right: 18px;
+}
+.notification-icon img{
+  width:32px;
+  height: 32px;
+  margin-right: 18px;
 }
 .yellow-color i,
 .yellow-color {
@@ -3415,7 +3426,7 @@ select {
 .table-heading h5 {
   font-size: 20px;
   font-weight: 700;
-  line-height: 22px;
+  line-height:34px;
   color: #fff;
 }
 table {
@@ -3751,7 +3762,7 @@ ul.dropdown li:hover {
 }
 .gradient-btn-small {
   background: linear-gradient(90deg, #277bf5 0%, #1cd691 100.01%);
-  padding: 6px 10px;
+  padding:6px 12px;
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
@@ -4068,8 +4079,12 @@ ul.dropdown li:hover {
   border: 1px solid #2683ee60;
   height: 100%;
 }
+.bg-2682{
+  background: #2682EE1A;
+}
 .card-1-sm .balance-info p {
   font-size: 15px;
+  line-height: 20px;
 }
 .card-1-sm .balance-logo img {
   height: 38px;
@@ -4834,4 +4849,103 @@ input[type="time"]::after {
 .sm-text-view td {
   padding: 6px;
 }
- 
+ .verified-status{
+  background: #1CD691;
+  border: 1px solid #FFFFFFB2;
+  font-size:18px;
+  color:#fff;
+  padding:4px 12px;
+  font-weight: 500;
+  border-radius: 50px;
+ }
+ .coin-balance-logo .placeholder{
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background-color:#fff;
+ }
+ .placeholder-width-100{
+  height: 20px;
+  border-radius: 10px;
+  width:100px;
+ }
+ .placeholder-width-120{
+  height: 20px;
+  border-radius: 10px;
+  width:120px;
+ }
+ .affiliate-box{
+  padding: 10px 20px;
+ }
+ .affiliate-box p i{
+  color: #2682EE;
+ }
+ .affiliate-box p{
+  color: #FFFFFF99;
+ }
+ .p-sm{
+  font-size: 16px;
+  color:#FFFFFFCC;
+  font-weight: 400;
+  line-height: 20px;
+ }
+ .card-inner h6{
+  font-size: 14px;
+  color:#fff;
+ }
+ .card-inner span{
+  font-weight:700;
+  font-size:28px;
+  color:#fff;
+ }
+ .card-inner{
+  background: #FFFFFF14;
+  padding: 6px 14px;
+  border-radius: 5px;
+ }
+ .coin-list-header{
+  background: #2682EE;
+  padding: 12px 20px;
+  border-radius:10px 10px 0 0;
+ }
+ .coin-list-header span{
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Oxanium", sans-serif;
+  color:#fff;
+ }
+ .coin-list-header img{
+  width: 50px;
+  height: 50px;
+ }
+ .p-xm{
+  font-size: 14px;
+ }
+ .color-FFFFFF99{
+  color: #FFFFFF99;
+ }
+ .token-card-heading h4{
+  font-size:32px;
+ }
+ .close-icon{
+  height:18px;
+  width:18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  background: red;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+ }
+ .close-icon i{
+  color:#fff;
+  font-size: 12px;
+ }
+ /* .notification-close{
+  position: absolute;
+  right:2px;
+  top: 2px;
+  z-index: 9;
+ } */
