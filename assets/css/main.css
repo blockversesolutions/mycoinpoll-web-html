@@ -1972,7 +1972,6 @@ input[type="date"]::after {
 .pagination-inner {
   gap: 20px;
 }
-
 .opacity-low {
   opacity: 40%;
 }
@@ -4878,7 +4877,7 @@ input[type="time"]::after {
   padding: 10px 20px;
  }
  .affiliate-box p i{
-  color: #2682EE;
+  color: #2682EE; 
  }
  .affiliate-box p{
   color: #FFFFFF99;
@@ -4957,3 +4956,61 @@ input[type="time"]::after {
   transform: translateY(-50%);
   z-index: 9;
  }
+ /* admin dashboard start */
+ .funds-raised-box h4{
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Montserrat;
+ }
+ .funds-info-card .balance-info span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 4px;
+}
+ .funds-info-card{
+  padding: 10px 12px;
+ }
+ .funds-info-card .day-user-count{
+  font-size: 12px;
+ }
+ .funds-info-card .balance-info p{
+  font-size:12px;
+ }
+ .funds-info-card .balance-info{
+  padding-left: 12px;
+  margin-left: 12px;
+ }
+ .funds-info-card .balance-logo img{
+  width:30px;
+  height: auto;
+ }
+ .platform-activity-chart canvas{
+  height:100% !important;
+  width: 100% !important;
+ }
+ .platform-activity-chart{
+  max-height:370px;
+ }
+ /* admin dashboard end */
+ 
+ .chart-container {
+  height:370px;
+   
+}
+.chart-containers {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.chart-containers .chart-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:40px;
+  font-weight: 700;
+  color: #F3F4F6;
+}

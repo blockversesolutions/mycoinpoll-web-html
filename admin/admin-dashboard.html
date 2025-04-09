@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mycoinpoll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    >
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="ellipse ellipse1"></div>
+    <div class="ellipse ellipse2"></div>
+    <div class="ellipse ellipse3"></div>
+    <div class="dashboard-main-area">
+      <div class="dashboard-area d-flex align-items-start">
+        <div class="dashboard-left position-relative">
+          <div class="logo mb40">
+            <a href="#"
+              ><img src="../assets/images/logo.png" alt="" class="w-100"
+            /></a>
+          </div>
+          <div class="logo2 mb40">
+            <a href="#"
+              ><img
+                src="../assets/images/dashboard/icon/small-logo.png"
+                alt="logo"
+                class="w-100"
+            /></a>
+          </div>
+          <div class="dashboard-left-menu">
+            <ul>
+              <li>
+                <a href="dashboard.html" class="menu-active-bg"
+                  ><img
+                    src="../assets/images/dashboard/icon/dashboard.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Dashboard</span></a
+                >
+              </li>
+              <li>
+                <a href="profile.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/profile.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Profile</span></a
+                >
+              </li>
+              <li>
+                <a href="transactions.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/transactions.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Transactions</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/wallet.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Wallet</span></a
+                >
+              </li>
+              <li>
+                <a href="ico.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/ico.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">ICO</span></a
+                >
+              </li>
+              <li>
+                <a href="refferal-link-details.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/referral.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Referral User</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/logout.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dashboard-right">
+          <div
+            class="dashboard-right-header-area d-flex align-items-center justify-content-between"
+          >
+            <div class="page-info d-flex align-items-center">
+              <div class="resize-icon">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+              <h5 class="page-title">Dashboard</h5>
+            </div>
+            <!-- <div class="search-box-area">
+                     <form action="">
+                        <div class="input bg-border-input position-relative">
+                           <div class="search-icon">
+                              <i class="search-icon fas fa-search"></i>
+                           </div>
+                           <input type="text" class="form-control" id="search" placeholder="Search here...">
+                        </div>
+                     </form>
+                  </div> -->
+            <div class="dashboard-header-right">
+              <div
+                class="d-flex align-items-center dashboard-header-right-group"
+              >
+                <div class="text-btn d-flex align-items-center border-gradient">
+                  310 USDT
+                  <span
+                    ><img
+                      src="../assets/images/dashboard/icon/wallet2.png"
+                      alt="icon"
+                  /></span>
+                </div>
+                <div class="text-btn d-flex align-items-center border-gradient">
+                  300 CRM
+                  <span
+                    ><img src="../assets/images/icon/wallet.png" alt="icon"
+                  /></span>
+                </div>
+                <div class="notification-icon position-relative">
+                  <span>2+</span>
+                  <img
+                    src="../assets/images/dashboard/icon/bell.png"
+                    alt="icon"
+                    class="dropdown-toggle"
+                  />
+                  <ul
+                    class="dropdown notification-box"
+                    data-simplebar
+                    style="height: 303px"
+                  >
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </li>
+                    <li>
+                      <a href="notification.html" class="gradient-btn-small"
+                        >Show All</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="profile-mini-icon">
+                  <a href="user-profile.html"
+                    ><img
+                      src="../assets/images/dashboard/icon/user.png"
+                      alt="user"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-body">
+            <div class="card-1-sm card-1 mt30">
+              <div class="row gy-3">
+                <div class="col-xxl-4 col-lg-6">
+                  <div
+                    class="card-1-sm card-1 d-flex align-items-center justify-content-between flex-wrap"
+                  >
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="coin-balance-logo text-center p-0">
+                        <img
+                          src="../assets/images/dashboard/icon/coin.png"
+                          alt="icon"
+                        />
+                      </div>
+                      <div class="balance-info">
+                        <p>ECM Coin</p>
+                        <div class="d-flex g-10">
+                          <span>20M </span>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="../token-details.html" class="gradient-btn-small"
+                      >See Details</a
+                    >
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-lg-6">
+                  <div
+                    class="card-1-sm card-1 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div
+                        class="coin-balance-logo text-center p-0 placeholder-glow"
+                      >
+                        <span class="placeholder"></span>
+                      </div>
+                      <div class="balance-info">
+                        <p class="placeholder-glow">
+                          <span
+                            class="placeholder placeholder-width-100"
+                          ></span>
+                        </p>
+                        <p class="placeholder-glow">
+                          <span
+                            class="placeholder placeholder-width-120 mt-1"
+                          ></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-lg-6">
+                  <div
+                    class="card-1-sm card-1 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div
+                        class="coin-balance-logo text-center p-0 placeholder-glow"
+                      >
+                        <span class="placeholder"></span>
+                      </div>
+                      <div class="balance-info">
+                        <p class="placeholder-glow">
+                          <span
+                            class="placeholder placeholder-width-100"
+                          ></span>
+                        </p>
+                        <p class="placeholder-glow">
+                          <span
+                            class="placeholder placeholder-width-120 mt-1"
+                          ></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gy-3 mt-1">
+              <div class="col-xl-7">
+                <div class="dashboard-box h-100">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="funds-raised-box">
+                        <p
+                          class="page-title-sm mb-1 d-flex align-items-center g-10"
+                        >
+                          Total Funds Raised
+                          <span class="opacity-50"
+                            ><i class="fa-solid fa-circle-info"></i
+                          ></span>
+                        </p>
+                        <p>6 February 2024 - 6 February 2025</p>
+                        <div class="d-flex align-items-center mt-40 g-20">
+                          <h4 class="text-white">$2,500,000</h4>
+                          <div class="today-up d-flex align-items-center g-10">
+                            <img
+                              src="../assets/images/dashboard/icon/up-value.png"
+                              alt="icon"
+                              class="w-100"
+                            />
+                            <p>24.21%</p>
+                          </div>
+                        </div>
+                        <span class="active-status badge mt-20">
+                          You have a great performance
+                          <img
+                            src="../assets/images/dashboard/icon/strong.png"
+                            alt="icon"
+                            class="ms-2"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="../assets/images/dashboard/icon/chart.png"
+                        alt="img"
+                        class="w-100 h-100 opacity-75"
+                      />
+                    </div>
+                  </div>
+                  <div class="row gy-3 mt-5 gx-3">
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card-1 funds-info-card">
+                        <div
+                          class="user-balance-card d-flex align-items-center"
+                        >
+                          <div class="balance-logo">
+                            <img
+                              src="../assets/images/icon/32.png"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="balance-info">
+                            <p>Total User</p>
+
+                            <div class="d-flex align-items-center g-10">
+                              <span>60,000 </span>
+                              <div
+                                class="day-user-count d-flex align-items-center day-user-count-down red"
+                              >
+                                <i class="fa-solid fa-caret-down"></i> - 24
+                                Today
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card-1 funds-info-card">
+                        <div
+                          class="user-balance-card d-flex align-items-center"
+                        >
+                          <div class="balance-logo">
+                            <img
+                              src="../assets/images/icon/33.png"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="balance-info">
+                            <p>Active Users</p>
+                            <div class="d-flex align-items-center g-10">
+                              <span>06 </span>
+                              <div
+                                class="day-user-count d-flex align-items-center day-user-count-down red"
+                              >
+                                <i class="fa-solid fa-caret-down"></i> - 24
+                                Today
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card-1 funds-info-card">
+                        <div
+                          class="user-balance-card d-flex align-items-center"
+                        >
+                          <div class="balance-logo">
+                            <img
+                              src="../assets/images/icon/34.png"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="balance-info">
+                            <p>Active Moderators</p>
+                            <div class="d-flex align-items-center g-10">
+                              <span> 04 </span>
+                              <div
+                                class="day-user-count d-flex align-items-center day-user-count-up green"
+                              >
+                                <i class="fa-solid fa-caret-up"></i> - 24 Today
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="dashboard-box h-100">
+                  <div
+                    class="d-flex align-items-center justify-content-between g-10 flex-wrap mb-3"
+                  >
+                    <p class="page-title-sm">KYC Submissions</p>
+                    <a
+                      href="../user/support-ticket.html"
+                      class="gradient-btn-small"
+                      >View Details</a
+                    >
+                  </div>
+                  <div class="table-responsive-md">
+                    <table class="sm-text-view">
+                      <thead>
+                        <tr>
+                          <th>SL</th>
+                          <th>Name</th>
+                          <th>Created Date</th>
+                          <th>Last Update</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>
+                            <div class="d-flex align-items-center g-5">
+                              <img
+                                src="../assets/images/dashboard/icon/user.png"
+                                alt=""
+                                class="table-img"
+                              />
+                              Jane Cooper
+                            </div>
+                          </td>
+                          <td>10th June</td>
+                          <td>12th June</td>
+                          <td>
+                            <span class="active-status badge">Active</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                          <td>
+                            <div class="d-flex align-items-center g-5">
+                              <img
+                                src="../assets/images/dashboard/icon/user.png"
+                                alt=""
+                                class="table-img"
+                              />
+                              Jane Cooper
+                            </div>
+                          </td>
+                          <td>10th June</td>
+                          <td>12th June</td>
+                          <td>
+                            <span class="active-status badge">Active</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                          <td>
+                            <div class="d-flex align-items-center g-5">
+                              <img
+                                src="../assets/images/dashboard/icon/user.png"
+                                alt=""
+                                class="table-img"
+                              />
+                              Jane Cooper
+                            </div>
+                          </td>
+                          <td>10th June</td>
+                          <td>12th June</td>
+                          <td>
+                            <span class="active-status badge">Active</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>04</td>
+                          <td>
+                            <div class="d-flex align-items-center g-5">
+                              <img
+                                src="../assets/images/dashboard/icon/user.png"
+                                alt=""
+                                class="table-img"
+                              />
+                              Jane Cooper
+                            </div>
+                          </td>
+                          <td>10th June</td>
+                          <td>12th June</td>
+                          <td>
+                            <span class="active-status badge">Active</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>05</td>
+                          <td>
+                            <div class="d-flex align-items-center g-5">
+                              <img
+                                src="../assets/images/dashboard/icon/user.png"
+                                alt=""
+                                class="table-img"
+                              />
+                              Jane Cooper
+                            </div>
+                          </td>
+                          <td>10th June</td>
+                          <td>12th June</td>
+                          <td>
+                            <span class="active-status badge">Active</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-box mt-20">
+              <div
+                class="chart-header d-flex justify-content-between align-items-center flex-wrap g-10"
+              >
+                <h6 class="page-title-sm d-flex align-items-center g-10">
+                  Coin Growth
+                  <span class="opacity-50"
+                    ><i class="fa-solid fa-circle-info"></i
+                  ></span>
+                </h6>
+                <!-- Custom Legend -->
+                <div id="chartLegend" class="d-flex g-5"></div>
+              </div>
+              <div class="row gy-3 mt-2">
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/ecm.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total ECM Coin</p>
+                        <span>20M</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/27.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total ECM Sold</p>
+                        <span>15.7M </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/34.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total ECM Stacked</p>
+                        <span>45.2k </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/35.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total ECM Reserve</p>
+                        <span>10M</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mt-20">
+                    <!-- Chart Container -->
+                    <div class="chart-container mt-20">
+                      <canvas id="balanceChart" style="height: 300px"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-box mt-20">
+              <h6 class="page-title-sm d-flex align-items-center g-10">
+                Milestone Performance
+                <span class="opacity-50"
+                  ><i class="fa-solid fa-circle-info"></i
+                ></span>
+              </h6>
+              <div class="row gy-3 mt-1">
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/16.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total Milestone</p>
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/37.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Started Milestone</p>
+                        <span>23,424</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/30.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Completed</p>
+                        <span>12,453</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/18.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Not Started</p>
+                        <span>30,234</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row gy-3 mt-1">
+                <div class="col-lg-6">
+                  <div class="dashboard-box h-100">
+                    <p class="page-title-sm">Top Performing Milestone</p>
+                    <canvas id="milestoneChart" class="mt-4"></canvas>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="dashboard-box h-100">
+                    <div
+                      class="d-flex align-items-center justify-content-between g-10 flex-wrap mb-3"
+                    >
+                      <p class="page-title-sm">Recent Milestones Met</p>
+                      <a
+                        href="../user/millestone-details.html"
+                        class="gradient-btn-small"
+                        >View Details</a
+                      >
+                    </div>
+                    <div class="table-responsive-md">
+                      <table class="sm-text-view">
+                        <thead>
+                          <tr>
+                            <th>SL</th>
+                            <th>Name</th>
+                            <th>Target Sales</th>
+                            <th>Reward Type</th>
+                            <th>Achieve Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>01</td>
+                            <td>
+                              <div class="d-flex align-items-center g-5">
+                                <img
+                                  src="../assets/images/dashboard/icon/user.png"
+                                  alt=""
+                                  class="table-img"
+                                />
+                                Jane Cooper
+                              </div>
+                            </td>
+                            <td>1000 ECM</td>
+                            <td>Tour Trip</td>
+                            <td>10th June</td>
+                          </tr>
+                          <tr>
+                            <td>02</td>
+                            <td>
+                              <div class="d-flex align-items-center g-5">
+                                <img
+                                  src="../assets/images/dashboard/icon/user.png"
+                                  alt=""
+                                  class="table-img"
+                                />
+                                Jane Cooper
+                              </div>
+                            </td>
+                            <td>1000 ECM</td>
+                            <td>Tour Trip</td>
+                            <td>10th June</td>
+                          </tr>
+                          <tr>
+                            <td>03</td>
+                            <td>
+                              <div class="d-flex align-items-center g-5">
+                                <img
+                                  src="../assets/images/dashboard/icon/user.png"
+                                  alt=""
+                                  class="table-img"
+                                />
+                                Jane Cooper
+                              </div>
+                            </td>
+                            <td>1000 ECM</td>
+                            <td>Tour Trip</td>
+                            <td>10th June</td>
+                          </tr>
+                          <tr>
+                            <td>04</td>
+                            <td>
+                              <div class="d-flex align-items-center g-5">
+                                <img
+                                  src="../assets/images/dashboard/icon/user.png"
+                                  alt=""
+                                  class="table-img"
+                                />
+                                Jane Cooper
+                              </div>
+                            </td>
+                            <td>1000 ECM</td>
+                            <td>Tour Trip</td>
+                            <td>10th June</td>
+                          </tr>
+                          <tr>
+                            <td>05</td>
+                            <td>
+                              <div class="d-flex align-items-center g-5">
+                                <img
+                                  src="../assets/images/dashboard/icon/user.png"
+                                  alt=""
+                                  class="table-img"
+                                />
+                                Jane Cooper
+                              </div>
+                            </td>
+                            <td>1000 ECM</td>
+                            <td>Tour Trip</td>
+                            <td>10th June</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-box mt-20">
+              <h6 class="page-title-sm d-flex align-items-center g-10">
+                Platform Activity Trends
+                <span class="opacity-50"
+                  ><i class="fa-solid fa-circle-info"></i
+                ></span>
+              </h6>
+
+              <div class="row gy-3 mt-1">
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/ecm-1.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total Transaction</p>
+                        <span>5685</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/38.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total Affiliators</p>
+                        <span>23,424</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/27.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total ECM Sold</p>
+                        <span>12,453</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                  <div class="card-1 card-1-sm">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/39.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total ECM Purchased</p>
+                        <span>30,234</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="platform-activity-chart mt-20">
+                <canvas id="ecmChart"></canvas>
+              </div>
+            </div>
+            <div class="dashboard-box mt-20">
+              <div
+                class="d-flex align-items-center justify-content-between g-10 flex-wrap mb-3"
+              >
+                <p class="page-title-sm d-flex align-items-center g-10">
+                  Support Ticket
+                  <span class="opacity-50"
+                    ><i class="fa-solid fa-circle-info"></i
+                  ></span>
+                </p>
+                <a href="../user/support-ticket.html" class="gradient-btn-small"
+                  >View Details</a
+                >
+              </div>
+              <div class="row gy-3">
+                <div class="col-xl-3 col-md-6">
+                  <div class="card-1-sm card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/10.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Total Ticket</p>
+                        <span>2,456 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="card-1-sm card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/20.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Ticket (In Progress)</p>
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="card-1-sm card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/21.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Reopened Ticket</p>
+                        <span>18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="card-1-sm card-1">
+                    <div class="user-balance-card d-flex align-items-center">
+                      <div class="balance-logo">
+                        <img src="../assets/images/icon/15.png" alt="icon" />
+                      </div>
+                      <div class="balance-info">
+                        <p>Unsolved Ticket</p>
+                        <span>18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-box mt-20">
+              <h6 class="page-title-sm d-flex align-items-center g-10">
+                User Engagement Metrics
+                <span class="opacity-50"
+                  ><i class="fa-solid fa-circle-info"></i
+                ></span>
+              </h6>
+              <div class="row gy-3 mt-1">
+                <div class="col-lg-8">
+                  <div class="chart-container">
+                    <canvas id="activeUserChart"></canvas>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div
+                    class="dashboard-box bg-transparent text-center h-100 d-flex flex-column justify-content-center"
+                  >
+                    <h6 class="page-title-sm">New Registrations Daily</h6>
+                    <div class="chart-containers mt-4">
+                      <canvas id="progressChart"></canvas>
+                      <div class="chart-text" id="progressText">20%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/chart.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script></script>
+  </body>
+</html>
