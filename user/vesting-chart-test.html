@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vesting Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+  <style>
+    body {
+      background: #0a192f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    canvas {
+      max-width: 950px;
+      max-height: 450px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="vestingChart"></canvas>
+
+  <script>
+    const ctx = document.getElementById('vestingChart').getContext('2d');
+
+    // Gradient background for dataset fill
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, "rgba(28, 214, 145, 0)");
+    gradient.addColorStop(1, "rgba(28, 214, 145, 0.3)");
+
+    const labels = [
+      "Aug 2025", "Sep 2025", "Oct 2025", 
+      "Nov 2025", "Dec 2025", "Jan 2026", "Feb 2026", 
+      "Mar 2026", "Apr 2026", "May 2026", "Jun 2026", 
+      "Jul 2026", "Aug 2026"
+    ];
+
+    const datasetValues = [
+      0, 0, 0,   // Aug–Oct = flat (0)
+      200,       // sudden jump in Nov
+      400, 600, 800, 1000, 1200, 1400, 1600, 1800,
+      2000       // full vested Aug 2026
+    ];
+
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Vesting Schedule',
+        data: datasetValues,
+        fill: true,
+        borderColor: '#1CD691',
+        backgroundColor: gradient,
+        tension: 0,
+        pointRadius: 4,
+        pointBackgroundColor: "#1CD691"
+      }]
+    };
+
+    const options = {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        annotation: {
+          annotations: {
+            // Cliff vertical dashed line
+            cliff: {
+              type: 'line',
+              xMin: 3, // index for "Nov 2025"
+              xMax: 3,
+              borderColor: 'white',
+              borderWidth: 1,
+              borderDash: [6, 6],
+              label: {
+                content: 'Cliff 13-11-2025',
+                enabled: true,
+                position: 'start',
+                color: 'white',
+                backgroundColor: 'rgba(0,0,0,0.7)'
+              }
+            },
+            // Full vested vertical dashed line
+            fullVestedLine: {
+              type: 'line',
+              xMin: 12, // index for "Aug 2026"
+              xMax: 12,
+              borderColor: 'white',
+              borderWidth: 1,
+              borderDash: [6, 6]
+            },
+            // Full vested text separately placed
+            fullVestedLabel: {
+              type: 'label',
+              xValue: "Aug 2026",
+              yValue: 100, // position near bottom
+              content: ['Full Vested: 13-08-2026'],
+              backgroundColor: 'rgba(0,0,0,0)',
+              color: 'white',
+              position: { x: "end", y: "end" },
+              font: { size: 12 }
+            },
+            // Aug 23, 2025 marker point
+            specialPoint: {
+              type: 'point',
+              xValue: "Aug 2025",
+              yValue: 1000, // adjust to match dataset value
+              backgroundColor: '#00ffcc',
+              radius: 6,
+              borderColor: 'white',
+              borderWidth: 2,
+              label: {
+                content: "Aug 23, 2025",
+                enabled: true,
+                position: "top",
+                color: 'white',
+                backgroundColor: 'rgba(0,0,0,0.7)'
+              }
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+           
+          ticks: { color: "#ffffff" }
+        },
+        y: {
+          beginAtZero: true,
+          
+          ticks: { color: "#ffffff" }
+        }
+      }
+    };
+
+    new Chart(ctx, {
+      type: 'line',
+      data: data,
+      options: options
+    });
+  </script>
+</body>
+</html>
