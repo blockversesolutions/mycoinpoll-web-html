@@ -169,10 +169,45 @@
 .why-vesting-thumbnails {
   min-height: 420px;
 }
+.nowrap {
+  white-space: nowrap;
+}
+.bg-border-input-before:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(39, 123, 245, 0.08) 0%,
+    rgba(28, 214, 145, 0.08) 100.01%
+  );
+  backdrop-filter: blur(7.5px);
+  border-radius: 8px;
+  z-index: -1;
+}
+.bg-border-input-before.bg-border-input:after {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 123, 245, 0.4) 0%,
+    rgba(28, 214, 145, 0.3) 100.01%
+  );
+}
+
 /* end vesting step-2 */
 
 @media all and (max-width: 767px) {
   .short-text {
     max-width: 35ch;
+  }
+  .vesting-start-counter span {
+    width: 52px;
+    height: 42px;
+    font-size: 15px;
+  }
+  .vesting-start-counter {
+    gap: 5px;
   }
 }

@@ -2628,7 +2628,7 @@ select {
   left: -1px;
   right: -1px;
   z-index: -1;
-  border-radius: 32px;
+  border-radius:42px;
 }
 .filter-btn .select-icon {
   right: 12px;
