@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mycoinpoll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- vesting css -->
+    <link rel="stylesheet" href="../assets/css/vesting.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="ellipse ellipse1"></div>
+    <div class="ellipse ellipse2"></div>
+    <div class="ellipse ellipse3"></div>
+    <div class="dashboard-main-area">
+      <div class="dashboard-area d-flex align-items-start">
+        <div
+          class="dashboard-left position-relative"
+          data-simplebar
+          style="height: calc(100svh - 60px)"
+        >
+          <div class="logo mb40">
+            <a href="#"
+              ><img src="../assets/images/logo.png" alt="" class="w-100"
+            /></a>
+          </div>
+          <div class="logo2 mb40">
+            <a href="#"
+              ><img
+                src="../assets/images/dashboard/icon/small-logo.png"
+                alt="logo"
+                class="w-100"
+            /></a>
+          </div>
+          <div class="dashboard-left-menu">
+            <ul>
+              <li>
+                <a href="dashboard.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/dashboard.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Dashboard</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/profile.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Profile</span></a
+                >
+              </li>
+              <li>
+                <a href="transactions.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/transactions.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Transactions</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/wallet.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Wallet</span></a
+                >
+              </li>
+              <li>
+                <a href="ico.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/ico.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">ICO</span></a
+                >
+              </li>
+              <li>
+                <a href="referral-user.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/referral.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Referral User</span></a
+                >
+              </li>
+              <li>
+                <a href="manage-roles.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/roles.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Manage Roles</span></a
+                >
+              </li>
+              <li class="menu-active-bg">
+                <a href="vesting.html"
+                  ><img
+                    src="../assets/images/dashboard/icon/make-deposit.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Vesting </span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="../assets/images/dashboard/icon/logout.png"
+                    alt="icon"
+                  />
+                  <span class="left-menu-text">Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dashboard-right">
+          <div
+            class="dashboard-right-header-area d-flex align-items-center justify-content-between"
+          >
+            <div class="page-info d-flex align-items-center">
+              <div class="resize-icon">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+              <h5 class="page-title">Vesting</h5>
+            </div>
+            <div class="dashboard-header-right">
+              <div
+                class="d-flex align-items-center dashboard-header-right-group"
+              >
+                <div class="text-btn d-flex align-items-center border-gradient">
+                  310 USDT
+                  <span
+                    ><img
+                      src="../assets/images/dashboard/icon/wallet2.png"
+                      alt="icon"
+                  /></span>
+                </div>
+                <div class="text-btn d-flex align-items-center border-gradient">
+                  300 CRM
+                  <span
+                    ><img src="../assets/images/icon/wallet.png" alt="icon"
+                  /></span>
+                </div>
+                <div class="notification-icon position-relative">
+                  <span>2+</span>
+                  <img
+                    src="../assets/images/dashboard/icon/bell.png"
+                    alt="icon"
+                    class="dropdown-toggle"
+                  />
+
+                  <ul
+                    class="dropdown notification-box"
+                    data-simplebar
+                    style="height: 303px"
+                  >
+                    <li>
+                      <img
+                        src="../assets/images/icon/noticifation-details.png"
+                        alt="icon"
+                      />
+                      <h6>Order Shipped <b>(2h ago)</b></h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adicing elit.
+                      </p>
+                    </li>
+                    <li>
+                      <img
+                        src="../assets/images/icon/noticifation-details.png"
+                        alt="icon"
+                      />
+                      <h6>Order Shipped <b>(2h ago)</b></h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adicing elit.
+                      </p>
+                    </li>
+                    <li>
+                      <img
+                        src="../assets/images/icon/noticifation-details.png"
+                        alt="icon"
+                      />
+                      <h6>Order Shipped <b>(2h ago)</b></h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adicing elit.
+                      </p>
+                    </li>
+                    <li>
+                      <a href="notification.html" class="gradient-btn-small"
+                        >Show All</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="profile-mini-icon">
+                  <a href="user-profile.html"
+                    ><img
+                      src="../assets/images/dashboard/icon/user.png"
+                      alt="user"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-body mt30">
+            <!-- Start vesting top card -->
+            <div class="row gy-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="bg-border-input p-4">
+                  <div class="vesting-top-card">
+                    <span class="text-white">Total Vesting ECM</span>
+                    <h3 class="text-white mt-3">ECM 300.00</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="bg-border-input p-4">
+                  <div class="vesting-top-card">
+                    <span class="text-white">Claimed Amount</span>
+                    <h3 class="text-white mt-3">ECM 0.00</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <!-- lock -->
+                <div class="bg-border-input p-4">
+                  <div class="vesting-top-card text-center">
+                    <span class="text-white"
+                      >Once the countdown ends, you can claim your ECM</span
+                    >
+                    <h3 class="text-white mt-3">
+                      <svg
+                        width="37"
+                        height="37"
+                        viewBox="0 0 37 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_4225_181)">
+                          <mask
+                            id="mask0_4225_181"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="37"
+                            height="37"
+                          >
+                            <path
+                              d="M36.5 0.5H0.5V36.5H36.5V0.5Z"
+                              fill="white"
+                            />
+                          </mask>
+                          <g mask="url(#mask0_4225_181)">
+                            <path
+                              d="M31.625 20.375C31.625 27.62 25.745 33.5 18.5 33.5C11.255 33.5 5.375 27.62 5.375 20.375C5.375 13.13 11.255 7.25 18.5 7.25C25.745 7.25 31.625 13.13 31.625 20.375Z"
+                              stroke="white"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M18.5 12.5V20"
+                              stroke="white"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M14 3.5H23"
+                              stroke="white"
+                              stroke-width="2.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </g>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_4225_181">
+                            <rect
+                              width="36"
+                              height="36"
+                              fill="white"
+                              transform="translate(0.5 0.5)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span id="countdown"></span>
+                    </h3>
+                  </div>
+                </div>
+                <!-- open -->
+                <div class="vesting-claim-card p-4">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <span class="text-white">Available to claim</span>
+                      <h3 class="text-white mt-3">ECM 52.152</h3>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul class="d-flex g-10">
+                        <li
+                          class="claim-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#claim-modal"
+                        >
+                          <span class="gradient-btn pointer"> CLAIM</span>
+                          <p class="mt-1">*Trx Fees: 0.01%</p>
+                        </li>
+                        <li>
+                          <span class="reload-button pointer">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_6001_972)">
+                                <path
+                                  d="M18.3332 9.99996C18.3332 14.6 14.5998 18.3333 9.99984 18.3333C5.39984 18.3333 2.5915 13.7 2.5915 13.7M2.5915 13.7H6.35817M2.5915 13.7V17.8666M1.6665 9.99996C1.6665 5.39996 5.3665 1.66663 9.99984 1.66663C15.5582 1.66663 18.3332 6.29996 18.3332 6.29996M18.3332 6.29996V2.13329M18.3332 6.29996H14.6332"
+                                  stroke="white"
+                                  stroke-opacity="0.8"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_6001_972">
+                                  <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div
+                  class="transparent-btn default-hover border-gradient w-100 text-center d-flex align-items-center justify-content-center g-5 flex-wrap"
+                >
+                  <p>Vesting Account Address :</p>
+                  <span class="white-80 short-text"
+                    >0xB2744291cA7dF45278CF1c9c74CF1c9c991cA7dF45278CF1c9c74CF1c9c9</span
+                  >
+                </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="dashboard-box vesting-summary h-100">
+                  <h4 class="text-white mb-3">Vesting Summary</h4>
+                  <div class="row gy-4">
+                    <div class="col-sm-6">
+                      <div class="vesting-summary-info">
+                        <span class="white-60">Schedule</span>
+                        <p class="sm-p">12 Months. 3 months cliff</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="vesting-summary-info">
+                        <span class="white-60">Vesting Start</span>
+                        <p class="sm-p">13th August, 2025</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="vesting-summary-info">
+                        <span class="white-60">Fully Vested</span>
+                        <p class="sm-p">13th November, 2026</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="vesting-summary-info">
+                        <span class="white-60">Cliff</span>
+                        <p class="sm-p">Yes, 25% vests at 15 months</p>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="vesting-summary-info">
+                        <span class="white-60">Vesting</span>
+                        <p class="sm-p">
+                          After the cliff, the remainder of the shares will vest
+                          monthly on the same day as the start date for the
+                          remaining 36 months. After the cliff, the remainder of
+                          the shares will vest monthly on the same day as the
+                          start date for the remaining 36 months.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-7">
+                <div class="dashboard-box h-100">
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div class="ico-progress vesting-progress">
+                        <ul class="text-white">
+                          <li>CLIFF PERIOD</li>
+                        </ul>
+                        <div class="progress mt-2 position-relative">
+                          <div
+                            class="progress-bar align-items-end"
+                            role="progressbar"
+                            style="width: 60%"
+                            aria-valuenow="30"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                          <span class="text-white vesting-progress-number"
+                            >30%</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="ico-progress vesting-progress">
+                        <ul class="text-white">
+                          <li>Vesting Period</li>
+                        </ul>
+                        <div class="progress mt-2 position-relative">
+                          <div
+                            class="progress-bar align-items-end"
+                            role="progressbar"
+                            style="width: 0%"
+                            aria-valuenow="0"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                          <span class="text-white vesting-progress-number"
+                            >0%</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="vesting-chart mt-2">
+                        <canvas id="vestingChart"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End vesting top card -->
+            <!--start claim Modal -->
+            <div
+              class="modal fade bg-gradient-add"
+              id="claim-modal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-custom-width-md">
+                <div class="modal-content custom-modal">
+                  <form action="">
+                    <div
+                      class="modal-header-area d-flex align-items-center justify-content-between"
+                    >
+                      <h4 class="text-shadow">Claim Your ECM</h4>
+                      <div class="modal-close-btn">
+                        <span data-bs-dismiss="modal" aria-label="Close">
+                          <i class="fas fa-times"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="modal-body-inner">
+                      <div class="row gy-3">
+                        <div class="col-12">
+                          <div
+                            class="d-flex align-items-center justify-content-between claim-info-item"
+                          >
+                            <span class="claim-info-title">Claim Amount</span>
+                            <span class="claim-info-value">ECM 52.15</span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div
+                            class="d-flex align-items-center justify-content-between claim-info-item"
+                          >
+                            <span class="claim-info-title"
+                              >Network Fee
+                              <svg
+                                width="12"
+                                height="11"
+                                viewBox="0 0 12 11"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.545 4C4.66255 3.66583 4.89458 3.38405 5.19998 3.20457C5.50538 3.02508 5.86445 2.95947 6.21359 3.01936C6.56273 3.07924 6.87941 3.26076 7.10754 3.53176C7.33567 3.80277 7.46053 4.14576 7.46 4.5C7.46 5.5 5.96 6 5.96 6M6 8H6.005M11 5.5C11 8.26142 8.76142 10.5 6 10.5C3.23858 10.5 1 8.26142 1 5.5C1 2.73858 3.23858 0.5 6 0.5C8.76142 0.5 11 2.73858 11 5.5Z"
+                                  stroke="white"
+                                  stroke-opacity="0.8"
+                                  stroke-width="0.8"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                            <span class="claim-info-value">0.0025 ETH</span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div
+                            class="d-flex align-items-center justify-content-between claim-info-item"
+                          >
+                            <span class="claim-info-title">Net Amount</span>
+                            <span class="claim-info-value">ECM 52.1495</span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div
+                            class="d-flex align-items-center justify-content-between claim-info-item"
+                          >
+                            <span class="claim-info-title">Wallet Address</span>
+                            <span class="claim-info-value short-text"
+                              >0xB2744291cA7dF45278CF1c9c74CF1c9c991</span
+                            >
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="white-60">
+                            *Once you confirm, the claim will be processed on
+                            the blockchain and cannot be reversed.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row gy-4 mt-3">
+                      <div class="col-md-6">
+                        <div class="position-relative z-2">
+                          <span
+                            class="w-100 transparent-btn border-gradient text-center pointer"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            >Cancel</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <button class="gradient-btn w-100">
+                          Confirm & Claim
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- end claim modal -->
+            <!--Start user referable-list -->
+            <div class="data-show-table-area dashboard-box mt30">
+              <div
+                class="table-header-area d-flex align-items-center justify-content-between"
+              >
+                <div class="table-heading">
+                  <h5>Claim History</h5>
+                </div>
+                <div class="search-box-area">
+                  <form action="">
+                    <div class="input bg-border-input position-relative">
+                      <div class="search-icon">
+                        <i class="search-icon fas fa-search"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="search"
+                        placeholder="Search here..."
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="common-table mt30">
+                <table class="custom-table display nowrap mobile-table">
+                  <thead>
+                    <tr>
+                      <th class="text-start">Claim Time</th>
+                      <th class="text-start">Claim Amount (ECM)</th>
+                      <th class="text-start">Txn Hash / ID</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>06 Nov 2025 21:30:48</td>
+                      <td class="text-start">258.665</td>
+                      <td>
+                        <div class="transaction-id">
+                          <input
+                            type="text"
+                            id="refer-url"
+                            placeholder="Receiver Address"
+                            value="0xB2744291cA7dF45278CF1c9c74CF1c9c"
+                          />
+                          <img
+                            src="../assets/images/dashboard/icon/copy.png"
+                            alt="copy"
+                            onclick="urlCopy(this)"
+                          />
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <a
+                          href="#"
+                          class="transparent-btn border-gradient text-center white-60 weight-normall"
+                          >Explore
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.25 2.26904H15.75M15.75 2.26904V6.76904M15.75 2.26904L7.5 10.519M13.5 9.76904V14.269C13.5 14.6669 13.342 15.0484 13.0607 15.3297C12.7794 15.611 12.3978 15.769 12 15.769H3.75C3.35218 15.769 2.97064 15.611 2.68934 15.3297C2.40804 15.0484 2.25 14.6669 2.25 14.269V6.01904C2.25 5.62122 2.40804 5.23969 2.68934 4.95838C2.97064 4.67708 3.35218 4.51904 3.75 4.51904H8.25"
+                              stroke="white"
+                              stroke-opacity="0.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>06 Nov 2025 21:30:48</td>
+                      <td class="text-start">0000</td>
+                      <td>
+                        <div class="transaction-id">
+                          <input
+                            type="text"
+                            id="refer-url"
+                            placeholder="Receiver Address"
+                            value="0xB2744291cA7dF45278CF1c9c74CF1c9c"
+                          />
+                          <img
+                            src="../assets/images/dashboard/icon/copy.png"
+                            alt="copy"
+                            onclick="urlCopy(this)"
+                          />
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <a
+                          href="#"
+                          class="transparent-btn border-gradient text-center white-60 weight-normall"
+                          >Explore
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.25 2.26904H15.75M15.75 2.26904V6.76904M15.75 2.26904L7.5 10.519M13.5 9.76904V14.269C13.5 14.6669 13.342 15.0484 13.0607 15.3297C12.7794 15.611 12.3978 15.769 12 15.769H3.75C3.35218 15.769 2.97064 15.611 2.68934 15.3297C2.40804 15.0484 2.25 14.6669 2.25 14.269V6.01904C2.25 5.62122 2.40804 5.23969 2.68934 4.95838C2.97064 4.67708 3.35218 4.51904 3.75 4.51904H8.25"
+                              stroke="white"
+                              stroke-opacity="0.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>06 Nov 2025 21:30:48</td>
+                      <td class="text-start">58.00</td>
+                      <td>
+                        <div class="transaction-id">
+                          <input
+                            type="text"
+                            id="refer-url"
+                            placeholder="Receiver Address"
+                            value="0xB2744291cA7dF45278CF1c9c74CF1c9c"
+                          />
+                          <img
+                            src="../assets/images/dashboard/icon/copy.png"
+                            alt="copy"
+                            onclick="urlCopy(this)"
+                          />
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <a
+                          href="#"
+                          class="transparent-btn border-gradient text-center white-60 weight-normall"
+                          >Explore
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.25 2.26904H15.75M15.75 2.26904V6.76904M15.75 2.26904L7.5 10.519M13.5 9.76904V14.269C13.5 14.6669 13.342 15.0484 13.0607 15.3297C12.7794 15.611 12.3978 15.769 12 15.769H3.75C3.35218 15.769 2.97064 15.611 2.68934 15.3297C2.40804 15.0484 2.25 14.6669 2.25 14.269V6.01904C2.25 5.62122 2.40804 5.23969 2.68934 4.95838C2.97064 4.67708 3.35218 4.51904 3.75 4.51904H8.25"
+                              stroke="white"
+                              stroke-opacity="0.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--End user referable-list -->
+          </div>
+          <!-- copyright -->
+          <div
+            class="copyright-box d-flex align-items-center justify-content-center"
+          >
+            <p class="gradient-color">Current Version 1.0</p>
+            <p>
+              &copy; 2025
+              <a href="index.html" class="gradient-color"
+                >Develope By Mycoinpoll</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!-- start vesting open date counter -->
+    <script>
+      const targetDate = new Date("2025-11-13T23:59:59").getTime();
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+        if (distance <= 0) {
+          document.getElementById("countdown").innerHTML = "Time Over!";
+          return;
+        }
+        const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
+        const days = Math.floor(
+          (distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
+        );
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById(
+          "countdown"
+        ).innerHTML = `<span>${months}Mn</span> : 
+            <span>${days}D</span> : 
+            <span>${hours}H</span> : 
+            <span>${minutes}M</span> : 
+            <span>${seconds}S</span>`;
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    </script>
+    <!-- end vesting open date counter -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+    <script>
+      const ctx = document.getElementById("vestingChart").getContext("2d");
+
+      // Gradient background for dataset fill
+      const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0, "rgba(28, 214, 145, 0)");
+      gradient.addColorStop(1, "rgba(28, 214, 145, 0.3)");
+
+      const labels = [
+        "Aug 2025",
+        "Sep 2025",
+        "Oct 2025",
+        "Nov 2025",
+        "Dec 2025",
+        "Jan 2026",
+        "Feb 2026",
+        "Mar 2026",
+        "Apr 2026",
+        "May 2026",
+        "Jun 2026",
+        "Jul 2026",
+        "Aug 2026",
+      ];
+
+      const datasetValues = [
+        0,
+        0,
+        0, // Aug–Oct = flat (0)
+        200, // sudden jump in Nov
+        400,
+        600,
+        800,
+        1000,
+        1200,
+        1400,
+        1600,
+        1800,
+        2000, // full vested Aug 2026
+      ];
+
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "Vesting Schedule",
+            data: datasetValues,
+            fill: true,
+            borderWidth: 1.5,
+            borderColor: "#1CD691",
+            backgroundColor: gradient,
+            tension: 0,
+            pointRadius: 4,
+            pointBackgroundColor: "#1CD691",
+          },
+        ],
+      };
+
+      const options = {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          annotation: {
+            annotations: {
+              // Cliff vertical dashed line
+              cliff: {
+                type: "line",
+                xMin: 3, // index for "Nov 2025"
+                xMax: 3,
+                borderColor: "#FFFFFF99",
+                borderWidth: 1,
+                borderDash: [6, 6],
+                label: {
+                  content: "Cliff 13-11-2025",
+                  enabled: true,
+                  position: "start",
+                  color: "white",
+                  backgroundColor: "rgba(0,0,0,0.7)",
+                },
+              },
+              // Full vested vertical dashed line
+              fullVestedLine: {
+                type: "line",
+                xMin: 12, // index for "Aug 2026"
+                xMax: 12,
+                borderColor: "#FFFFFF99",
+                borderWidth: 1,
+                borderDash: [6, 6],
+              },
+              // Full vested text separately placed
+              fullVestedLabel: {
+                type: "label",
+                xValue: "Aug 2026",
+                yValue: 100, // position near bottom
+                content: ["Full Vested: 13-08-2026"],
+                backgroundColor: "rgba(0,0,0,0)",
+                color: "white",
+                position: { x: "end", y: "end" },
+                font: { size: 12 },
+              },
+              // Aug 23, 2025 marker point
+              specialPoint: {
+                type: "point",
+                xValue: "Aug 2025",
+                yValue: 1000, // adjust to match dataset value
+                backgroundColor: "#00ffcc",
+                radius: 6,
+                borderColor: "#FFFFFF99",
+                borderWidth: 1,
+                label: {
+                  content: "Aug 23, 2025",
+                  enabled: true,
+                  position: "top",
+                  color: "white",
+                  backgroundColor: "rgba(0,0,0,0.7)",
+                },
+              },
+            },
+          },
+        },
+        scales: {
+          x: {
+            ticks: { color: "#ffffff" },
+          },
+          y: {
+            beginAtZero: true,
+
+            ticks: { color: "#ffffff" },
+          },
+        },
+      };
+
+      new Chart(ctx, {
+        type: "line",
+        data: data,
+        options: options,
+      });
+    </script>
+  </body>
+</html>

@@ -2601,7 +2601,7 @@ select {
   padding: 10px 28px;
   border-radius: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   transition: 0.5s;
   border: none;
@@ -2612,7 +2612,7 @@ select {
   padding: 10px 28px;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   transition: 0.5s;
   border: none;
@@ -3054,8 +3054,8 @@ select {
   line-height: 22px;
   margin-right: 18px;
 }
-.notification-icon img{
-  width:32px;
+.notification-icon img {
+  width: 32px;
   height: 32px;
   margin-right: 18px;
 }
@@ -3425,7 +3425,7 @@ select {
 .table-heading h5 {
   font-size: 20px;
   font-weight: 700;
-  line-height:34px;
+  line-height: 34px;
   color: #fff;
 }
 table {
@@ -3761,7 +3761,7 @@ ul.dropdown li:hover {
 }
 .gradient-btn-small {
   background: linear-gradient(90deg, #277bf5 0%, #1cd691 100.01%);
-  padding:6px 12px;
+  padding: 6px 12px;
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
@@ -4078,8 +4078,8 @@ ul.dropdown li:hover {
   border: 1px solid #2683ee60;
   height: 100%;
 }
-.bg-2682{
-  background: #2682EE1A;
+.bg-2682 {
+  background: #2682ee1a;
 }
 .card-1-sm .balance-info p {
   font-size: 15px;
@@ -4848,87 +4848,87 @@ input[type="time"]::after {
 .sm-text-view td {
   padding: 6px;
 }
- .verified-status{
-  background: #1CD691;
-  border: 1px solid #FFFFFFB2;
-  font-size:18px;
-  color:#fff;
-  padding:4px 12px;
+.verified-status {
+  background: #1cd691;
+  border: 1px solid #ffffffb2;
+  font-size: 18px;
+  color: #fff;
+  padding: 4px 12px;
   font-weight: 500;
   border-radius: 50px;
- }
- .coin-balance-logo .placeholder{
+}
+.coin-balance-logo .placeholder {
   height: 54px;
   width: 54px;
   border-radius: 50%;
-  background-color:#fff;
- }
- .placeholder-width-100{
+  background-color: #fff;
+}
+.placeholder-width-100 {
   height: 20px;
   border-radius: 10px;
-  width:100px;
- }
- .placeholder-width-120{
+  width: 100px;
+}
+.placeholder-width-120 {
   height: 20px;
   border-radius: 10px;
-  width:120px;
- }
- .affiliate-box{
+  width: 120px;
+}
+.affiliate-box {
   padding: 10px 20px;
- }
- .affiliate-box p i{
-  color: #2682EE; 
- }
- .affiliate-box p{
-  color: #FFFFFF99;
- }
- .p-sm{
+}
+.affiliate-box p i {
+  color: #2682ee;
+}
+.affiliate-box p {
+  color: #ffffff99;
+}
+.p-sm {
   font-size: 16px;
-  color:#FFFFFFCC;
+  color: #ffffffcc;
   font-weight: 400;
   line-height: 20px;
- }
- .card-inner h6{
+}
+.card-inner h6 {
   font-size: 14px;
-  color:#fff;
- }
- .card-inner span{
-  font-weight:700;
-  font-size:28px;
-  color:#fff;
- }
- .card-inner{
-  background: #FFFFFF14;
+  color: #fff;
+}
+.card-inner span {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+.card-inner {
+  background: #ffffff14;
   padding: 6px 14px;
   border-radius: 5px;
- }
- .coin-list-header{
-  background: #2682EE;
+}
+.coin-list-header {
+  background: #2682ee;
   padding: 12px 20px;
-  border-radius:10px 10px 0 0;
- }
- .coin-list-header span{
+  border-radius: 10px 10px 0 0;
+}
+.coin-list-header span {
   font-weight: 600;
   font-size: 20px;
   font-family: "Oxanium", sans-serif;
-  color:#fff;
- }
- .coin-list-header img{
+  color: #fff;
+}
+.coin-list-header img {
   width: 50px;
   height: 50px;
- }
- .p-xm{
+}
+.p-xm {
   font-size: 14px;
- }
- .color-FFFFFF99{
-  color: #FFFFFF99;
- }
- .token-card-heading h4{
-  font-size:32px;
- }
- .close-icon{
-  height:18px;
-  width:18px;
+}
+.color-FFFFFF99 {
+  color: #ffffff99;
+}
+.token-card-heading h4 {
+  font-size: 32px;
+}
+.close-icon {
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -4937,66 +4937,65 @@ input[type="time"]::after {
   background: red;
   outline: 1px solid #fff;
   outline-offset: 2px;
- }
- .close-icon i{
-  color:#fff;
+}
+.close-icon i {
+  color: #fff;
   font-size: 12px;
- }
- /* .notification-close{
+}
+/* .notification-close{
   position: absolute;
   right:2px;
   top: 2px;
   z-index: 9;
  } */
 
- .searching-btn{
+.searching-btn {
   position: absolute;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 9;
- }
- /* admin dashboard start */
- .funds-raised-box h4{
+}
+/* admin dashboard start */
+.funds-raised-box h4 {
   font-size: 32px;
   font-weight: 700;
   font-family: Montserrat;
- }
- .funds-info-card .balance-info span {
+}
+.funds-info-card .balance-info span {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   padding-top: 4px;
 }
- .funds-info-card{
+.funds-info-card {
   padding: 10px 12px;
- }
- .funds-info-card .day-user-count{
+}
+.funds-info-card .day-user-count {
   font-size: 12px;
- }
- .funds-info-card .balance-info p{
-  font-size:12px;
- }
- .funds-info-card .balance-info{
+}
+.funds-info-card .balance-info p {
+  font-size: 12px;
+}
+.funds-info-card .balance-info {
   padding-left: 12px;
   margin-left: 12px;
- }
- .funds-info-card .balance-logo img{
-  width:30px;
+}
+.funds-info-card .balance-logo img {
+  width: 30px;
   height: auto;
- }
- .platform-activity-chart canvas{
-  height:100% !important;
+}
+.platform-activity-chart canvas {
+  height: 100% !important;
   width: 100% !important;
- }
- .platform-activity-chart{
-  max-height:370px;
- }
- /* admin dashboard end */
- 
- .chart-container {
-  height:370px;
-   
+}
+.platform-activity-chart {
+  max-height: 370px;
+}
+/* admin dashboard end */
+
+.chart-container {
+  height: 370px;
 }
 .chart-containers {
   position: relative;
@@ -5010,7 +5009,7 @@ input[type="time"]::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size:40px;
+  font-size: 40px;
   font-weight: 700;
-  color: #F3F4F6;
+  color: #f3f4f6;
 }
