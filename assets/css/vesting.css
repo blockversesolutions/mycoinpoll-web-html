@@ -93,12 +93,17 @@
   background: #0a1622;
 }
 /* start vesting step-2 */
+.vesting-start-counter li:nth-child(even) {
+  color: #e6e4e426;
+  font-size: 40px;
+}
 .vesting-start-counter span {
   height: 70px;
   width: 81px;
   background-color: #ffffff26;
   border-radius: 10px;
   display: flex;
+  color: #fff;
   font-size: 24px;
   justify-content: center;
   align-items: center;
@@ -215,7 +220,7 @@
   }
 }
 @media all and (max-width: 767px) {
-   .short-text {
-    max-width:25ch;
+  .short-text {
+    max-width: 25ch;
   }
 }

@@ -237,17 +237,29 @@
             <div class="row gy-4">
               <!-- lock -->
               <div class="col-md-12">
-                <div class="bg-border-input p-4">
+                <div class="bg-border-input p-4 py-5">
                   <div class="vesting-top-card text-center">
                     <h3 class="text-white mb-3">
                       Vesting Begin on 20 January 2026
                     </h3>
-                    <h3 class="text-white mt-3">
-                      <span
-                        id="countdown"
-                        class="vesting-start-counter d-flex align-items-center justify-content-center"
-                      ></span>
-                    </h3>
+
+                    <ul
+                      class="vesting-start-counter d-flex align-items-center justify-content-center mt-4"
+                    >
+                      <li>
+                        <span>4Mn</span>
+                      </li>
+                      <li>:</li>
+                      <li>
+                        <span>7D</span>
+                      </li>
+                      <li>:</li>
+                      <li><span>23H</span></li>
+                      <li>:</li>
+                      <li><span>59M</span></li>
+                      <li>:</li>
+                      <li><span>59S</span></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -355,35 +367,7 @@
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <!-- start vesting open date counter -->
-    <script>
-      const targetDate = new Date("2025-11-13T23:59:59").getTime();
-      function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
-        if (distance <= 0) {
-          document.getElementById("countdown").innerHTML = "Time Over!";
-          return;
-        }
-        const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
-        const days = Math.floor(
-          (distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
-        );
-        const hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById(
-          "countdown"
-        ).innerHTML = `<span>${months}Mn</span> : 
-            <span>${days}D</span> : 
-            <span>${hours}H</span> : 
-            <span>${minutes}M</span> : 
-            <span>${seconds}S</span>`;
-      }
-      setInterval(updateCountdown, 1000);
-      updateCountdown();
-    </script>
+
     <!-- end vesting open date counter -->
   </body>
 </html>
