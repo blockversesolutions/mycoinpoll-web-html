@@ -4993,7 +4993,6 @@ input[type="time"]::after {
   max-height: 370px;
 }
 /* admin dashboard end */
-
 .chart-container {
   height: 370px;
 }
@@ -5003,7 +5002,6 @@ input[type="time"]::after {
   height: 200px;
   margin: 0 auto;
 }
-
 .chart-containers .chart-text {
   position: absolute;
   top: 50%;
@@ -5013,5 +5011,7 @@ input[type="time"]::after {
   font-weight: 700;
   color: #f3f4f6;
 }
-
- 
+ .copied-highlight {
+  background: #2A5E88 !important;
+  transition: background 0.9s ease !important;
+}
