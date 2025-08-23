@@ -163,7 +163,6 @@ if ($(".logo-flip-box").length) {
 function urlCopy(elem) {
   const target = elem.previousElementSibling;
   let textToCopy = "";
-
   if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") {
     textToCopy = target.value;
   } else {
@@ -174,6 +173,10 @@ function urlCopy(elem) {
     .writeText(textToCopy)
     .then(() => {
       console.log("Copied:", textToCopy);
+      target.classList.add("copied-highlight");
+      setTimeout(() => {
+        target.classList.remove("copied-highlight");
+      }, 1000);
     })
     .catch((err) => {
       console.error("Failed to copy:", err);
