@@ -2628,7 +2628,7 @@ select {
   left: -1px;
   right: -1px;
   z-index: -1;
-  border-radius:42px;
+  border-radius:52px;
 }
 .filter-btn .select-icon {
   right: 12px;
@@ -5013,3 +5013,5 @@ input[type="time"]::after {
   font-weight: 700;
   color: #f3f4f6;
 }
+
+ 

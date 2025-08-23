@@ -323,7 +323,7 @@
                 </div>
                 <!-- open -->
                 <div class="vesting-claim-card p-4">
-                  <div class="row">
+                  <div class="row align-items-center">
                     <div class="col-sm-6">
                       <span class="text-white">Available to claim</span>
                       <h3 class="text-white mt-3">ECM 52.152</h3>
@@ -336,7 +336,6 @@
                           data-bs-target="#claim-modal"
                         >
                           <span class="gradient-btn pointer"> CLAIM</span>
-                          <p class="mt-1">*Trx Fees: 0.01%</p>
                         </li>
                         <li>
                           <span class="reload-button pointer">
@@ -372,12 +371,23 @@
               </div>
               <div class="col-md-12">
                 <div
-                  class="transparent-btn default-hover border-gradient w-100 text-center d-flex align-items-center justify-content-center g-5 flex-wrap"
+                  class="transparent-btn default-hover border-gradient w-100 text-center d-flex align-items-center flex-wrap justify-content-center flex-xl-nowrap g-5"
                 >
-                  <p>Vesting Account Address :</p>
-                  <span class="white-80 short-text"
-                    >0xB2744291cA7dF45278CF1c9c74CF1c9c991cA7dF45278CF1c9c74CF1c9c9</span
+                  <p class="nowrap text-white">Vesting Account Address :</p>
+
+                  <div
+                    class="transaction-id d-flex align-items-center g-10 mt-1"
                   >
+                    <span id="refer-url" class="white-80 short-text"
+                      >0xB2744291cA7dF45278CF1c9c74CF1c9c991cA7dF45278CF1c9c74CF1c9c9</span
+                    >
+
+                    <img
+                      src="../assets/images/dashboard/icon/copy.png"
+                      alt="copy"
+                      onclick="urlCopy(this)"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="col-xl-5">
