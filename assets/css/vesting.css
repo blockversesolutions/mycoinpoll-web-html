@@ -144,6 +144,9 @@
 }
 .why-vesting-thumbnail img {
   height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #1a362c;
 }
 .why-vesting-thumbnail.active {
   opacity: 1;
@@ -209,5 +212,10 @@
   }
   .vesting-start-counter {
     gap: 5px;
+  }
+}
+@media all and (max-width: 767px) {
+   .short-text {
+    max-width:25ch;
   }
 }
