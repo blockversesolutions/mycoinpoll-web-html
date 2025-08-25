@@ -2810,18 +2810,21 @@ select {
 .news-thumbnails img {
   border-radius: 5px;
 }
-.news-poin-list-item ol li h4 {
+.news-point-list-item ol li h4 {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
   line-height: 37.5px;
 }
-.news-poin-list {
+.news-point-list {
   position: relative;
   z-index: 2;
 }
-.news-poin-list h3,
-.news-poin-list-item ol li {
+.news-point-list ol{
+  color: #fff;
+}
+.news-point-list h3,
+.news-point-list-item ol li {
   font-size: 26px;
   font-weight: 600;
   line-height: 30px;
@@ -2829,10 +2832,10 @@ select {
   margin-top: 30px;
   margin-bottom: 16px;
 }
-.news-poin-list-item ol li {
+.news-point-list-item ol li {
   font-size: 18px;
 }
-.news-poin-list-item ol li {
+.news-point-list-item ol li {
   margin-bottom: 20px;
 }
 .learning-video-box {
