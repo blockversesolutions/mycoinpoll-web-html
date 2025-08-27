@@ -1,0 +1,102 @@
+.single-download-btn {
+  border: 1px solid #a6a6a6;
+  padding: 8px 22px;
+  border-radius: 10px;
+  background-color: #000;
+  padding-left: 20px;
+  transition: 0.5s;
+}
+.single-download-btn:hover {
+  background-color: #333333;
+}
+.app-download-info h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fafafa;
+}
+.app-download-info p {
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.app-download-icon img {
+  max-width: 36px;
+}
+.app-label {
+  position: absolute;
+  right: -5px;
+  top: 2px;
+}
+.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+.app-qr-code {
+  height: 150px;
+  padding: 10px;
+  width: 150px;
+  border: 0.7px solid #ffffff;
+  border-radius: 5px;
+}
+.app-thumbnails-bottom img {
+  max-width: 605px;
+  max-height: 280px;
+}
+.app-thumbnails-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.app-thumbnails-top {
+  text-align: center;
+  position: absolute;
+  bottom: 160px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+.app-thumbnails-top img {
+  max-width: 245px;
+  max-height: 535px;
+}
+.app-section-thumbnails-group {
+  height: 700px;
+}
+.app-thumbnails-top:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../images/thumbnail/light-1.png");
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.app-thumbnails-top:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 38px;
+  background: url("../images/thumbnail/light-1.png");
+  height: 100%;
+  width: 475px;
+  background-size: 100% 100%;
+  right: 0;
+  margin: 0 auto;
+}
+@media all and (max-width: 480px) {
+  .app-thumbnails-top {
+    bottom: 100px;
+  }
+  .app-section-thumbnails-group {
+    height: 650px;
+  }
+  .app-thumbnails-top:after {
+    width: 352px;
+  }
+}
