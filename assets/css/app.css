@@ -63,7 +63,19 @@
 .app-thumbnails-top img {
   max-width: 220px;
   max-height: 433px;
+  animation: bounceLoop 4.5s ease-in-out infinite;
 }
+/* Continuous bounce effect */
+@keyframes bounceLoop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
 .app-section-thumbnails-group {
   height: 525px;
 }
@@ -106,6 +118,18 @@
   right: -10px;
   top: -10px;
 }
+/* Smooth zoom-in and fade-in */
+.modal.fade .modal-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .app-download-btn {
   position: absolute;
   left: 55px;
@@ -139,6 +163,7 @@
   font-size: 20px;
   font-weight: 600;
 }
+
 .download-btn .icon {
   position: relative;
   width: var(--icon-size);
@@ -256,12 +281,12 @@
   .download-btn {
     --icon-size: 25px;
   }
-.video-modal-close span {
+  .video-modal-close span {
     height: 30px;
     width: 30px;
     right: -4px;
     z-index: 9;
     top: -11px;
     border: 2px solid white;
-}
+  }
 }
