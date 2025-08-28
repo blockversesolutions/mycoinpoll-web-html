@@ -1829,13 +1829,7 @@
         </div>
       </div>
     </section>
-    <div
-      class="modal fade bg-gradient-add"
-      id="app-download-modal"
-      tabindex="-1"
-      aria-labelledby="app-download-modalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="app-download-modal" tabindex="-1">
       <div class="modal-dialog modal-custom-width">
         <div class="modal-content custom-modal">
           <div class="video-modal-close modal-close-btn bonus-modal-close">
@@ -2047,44 +2041,36 @@
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      const modalID = "#app-download-modal";
+      const modalID = document.getElementById("app-download-modal");
       const closeFlagKey = "bonusModalClosedAt";
-      const delay = 5 * 60 * 1000; // 5 minutes in ms
+      const delay = 10 * 60 * 1000; // 5 minutes
 
-      function hideModal() {
-        $(modalID).removeClass("show d-block").addClass("d-none");
-      }
+      const modalInstance = new bootstrap.Modal(modalID);
 
       function showModal() {
-        $(modalID).removeClass("d-none").addClass("show d-block");
+        modalInstance.show();
+      }
+
+      function hideModal() {
+        modalInstance.hide();
       }
 
       function checkModal() {
         const lastClosed = localStorage.getItem(closeFlagKey);
         const now = Date.now();
 
-        if (!lastClosed) {
-          // No close recorded → always show
+        if (!lastClosed || now - parseInt(lastClosed) >= delay) {
+          localStorage.removeItem(closeFlagKey);
           showModal();
         } else {
-          const diff = now - parseInt(lastClosed);
-          if (diff >= delay) {
-            // 5 min passed → show again
-            localStorage.removeItem(closeFlagKey);
-            showModal();
-          } else {
-            // Still under 5 mins → hide modal
-            hideModal();
-          }
+          hideModal();
         }
       }
 
-      // On page load
       document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(checkModal, 5000); // Show modal after 05 seconds
+        setTimeout(checkModal, 3000); // Show modal after 5 seconds
       });
 
-      // On close button click
       document
         .querySelector(".bonus-modal-close")
         .addEventListener("click", function () {
