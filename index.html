@@ -1431,13 +1431,16 @@
       <div class="container">
         <div class="chain-circle circle-effect5"></div>
         <div class="row gy-5">
-          <div class="col-xl-6">
+          <div class="col-xl-7">
             <div class="section-heading text-center text-xl-start">
               <h3 class="text-shadow">Experience MyCoinPoll on the Go</h3>
               <p>
-                With the MyCoinPoll app, you can track polls, explore real-time
-                results and insights, and stay connected with the community —
-                anytime, anywhere on iOS and Android.
+                Download the Beta Android app today and be among the first to
+                explore MyCoinPoll on mobile. Be an early adopter of ECM Coin,
+                view real-time results, and connect with the rapidly growing
+                community to gain valuable insights anytime, anywhere just a tap
+                away. Your feedback during this Beta phase will help us improve
+                and shape the full release.
               </p>
             </div>
             <div
@@ -1513,18 +1516,18 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
+          <div class="col-xl-5">
             <div class="app-section-thumbnails-group position-relative">
               <div class="app-thumbnails-top text-center">
                 <img
-                  src="assets/images/thumbnail/mobile-2.svg"
+                  src="assets/images/thumbnail/mobile-2.png"
                   alt=""
                   class="w-100"
                 />
               </div>
               <div class="app-thumbnails-bottom text-center">
                 <img
-                  src="assets/images/thumbnail/mobile-1.svg"
+                  src="assets/images/thumbnail/mobile-1.png"
                   alt=""
                   class="w-100"
                 />
@@ -1826,6 +1829,66 @@
         </div>
       </div>
     </section>
+    <div
+      class="modal fade bg-gradient-add"
+      id="app-download-modal"
+      tabindex="-1"
+      aria-labelledby="app-download-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-custom-width">
+        <div class="modal-content custom-modal">
+          <div class="video-modal-close modal-close-btn bonus-modal-close">
+            <span data-bs-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times"></i>
+            </span>
+          </div>
+          <div class="modal-body-inner position-relative">
+            <div class="add-video-box">
+              <video
+                class="lg-screen-show"
+                src="assets/video/Mycoinpoll-App-Banner-Ad-5.webm"
+                autoplay
+                muted
+                playsinline
+              ></video>
+              <video
+                class="sm-screen-show"
+                src="assets/video/Mycoinpoll-App-Banner-Ad-6.webm"
+                autoplay
+                muted
+                playsinline
+              ></video>
+            </div>
+            <div class="app-download-btn">
+              <a href="#">
+                <div class="download-btn">
+                  <span class="icon">
+                    <span class="ring" aria-hidden="true"></span>
+                    <svg
+                      class="arrow"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 3v14"></path>
+                      <path d="M5 12l7 7 7-7"></path>
+                    </svg>
+                  </span>
+                  <span>DOWNLOAD</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer-main-section pt120 position-relative center-effect1">
       <div class="footer-circle circle-effect-center"></div>
       <div class="container">
@@ -1904,6 +1967,30 @@
                         ></a>
                       </div>
                     </li>
+                    <li>
+                      <div class="d-inline-block disabled-link">
+                        <a href="#"
+                          ><div
+                            class="single-download-btn d-flex align-items-center g-5 position-relative"
+                          >
+                            <div class="app-download-icon">
+                              <img
+                                src="assets/images/icon/apple.svg"
+                                alt="apple"
+                              />
+                            </div>
+                            <div class="app-download-info">
+                              <p>Download on the</p>
+                              <h5>App Store</h5>
+                            </div>
+                            <span class="app-label d-none"
+                              ><img
+                                src="assets/images/icon/beta-tag.svg"
+                                alt="beta"
+                            /></span></div
+                        ></a>
+                      </div>
+                    </li>
                   </ul>
                 </div>
                 <div class="footer-widgets footer-subscribe">
@@ -1959,5 +2046,51 @@
     <script src="assets/js/jquery.flipbox.js"></script>
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const modalID = "#app-download-modal";
+      const closeFlagKey = "bonusModalClosedAt";
+      const delay = 5 * 60 * 1000; // 5 minutes in ms
+
+      function hideModal() {
+        $(modalID).removeClass("show d-block").addClass("d-none");
+      }
+
+      function showModal() {
+        $(modalID).removeClass("d-none").addClass("show d-block");
+      }
+
+      function checkModal() {
+        const lastClosed = localStorage.getItem(closeFlagKey);
+        const now = Date.now();
+
+        if (!lastClosed) {
+          // No close recorded → always show
+          showModal();
+        } else {
+          const diff = now - parseInt(lastClosed);
+          if (diff >= delay) {
+            // 5 min passed → show again
+            localStorage.removeItem(closeFlagKey);
+            showModal();
+          } else {
+            // Still under 5 mins → hide modal
+            hideModal();
+          }
+        }
+      }
+
+      // On page load
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(checkModal, 5000); // Show modal after 05 seconds
+      });
+
+      // On close button click
+      document
+        .querySelector(".bonus-modal-close")
+        .addEventListener("click", function () {
+          localStorage.setItem(closeFlagKey, Date.now());
+          hideModal();
+        });
+    </script>
   </body>
 </html>
