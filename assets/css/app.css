@@ -111,7 +111,9 @@
   left: 55px;
   bottom: 55px;
 }
-
+.sm-screen-show {
+  display: none;
+}
 .download-btn {
   --btn-radius: 999px;
   --btn-grad-1: #2683ed;
@@ -216,17 +218,29 @@
   }
 }
 @media all and (max-width: 767px) {
+  .sm-screen-show {
+    display: block;
+  }
+  .lg-screen-show {
+    display: none;
+  }
   .custom-modal {
     padding: 20px 15px !important;
     padding-bottom: 20px !important;
   }
   .app-download-btn {
-    left: 32px;
-    bottom: 10px;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
   }
   .download-btn .icon {
-    height: 32px;
-    width: 32px;
+    height: 40px;
+    width: 40px;
+  }
+  .download-btn {
+    padding: 12px 55px !important;
   }
 }
 @media all and (max-width: 480px) {
@@ -242,13 +256,12 @@
   .download-btn {
     --icon-size: 25px;
   }
-  .app-download-btn {
-    left: 20px;
-  }
-  .video-modal-close span {
-    height: 26px;
-    width: 26px;
-    right: 5px;
-    top: -22px;
-  }
+.video-modal-close span {
+    height: 30px;
+    width: 30px;
+    right: -4px;
+    z-index: 9;
+    top: -11px;
+    border: 2px solid white;
+}
 }

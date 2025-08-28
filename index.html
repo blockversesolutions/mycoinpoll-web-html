@@ -1831,9 +1831,9 @@
     </section>
     <div
       class="modal fade bg-gradient-add"
-      id="bonusModal"
+      id="app-download-modal"
       tabindex="-1"
-      aria-labelledby="bonusModalLabel"
+      aria-labelledby="app-download-modalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-custom-width">
@@ -1846,7 +1846,15 @@
           <div class="modal-body-inner position-relative">
             <div class="add-video-box">
               <video
+                class="lg-screen-show"
                 src="assets/video/Mycoinpoll-App-Banner-Ad-5.webm"
+                autoplay
+                muted
+                playsinline
+              ></video>
+              <video
+                class="sm-screen-show"
+                src="assets/video/Mycoinpoll-App-Banner-Ad-6.webm"
                 autoplay
                 muted
                 playsinline
@@ -2039,7 +2047,7 @@
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      const modalID = "#bonusModal";
+      const modalID = "#app-download-modal";
       const closeFlagKey = "bonusModalClosedAt";
       const delay = 5 * 60 * 1000; // 5 minutes in ms
 
