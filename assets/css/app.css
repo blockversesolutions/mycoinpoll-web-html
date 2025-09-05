@@ -106,11 +106,14 @@
   border-radius: 5px;
 }
 .app-download-btn .primary-btn {
-  min-width: 290px;
-  font-size: 28px;
-  font-weight: 600;
-  transition: 0.5s;
-  height: 75px;
+    min-width: 260px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.5s;
+    height: 70px;
+}
+.app-subscribe-form .subscribe-email input{
+ color:black !important;
 }
 .video-modal-close span {
   height: 35px;

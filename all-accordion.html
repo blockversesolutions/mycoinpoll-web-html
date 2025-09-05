@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mycoinpoll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-area-bg-color">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl menu-bg clip-path">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler icon"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"
+                ><i class="fa fa-bars" aria-hidden="true"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mx-auto" id="outside-click">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="token-details.html">Tokens</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="learn-earn.html">Learn & Earn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+              </ul>
+              <div class="header-right d-flex align-items-center">
+                <div
+                  class="button-wrapper d-flex align-items-center border-gradient"
+                >
+                  <a href="apply-launch.html"
+                    >Apply for Launch
+                    <span
+                      ><img
+                        src="assets/images/icon/launch.png"
+                        alt="icon" /></span
+                  ></a>
+                </div>
+                <div
+                  class="button-wrapper d-flex align-items-center border-gradient"
+                >
+                  <a href="#"
+                    >Connect Wallet
+                    <span
+                      ><img
+                        src="assets/images/icon/wallet.png"
+                        alt="icon" /></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div
+      class="coin-details-hero-bg position-relative coin-details-hero-border custom-container"
+    >
+      <div class="breadcrumbs-area mt-20 breadcrumbs-mobile-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="breadcrumbs">
+                <ul class="d-flex align-items-center flex-wrap">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                  </li>
+                  <li>
+                    <a href="all-accordion.html" class="active">Accordion</a>
+                  </li>
+                </ul>
+                <h6>Accordion</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coin-hero-area ptb50 position">
+        <div class="frequently-circle"></div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="learn-earn-hero-left">
+                <div class="hero-area-text">
+                  <h3>FAQ – Frequently Asked Questions</h3>
+                  <p class="mb-0">
+                    Explore answers to the most common questions about
+                    MyCoinPoll, your premier crypto launchpad—covering
+                    everything from platform benefits to upcoming events.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="box-bg">
+                <div class="token-card-thumbnails position-relative m-0">
+                  <img
+                    src="assets/images/thumbnail/faq.png"
+                    alt="img"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="frequently-asked-question-section pt120 position-relative">
+      <div class="frequently-circle"></div>
+      <div class="container">
+        <div class="row faq-cover-box">
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  What is MyCoinPoll?
+                </span>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      MyCoinPoll is a crypto launchpad that connects investors
+                      with promising projects and allows project creators to
+                      seek funding through community voting.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How can I know that It’s official site?
+                </span>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Get early access to cutting-edge crypto projects. Stake
+                      and participate in IDOs across multiple blockchains with
+                      guaranteed security.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  How to participate in IDOs / sales?
+                </span>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Get early access to cutting-edge crypto projects. Stake
+                      and participate in IDOs across multiple blockchains with
+                      guaranteed security.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsefour"
+                  aria-expanded="false"
+                  aria-controls="collapsefour"
+                >
+                  How is the FCFS allocation calculated?
+                </span>
+                <div
+                  id="collapsefour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Get early access to cutting-edge crypto projects. Stake
+                      and participate in IDOs across multiple blockchains with
+                      guaranteed security.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsefive"
+                  aria-expanded="false"
+                  aria-controls="collapsefive"
+                >
+                  Is MyCoinPoll audited or secure?
+                </span>
+                <div
+                  id="collapsefive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Yes, our smart contracts have been independently audited
+                      and verified. You can view the full audit report and
+                      contract address on Etherscan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsesix"
+                  aria-expanded="false"
+                  aria-controls="collapsesix"
+                >
+                  Is MyCoinPoll legally registered?
+                </span>
+                <div
+                  id="collapsesix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Yes. MyCoinPoll is operated by MetaFusion Labs, a legally
+                      registered company in Panama authorized to raise public
+                      funds through token sales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseseven"
+                  aria-expanded="false"
+                  aria-controls="collapseseven"
+                >
+                  What is the ECM Token used for?
+                </span>
+                <div
+                  id="collapseseven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      The ECM token enables staking, voting, discounted trading,
+                      governance, and future access to metaverse features and
+                      NFT utilities within the ecosystem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseeight"
+                  aria-expanded="false"
+                  aria-controls="collapseeight"
+                >
+                  How is the ECM Token distributed?
+                </span>
+                <div
+                  id="collapseeight"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      ECM has a total supply of 200 million tokens. 24 percent
+                      is allocated for public sale. The rest is distributed
+                      among staking rewards, ecosystem development, team, and
+                      partners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsenine"
+                  aria-expanded="false"
+                  aria-controls="collapsenine"
+                >
+                  Will ECM be listed on exchanges?
+                </span>
+                <div
+                  id="collapsenine"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Yes. ECM is scheduled to be listed on bCoinMart at the end
+                      of Q1 2026, with other exchange listings planned after
+                      that.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseten"
+                  aria-expanded="false"
+                  aria-controls="collapseten"
+                >
+                  When will I be able to vote on new projects?
+                </span>
+                <div
+                  id="collapseten"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      The voting feature will go live after the ECM token is
+                      listed on bCoinMart and the launchpad opens to external
+                      projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseeleven"
+                  aria-expanded="false"
+                  aria-controls="collapseeleven"
+                >
+                  Can I participate in other projects before the ICO ends?
+                </span>
+                <div
+                  id="collapseeleven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      No. Currently, the platform is focused on hosting the ECM
+                      ICO. Additional projects will be launched after the ECM
+                      listing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsetwelve"
+                  aria-expanded="false"
+                  aria-controls="collapsetwelve"
+                >
+                  Is KYC required to use MyCoinPoll?
+                </span>
+                <div
+                  id="collapsetwelve"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      At this stage, KYC is not required to participate in the
+                      ECM ICO. However, future token sales may require KYC based
+                      on regulatory needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsethirteen"
+                  aria-expanded="false"
+                  aria-controls="collapsethirteen"
+                >
+                  Where is user data stored?
+                </span>
+                <div
+                  id="collapsethirteen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      User data is securely encrypted and stored on protected
+                      servers following industry-standard data protection and
+                      privacy measures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsefourteen"
+                  aria-expanded="false"
+                  aria-controls="collapsefourteen"
+                >
+                  What projects are live in the ECM Ecosystem?
+                </span>
+                <div
+                  id="collapsefourteen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>Currently live projects include:</p>
+                    <ul>
+                      <li>MyCoinPoll (Launchpad) – Live</li>
+                      <li>AndroMarkets – Live</li>
+                      <li>Crypto Coin Earning – In Testing</li>
+                    </ul>
+                    <p>Upcoming:</p>
+                    <ul>
+                      <li>ECM Blockchain – Launching Q4 2025</li>
+                      <li>bCoinMart – Launching Q4 2025</li>
+                      <li>AndroVerse – Launching 2027–2028</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsefiveteen"
+                  aria-expanded="false"
+                  aria-controls="collapsefiveteen"
+                >
+                  Where can I learn more about ECM and blockchain?
+                </span>
+                <div
+                  id="collapsefiveteen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      A dedicated “Learn & Earn” section is coming soon. In the
+                      meantime, follow our social media or read the ECM Business
+                      Plan for detailed information.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 offset-md-2">
+            <div class="accordion frequently-answere">
+              <div class="accordion-item">
+                <span
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsesixteen"
+                  aria-expanded="false"
+                  aria-controls="collapsesixteen"
+                >
+                  How do I contact support or report a problem?
+                </span>
+                <div
+                  id="collapsesixteen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      You can reach our support team via the website’s contact
+                      form or by emailing support@mycoinpoll.com.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-main-section pt120 position-relative center-effect1">
+      <div class="footer-circle circle-effect-center"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-area d-flex justify-content-between">
+              <div class="footer-description">
+                <a href="#"><img src="assets/images/logo.png" alt="logo" /></a>
+                <p class="mt40">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="social-menu">
+                  <span>Follow us</span>
+                  <ul class="d-flex align-items-center">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-widgets-area d-flex">
+                <div class="footer-widgets">
+                  <h4>Company</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Investment</a></li>
+                    <li><a href="#">Referral</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widgets contactinfo">
+                  <h4>Contact Info.</h4>
+                  <ul>
+                    <li>
+                      Customer Support: <br />
+                      <a href="mailto:support@brunoex.com"
+                        >support@brunoex.com</a
+                      >
+                    </li>
+                    <li>
+                      <p class="or-divider">OR</p>
+                    </li>
+                    <li>
+                      Corporate Enquiries: <br />
+                      <a href="mailto:info@brunoex.com">info@brunoex.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-widgets footer-subscribe">
+                  <h4>Newsletter</h4>
+                  <p>
+                    Subscribe to our newsletter for latest update & stay with
+                    us.
+                  </p>
+                  <div class="subscribe-form">
+                    <form action="">
+                      <div class="subscribe-email mt-20">
+                        <input type="email" placeholder="Enter Your Email" />
+                      </div>
+                      <input
+                        type="submit"
+                        class="btn1 primary-btn subscribe-btn mt30"
+                        value="Subscribe"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div
+              class="footer-bottom-copyright d-flex flex-wrap align-items-center justify-content-between"
+            >
+              <div class="copyright-text">
+                <p>
+                  &copy; 2024
+                  <a href="#" class="gradient-color"> Mycoinpoll</a> All Rights
+                  Reserved.
+                </p>
+              </div>
+              <div class="terms-conditions">
+                <ul class="d-flex align-items-center">
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include the DataLabels Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <!-- chart customize js -->
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
