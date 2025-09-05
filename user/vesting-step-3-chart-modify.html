@@ -812,142 +812,141 @@
     <!-- end vesting open date counter -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
-   <script>
-  const ctx = document.getElementById("vestingChart").getContext("2d");
+    <script>
+      const ctx = document.getElementById("vestingChart").getContext("2d");
 
-  // Gradient background
-  const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-  gradient.addColorStop(0, "rgba(28, 214, 145, 0)");
-  gradient.addColorStop(1, "rgba(28, 214, 145, 0.5)");
+      // Gradient background
+      const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0, "rgba(28, 214, 145, 0)");
+      gradient.addColorStop(1, "rgba(28, 214, 145, 0.5)");
 
-  const labels = [
-    "Aug 2025",
-    "Sep 2025",
-    "Oct 2025",
-    "Nov 2025",
-    "Dec 2025",
-    "Jan 2026",
-    "Feb 2026",
-    "Mar 2026",
-    "Apr 2026",
-    "May 2026",
-    "Jun 2026",
-    "Jul 2026",
-    "Aug 2026",
-  ];
+      const labels = [
+        "Aug 2025",
+        "Sep 2025",
+        "Oct 2025",
+        "Nov 2025",
+        "Dec 2025",
+        "Jan 2026",
+        "Feb 2026",
+        "Mar 2026",
+        "Apr 2026",
+        "May 2026",
+        "Jun 2026",
+        "Jul 2026",
+        "Aug 2026",
+      ];
 
-  // Full values
-  const datasetValues = [
-    0, 0, 0, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000,
-  ];
+      // Full values
+      const datasetValues = [
+        0, 0, 0, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000,
+      ];
 
-  // Split vested vs unvested (Cliff index = 3)
-  const vestedValues = datasetValues.map((v, i) => (i <= 8 ? v : null));
-  const futureValues = datasetValues.map((v, i) => (i >= 8 ? v : null));
+      // Split vested vs unvested (Cliff index = 3)
+      const vestedValues = datasetValues.map((v, i) => (i <= 8 ? v : null));
+      const futureValues = datasetValues.map((v, i) => (i >= 8 ? v : null));
 
-  const data = {
-    labels: labels,
-    datasets: [
-      {
-        label: "Vested",
-        data: vestedValues,
-        fill: true,
-        borderWidth: 1.5,
-        borderColor: "#1CD691", // green line
-        backgroundColor: gradient,
-        tension: 0,
-        pointRadius: 4,
-        pointBackgroundColor: "#1CD691", // green circles
-      },
-      {
-        label: "Unvested",
-        data: futureValues,
-        fill: false,
-        borderWidth: 1.5,
-        borderColor: "#AAAAAA", // gray line
-        borderDash: [6, 6], // dashed
-        tension: 0,
-        pointRadius: 4,
-        pointBackgroundColor: "#AAAAAA", // gray circles
-      },
-    ],
-  };
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-      annotation: {
-        annotations: {
-          cliff: {
-            type: "line",
-            xMin: 3,
-            xMax: 3,
-            borderColor: "#FFFFFF99",
-            borderWidth: 1,
-            borderDash: [6, 6],
-            label: {
-              content: "Cliff 13-11-2025",
-              enabled: true,
-              position: "start",
-              color: "white",
-              backgroundColor: "rgba(0,0,0,0.7)",
-            },
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "Vested",
+            data: vestedValues,
+            fill: true,
+            borderWidth: 1.5,
+            borderColor: "#1CD691", // green line
+            backgroundColor: gradient,
+            tension: 0,
+            pointRadius: 4,
+            pointBackgroundColor: "#1CD691", // green circles
           },
-          fullVestedLine: {
-            type: "line",
-            xMin: 12,
-            xMax: 12,
-            borderColor: "#FFFFFF99",
-            borderWidth: 1,
-            borderDash: [6, 6],
+          {
+            label: "Unvested",
+            data: futureValues,
+            fill: false,
+            borderWidth: 1.5,
+            borderColor: "#AAAAAA", // gray line
+            borderDash: [6, 6], // dashed
+            tension: 0,
+            pointRadius: 4,
+            pointBackgroundColor: "#AAAAAA", // gray circles
           },
-          fullVestedLabel: {
-            type: "label",
-            xValue: "Aug 2026",
-            yValue: 100,
-            content: ["Full Vested: 13-08-2026"],
-            backgroundColor: "rgba(0,0,0,0)",
-            color: "white",
-            position: { x: "end", y: "end" },
-            font: { size: 12 },
-          },
-          specialPoint: {
-            type: "point",
-            xValue: "Aug 2025",
-            yValue: 1000,
-            backgroundColor: "#00ffcc",
-            radius: 6,
-            borderColor: "#FFFFFF99",
-            borderWidth: 1,
-            label: {
-              content: "Aug 23, 2025",
-              enabled: true,
-              position: "top",
-              color: "white",
-              backgroundColor: "rgba(0,0,0,0.7)",
+        ],
+      };
+
+      const options = {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          annotation: {
+            annotations: {
+              cliff: {
+                type: "line",
+                xMin: 3,
+                xMax: 3,
+                borderColor: "#FFFFFF99",
+                borderWidth: 1,
+                borderDash: [6, 6],
+                label: {
+                  content: "Cliff 13-11-2025",
+                  enabled: true,
+                  position: "start",
+                  color: "white",
+                  backgroundColor: "rgba(0,0,0,0.7)",
+                },
+              },
+              fullVestedLine: {
+                type: "line",
+                xMin: 12,
+                xMax: 12,
+                borderColor: "#FFFFFF99",
+                borderWidth: 1,
+                borderDash: [6, 6],
+              },
+              fullVestedLabel: {
+                type: "label",
+                xValue: "Aug 2026",
+                yValue: 100,
+                content: ["Full Vested: 13-08-2026"],
+                backgroundColor: "rgba(0,0,0,0)",
+                color: "white",
+                position: { x: "end", y: "end" },
+                font: { size: 12 },
+              },
+              specialPoint: {
+                type: "point",
+                xValue: "Aug 2025",
+                yValue: 1000,
+                backgroundColor: "#00ffcc",
+                radius: 6,
+                borderColor: "#FFFFFF99",
+                borderWidth: 1,
+                label: {
+                  content: "Aug 23, 2025",
+                  enabled: true,
+                  position: "top",
+                  color: "white",
+                  backgroundColor: "rgba(0,0,0,0.7)",
+                },
+              },
             },
           },
         },
-      },
-    },
-    scales: {
-      x: {
-        ticks: { color: "#ffffff" },
-      },
-      y: {
-        beginAtZero: true,
-        ticks: { color: "#ffffff" },
-      },
-    },
-  };
+        scales: {
+          x: {
+            ticks: { color: "#ffffff" },
+          },
+          y: {
+            beginAtZero: true,
+            ticks: { color: "#ffffff" },
+          },
+        },
+      };
 
-  new Chart(ctx, {
-    type: "line",
-    data: data,
-    options: options,
-  });
-</script>
-
+      new Chart(ctx, {
+        type: "line",
+        data: data,
+        options: options,
+      });
+    </script>
   </body>
 </html>

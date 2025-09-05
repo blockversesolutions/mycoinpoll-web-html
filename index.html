@@ -1854,30 +1854,20 @@
                 playsinline
               ></video>
             </div>
-            <div class="app-download-btn">
-              <a href="#">
-                <div class="download-btn">
-                  <span class="icon">
-                    <span class="ring" aria-hidden="true"></span>
-                    <svg
-                      class="arrow"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M12 3v14"></path>
-                      <path d="M5 12l7 7 7-7"></path>
-                    </svg>
-                  </span>
-                  <span>DOWNLOAD</span>
-                </div>
-              </a>
+            <div class="app-download-btn d-flex justify-content-center">
+              <button class="btn1 primary-btn get-notified">Get Notified</button>
+              <div class="app-subscribe-form subscribe-form">
+                <form action="">
+                  <div class="subscribe-email mt-20">
+                    <input type="email" placeholder="Enter Your Email" required />
+                  </div>
+                  <input
+                    type="submit"
+                    class="btn1 primary-btn subscribe-btn mt-2"
+                    value="Get Notified"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -2044,21 +2034,16 @@
       const modalID = document.getElementById("app-download-modal");
       const closeFlagKey = "bonusModalClosedAt";
       const delay = 10 * 60 * 1000; // 5 minutes
-
       const modalInstance = new bootstrap.Modal(modalID);
-
       function showModal() {
         modalInstance.show();
       }
-
       function hideModal() {
         modalInstance.hide();
       }
-
       function checkModal() {
         const lastClosed = localStorage.getItem(closeFlagKey);
         const now = Date.now();
-
         if (!lastClosed || now - parseInt(lastClosed) >= delay) {
           localStorage.removeItem(closeFlagKey);
           showModal();
@@ -2066,11 +2051,9 @@
           hideModal();
         }
       }
-
       document.addEventListener("DOMContentLoaded", function () {
         setTimeout(checkModal, 3000); // Show modal after 5 seconds
       });
-
       document
         .querySelector(".bonus-modal-close")
         .addEventListener("click", function () {
@@ -2078,5 +2061,21 @@
           hideModal();
         });
     </script>
+    <!-- Your HTML content -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.querySelector(".get-notified");
+    const form = document.querySelector(".app-subscribe-form");
+
+    btn.addEventListener("click", function () {
+      console.log("Button clicked");
+      btn.style.display = "none";
+      form.classList.add("show");
+    });
+  });
+</script>
+
+</body>
+
   </body>
 </html>
