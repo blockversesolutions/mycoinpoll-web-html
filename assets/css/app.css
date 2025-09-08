@@ -146,14 +146,14 @@
 .sm-screen-show {
   display: none;
 }
-.subscribe-form {
+.app-subscribe-form{
   display: none !important;
   opacity: 0;
   transition: opacity 0.4s ease, visibility 0.4s ease;
   height: auto;
 }
 
-.subscribe-form.show {
+.app-subscribe-form.show {
   display: block !important;
   opacity: 1;
 }
@@ -209,6 +209,18 @@
   color: #ffffff;
   animation: arrow-bounce 1.2s ease-in-out infinite;
   will-change: transform;
+}
+ 
+.coming-text h3{
+  font-size:25px !important;
+  font-weight: 500;
+}
+.coming-text img{
+  max-width: 100px;
+  width: 100%;
+  margin-left: 18px;
+  transform: rotate(-60deg);
+  opacity: 0.8;
 }
 @keyframes spin {
   to {
@@ -292,7 +304,13 @@
   .download-btn {
     padding: 12px 55px !important;
   }
+  .app-subscribe-form .subscribe-email input {
+    color: #fff !important;
+  }
 }
+/* 
+  9-10-11-12
+*/
 @media all and (max-width: 480px) {
   .app-thumbnails-top {
     bottom: 100px;
