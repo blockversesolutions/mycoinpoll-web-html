@@ -1010,6 +1010,14 @@ a.nav-link.dropdown-toggle i {
   padding-top: 7px;
   padding-bottom: 38px;
 }
+.accordion-body ul{
+  list-style-type: disc;
+  margin: 10px 0 10px 30px ;
+}
+.accordion-body ul li{
+  color: rgb(201, 199, 199);
+  font-size: 14px;
+}
 .frequently-answere .accordion-button {
   background-color: transparent;
   border: none;
@@ -5023,3 +5031,41 @@ input[type="time"]::after {
   padding: 6px 12px;
   font-size: 15px;
 }
+
+ /* submenu css start */
+ .submenu-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.submenu-list li a {
+  margin-bottom: 0 !important;
+  padding-left: 20px !important;
+
+  margin: 2px 10px !important;
+}
+.submenu-list li a:hover {
+  background: #17294a !important;
+}
+.submenu-list.show-submenu {
+  max-height: 500px; /* Adjust based on content height */
+}
+
+.submenu-list.show-submenu {
+  display: block;
+}
+
+.rotate-arrow {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+.left-menu-text,
+.submenu-btn i {
+  color: #fff;
+}
+.menu-icon-show .dashboard-left-menu .submenu-btn span,
+.menu-icon-show .dashboard-left-menu .submenu-btn i,
+.menu-icon-show .dashboard-left-menu .submenu-list span {
+  display: none;
+}
+ /* submenu css end */

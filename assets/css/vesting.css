@@ -202,16 +202,16 @@
     rgba(28, 214, 145, 0.3) 100.01%
   );
 }
-.vesting-summary-info-list ul{
+.vesting-summary-info-list ul {
   list-style-type: disc;
   margin-left: 30px;
   margin-top: 12px;
 }
-.vesting-summary-info-list ul li{
+.vesting-summary-info-list ul li {
   padding: 4px;
   border-radius: 4px;
   color: #fff;
-  font-size: 14px;  
+  font-size: 14px;
 }
 /* end vesting step-2 */
 
@@ -232,4 +232,24 @@
   .short-text {
     max-width: 25ch;
   }
+}
+
+
+.vesting-accordion .accordion-body p {
+  font-size: 14px;
+  line-height: 25px;
+}
+.vesting-accordion .accordion-button {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.accordion-button {
+  color: #1cd691 !important;
+}
+.accordion-button.collapsed {
+  color: #fff !important;
+}
+.accordion-button.collapsed:hover {
+  color: #1cd691 !important;
 }

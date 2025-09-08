@@ -61,7 +61,7 @@
   z-index: 1;
 }
 .app-thumbnails-top img {
-  max-width: 220px;
+  max-width: 205px;
   max-height: 433px;
   animation: bounceLoop 4.5s ease-in-out infinite;
 }
@@ -105,6 +105,16 @@
   width: 100%;
   border-radius: 5px;
 }
+.app-download-btn .primary-btn {
+    min-width: 260px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.5s;
+    height: 70px;
+}
+.app-subscribe-form .subscribe-email input{
+ color:black !important;
+}
 .video-modal-close span {
   height: 35px;
   width: 35px;
@@ -124,27 +134,36 @@
   opacity: 0;
   transition: all 0.4s ease;
 }
-
 .modal.fade.show .modal-dialog {
   transform: scale(1);
   opacity: 1;
 }
-
 .app-download-btn {
   position: absolute;
   left: 55px;
-  bottom: 55px;
+  bottom: 35px;
 }
 .sm-screen-show {
   display: none;
 }
+.app-subscribe-form{
+  display: none !important;
+  opacity: 0;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  height: auto;
+}
+
+.app-subscribe-form.show {
+  display: block !important;
+  opacity: 1;
+}
+
 .download-btn {
   --btn-radius: 999px;
   --btn-grad-1: #2683ed;
   --btn-grad-2: #22c55e;
   --icon-size: 48px;
   --ring-thickness: 3px;
-
   display: inline-flex;
   align-items: center;
   gap: 14px;
@@ -191,12 +210,23 @@
   animation: arrow-bounce 1.2s ease-in-out infinite;
   will-change: transform;
 }
+ 
+.coming-text h3{
+  font-size:25px !important;
+  font-weight: 500;
+}
+.coming-text img{
+  max-width: 100px;
+  width: 100%;
+  margin-left: 18px;
+  transform: rotate(-60deg);
+  opacity: 0.8;
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
-
 @keyframes arrow-bounce {
   0%,
   100% {
@@ -216,24 +246,21 @@
     opacity: 1;
   }
 }
-
+.app-subscribe-form .primary-btn {
+  font-size: 20px;
+}
 .app-download-btn {
   animation: slideUp 1.5s ease-in-out;
   animation-delay: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-
 @media all and (max-width: 1199px) {
   .app-thumbnails-bottom img {
     max-width: 425px;
   }
 }
 @media all and (max-width: 991px) {
-  .app-download-btn {
-    position: absolute;
-    bottom: 48px;
-  }
   .download-btn {
     padding: 5px 4px;
     padding-right: 20px;
@@ -241,8 +268,18 @@
   .download-btn span {
     font-size: 16px;
   }
+  .app-download-btn {
+ 
+    bottom: 12px;
+  }
 }
 @media all and (max-width: 767px) {
+  .app-subscribe-form {
+    background: #010519;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
   .sm-screen-show {
     display: block;
   }
@@ -267,7 +304,13 @@
   .download-btn {
     padding: 12px 55px !important;
   }
+  .app-subscribe-form .subscribe-email input {
+    color: #fff !important;
+  }
 }
+/* 
+  9-10-11-12
+*/
 @media all and (max-width: 480px) {
   .app-thumbnails-top {
     bottom: 100px;
