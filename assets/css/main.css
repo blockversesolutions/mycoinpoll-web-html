@@ -1010,11 +1010,11 @@ a.nav-link.dropdown-toggle i {
   padding-top: 7px;
   padding-bottom: 38px;
 }
-.accordion-body ul{
+.accordion-body ul {
   list-style-type: disc;
-  margin: 10px 0 10px 30px ;
+  margin: 10px 0 10px 30px;
 }
-.accordion-body ul li{
+.accordion-body ul li {
   color: rgb(201, 199, 199);
   font-size: 14px;
 }
@@ -5026,38 +5026,44 @@ input[type="time"]::after {
   background: #2a5e88 !important;
   transition: background 0.9s ease !important;
 }
-
 .featured ul li a.transparent-btn {
   padding: 6px 12px;
   font-size: 15px;
 }
-
- /* submenu css start */
- .submenu-list {
+/* submenu css start */
+.submenu-list {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.8s ease;
 }
 .submenu-list li a {
   margin-bottom: 0 !important;
-  padding-left: 20px !important;
-
-  margin: 2px 10px !important;
+  font-size: 13px !important;
 }
 .submenu-list li a:hover {
   background: #17294a !important;
 }
 .submenu-list.show-submenu {
-  max-height: 500px; /* Adjust based on content height */
+  max-height: 200px; /* Adjust based on content height */
 }
 
 .submenu-list.show-submenu {
   display: block;
+ 
 }
-
+.submenu-list {
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.arrow-direction i{
+  transition: transform 0.8s ease;
+}
 .rotate-arrow {
   transform: rotate(90deg);
-  transition: transform 0.3s ease;
+  transition: transform 0.8s ease;
+}
+.submenu-btn {
+  margin-bottom: 10px;
 }
 .left-menu-text,
 .submenu-btn i {
@@ -5068,4 +5074,8 @@ input[type="time"]::after {
 .menu-icon-show .dashboard-left-menu .submenu-list span {
   display: none;
 }
- /* submenu css end */
+.submenu-list li.active{
+  background: linear-gradient(90deg, #277bf563 0%, #1cd69159 100.01%);
+  border-radius: 10px;
+}
+/* submenu css end */
