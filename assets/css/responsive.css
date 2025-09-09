@@ -62,7 +62,7 @@
   .logo2 {
     display: block;
   }
-  .dashboard-left-menu ul li a span {
+  .dashboard-left-menu ul li a span,.submenu-btn span,.submenu-btn  i {
     display: none;
   }
   .menu-icon-show .logo {
@@ -71,8 +71,8 @@
   .menu-icon-show .logo2 {
     display: none;
   }
-  .menu-icon-show .dashboard-left-menu ul li a span {
-    display: block;
+  .menu-icon-show .dashboard-left-menu ul li a span,.menu-icon-show .submenu-btn span, .menu-icon-show .submenu-btn  i {
+    display: block !important;
   }
 
   /* End left bar edit */
@@ -633,7 +633,7 @@
   .token-card-heading h3,
   .section-heading h3 {
     font-size: 35px;
-    line-height: 55px;
+    line-height:45px;
   }
   .section-heading h3 {
     font-size: 32px;
@@ -647,7 +647,6 @@
   }
   .primary-btn {
     min-width: 280px;
-    font-size: 16px;
     display: flex;
   }
   .coin-logo-section {
@@ -1089,9 +1088,6 @@
   }
   .copyright-box p {
     font-size: 12px;
-  }
-  .accordion-item .accordion-button {
-    flex-wrap: wrap;
   }
   .accordion-button b {
     margin-top: 5px !important;
