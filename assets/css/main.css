@@ -2987,7 +2987,7 @@ select {
   width: 20px;
 }
 .menu-active-bg,
-.dashboard-left-menu ul li a:hover {
+.dashboard-left-menu ul li a:hover,.submenu-btn:hover {
   background: linear-gradient(90deg, #277bf5 0%, #1cd691 100.01%);
   border-radius: 10px;
 }
@@ -3012,7 +3012,7 @@ select {
   font-size: 10px;
   justify-content: center;
   position: absolute;
-  top: 8px;
+  top:-5px;
   right: 14px;
   pointer-events: none;
 }
@@ -5054,6 +5054,7 @@ input[type="time"]::after {
 .submenu-list {
   margin-bottom: 10px;
   border-radius: 2px;
+  margin-top: 5px;
 }
 .arrow-direction i{
   transition: transform 0.8s ease;
@@ -5062,12 +5063,11 @@ input[type="time"]::after {
   transform: rotate(90deg);
   transition: transform 0.8s ease;
 }
-.submenu-btn {
-  margin-bottom: 10px;
-}
+
 .left-menu-text,
 .submenu-btn i {
   color: #fff;
+  font-weight: 600;
 }
 .menu-icon-show .dashboard-left-menu .submenu-btn span,
 .menu-icon-show .dashboard-left-menu .submenu-btn i,
